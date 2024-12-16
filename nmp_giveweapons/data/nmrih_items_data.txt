@@ -1,0 +1,484 @@
+"items_data"
+{
+	"categories"
+	{
+		"ammo"
+		{
+			"name"		"NMP Category Ammo"
+		}
+		"items"
+		{
+			"name"		"NMP Category Items"
+		}
+		"melee"
+		{
+			"name"		"NMP Category Melee"
+		}
+		"light"
+		{
+			"name"		"NMP Category Light Weapons"
+		}
+		"rifles"
+		{
+			"name"		"NMP Category Rifles"
+		}
+		"heavy"
+		{
+			"name"		"NMP Category Heavy Weapons"
+		}
+	}
+	
+	"items"
+	{
+		"Big Inventory Box"
+		{
+			"classname"			"item_inventory_box"
+			"type"				"box"
+			"category"			"items"
+		}
+		
+		"Compound Bow"
+		{
+			"classname"			"bow_deerhunter"
+			"type"				"bow"
+			"category"			"light"
+			"ammobox"			"arrow"
+			"clip"				"1"
+		}
+		
+		"Grenade"
+		{
+			"classname"			"exp_grenade"
+			"type"				"explosive"
+			"category"			"heavy"
+			"ammobox"			"grenades"
+			"clip"				"1"
+		}
+		
+		"Molotov"
+		{
+			"classname"			"exp_molotov"
+			"type"				"explosive"
+			"category"			"heavy"
+			"ammobox"			"molotovs"
+			"clip"				"1"
+		}
+		
+		"TNT"
+		{
+			"classname"			"exp_tnt"
+			"type"				"explosive"
+			"category"			"heavy"
+			"ammobox"			"tnt"
+			"clip"				"1"
+		}
+		
+		"Mossberg 500A"
+		{
+			"classname"			"fa_500a"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"12gauge"
+			"clip"				"5"
+		}
+		
+		"Remington 870"
+		{
+			"classname"			"fa_870"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"12gauge"
+			"clip"				"8"
+		}
+		
+		"Ruger 10/22"
+		{
+			"classname"			"fa_1022"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"22lr"
+			"clip"				"10"
+		}
+		
+		"Colt M1911"
+		{
+			"classname"			"fa_1911"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"45acp"
+			"clip"				"7"
+		}
+		
+		"CZech 858"
+		{
+			"classname"			"fa_cz858"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"762mm"
+			"clip"				"30"
+		}
+		
+		"FN FAL"
+		{
+			"classname"			"fa_fnfal"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"308"
+			"clip"				"20"
+		}
+		
+		"Glock 17"
+		{
+			"classname"			"fa_glock17"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"9mm"
+			"clip"				"17"
+		}
+		
+		"JAE 700"
+		{
+			"classname"			"fa_jae700"
+			"type"				"sniperrifle"
+			"category"			"rifles"
+			"ammobox"			"308"
+			"clip"				"10"
+		}
+		
+		"M16A4"
+		{
+			"classname"			"fa_m16a4"
+			"type"				"rifle"
+			"category"			"light"
+			"ammobox"			"556"
+			"clip"				"30"
+		}
+		
+		"Beretta M9"
+		{
+			"classname"			"fa_m92fs"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"9mm"
+			"clip"				"15"
+		}
+		
+		"MAC10"
+		{
+			"classname"			"fa_mac10"
+			"type"				"smg"
+			"category"			"light"
+			"ammobox"			"45acp"
+			"clip"				"30"
+		}
+		
+		"MP5A3"
+		{
+			"classname"			"fa_mp5a3"
+			"type"				"smg"
+			"category"			"light"
+			"ammobox"			"9mm"
+			"clip"				"30"
+		}
+		
+		"Ruger MkIII"
+		{
+			"classname"			"fa_mkiii"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"22lr"
+			"clip"				"10"
+		}
+		
+		"Sako 85"
+		{
+			"classname"			"fa_sako85"
+			"type"				"sniperrifle"
+			"category"			"rifles"
+			"ammobox"			"308"
+			"clip"				"5"
+		}
+		
+		"SKS"
+		{
+			"classname"			"fa_sks"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"762mm"
+			"clip"				"10"
+		}
+		
+		"Beretta SV10"
+		{
+			"classname"			"fa_sv10"
+			"type"				"shotgun"
+			"category"			"light"
+			"ammobox"			"12gauge"
+			"clip"				"2"
+		}
+		
+		"S&W 686"
+		{
+			"classname"			"fa_sw686"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"357"
+			"clip"				"6"
+		}
+		
+		"Winchester X3"
+		{
+			"classname"			"fa_superx3"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"12gauge"
+			"clip"				"5"
+		}
+		
+		"Winchester 1892"
+		{
+			"classname"			"fa_winchester1892"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"357"
+			"clip"				"15"
+		}
+		
+		"Bandages"
+		{
+			"classname"			"item_bandages"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"Maglite"
+		{
+			"classname"			"item_maglite"
+			"type"				"tool"
+			"category"			"items"
+		}
+		
+		"Pills"
+		{
+			"classname"			"item_pills"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"Gene Therapy"
+		{
+			"classname"			"item_gene_therapy"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"First Aid Kit"
+		{
+			"classname"			"item_first_aid"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"Walkie Talkie"
+		{
+			"classname"			"item_walkietalkie"
+			"type"				"tool"
+			"category"			"items"
+		}
+		
+		"Fire Axe"
+		{
+			"classname"			"me_axe_fire"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Baseball Bat"
+		{
+			"classname"			"me_bat_metal"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Chainsaw"
+		{
+			"classname"			"me_chainsaw"
+			"type"				"melee"
+			"category"			"melee"
+			"ammobox"			"fuel"
+			"clip"				"100"
+		}
+		
+		"Crowbar"
+		{
+			"classname"			"me_crowbar"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Hatchet"
+		{
+			"classname"			"me_hatchet"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Kitchen Knife"
+		{
+			"classname"			"me_kitknife"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Machete"
+		{
+			"classname"			"me_machete"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Lead Pipe"
+		{
+			"classname"			"me_pipe_lead"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Shovel"
+		{
+			"classname"			"me_shovel"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Sledge Hammer"
+		{
+			"classname"			"me_sledge"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Wrench"
+		{
+			"classname"			"me_wrench"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"FUBAR"
+		{
+			"classname"			"me_fubar"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Entrenching Tool"
+		{
+			"classname"			"me_etool"
+			"type"				"melee"
+			"category"			"melee"
+		}
+		
+		"Claw Hammer"
+		{
+			"classname"			"tool_barricade"
+			"type"				"tool"
+			"category"			"items"
+			"ammobox"			"board"
+			"clip"				"1"
+		}
+		
+		"Fire Extinguisher"
+		{
+			"classname"			"tool_extinguisher"
+			"type"				"tool"
+			"category"			"items"
+		}
+		
+		"Flare Gun"
+		{
+			"classname"			"tool_flare_gun"
+			"type"				"tool"
+			"category"			"items"
+			"ammobox"			"flare"
+			"clip"				"1"
+		}
+		
+		"Welder"
+		{
+			"classname"			"tool_welder"
+			"type"				"tool"
+			"category"			"items"
+		}
+		
+		//"Zippo Lighter"
+		//{
+		//	"classname"			"item_zippo"
+		//	"type"				"tool"
+		//	"category"			"items"
+		//	"name"				"Zippo lighter"
+		//	"name_short"		"Zippo"
+		//}
+		
+		//"Fists"
+		//{
+		//	"classname"			"me_fists"
+		//	"type"				"melee"
+		//	"category"			"melee"
+		//	"name"				"Fists"
+		//	"name_short"		"Fists"
+		//}
+	}
+	
+	"types"
+	{
+		"box"
+		{
+			"name"		"NMP Type Box"
+		}
+		"pistol"
+		{
+			"name"		"NMP Type Pistol"
+		}
+		"shotgun"
+		{
+			"name"		"NMP Type Shotgun"
+		}
+		"smg"
+		{
+			"name"		"NMP Type SMG"
+		}
+		"rifle"
+		{
+			"name"		"NMP Type Rifle"
+		}
+		"sniperrifle"
+		{
+			"name"		"NMP Type Sniper Rifle"
+		}
+		"bow"
+		{
+			"name"		"NMP Type Bow"
+		}
+		"explosive"
+		{
+			"name"		"NMP Type Explosive"
+		}
+		"melee"
+		{
+			"name"		"NMP Type Melee"
+		}
+		"tool"
+		{
+			"name"		"NMP Type Tool"
+		}
+		"ammo"
+		{
+			"name"		"NMP Type Ammo"
+		}
+		"meds"
+		{
+			"name"		"NMP Type Meds"
+		}
+	}
+}

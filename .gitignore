@@ -1,0 +1,6 @@
+#ignore zip
+*.zip
+
+#ignore vscode
+*.vs
+*.vscode

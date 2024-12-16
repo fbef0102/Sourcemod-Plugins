@@ -1,0 +1,429 @@
+"Phrases"
+{
+	"NMP Activity Give 2 T"
+	{
+		"#format"		"{1:t},{2:N}"
+		"en"			"Gave {1} to {2}"
+		"ru"			"Выдал {1} для {2}"
+	}
+	"NMP Activity Give 2"
+	{
+		"#format"		"{1:s},{2:N}"
+		"en"			"Gave {1} to {2}"
+		"ru"			"Выдал {1} для {2}"
+	}
+	"NMP Activity Give T"
+	{
+		"#format"		"{1:t},{2:t}"
+		"en"			"Gave {1} to {2}"
+		"ru"			"Дал {1} для {2}"
+	}
+	"NMP Activity Give"
+	{
+		"#format"		"{1:s},{2:t}"
+		"en"			"Gave {1} to {2}"
+		"ru"			"Дал {1} для {2}"
+	}
+	"NMP Activity Placed T"
+	{
+		"#format"		"{1:t}"
+		"en"			"Placed {1}"
+		"ru"			"Разместил {1}"
+	}
+	"NMP Activity Placed"
+	{
+		"#format"		"{1:s}"
+		"en"			"Placed {1}"
+		"ru"			"Разместил {1}"
+	}
+	"NMP Activity Spawn 2 T"
+	{
+		"#format"		"{1:t},{2:N}"
+		"en"			"Spawned {1} for {2}"
+		"ru"			"Поставил {1} для {2}"
+	}
+	"NMP Activity Spawn 2"
+	{
+		"#format"		"{1:s},{2:N}"
+		"en"			"Spawned {1} for {2}"
+		"ru"			"Поставил {1} для {2}"
+	}
+	"NMP Activity Spawn T"
+	{
+		"#format"		"{1:t},{2:t}"
+		"en"			"Spawned {1} for {2}"
+		"ru"			"Поставил {1} для {2}"
+	}
+	"NMP Activity Spawn"
+	{
+		"#format"		"{1:s},{2:t}"
+		"en"			"Spawned {1} for {2}"
+		"ru"			"Поставил {1} для {2}"
+	}
+	
+	"NMP AM Category"
+	{
+		"en"			"Give/Spawn items"
+		"ru"			"Выдать/поставить предметы"
+		"zho"			"給予/生成 物資"
+	}
+	"NMP AM Action"
+	{
+		"en"			"Select action:"
+		"ru"			"выберите действие:"
+	}
+	"NMP AM Give Item"
+	{
+		"en"			"Give player item"
+		"ru"			"Выдать игроку предмет"
+	}
+	"NMP AM Spawn Item"
+	{
+		"en"			"Spawn player item"
+		"ru"			"Поставить игроку предмет"
+	}
+	"NMP AM Select Target"
+	{
+		"en"			"Select target:"
+		"ru"			"Выберите цель:"
+	}
+	"NMP AM Select Item"
+	{
+		"en"			"Select item:"
+		"ru"			"Выберите предмет:"
+	}
+	
+	"NMP Data Reloaded"
+	{
+		"en"			"Items data was successfully realoded"
+		"ru"			"База предметов успешно перезагружена"
+	}
+	"NMP Data Not Reloaded"
+	{
+		"en"			"Failed to reload items data"
+		"ru"			"Не удалось перезагрузить базу предметов"
+	}
+	
+	"NMP Cannot Give"
+	{
+		"en"			"This item cannot be given"
+		"ru"			"Этот предмет не может быть выдан"
+	}
+	"NMP Cannot Spawn"
+	{
+		"en"			"This item cannot be spawned"
+		"ru"			"Этот предмет не может быть поставлен"
+	}
+	"NMP No Access"
+	{
+		"en"			"You do not have access to give this item"
+		"ru"			"У вас недостаточно прав для выдачи этого предмета"
+	}
+	"NMP No Matching"
+	{
+		"en"			"No matching items was found"
+		"ru"			"Не удалось найти предмет"
+	}
+	"NMP Multiple Items"
+	{
+		"en"			"Found more than one item"
+		"ru"			"Нашлось более одного предмета"
+	}
+	"NMP Invalid Item Argument"
+	{
+		"#format"		"{1:s}"
+		"en"			"Possibly invalid item classname: {1}"
+		"ru"			"Неверное название класса предмета: {1}"
+	}
+	"NMP Invalid Item Entity"
+	{
+		"#format"		"{1:s}"
+		"en"			"Failed to generate an item '{1}'"
+		"ru"			"Не удалость создать предмет '{1}'"
+	}
+	
+	"NMP Type Pistol"
+	{
+		"en"			"Pistol"
+		"ru"			"Пистолет"
+		"zho"			"手槍"
+	}
+	"NMP Type Shotgun"
+	{
+		"en"			"Shotgun"
+		"ru"			"Дробовик"
+		"zho"			"霰彈槍"
+	}
+	"NMP Type SMG"
+	{
+		"en"			"Submachine gun"
+		"ru"			"Пистолет-пулемет"
+		"zho"			"機槍"
+	}
+	"NMP Type Rifle"
+	{
+		"en"			"Rifle"
+		"ru"			"Винтовка"
+		"zho"			"步槍"
+	}
+	"NMP Type Sniper Rifle"
+	{
+		"en"			"Sniper rifle"
+		"ru"			"Снайперская винтовка"
+		"zho"			"狙擊步槍"
+	}
+	"NMP Type Bow"
+	{
+		"en"			"Bow"
+		"ru"			"Лук"
+		"zho"			"弓"
+	}	
+	"NMP Type Box"
+	{
+		"en"			"Box"
+		"zho"			"箱子"
+	}
+	"NMP Type Explosive"
+	{
+		"en"			"Explosive"
+		"ru"			"Взрывчатка"
+		"zho"			"爆炸物"
+	}
+	"NMP Type Melee"
+	{
+		"en"			"Melee"
+		"ru"			"Рукопашное"
+		"zho"			"近戰"
+	}
+	"NMP Type Tool"
+	{
+		"en"			"Tool"
+		"ru"			"Инструмент"
+		"zho"			"工具"
+	}
+	"NMP Type Ammo"
+	{
+		"en"			"Ammo"
+		"ru"			"Патроны"
+		"zho"			"子彈"
+	}
+	"NMP Type Meds"
+	{
+		"en"			"Medical Supply"
+		"ru"			"Медикаменты"
+		"zho"			"醫療物資"
+	}
+	
+	"Weapon_bow_deerhunter_short"
+	{
+		"en"			"PSE D. Hunt."
+		"zho"			"獵鹿十字弓"
+	}
+	"Weapon_exp_grenade_short"
+	{
+		"en"			"Grenade"
+		"zho"			"手榴彈"
+	}
+	"Weapon_exp_molotov_short"
+	{
+		"en"			"Molotov"
+		"zho"			"燃燒彈"
+	}
+	"Weapon_exp_tnt_short"
+	{
+		"en"			"TNT"
+		"zho"			"TNT 炸藥"
+	}
+	"Weapon_fa_500a_short"
+	{
+		"en"			"Moss. 500a"
+	}
+	"Weapon_fa_870_short"
+	{
+		"en"			"Rem. 870"
+	}
+	"Weapon_fa_1022_short"
+	{
+		"en"			"Ruger 10/22"
+	}
+	"Weapon_fa_1911_short"
+	{
+		"en"			"Colt 1911"
+	}
+	"Weapon_fa_cz858_short"
+	{
+		"en"			"CZ858"
+	}
+	"Weapon_fa_glock17_short"
+	{
+		"en"			"Glock"
+	}
+	"Weapon_fa_fnfal_short"
+	{
+		"en"			"FN FAL"
+	}
+	"Weapon_fa_jae700_short"
+	{
+		"en"			"JAE 700"
+	}
+	"Weapon_fa_m16a4_short"
+	{
+		"en"			"M16A4"
+	}
+	"Weapon_fa_m92fs_short"
+	{
+		"en"			"M92FS"
+	}
+	"Weapon_fa_mac10_short"
+	{
+		"en"			"Mac-10"
+	}
+	"Weapon_fa_mkiii_short"
+	{
+		"en"			"Ruger MKiii"
+	}
+	"Weapon_fa_mp5a3_short"
+	{
+		"en"			"MP5A3"
+	}
+	"Weapon_fa_sako85_short"
+	{
+		"en"			"Sako 85"
+	}
+	"Weapon_fa_sks_short"
+	{
+		"en"			"SKS"
+	}
+	"Weapon_fa_superx3_short"
+	{
+		"en"			"Super X3"
+	}
+	"Weapon_fa_sv10_short"
+	{
+		"en"			"SV10"
+	}
+	"Weapon_fa_sw686_short"
+	{
+		"en"			"S&W 686"
+	}
+	"Weapon_fa_winchester1892_short"
+	{
+		"en"			"Win. 1892"
+	}
+	"Weapon_item_bandages_short"
+	{
+		"en"			"Bandages"
+		"ru"			"Бинты"
+		"zho"			"繃帶"
+	}
+	"Weapon_item_maglite_short"
+	{
+		"en"			"Maglite"
+		"ru"			"Фонарик"
+		"zho"			"手電筒"
+	}
+	"Weapon_item_pills_short"
+	{
+		"en"			"Pills"
+		"ru"			"Таблетки"
+		"zho"			"膠囊"
+	}
+	"Weapon_item_first_aid_short"
+	{
+		"en"			"First Aid"
+		"ru"			"Аптечка"
+		"zho"			"醫療包"
+	}
+	"Weapon_item_walkietalkie_short"
+	{
+		"en"			"Walkie Talkie"
+		"ru"			"Рация"
+		"zho"			"對講機"
+	}
+	"Weapon_me_axe_fire_short"
+	{
+		"en"			"Fire Axe"
+	}
+	"Weapon_me_bat_metal_short"
+	{
+		"en"			"Baseball Bat"
+	}
+	"Weapon_me_chainsaw_short"
+	{
+		"en"			"Chainsaw"
+		"zho"			"電鋸"
+	}
+	"Weapon_me_crowbar_short"
+	{
+		"en"			"Crowbar"
+	}
+	"Weapon_me_hatchet_short"
+	{
+		"en"			"Hatchet"
+	}
+	"Weapon_me_kitknife_short"
+	{
+		"en"			"Kit Knife"
+	}
+	"Weapon_me_etool_short"
+	{
+		"en"			"E-Tool"
+		"zho"			"土工器具"
+	}
+	"Weapon_me_fubar_short"
+	{
+		"en"			"Fubar"
+	}
+	"Weapon_me_machete_short"
+	{
+		"en"			"Machete"
+	}
+	"Weapon_me_pipe_lead_short"
+	{
+		"en"			"Lead Pipe"
+	}
+	"Weapon_me_shovel_short"
+	{
+		"en"			"Shovel"
+	}
+	"Weapon_me_sledge_short"
+	{
+		"en"			"Sledge"
+	}
+	"Weapon_me_wrench_short"
+	{
+		"en"			"Wrench"
+	}
+	"Weapon_tool_barricade_short"
+	{
+		"en"			"Barr. Tool"
+		"zho"			"釘板榔頭"
+	}
+	"Weapon_tool_extinguisher_short"
+	{
+		"en"			"Fire Exting."
+		"zho"			"滅火器"
+	}
+	"Weapon_tool_flare_gun_short"
+	{
+		"en"			"Flare Gun"
+		"zho"			"信號槍"
+	}
+	"Weapon_tool_welder_short"
+	{
+		"en"			"Welder"
+		"zho"			"焊槍"
+	}
+	
+	"Weapon_item_inventory_box_short"
+	{
+		"en"			"Big Inventory Box"
+		"zho"			"補給大箱子"
+	}	
+	
+	"Weapon_item_gene_therapy_short"
+	{
+		"en"			"Gene Therapy"
+		"zho"			"基因治療劑"
+	}
+}

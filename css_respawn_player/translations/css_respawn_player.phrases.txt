@@ -1,0 +1,59 @@
+"Phrases"
+{
+	"List_Players"
+	{
+		"en"		"Who do you want to respawn?"
+		"zho"       "你想復活誰?"
+		"chi"       "你想复活谁?"
+		"ru"		"Кого вы хотите возродить?"
+		"tr"		"Kimi yeniden canlandırmak istiyorsun?"
+	}
+	"Respawn_Player"
+	{
+		"en"		"Respawn player"
+		"zho"       "復活玩家"
+		"chi"       "复活玩家"
+		"ru"		"Возродить игрока"
+		"tr"		"Oyuncuyu yeniden canlandır"
+	}
+	"Respawn_Info"
+	{
+		"en"		"Respawned player '%N'"
+		"zho"       "復活了 '%N'"
+		"chi"       "复活了 '%N'"
+		"ru"		"Возрождение игрока «%N»"
+		"tr"		"'%N' adlı oyuncu yeniden canlandırıldı"
+	}
+	"No Any Dead Survivor"
+	{
+		"en"		"There Are No Any Dead Survivor"
+		"zho"       "沒有死掉的玩家"
+		"chi"       "没有死掉的玩家"
+		"ru"		"Мёртвых выживших нет"
+		"tr"		"Ölü Oyuncu Yok"
+	}
+	"message_1"
+	{
+		"en"		"You Dumb? %N is still alive!"
+		"zho"       "蠢? 目標玩家還活著!"
+		"chi"       "傻B? 目标玩家还活着!"
+		"ru"		"Вы совсем? %N в живых!"
+		"tr"		"Aptal mısın? %N hala hayatta!"
+	}
+	"message_2"
+	{
+		"en"		"Failed! %N is not Terrorists or Counter-Terrorists"
+		"zho"       "失敗! 目標玩家不是反恐小組或恐怖份子"
+		"chi"       "失败! 目标玩家不是反恐精英或恐怖份子"
+		"ru"		"Не удалось! %N не террорист или спецназовец"
+		"tr"		"Başarısız! %N Terörist veya Anti-Terörist değil"
+	}
+	"message_3"
+	{
+		"en"		"Failed! %N is spectator"
+		"zho"       "失敗! 目標玩家是旁觀者"
+		"chi"       "失败! 目标玩家是旁观者"
+		"ru"		"Не удалось! %N наблюдатель"
+		"tr"		"Başarısız! %N bir izleyici"
+	}
+}
