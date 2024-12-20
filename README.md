@@ -10,8 +10,8 @@ If you want any modify or request, free to use or pay me money to do it.
 
 # Plugins
 > __Note__  
-> **[>>Click here to see my private plugin list<<](https://github.com/fbef0102/Game-Private_Plugin#cs-plugin-list--cs%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8)**<br/>
-> **[>>點擊我查看更多私人插件<<](https://github.com/fbef0102/Game-Private_Plugin#cs-plugin-list--cs%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8)**
+> **[>>Click here to see my private plugin list<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**<br/>
+> **[>>點擊我查看更多私人插件<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**
 
 * <b>[css_drop_weapon](/css_drop_weapon)</b>: (CSS) Player can drop knife and HE Grenade, Smoke Grenade, Flash Bang
     * (CSS) 可以丟棄手中的刀、閃光彈、高爆手榴彈、煙霧彈
@@ -31,7 +31,8 @@ If you want any modify or request, free to use or pay me money to do it.
     * (NMRIH) 給予武器與物資
 * <b>[smd_restartmap_command](/smd_restartmap_command)</b>: Admin say !restartmap to restart current map 
     * 管理員輸入!restartmap能重新地圖關卡
-
+* <b>[simple_chatprocessor](/simple_chatprocessor)</b>: Process chat and allows other plugins to manipulate chat.
+    * 輔助插件，控制玩家在聊天窗口輸入的文字與顏色
 # Scripting Compiler
 * [sourcemod v1.11 compiler](https://www.sourcemod.net/downloads.php?branch=1.11-dev): scripting folder
 
