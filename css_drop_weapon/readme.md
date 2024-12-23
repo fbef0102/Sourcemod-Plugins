@@ -2,9 +2,6 @@
 # Description | 內容
 Player can drop knife and HE Grenade, Smoke Grenade, Flash Bang
 
-* Video | 影片展示
-<br/>None
-
 * Image | 圖示
     <br/>![css_drop_weapon_1](image/css_drop_weapon_1.gif)
 

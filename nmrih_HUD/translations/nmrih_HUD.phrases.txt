@@ -1,0 +1,95 @@
+//Please use notpad++ or vscode to open this file, so you will see the special ascii character
+//= \x01 (SOH)
+//= \x02 (STX)
+//= \x03 (ETX)
+//= \x04 (EOT)
+//= \x05 (ENQ)
+//= \x06 (ACK)
+//= \x07 (BEL)
+//= \x08 (BS)
+
+"Phrases"
+{
+	"Health"
+	{
+		"#format"	"{1:i}"
+		"en"		"Health: {1}"
+		"jp"		"体力; {1}"
+		"chi"		"血量: {1}"
+		"zho"		"生命: {1}"
+	}
+	
+	"Stamina"
+	{
+		"#format"	"{1:i}"
+		"en"		"Stamina: {1}"
+		"jp"		"スタミナ; {1}"
+		"chi"		"耐力: {1}"
+		"zho"		"體力: {1}"
+	}
+
+	"bleeding"
+	{
+		"en"		"< bleeding >"
+		"jp"		"< 出血 >"
+		"chi"		"「 流血 」"
+		"zho"		"「 血流不止 」"
+	}
+
+	"vaccinated"
+	{
+		"en"		"< vaccinated >"
+		"jp"		"< ワクチン接種済 >"
+		"chi"		"「 疫苗接种 」"
+		"zho"		"「 免疫 」"
+	}
+
+	"infected"
+	{
+		"#format"	"{1:i}"
+		"en"		"< infected; {1} >"
+		"jp"		"< 感染; {1} >"
+		"chi"		"「 感染: {1} 」"
+		"zho"		"「 感染: {1} 」"
+	}
+
+	"infected"
+	{
+		"#format"	"{1:i}"
+		"en"		"< infected; {1} >"
+		"jp"		"< 感染; {1} >"
+		"chi"		"「 感染: {1} 」"
+		"zho"		"「 感染: {1} 」"
+	}
+
+	"Speed Off"
+	{
+		"en"		"[SpeedMetter] is nowFFFF00 Off"
+		"chi"		"[SpeedMetter] 已经FFFF00 关闭"
+		"zho"		"[SpeedMetter] 已經FFFF00 關閉"
+	}
+
+	"Speed On"
+	{
+		"en"		"[SpeedMetter] is nowFFFF00 On"
+		"chi"		"[SpeedMetter] 已经FFFF00 开启"
+		"zho"		"[SpeedMetter] 已經FFFF00 開啟"
+	}
+
+	"Speed"
+	{
+		"#format"	"{1:.1f}"
+		"en"		"{1} m/s"
+		"chi"		"{1} m/s"
+		"zho"		"{1} m/s"
+	}
+
+	"Spectating"
+	{
+		"#format"	"{1:N}"
+		"en"		"Players spectating {1}：\n"
+		"chi"		"正在观看 {1} 的玩家：\n"
+		"zho"		"正在觀看 {1} 的玩家：\n"
+	}
+}
+

@@ -132,7 +132,7 @@ void RestartMapDelayed()
 	{
 		case 0: {/*nothing*/}
 		case 1: {
-			PrintToChatAll("[\x04TS\x01] Get Ready! Map restart in \x05%d\x01", g_iMapRestartDelay);
+			PrintToChatAll("\x01Get Ready! Map restart in \x04%d", g_iMapRestartDelay);
 		}
 		case 2: {
 			PrintHintTextToAll("Get Ready! Map restart in %d", g_iMapRestartDelay);
@@ -165,7 +165,7 @@ Action Timer_RestartMap(Handle timer)
 	{
 		case 0: {/*nothing*/}
 		case 1: {
-			PrintToChatAll("[\x04TS\x01] Get Ready! Map restart in \x05%d\x01", g_iMapRestartDelay);
+			PrintToChatAll("\x01Get Ready! Map restart in \x04%d", g_iMapRestartDelay);
 		}
 		case 2: {
 			PrintHintTextToAll("Get Ready! Map restart in %d", g_iMapRestartDelay);
