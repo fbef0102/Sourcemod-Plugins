@@ -27,7 +27,7 @@
 
 public Plugin myinfo =
 {
-	name = "SM Translator",
+	name = "[Any] SM Translator",
 	description = "Translate chat messages",
 	author = "Franc1sco franug, HarryPotter",
 	version = PLUGIN_VERSION,
@@ -79,6 +79,7 @@ public void OnPluginStart()
 	g_smCodeToGoogle = new StringMap();
 	g_smCodeToGoogle.SetString("zho", "zh-TW");
 	g_smCodeToGoogle.SetString("chi", "zh-CN");
+	g_smCodeToGoogle.SetString("jp", "ja");
 }
 
 void LateLoad()

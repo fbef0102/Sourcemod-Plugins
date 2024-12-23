@@ -25,6 +25,7 @@ Translate chat message via Google API
         ```
     * The translation is using Google Translation API
         * May not working if Google is blocked in your Country/Region
+        * If sourcemod does not support your language, you will only see the english, check ```addons/sourcemod/configs/languages.cfg```
 </details>
 
 * Require | 必要安裝
@@ -50,15 +51,6 @@ Translate chat message via Google API
 		```php
 		sm_translator
 		```
-</details>
-
-* <details><summary>Translation Support | 支援翻譯</summary>
-
-	```
-	English
-	繁體中文
-	简体中文
-	```
 </details>
 
 * <details><summary>Changelog | 版本日誌</summary>
@@ -103,6 +95,8 @@ Translate chat message via Google API
 * 注意事項
     * 使用的是Google提供的API翻譯，所以可能翻譯得不正確
     * 如果你所在的地區無法上Google網站，可能無法使用此插件
+    * 如果Sourcemod不支援你的語言，你只會看到英文翻譯
+        * 查看Sourcemod 支援的語言列表: ```addons/sourcemod/configs/languages.cfg```
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
