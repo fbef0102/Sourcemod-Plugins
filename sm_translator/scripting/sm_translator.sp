@@ -19,9 +19,11 @@
 #include <sdktools>
 #include <SteamWorks>
 #include <multicolors>
+#include <basecomm>
 #include <json> //https://github.com/clugg/sm-json
+#include <clientprefs>
 
-#define PLUGIN_VERSION 			"1.4h-2024/9/22"
+#define PLUGIN_VERSION 			"1.5h-2025/1/7"
 #define PLUGIN_NAME			    "sm_translator"
 #define DEBUG 0
 
@@ -44,8 +46,8 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 #define CVAR_FLAGS                    FCVAR_NOTIFY
 #define CVAR_FLAGS_PLUGIN_VERSION     FCVAR_NOTIFY|FCVAR_DONTRECORD|FCVAR_SPONLY
 
-ConVar g_hCvarEnable, g_hCvarDefault;
-bool g_bCvarEnable, g_bCvarDefault;
+ConVar g_hCvarEnable, g_hCvarDefault, g_hCookiesCachedEnable;
+bool g_bCvarEnable, g_bCvarDefault, g_bCookiesCachedEnable;
 
 char ServerLang[8];
 char ServerCompleteLang[32];
@@ -55,7 +57,11 @@ bool
 	g_bHasSelectMenu[MAXPLAYERS+1];
 
 StringMap 
-	g_smCodeToGoogle;
+	g_smCodeToGoogle,
+	g_smUserIdToClient;
+
+Cookie 
+	g_hCookie;
 
 public void OnPluginStart()
 {
@@ -63,16 +69,20 @@ public void OnPluginStart()
 
 	LoadTranslations("sm_translator.phrases.txt");
 
-	g_hCvarEnable 		= CreateConVar( PLUGIN_NAME ... "_enable",        "1",   "0=Plugin off, 1=Plugin on.", CVAR_FLAGS, true, 0.0, true, 1.0);
-	g_hCvarDefault 		= CreateConVar( PLUGIN_NAME ... "_default",       "0",   "When new player connects, 0=Display menu to ask if player 'yes' or 'no', 1=Auto enable translator for player + Don't display menu", CVAR_FLAGS, true, 0.0, true, 1.0);
-	CreateConVar(                       PLUGIN_NAME ... "_version",       PLUGIN_VERSION, PLUGIN_NAME ... " Plugin Version", CVAR_FLAGS_PLUGIN_VERSION);
-	AutoExecConfig(true,                PLUGIN_NAME);
+	g_hCookie = new Cookie("sm_translator", "Save character for sm_translator.smx", CookieAccess_Protected);
+
+	g_hCvarEnable 			= CreateConVar( PLUGIN_NAME ... "_enable",        "1",   "0=Plugin off, 1=Plugin on.", CVAR_FLAGS, true, 0.0, true, 1.0);
+	g_hCvarDefault 			= CreateConVar( PLUGIN_NAME ... "_default",       "0",   "When new player connects, 0=Display menu to ask if player 'yes' or 'no', 1=Auto enable translator for player + Don't display menu", CVAR_FLAGS, true, 0.0, true, 1.0);
+	g_hCookiesCachedEnable 	= CreateConVar( PLUGIN_NAME ... "_save_cookie",   "0",   "If 1, use CookiesCached to save player settings. No need to select 'yes' or 'no' menu if rejoin server next time.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	CreateConVar(                       	PLUGIN_NAME ... "_version",       PLUGIN_VERSION, PLUGIN_NAME ... " Plugin Version", CVAR_FLAGS_PLUGIN_VERSION);
+	AutoExecConfig(true,                	PLUGIN_NAME);
 
 	GetCvars();
 	g_hCvarEnable.AddChangeHook(ConVarChanged_Cvars);
 	g_hCvarDefault.AddChangeHook(ConVarChanged_Cvars);
+	g_hCookiesCachedEnable.AddChangeHook(ConVarChanged_Cvars);
 
-	HookEvent("player_connect", 		Event_PlayerConnect); //換圖不會觸發該事件
+	HookEvent("player_disconnect", 		Event_PlayerDisconnect); //換圖不會觸發該事件
 
 	RegConsoleCmd("sm_translator", Command_Translator, "");
 
@@ -80,17 +90,21 @@ public void OnPluginStart()
 	g_smCodeToGoogle.SetString("zho", "zh-TW");
 	g_smCodeToGoogle.SetString("chi", "zh-CN");
 	g_smCodeToGoogle.SetString("jp", "ja");
+
+	g_smUserIdToClient = new StringMap();
 }
 
 void LateLoad()
 {
-    for (int client = 1; client <= MaxClients; client++)
-    {
-        if (!IsClientInGame(client))
-            continue;
+	for (int client = 1; client <= MaxClients; client++)
+	{
+		if (!IsClientInGame(client))
+			continue;
 
-        OnClientPostAdminCheck(client);
-    }
+		OnClientConnected(client);
+		OnClientCookiesCached(client);
+		OnClientPostAdminCheck(client);
+	}
 }
 
 // Cvars-------------------------------
@@ -104,6 +118,7 @@ void GetCvars()
 {
 	g_bCvarEnable = g_hCvarEnable.BoolValue;
 	g_bCvarDefault = g_hCvarDefault.BoolValue;
+	g_bCookiesCachedEnable = g_hCookiesCachedEnable.BoolValue;
 }
 
 // Sourcemod API Forward-------------------------------
@@ -111,28 +126,68 @@ void GetCvars()
 bool g_bFirst = true;
 public void OnConfigsExecuted()
 {
+	delete g_smUserIdToClient;
+	g_smUserIdToClient = new StringMap();
+
 	GetCvars();
 	if(g_bFirst)
 	{
 		g_bFirst = false;
-		if(bLate)
-		{
-			LateLoad();
-		}
 
 		for(int i = 0; i <= MaxClients; i++)
 		{
 			g_bTranslator[i] = g_bCvarDefault;
-			g_bHasSelectMenu[i] = false;
+			g_bHasSelectMenu[i] = g_bCvarDefault;
+		}
+
+		if(bLate)
+		{
+			LateLoad();
+		}
+	}
+}
+
+public void OnClientConnected(int client)
+{
+	if(IsFakeClient(client)) return;
+
+	static char sUserId[12];
+	FormatEx(sUserId, sizeof(sUserId), "%d", GetClientUserId(client));
+	g_smUserIdToClient.SetValue(sUserId, client, true);
+}
+
+public void OnClientCookiesCached(int client)
+{
+	if(!g_bCookiesCachedEnable) return;
+
+	if(IsFakeClient(client)) return;
+
+	char sCookie[8];
+	g_hCookie.Get(client, sCookie, sizeof(sCookie));
+	if( strlen(sCookie) > 0 )
+	{
+		g_bTranslator[client] = view_as<bool>(StringToInt(sCookie));
+		g_bHasSelectMenu[client] = true;
+	}
+	else
+	{
+		if(g_bCvarDefault)
+		{
+			g_bTranslator[client] = true;
+			g_bHasSelectMenu[client] = true;
+			g_hCookie.Set(client, "1");
+		}
+		else
+		{
+			g_bTranslator[client] = false;
+			g_bHasSelectMenu[client] = false;
 		}
 	}
 }
 
 public void OnClientPostAdminCheck(int client)
 {
-	if(g_bHasSelectMenu[client]) return;
 	if(IsFakeClient(client)) return;
-	if(g_bCvarDefault) return;
 
 	CreateTimer(4.0, Timer_ShowMenu, GetClientUserId(client), TIMER_FLAG_NO_MAPCHANGE);
 }
@@ -142,8 +197,9 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 	if (!g_bCvarEnable) return;
 	if (!IsValidClient(client)) return;
 	if (!g_bTranslator[client]) return;
+	if (BaseComm_IsClientGagged(client) == true) return ; //this client has been gagged
 
-	if (sArgs[0] == '!' || sArgs[0] == '/') return;
+	if (sArgs[0] == '!' || sArgs[0] == '/' || sArgs[0] == '@') return;
 	if (CommandExists(sArgs)) return;
 	
 	static char buffer[255];
@@ -166,7 +222,7 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 	GetLanguageInfo(iServerLanguage, sServerLanguage, sizeof(sServerLanguage)); // get Server language
 	GetLanguageInfo(iClientLanguage, sSourceLanguage, sizeof(sSourceLanguage)); // get client language
 	
-	// Foreign language
+	// Foreign lanuage
 	if(iServerLanguage != iClientLanguage)
 	{
 		Handle request = CreateRequest(sSourceLanguage, sServerLanguage, buffer, client, 0, bTeamChat);
@@ -226,22 +282,25 @@ Action Command_Translator(int client, int args)
 
 // Event-------------------------------
 
-void Event_PlayerConnect(Event event, const char[] name, bool dontBroadcast)
+void Event_PlayerDisconnect(Event event, const char[] name, bool dontBroadcast)
 {
-	CreateTimer(2.0, Timer_OnClientConnected, event.GetInt("userid"), TIMER_FLAG_NO_MAPCHANGE);
+	static char networkid[32];
+	event.GetString("networkid", networkid, sizeof(networkid));
+	// "networkid" is "BOT" is fake client
+	if(strcmp(networkid, "BOT", false) == 0) return;
+
+	int userid = event.GetInt("userid");
+	static char sUserId[12];
+	FormatEx(sUserId, sizeof(sUserId), "%d", userid);
+	int client;
+	if(g_smUserIdToClient.GetValue(sUserId, client))
+	{
+		g_bTranslator[client] = g_bCvarDefault;
+		g_bHasSelectMenu[client] = g_bCvarDefault;
+	}
 }
 
 // Timer-------------------------------
-
-Action Timer_OnClientConnected(Handle timer, int userid)
-{
-	int client = GetClientOfUserId(userid);
-	if (!client || !IsClientConnected(client) || IsFakeClient(client)) return Plugin_Continue;
-
-	g_bTranslator[client] = g_bCvarDefault;
-	g_bHasSelectMenu[client] = false;
-	return Plugin_Continue;
-}
 
 Action Timer_ShowMenu(Handle timer, int userid)
 {
@@ -253,7 +312,14 @@ Action Timer_ShowMenu(Handle timer, int userid)
 
 	//if (GetServerLanguage() == GetClientLanguage(client)) return Plugin_Continue;
 
-	DoMenu(client);
+	if(g_bHasSelectMenu[client])
+	{
+		//nothing
+	}
+	else
+	{
+		DoMenu(client);
+	}
 
 	return Plugin_Continue;
 }
@@ -283,8 +349,18 @@ int Menu_select(Menu menu, MenuAction action, int client, int param)
 		char selection[128];
 		menu.GetItem(param, selection, sizeof(selection));
 		
-		if (StrEqual(selection, "yes")) g_bTranslator[client] = true;
-		else g_bTranslator[client] = false;
+		if (StrEqual(selection, "yes"))
+		{
+			g_bTranslator[client] = true;
+
+			if(g_bCookiesCachedEnable) g_hCookie.Set(client, "1");
+		}
+		else
+		{
+			g_bTranslator[client] = false;
+
+			if(g_bCookiesCachedEnable) g_hCookie.Set(client, "0");
+		}
 
 		g_bHasSelectMenu[client] = true;
 		CPrintToChat(client, "{lightgreen}[TRANSLATOR]{green} %T", "Type in chat !translator for open again this menu", client);

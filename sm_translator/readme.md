@@ -42,6 +42,9 @@ Translate chat message via Google API
 
         // When new player connects, 0=Display menu to ask if player 'yes' or 'no', 1=Auto enable translator for player + Don't display menu
         sm_translator_default "0"
+
+        // If 1, use CookiesCached to save player settings. No need to select 'yes' or 'no' menu if rejoin server next time.
+        sm_translator_save_cookie "0"
         ```
 </details>
 
@@ -54,6 +57,10 @@ Translate chat message via Google API
 </details>
 
 * <details><summary>Changelog | 版本日誌</summary>
+
+    * v1.5h (2025-1-7)
+        * Use cookie to save client setting
+        * Update cvars
 
     * v1.4h (2024-9-22)
         * Block chat translation if different team
@@ -107,6 +114,9 @@ Translate chat message via Google API
 
         // 當玩家近來伺服器時, 0=彈出選單詢問玩家是否自動翻譯, 1=自動幫玩家翻譯 + 不彈出選單
         sm_translator_default "0"
+
+        // 為1時，使用 CookiesCached 儲存玩家設定. 意思是說，下次玩家進服後不需要再顯示選單
+        sm_translator_save_cookie "0"
         ```
 </details>
 
