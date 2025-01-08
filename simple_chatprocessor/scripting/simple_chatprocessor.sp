@@ -36,7 +36,7 @@ $Copyright: (c) Simple Plugins 2008-2009$
 #pragma semicolon 1
 #pragma newdecls required
 #include <sourcemod>
-#define PLUGIN_VERSION			"1.9h-2024/12/20"
+#define PLUGIN_VERSION			"2.0h-2025/1/8"
 #define PLUGIN_NAME			    "simple_chatprocessor"
 #define DEBUG 0
 
@@ -45,7 +45,7 @@ public Plugin myinfo = {
 	author = "Simple Plugins, Mini, HarryPotter",
 	description = "Process chat and allows other plugins to manipulate chat.",
 	version = PLUGIN_VERSION,
-	url = "https://github.com/fbef0102/Sourcemod-Plugins/tree/main/simple_chatprocessor"
+	url = "https://github.com/fbef0102/L4D1_2-Plugins/tree/master/simple_chatprocessor"
 };
 
 GlobalForward g_fwdOnChatMessagePre, g_fwdOnChatMessagePost;
@@ -225,7 +225,7 @@ public Action OnSayText2(UserMsg msg_id, BfRead msg, const int[] players, int pl
 		realSender = msg.ReadByte();
 	}
 
-	
+
 	if (realSender == SENDER_WORLD) {
 		return Plugin_Continue;
 	}
@@ -251,6 +251,12 @@ public Action OnSayText2(UserMsg msg_id, BfRead msg, const int[] players, int pl
 	}
 	else {
 		msg.ReadString(cpTranslationName, sizeof(cpTranslationName));
+	}
+
+	//LogError("cpTranslationName:%s", cpTranslationName);
+	if(StrContains(cpTranslationName, "Cstrike_Name_Change") != -1)
+	{
+		return Plugin_Continue;
 	}
 
 	if (StrContains(cpTranslationName, "all", false) != -1) {

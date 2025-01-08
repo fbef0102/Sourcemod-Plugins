@@ -56,6 +56,9 @@ Process chat and allows other plugins to manipulate chat.
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+	* v2.0h (2025-1-8)
+		* Ignore "name change" message
+
 	* v1.9h (2024-12-20)
 		* Support most source game
 
