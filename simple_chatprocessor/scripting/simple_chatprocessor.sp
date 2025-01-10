@@ -70,6 +70,8 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 #define MAXLENGTH_NAME			64		// This is backwords math to get compability.  Sourcemod has it set at 32, but there is room for more.
 #define MAXLENGTH_MESSAGE		256		// This is based upon the SDK and the length of the entire message, including tags, name, : etc.
 
+#define ADDSTRING(%1) g_hChatFormats.SetValue(%1, 1)
+
 #define CHATFLAGS_INVALID		0
 #define CHATFLAGS_ALL			(1 << 0)
 #define CHATFLAGS_TEAM			(1 << 1)
@@ -121,6 +123,9 @@ eMods g_CurrentMod;
 };*/
 ArrayList g_hDPArray = null;
 	  
+StringMap
+	  g_hChatFormats;
+
 bool
 	  g_bSayText2;
 int
@@ -145,6 +150,7 @@ public void OnPluginStart()
 		g_hCvarDeathInfected.AddChangeHook(ConVarChanged_Cvars);
 	}
 
+	g_hChatFormats = new StringMap();
 	//LogMessage("[SCP] Recognized mod [%s].", g_sGameName[g_CurrentMod]);
 
 	/**
@@ -186,10 +192,15 @@ public void OnPluginStart()
 		if (FileExists(sTranslationLocation)) {
 			//LogMessage("[SCP] Loading translation file [%s].", sTranslationFile);
 			LoadTranslations(sTranslationFile);
+			if (!GetChatFormats(sTranslationLocation)) 
+			{
+				LogError("[SCP] Could not parse the translation file");
+				SetFailState("Could not parse the translation file");
+			}
 		}
 		else {
-			//LogError("[SCP] Translation file is not present: translations/%s.txt", sTranslationFile);
-			//SetFailState("Translation file is not present: translations/%s.txt", sTranslationFile);
+			LogError("[SCP] Translation file is not present: translations/%s.txt", sTranslationFile);
+			SetFailState("Translation file is not present: translations/%s.txt", sTranslationFile);
 		}
 	}
 
@@ -253,9 +264,9 @@ public Action OnSayText2(UserMsg msg_id, BfRead msg, const int[] players, int pl
 		msg.ReadString(cpTranslationName, sizeof(cpTranslationName));
 	}
 
+	int buffer;
 	//LogError("cpTranslationName:%s", cpTranslationName);
-	if(StrContains(cpTranslationName, "Cstrike_Name_Change") != -1)
-	{
+	if (!g_hChatFormats.GetValue(cpTranslationName, buffer)) {
 		return Plugin_Continue;
 	}
 
@@ -787,4 +798,44 @@ eMods GetCurrentMod() {
 	}
 	LogMessage("Unknown Game Folder: %s", sGameType);
 	return GameType_Unknown;
+}
+
+bool GetChatFormats(const char[] file) {
+	SMCParser hParser = new SMCParser();
+	char error[128];
+	int line = 0, col = 0;
+
+	hParser.OnEnterSection = Config_NewSection;
+	hParser.OnKeyValue = Config_KeyValue;
+	hParser.OnLeaveSection = Config_EndSection;
+	hParser.OnEnd = Config_End;
+	SMCError result = hParser.ParseFile(file, line, col);
+	delete hParser;
+
+	if (result != SMCError_Okay) {
+		hParser.GetErrorString(result, error, sizeof(error));
+		LogError("%s on line %d, col %d of %s", error, line, col, file);
+	}
+
+	return (result == SMCError_Okay);
+}
+
+SMCResult Config_NewSection(Handle parser, const char[] section, bool quotes) {
+	if (StrEqual(section, "Phrases")) {
+		return SMCParse_Continue;
+	}
+	ADDSTRING(section);
+	return SMCParse_Continue;
+}
+
+SMCResult Config_KeyValue(Handle parser, const char[] key, const char[] value, bool key_quotes, bool value_quotes) {
+	return SMCParse_Continue;
+}
+
+SMCResult Config_EndSection(Handle parser) {
+	return SMCParse_Continue;
+}
+
+void Config_End(Handle parser, bool halted, bool failed) {
+	//nothing
 }
