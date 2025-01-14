@@ -3,9 +3,9 @@
 Teleport alive players in game
 
 * Apply to | 適用於
-    ```
-    Any
-    ```
+	```
+	Any Source Game
+	```
 	
 * <details><summary>How does it work?</summary>
 

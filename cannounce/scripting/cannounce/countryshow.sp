@@ -66,10 +66,12 @@ void OnPostAdminCheck_CountryShow(int client)
 		{
 			PrintFormattedMessageToAdmins( rawadmmsg, client );
 			PrintFormattedMsgToNonAdmins( rawmsg, client );
+			PrintMsgToSourceTV( client, true );
 		}
 		else
 		{
 			PrintFormattedMessageToAll( rawmsg, client );
+			PrintMsgToSourceTV( client, true );
 		}
 	}	
 }
@@ -142,10 +144,12 @@ void event_PlayerDisc_CountryShow(Event event)
 		{
 			PrintFormattedMessageToAdmins( rawadmmsg, client );
 			PrintFormattedMsgToNonAdmins( rawmsg, client );
+			PrintMsgToSourceTV( client, false );
 		}
 		else
 		{
 			PrintFormattedMessageToAll( rawmsg, client );
+			PrintMsgToSourceTV( client, false );
 		}
 		
 		KvRewind(hKVCountryShow);

@@ -1,17 +1,13 @@
 # Description | 內容
 Admin say !restartmap to restart current map
 
-> __Note__ <br/>
-This plugin is private, Please contact [me](https://github.com/fbef0102/Game-Private_Plugin#私人插件列表-private-plugins-list)<br/>
-此為私人插件, 請聯繫[本人](https://github.com/fbef0102/Game-Private_Plugin#私人插件列表-private-plugins-list)
-
 * Image | 圖示
 	* Count down message (倒數計時)
 	<br/>![smd_restartmap_command_1](image/smd_restartmap_command_1.jpg)
 
 * Apply to | 適用於
 	```
-	Counter-Strike: Source
+	Any Source Game
 	```
 
 * <details><summary>How does it work?</summary>
@@ -51,11 +47,6 @@ This plugin is private, Please contact [me](https://github.com/fbef0102/Game-Pri
 		sm_rs
 		```
 </details>
-
-* Apply to | 適用於
-	```
-	CSS
-	```
 
 * <details><summary>Changelog | 版本日誌</summary>
 

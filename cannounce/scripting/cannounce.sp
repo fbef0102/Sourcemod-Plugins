@@ -308,6 +308,30 @@ void PrintFormattedMsgToNonAdmins( char rawmsg[301], int client )
 	//C_LogMessage(message, "MsgToNonAdmins");
 }
 
+void PrintMsgToSourceTV( int client, bool bConnect )
+{
+	char message[256];
+	char steamid[32];
+	GetClientAuthId(client, AuthId_Steam3, steamid, sizeof(steamid));
+	if(bConnect)
+	{
+		FormatEx(message, sizeof(message), "[{green}SourceTV{default}] {lightgreen}%N, %s{default} connected", client, steamid);
+	}
+	else
+	{
+		FormatEx(message, sizeof(message), "[{green}SourceTV{default}] {lightgreen}%N, %s{default} disconnected", client, steamid);
+	}
+	
+	for (int i = 1; i <= MaxClients; i++)
+	{
+		if( !IsClientInGame(i) ) continue;
+		if( !IsFakeClient(i) ) continue;
+		if( !IsClientSourceTV(i) ) continue;
+
+		CPrintToChat(i, message);
+	}
+}
+
 //GetFormattedMessage - based on code from the DJ Tsunami plugin Advertisements - http://forums.alliedmods.net/showthread.php?p=592536
 void GetFormattedMessage( char rawmsg[301], int client,char[] outbuffer, int outbuffersize )
 {
