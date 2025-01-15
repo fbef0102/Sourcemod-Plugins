@@ -10,7 +10,7 @@ Replacement of default player connection message, allows for custom connection m
 
 * Apply to | 適用於
 	```
-	Any Source Game
+	Any Source Game Dedicated Server
 	```
 
 * <details><summary>How does it work?</summary>
