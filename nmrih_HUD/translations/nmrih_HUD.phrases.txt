@@ -1,4 +1,4 @@
-//Please use notpad++ or vscode to open this file, so you will see the special ascii character
+//Please use notepad++ or vscode to open this file, so you will see the special ascii character
 //= \x01 (SOH)
 //= \x02 (STX)
 //= \x03 (ETX)
