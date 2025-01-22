@@ -82,5 +82,5 @@ If you want any modify or request, free to use or pay me money to do it.
 
 # Others
 * <b>[L4D1_2-Plugins](https://github.com/fbef0102/L4D1_2-Plugins)</b>: L4D1/2 general purpose and freaky-fun plugins.
-* <b>[L4D2-Plugins](https://github.com/fbef0102/L4D2-Plugins)</b>
+* <b>[Sourcemod-Server](https://github.com/fbef0102/Sourcemod-Server)</b>: Setup your own sourcemod servers.
 * <b>[Game-Private_Plugin](https://github.com/fbef0102/Game-Private_Plugin)</b>: Private Plugin List.
