@@ -54,6 +54,8 @@ If you want any modify or request, free to use or pay me money to do it.
     * 輸入!match/!load/!mode投票執行cfg文件，用於更換模式或玩法
 * <b>[server_loader](/server_loader)</b>: Executes cfg file on server startup
     * 開服只執行一次的cfg檔案
+* <b>[firebulletsfix](/firebulletsfix)</b>: Fixes shooting/bullet displacement by 1 tick problems so you can accurately hit by moving.
+    * 修復子彈擊中與伺服器運算相差 1 tick的延遲
 
 # CSS-Plugins
 > Apply to Counter-Strike: Source
