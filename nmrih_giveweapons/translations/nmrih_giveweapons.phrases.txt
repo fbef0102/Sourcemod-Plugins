@@ -4,179 +4,203 @@
 	{
 		"#format"		"{1:t},{2:N}"
 		"en"			"Gave {1} to {2}"
+		"zho"			"給予 {1} 到 {2}"
 		"ru"			"Выдал {1} для {2}"
 	}
 	"NMP Activity Give 2"
 	{
 		"#format"		"{1:s},{2:N}"
 		"en"			"Gave {1} to {2}"
+		"zho"			"給予 {1} 到 {2}"
 		"ru"			"Выдал {1} для {2}"
 	}
 	"NMP Activity Give T"
 	{
 		"#format"		"{1:t},{2:t}"
 		"en"			"Gave {1} to {2}"
+		"zho"			"給予 {1} 到 {2}"
 		"ru"			"Дал {1} для {2}"
 	}
 	"NMP Activity Give"
 	{
 		"#format"		"{1:s},{2:t}"
 		"en"			"Gave {1} to {2}"
+		"zho"			"給予 {1} 到 {2}"
 		"ru"			"Дал {1} для {2}"
 	}
 	"NMP Activity Placed T"
 	{
 		"#format"		"{1:t}"
 		"en"			"Placed {1}"
+		"zho"			"放置 {1}"
 		"ru"			"Разместил {1}"
 	}
 	"NMP Activity Placed"
 	{
 		"#format"		"{1:s}"
 		"en"			"Placed {1}"
+		"zho"			"放置 {1}"
 		"ru"			"Разместил {1}"
 	}
 	"NMP Activity Spawn 2 T"
 	{
 		"#format"		"{1:t},{2:N}"
 		"en"			"Spawned {1} for {2}"
+		"zho"			"Spawned {1} for {2}"
 		"ru"			"Поставил {1} для {2}"
 	}
 	"NMP Activity Spawn 2"
 	{
 		"#format"		"{1:s},{2:N}"
 		"en"			"Spawned {1} for {2}"
+		"zho"			"Spawned {1} for {2}"
 		"ru"			"Поставил {1} для {2}"
 	}
 	"NMP Activity Spawn T"
 	{
 		"#format"		"{1:t},{2:t}"
 		"en"			"Spawned {1} for {2}"
+		"zho"			"Spawned {1} for {2}"
 		"ru"			"Поставил {1} для {2}"
 	}
 	"NMP Activity Spawn"
 	{
 		"#format"		"{1:s},{2:t}"
 		"en"			"Spawned {1} for {2}"
+		"zho"			"Spawned {1} for {2}"
 		"ru"			"Поставил {1} для {2}"
 	}
 	
 	"NMP AM Category"
 	{
 		"en"			"Give/Spawn items"
-		"ru"			"Выдать/поставить предметы"
 		"zho"			"給予/生成 物資"
+		"ru"			"Выдать/поставить предметы"
 	}
 	"NMP AM Action"
 	{
 		"en"			"Select action:"
+		"zho"			"選擇操作:"
 		"ru"			"выберите действие:"
 	}
 	"NMP AM Give Item"
 	{
 		"en"			"Give player item"
+		"zho"			"給予玩家物品"
 		"ru"			"Выдать игроку предмет"
 	}
 	"NMP AM Spawn Item"
 	{
 		"en"			"Spawn player item"
+		"zho"			"生成玩家物品"
 		"ru"			"Поставить игроку предмет"
 	}
 	"NMP AM Select Target"
 	{
 		"en"			"Select target:"
+		"zho"			"選擇目標:"
 		"ru"			"Выберите цель:"
 	}
 	"NMP AM Select Item"
 	{
 		"en"			"Select item:"
+		"zho"			"選擇項目:"
 		"ru"			"Выберите предмет:"
 	}
 	
 	"NMP Data Reloaded"
 	{
 		"en"			"Items data was successfully realoded"
+		"zho"			"物品資料已重新載入成功"
 		"ru"			"База предметов успешно перезагружена"
 	}
 	"NMP Data Not Reloaded"
 	{
 		"en"			"Failed to reload items data"
+		"zho"			"無法重新載入物品資料"
 		"ru"			"Не удалось перезагрузить базу предметов"
 	}
 	
 	"NMP Cannot Give"
 	{
 		"en"			"This item cannot be given"
+		"zho"			"此物品無法給予"
 		"ru"			"Этот предмет не может быть выдан"
 	}
 	"NMP Cannot Spawn"
 	{
 		"en"			"This item cannot be spawned"
+		"zho"			"此物品無法生成"
 		"ru"			"Этот предмет не может быть поставлен"
 	}
 	"NMP No Access"
 	{
 		"en"			"You do not have access to give this item"
+		"zho"			"您無權限給予此物品"
 		"ru"			"У вас недостаточно прав для выдачи этого предмета"
 	}
 	"NMP No Matching"
 	{
 		"en"			"No matching items was found"
+		"zho"			"未找到匹配項目"
 		"ru"			"Не удалось найти предмет"
 	}
 	"NMP Multiple Items"
 	{
 		"en"			"Found more than one item"
+		"zho"			"找到多個項目"
 		"ru"			"Нашлось более одного предмета"
 	}
 	"NMP Invalid Item Argument"
 	{
 		"#format"		"{1:s}"
 		"en"			"Possibly invalid item classname: {1}"
+		"zho"			"物品類別名稱可能無效: {1}"
 		"ru"			"Неверное название класса предмета: {1}"
 	}
 	"NMP Invalid Item Entity"
 	{
 		"#format"		"{1:s}"
 		"en"			"Failed to generate an item '{1}'"
+		"zho"			"無法產生物品 '{1}'"
 		"ru"			"Не удалость создать предмет '{1}'"
 	}
 	
 	"NMP Type Pistol"
 	{
 		"en"			"Pistol"
-		"ru"			"Пистолет"
 		"zho"			"手槍"
+		"ru"			"Пистолет"
 	}
 	"NMP Type Shotgun"
 	{
 		"en"			"Shotgun"
-		"ru"			"Дробовик"
 		"zho"			"霰彈槍"
+		"ru"			"Дробовик"
 	}
 	"NMP Type SMG"
 	{
 		"en"			"Submachine gun"
-		"ru"			"Пистолет-пулемет"
 		"zho"			"機槍"
+		"ru"			"Пистолет-пулемет"
 	}
 	"NMP Type Rifle"
 	{
 		"en"			"Rifle"
-		"ru"			"Винтовка"
 		"zho"			"步槍"
+		"ru"			"Винтовка"
 	}
 	"NMP Type Sniper Rifle"
 	{
 		"en"			"Sniper rifle"
-		"ru"			"Снайперская винтовка"
 		"zho"			"狙擊步槍"
+		"ru"			"Снайперская винтовка"
 	}
 	"NMP Type Bow"
 	{
 		"en"			"Bow"
-		"ru"			"Лук"
 		"zho"			"弓"
+		"ru"			"Лук"
 	}	
 	"NMP Type Box"
 	{
@@ -186,48 +210,48 @@
 	"NMP Type Explosive"
 	{
 		"en"			"Explosive"
-		"ru"			"Взрывчатка"
 		"zho"			"爆炸物"
+		"ru"			"Взрывчатка"
 	}
 	"NMP Type Melee"
 	{
 		"en"			"Melee"
-		"ru"			"Рукопашное"
 		"zho"			"近戰"
+		"ru"			"Рукопашное"
 	}
 	"NMP Type Tool"
 	{
 		"en"			"Tool"
-		"ru"			"Инструмент"
 		"zho"			"工具"
+		"ru"			"Инструмент"
 	}
 	"NMP Type Ammo"
 	{
 		"en"			"Ammo"
-		"ru"			"Патроны"
 		"zho"			"子彈"
+		"ru"			"Патроны"
 	}
 	"NMP Type Meds"
 	{
 		"en"			"Medical Supply"
-		"ru"			"Медикаменты"
 		"zho"			"醫療物資"
+		"ru"			"Медикаменты"
 	}
 	
 	"Weapon_bow_deerhunter_short"
 	{
 		"en"			"PSE D. Hunt."
-		"zho"			"獵鹿十字弓"
+		"zho"			"PSE 獵鹿者"
 	}
 	"Weapon_exp_grenade_short"
 	{
 		"en"			"Grenade"
-		"zho"			"手榴彈"
+		"zho"			"M67 手榴彈"
 	}
 	"Weapon_exp_molotov_short"
 	{
 		"en"			"Molotov"
-		"zho"			"燃燒彈"
+		"zho"			"莫勒托夫燃燒彈"
 	}
 	"Weapon_exp_tnt_short"
 	{
@@ -237,78 +261,97 @@
 	"Weapon_fa_500a_short"
 	{
 		"en"			"Moss. 500a"
+		"zho"			"莫斯伯格 500a"
 	}
 	"Weapon_fa_870_short"
 	{
 		"en"			"Rem. 870"
+		"zho"			"雷明頓 870"
 	}
 	"Weapon_fa_1022_short"
 	{
 		"en"			"Ruger 10/22"
+		"zho"			"儒格10/22"
 	}
 	"Weapon_fa_1911_short"
 	{
 		"en"			"Colt 1911"
+		"zho"			"柯爾特 1911"
 	}
 	"Weapon_fa_cz858_short"
 	{
 		"en"			"CZ858"
+		"zho"			"CZ858"
 	}
 	"Weapon_fa_glock17_short"
 	{
 		"en"			"Glock"
+		"zho"			"格洛克 17"
 	}
 	"Weapon_fa_fnfal_short"
 	{
 		"en"			"FN FAL"
+		"zho"			"FN FAL"
 	}
 	"Weapon_fa_jae700_short"
 	{
 		"en"			"JAE 700"
+		"zho"			"JAE-700"
 	}
 	"Weapon_fa_m16a4_short"
 	{
 		"en"			"M16A4"
+		"zho"			"M16A4 w/ACOG"
 	}
 	"Weapon_fa_m92fs_short"
 	{
 		"en"			"M92FS"
+		"zho"			"貝瑞塔 M92FS"
 	}
 	"Weapon_fa_mac10_short"
 	{
 		"en"			"Mac-10"
+		"zho"			"英格倫 Mac-10"
 	}
 	"Weapon_fa_mkiii_short"
 	{
 		"en"			"Ruger MKiii"
+		"zho"			"儒格 MKIII"
 	}
 	"Weapon_fa_mp5a3_short"
 	{
 		"en"			"MP5A3"
+		"zho"			"黑客勒 科赫 MP5A4"
 	}
 	"Weapon_fa_sako85_short"
 	{
 		"en"			"Sako 85"
+		"zho"			"沙可 85(狙擊鏡)"
 	}
 	"Weapon_fa_sks_short"
 	{
 		"en"			"SKS"
+		"zho"			"西蒙諾夫 SKS(刺刀)"
 	}
 	"Weapon_fa_superx3_short"
 	{
 		"en"			"Super X3"
+		"zho"			"溫徹斯特 Super X3"
 	}
 	"Weapon_fa_sv10_short"
 	{
 		"en"			"SV10"
+		"zho"			"貝瑞塔裴瑞尼亞 SV10"
 	}
 	"Weapon_fa_sw686_short"
 	{
 		"en"			"S&W 686"
+		"zho"			"史密斯&威生 686"
 	}
 	"Weapon_fa_winchester1892_short"
 	{
 		"en"			"Win. 1892"
+		"zho"			"溫徹斯特 1892"
 	}
 	"Weapon_item_bandages_short"
 	{
@@ -326,7 +369,7 @@
 	{
 		"en"			"Pills"
 		"ru"			"Таблетки"
-		"zho"			"膠囊"
+		"zho"			"斐蘭克斯膠囊"
 	}
 	"Weapon_item_first_aid_short"
 	{
@@ -343,10 +386,12 @@
 	"Weapon_me_axe_fire_short"
 	{
 		"en"			"Fire Axe"
+		"zho"			"消防斧"
 	}
 	"Weapon_me_bat_metal_short"
 	{
 		"en"			"Baseball Bat"
+		"zho"			"球棒"
 	}
 	"Weapon_me_chainsaw_short"
 	{
@@ -356,14 +401,17 @@
 	"Weapon_me_crowbar_short"
 	{
 		"en"			"Crowbar"
+		"zho"			"鐵撬"
 	}
 	"Weapon_me_hatchet_short"
 	{
 		"en"			"Hatchet"
+		"zho"			"短柄斧"
 	}
 	"Weapon_me_kitknife_short"
 	{
 		"en"			"Kit Knife"
+		"zho"			"廚房刀"
 	}
 	"Weapon_me_etool_short"
 	{
@@ -373,26 +421,32 @@
 	"Weapon_me_fubar_short"
 	{
 		"en"			"Fubar"
+		"zho"			"破壞桿"
 	}
 	"Weapon_me_machete_short"
 	{
 		"en"			"Machete"
+		"zho"			"開山刀"
 	}
 	"Weapon_me_pipe_lead_short"
 	{
 		"en"			"Lead Pipe"
+		"zho"			"鉛管"
 	}
 	"Weapon_me_shovel_short"
 	{
 		"en"			"Shovel"
+		"zho"			"鐵鏟"
 	}
 	"Weapon_me_sledge_short"
 	{
 		"en"			"Sledge"
+		"zho"			"大槌"
 	}
 	"Weapon_me_wrench_short"
 	{
 		"en"			"Wrench"
+		"zho"			"活動扳手"
 	}
 	"Weapon_tool_barricade_short"
 	{

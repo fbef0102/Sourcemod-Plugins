@@ -76,8 +76,8 @@ If you want any modify or request, free to use or pay me money to do it.
 
 * <b>[nmrih_giveweapons](/nmrih_giveweapons)</b>: Give weapons and items
     * 給予武器與物資
-* <b>[nmrih_HUD](/nmrih_HUD)</b>: Display health, stamina, speed, infected status on hud
-    * 顯示HUD在玩家的螢幕上: 血量、體力、感染狀態、速度...
+* <b>[nmrih_HUD](/nmrih_HUD)</b>: Display health, stamina, speed, infected status, ammo on hud
+    * 顯示HUD在玩家的螢幕上: 血量、體力、感染狀態、速度、武器彈藥...
 
 # Scripting Compiler
 * [sourcemod v1.11 compiler](https://www.sourcemod.net/downloads.php?branch=1.11-dev): scripting folder
