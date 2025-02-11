@@ -162,7 +162,8 @@ public void OnClientPutInServer(int client)
 
     SDKHook(client, SDKHook_WeaponSwitchPost, Hook_Switch);
     SDKHook(client, SDKHook_WeaponDropPost, Hook_Drop);
-    SDKHook(client, SDKHook_FireBulletsPost, Hook_Fire);
+    //SDKHook_FireBulletsPost沒觸發
+    //SDKHook(client, SDKHook_FireBulletsPost, Hook_Fire);
 }
 
 public void OnClientDisconnect(int iClient) {
@@ -210,10 +211,10 @@ void Hook_Drop(int client, int weapon)
 	ShowAmmo(client);
 }
 
-void Hook_Fire(int client, int shots, const char[] weaponname)
+/*void Hook_Fire(int client, int shots, const char[] weaponname)
 {
-	ShowAmmo(client);
-}
+    ShowAmmo(client);
+}*/
 
 int NativeSetChannelDisabled(Handle plugin, int num_params) {
     int n = GetNativeCell(1);
