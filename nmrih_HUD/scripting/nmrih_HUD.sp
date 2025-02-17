@@ -14,7 +14,7 @@ public Plugin myinfo = {
     name = "[No More] Status Hud",
     author = "clagura, Grey83, Harry",
     description = "Display health, stamina, speed, infected status, ammo on hud",
-    version = "1.1h-2025/2/10",
+    version = "1.1h-2025/2/18",
     url = "https://github.com/clague/plugin-source/blob/master/addons/sourcemod/scripting/HUD.sp"
 };
 
@@ -36,6 +36,9 @@ int iHealthChannel = 0, iSpeedChannel = 1, iAmmoChannel = 2,
     m_iClip1, m_iAmmo;
 int g_aObserveTarget[16];
 ArrayList g_aObserveAudience[MAXPLAYERS + 1];
+
+StringMap
+    g_smWeaponNameShotgun;
 
 static const char AMMO[][]	=
 {
@@ -91,6 +94,13 @@ public void OnPluginStart()
     iHealthChannel = 0;
     iSpeedChannel = 1;
     iAmmoChannel = 2;
+
+    g_smWeaponNameShotgun = new StringMap();
+    g_smWeaponNameShotgun.SetValue("fa_superx3",					true);
+    g_smWeaponNameShotgun.SetValue("fa_500a",			            true);
+    g_smWeaponNameShotgun.SetValue("fa_870",						true);
+    g_smWeaponNameShotgun.SetValue("fa_sv10",						true);
+    g_smWeaponNameShotgun.SetValue("fa_winchester1892",				true);
 
     CreateTimer(0.25, Repeat_Print, _, TIMER_REPEAT);
     CreateTimer(0.25, SendExtraMsg, _, TIMER_REPEAT);
@@ -196,9 +206,20 @@ void Event_PlayerDisconnect(Event event, const char[] name, bool dontBroadcast)
 
 void Event_Weapon(Event event, const char[] name, bool dontBroadcast)
 {
-	int client = event.GetInt("player_id");
-	if(name[7] == 'r') client = GetClientOfUserId(client);
-	if(0 < client <= MaxClients && IsClientInGame(client) && IsPlayerAlive(client)) ShowAmmo(client);
+    int client = event.GetInt("player_id");
+    if(name[7] == 'r')
+    {
+        static char weapon_classname[64];
+        event.GetString("weapon_classname", weapon_classname, sizeof(weapon_classname));
+        // 散彈槍會自己顯示
+        if(g_smWeaponNameShotgun.ContainsKey(weapon_classname)) return;
+
+        client = GetClientOfUserId(client);
+    }
+    if(0 < client <= MaxClients && IsClientInGame(client) && IsPlayerAlive(client))
+    {
+        ShowAmmo(client);
+    }
 }
 
 void Hook_Switch(int client, int weapon)

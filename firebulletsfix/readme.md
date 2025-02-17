@@ -7,7 +7,17 @@ Fixes shooting/bullet displacement by 1 tick problems so you can accurately hit 
 
 * Apply to | 適用於
     ```
-    Any Source Game
+    Counter-Strike: Source
+    Counter-Strike: Go
+    Left 4 Dead 2
+    Left 4 Dead 1
+    Team Fortress 2
+    Day of Defeat: Source
+    Nuclear Dawn
+    Half-Life 2: Deathmatch
+    NeoTokyo
+    Insurgency
+    No More Room in Hell
     ```
 
 * Require | 必要安裝

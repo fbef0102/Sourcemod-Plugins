@@ -1,5 +1,6 @@
 ﻿"Games"
 {
+	//Counter-Strike: Source
 	"cstrike"
 	{
 		"Offsets"
@@ -13,6 +14,7 @@
 		}
 	}
 
+	//Counter-Strike: Go
 	"csgo"
 	{
 		"Offsets"
@@ -26,6 +28,7 @@
 		}
 	}
 
+	//Left 4 Dead 2
 	"left4dead2"
 	{
 		"Offsets"
@@ -39,6 +42,7 @@
 		}
 	}
 
+	//Team Fortress 2
 	"tf"
 	{
 		"Offsets"
@@ -52,6 +56,7 @@
 		}
 	}
 
+	//Left 4 Dead 1
 	"left4dead"
 	{
 		"Offsets"
@@ -65,6 +70,7 @@
 		}
 	}
 
+	//Day of Defeat: Source
 	"dod"
 	{
 		"Offsets"
@@ -78,6 +84,7 @@
 		}
 	}
 
+	//Nuclear Dawn
 	"nucleardawn"
 	{
 		"Offsets"
@@ -91,6 +98,7 @@
 		}
 	}
 
+	//Half-Life 2: Deathmatch
 	"hl2mp"
 	{
 		"Offsets"
@@ -104,6 +112,7 @@
 		}
 	}
 
+	//NeoTokyo
 	"NeotokyoSource"
 	{
 		"Offsets"
@@ -115,6 +124,7 @@
 		}
 	}
 	
+	//Insurgency
 	"insurgency"
 	{
 		"Offsets"
@@ -124,6 +134,20 @@
 				"windows"	"285"
 				"linux"		"286"
 				"mac"		"286"
+			}
+		}
+	}
+	
+	//no more room in hell
+	"nmrih"
+	{
+		"Offsets"
+		{
+			"Weapon_ShootPosition"
+			{
+				"windows"	"273"
+				"linux"		"274"
+				"mac"		"274"
 			}
 		}
 	}

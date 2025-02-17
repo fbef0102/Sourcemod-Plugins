@@ -30,6 +30,7 @@
 	
 	"items"
 	{
+		// Box
 		"Big Inventory Box"
 		{
 			"classname"			"item_inventory_box"
@@ -37,6 +38,187 @@
 			"category"			"items"
 		}
 		
+		// pistol
+		
+		"Colt M1911"
+		{
+			"classname"			"fa_1911"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"45acp"
+			"clip"				"7"
+		}
+		
+		"Glock 17"
+		{
+			"classname"			"fa_glock17"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"9mm"
+			"clip"				"17"
+		}
+		
+		"Beretta M9"
+		{
+			"classname"			"fa_m92fs"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"9mm"
+			"clip"				"15"
+		}
+		
+		"Ruger MkIII"
+		{
+			"classname"			"fa_mkiii"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"22lr"
+			"clip"				"10"
+		}
+		
+		"S&W 686"
+		{
+			"classname"			"fa_sw686"
+			"type"				"pistol"
+			"category"			"light"
+			"ammobox"			"357"
+			"clip"				"6"
+		}
+		
+		// shotgun
+		"Mossberg 500A"
+		{
+			"classname"			"fa_500a"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"12gauge"
+			"clip"				"5"
+		}
+		
+		"Remington 870"
+		{
+			"classname"			"fa_870"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"12gauge"
+			"clip"				"8"
+		}
+		
+		"Winchester X3"
+		{
+			"classname"			"fa_superx3"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"12gauge"
+			"clip"				"5"
+		}
+		
+		"Beretta SV10"
+		{
+			"classname"			"fa_sv10"
+			"type"				"shotgun"
+			"category"			"light"
+			"ammobox"			"12gauge"
+			"clip"				"2"
+		}
+		
+		"Winchester 1892"
+		{
+			"classname"			"fa_winchester1892"
+			"type"				"shotgun"
+			"category"			"heavy"
+			"ammobox"			"357"
+			"clip"				"15"
+		}
+		
+		// smg
+		
+		"MAC10"
+		{
+			"classname"			"fa_mac10"
+			"type"				"smg"
+			"category"			"light"
+			"ammobox"			"45acp"
+			"clip"				"30"
+		}
+		
+		"MP5A3"
+		{
+			"classname"			"fa_mp5a3"
+			"type"				"smg"
+			"category"			"light"
+			"ammobox"			"9mm"
+			"clip"				"30"
+		}
+		
+		// rifle
+		
+		"Ruger 10/22"
+		{
+			"classname"			"fa_1022"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"22lr"
+			"clip"				"10"
+		}
+		
+		"FN FAL"
+		{
+			"classname"			"fa_fnfal"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"308"
+			"clip"				"20"
+		}
+		
+		"JAE 700"
+		{
+			"classname"			"fa_jae700"
+			"type"				"sniperrifle"
+			"category"			"rifles"
+			"ammobox"			"308"
+			"clip"				"10"
+		}
+		
+		"Sako 85"
+		{
+			"classname"			"fa_sako85"
+			"type"				"sniperrifle"
+			"category"			"rifles"
+			"ammobox"			"308"
+			"clip"				"5"
+		}
+		
+		"M16A4"
+		{
+			"classname"			"fa_m16a4"
+			"type"				"rifle"
+			"category"			"light"
+			"ammobox"			"556"
+			"clip"				"30"
+		}
+		
+		"SKS"
+		{
+			"classname"			"fa_sks"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"762mm"
+			"clip"				"10"
+		}
+		
+		"CZech 858"
+		{
+			"classname"			"fa_cz858"
+			"type"				"rifle"
+			"category"			"rifles"
+			"ammobox"			"762mm"
+			"clip"				"30"
+		}
+		
+		// sniperrifle
+		
+		// Bow
 		"Compound Bow"
 		{
 			"classname"			"bow_deerhunter"
@@ -46,6 +228,7 @@
 			"clip"				"1"
 		}
 		
+		// explosive
 		"Grenade"
 		{
 			"classname"			"exp_grenade"
@@ -73,218 +256,7 @@
 			"clip"				"1"
 		}
 		
-		"Mossberg 500A"
-		{
-			"classname"			"fa_500a"
-			"type"				"shotgun"
-			"category"			"heavy"
-			"ammobox"			"12gauge"
-			"clip"				"5"
-		}
-		
-		"Remington 870"
-		{
-			"classname"			"fa_870"
-			"type"				"shotgun"
-			"category"			"heavy"
-			"ammobox"			"12gauge"
-			"clip"				"8"
-		}
-		
-		"Ruger 10/22"
-		{
-			"classname"			"fa_1022"
-			"type"				"rifle"
-			"category"			"rifles"
-			"ammobox"			"22lr"
-			"clip"				"10"
-		}
-		
-		"Colt M1911"
-		{
-			"classname"			"fa_1911"
-			"type"				"pistol"
-			"category"			"light"
-			"ammobox"			"45acp"
-			"clip"				"7"
-		}
-		
-		"CZech 858"
-		{
-			"classname"			"fa_cz858"
-			"type"				"rifle"
-			"category"			"rifles"
-			"ammobox"			"762mm"
-			"clip"				"30"
-		}
-		
-		"FN FAL"
-		{
-			"classname"			"fa_fnfal"
-			"type"				"rifle"
-			"category"			"rifles"
-			"ammobox"			"308"
-			"clip"				"20"
-		}
-		
-		"Glock 17"
-		{
-			"classname"			"fa_glock17"
-			"type"				"pistol"
-			"category"			"light"
-			"ammobox"			"9mm"
-			"clip"				"17"
-		}
-		
-		"JAE 700"
-		{
-			"classname"			"fa_jae700"
-			"type"				"sniperrifle"
-			"category"			"rifles"
-			"ammobox"			"308"
-			"clip"				"10"
-		}
-		
-		"M16A4"
-		{
-			"classname"			"fa_m16a4"
-			"type"				"rifle"
-			"category"			"light"
-			"ammobox"			"556"
-			"clip"				"30"
-		}
-		
-		"Beretta M9"
-		{
-			"classname"			"fa_m92fs"
-			"type"				"pistol"
-			"category"			"light"
-			"ammobox"			"9mm"
-			"clip"				"15"
-		}
-		
-		"MAC10"
-		{
-			"classname"			"fa_mac10"
-			"type"				"smg"
-			"category"			"light"
-			"ammobox"			"45acp"
-			"clip"				"30"
-		}
-		
-		"MP5A3"
-		{
-			"classname"			"fa_mp5a3"
-			"type"				"smg"
-			"category"			"light"
-			"ammobox"			"9mm"
-			"clip"				"30"
-		}
-		
-		"Ruger MkIII"
-		{
-			"classname"			"fa_mkiii"
-			"type"				"pistol"
-			"category"			"light"
-			"ammobox"			"22lr"
-			"clip"				"10"
-		}
-		
-		"Sako 85"
-		{
-			"classname"			"fa_sako85"
-			"type"				"sniperrifle"
-			"category"			"rifles"
-			"ammobox"			"308"
-			"clip"				"5"
-		}
-		
-		"SKS"
-		{
-			"classname"			"fa_sks"
-			"type"				"rifle"
-			"category"			"rifles"
-			"ammobox"			"762mm"
-			"clip"				"10"
-		}
-		
-		"Beretta SV10"
-		{
-			"classname"			"fa_sv10"
-			"type"				"shotgun"
-			"category"			"light"
-			"ammobox"			"12gauge"
-			"clip"				"2"
-		}
-		
-		"S&W 686"
-		{
-			"classname"			"fa_sw686"
-			"type"				"pistol"
-			"category"			"light"
-			"ammobox"			"357"
-			"clip"				"6"
-		}
-		
-		"Winchester X3"
-		{
-			"classname"			"fa_superx3"
-			"type"				"shotgun"
-			"category"			"heavy"
-			"ammobox"			"12gauge"
-			"clip"				"5"
-		}
-		
-		"Winchester 1892"
-		{
-			"classname"			"fa_winchester1892"
-			"type"				"shotgun"
-			"category"			"heavy"
-			"ammobox"			"357"
-			"clip"				"15"
-		}
-		
-		"Bandages"
-		{
-			"classname"			"item_bandages"
-			"type"				"meds"
-			"category"			"items"
-		}
-		
-		"Maglite"
-		{
-			"classname"			"item_maglite"
-			"type"				"tool"
-			"category"			"items"
-		}
-		
-		"Pills"
-		{
-			"classname"			"item_pills"
-			"type"				"meds"
-			"category"			"items"
-		}
-		
-		"Gene Therapy"
-		{
-			"classname"			"item_gene_therapy"
-			"type"				"meds"
-			"category"			"items"
-		}
-		
-		"First Aid Kit"
-		{
-			"classname"			"item_first_aid"
-			"type"				"meds"
-			"category"			"items"
-		}
-		
-		"Walkie Talkie"
-		{
-			"classname"			"item_walkietalkie"
-			"type"				"tool"
-			"category"			"items"
-		}
+		// melee
 		
 		"Fire Axe"
 		{
@@ -379,6 +351,22 @@
 			"category"			"melee"
 		}
 		
+		// tool
+		
+		"Maglite"
+		{
+			"classname"			"item_maglite"
+			"type"				"tool"
+			"category"			"items"
+		}
+		
+		"Walkie Talkie"
+		{
+			"classname"			"item_walkietalkie"
+			"type"				"tool"
+			"category"			"items"
+		}
+		
 		"Claw Hammer"
 		{
 			"classname"			"tool_barricade"
@@ -411,6 +399,38 @@
 			"category"			"items"
 		}
 		
+		// meds
+		
+		"First Aid Kit"
+		{
+			"classname"			"item_first_aid"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"Bandages"
+		{
+			"classname"			"item_bandages"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"Pills"
+		{
+			"classname"			"item_pills"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		"Gene Therapy"
+		{
+			"classname"			"item_gene_therapy"
+			"type"				"meds"
+			"category"			"items"
+		}
+		
+		
+		// 打火機
 		//"Zippo Lighter"
 		//{
 		//	"classname"			"item_zippo"
@@ -420,6 +440,7 @@
 		//	"name_short"		"Zippo"
 		//}
 		
+		// 拳頭
 		//"Fists"
 		//{
 		//	"classname"			"me_fists"

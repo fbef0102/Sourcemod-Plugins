@@ -56,7 +56,7 @@ Display health, stamina, speed, infected status, ammo on hud
 
 * <details><summary>Changelog | 版本日誌</summary>
 
-    * v1.1h (2025-2-10)
+    * v1.1h (2025-2-18)
         * Add weapon clip/ammo hud
 
     * v1.0h (2024-12-23)
