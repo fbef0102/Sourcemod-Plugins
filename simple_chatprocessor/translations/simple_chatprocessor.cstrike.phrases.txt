@@ -1,3 +1,10 @@
+//Please use notepad++ or vscode to open this file, so you will see the special ascii character
+//= \x01 (SOH) - Use team color up to the end of the player name.  This only works at the start of the string, and precludes using the other control characters.
+//= \x02 (STX) - Use team color from this point forward
+//= \x03 (ETX) - Use location color from this point forward
+//= \x04 (EOT) - Use achievement color from this point forward
+//= \x05 (ENQ) - Use normal color from this point forward
+
 "Phrases"
 {
 	"Cstrike_Chat_CT_Loc"

@@ -31,12 +31,22 @@
 	"items"
 	{
 		// Box
-		"Big Inventory Box"
+		"Big Inventory Box 1"
 		{
-			"classname"			"item_inventory_box"
+			"classname"			"item_inventory_box_1"
 			"type"				"box"
 			"category"			"items"
+			"model"				"models/props/army/heli_supplycrate.mdl"
 		}
+		
+		"Big Inventory Box 2"
+		{
+			"classname"			"item_inventory_box_2"
+			"type"				"box"
+			"category"			"items"
+			"model"				"models/survival/item_dufflebag.mdl"
+		}
+		
 		
 		// pistol
 		

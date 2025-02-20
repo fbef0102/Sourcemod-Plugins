@@ -5,7 +5,7 @@
 #include <sdktools>
 #include <adminmenu>
 
-#define PLUGIN_VERSION "1.0h-2024/12/01"
+#define PLUGIN_VERSION "1.1h-2025/2/20"
 #define PLUGIN_MSG_PREFIX "[NMP-GW] "
 
 #define PATH_ITEMS_DATA "data/nmrih_giveweapons.txt"
@@ -60,7 +60,7 @@ public void OnPluginStart()
 	AutoExecConfig(true,                "nmrih_giveweapons");
 
 	RegAdminCmd( "sm_give", Command_Give, ADMFLAG_SLAY, "Usage: sm_give <targets> <weapon|item>" );
-	RegAdminCmd( "sm_spawni", Command_SpawnItem, ADMFLAG_KICK, "Usage: sm_spawni <weapon|item> [targets|x y z]" );
+	RegAdminCmd( "sm_spawni", Command_SpawnItem, ADMFLAG_ROOT, "Usage: sm_spawni <weapon|item> [targets|x y z]" );
 	RegAdminCmd( "sm_gw_reload", Command_ReloadConfigs, ADMFLAG_ROOT );
 	RegAdminCmd( "sm_gw_scan", Command_Scan, ADMFLAG_GENERIC );
 	
@@ -112,11 +112,11 @@ Action Command_Give( int iClient, int nArgs )
 		return Plugin_Handled;
 	}
 	
-	char szBuffer[121];
+	char szBuffer[128];
 	int iTargets[MAXPLAYERS+1], nTargets;
 	char szTargetName[MAX_NAME_LENGTH];
 	bool bTargetNameML;
-	char szClassname[21], szItemName[2][32];
+	char szClassname[32], szItemName[2][32];
 	bool bItemNameIsML;
 	int iMaxAmmo[2];
 	
@@ -128,7 +128,9 @@ Action Command_Give( int iClient, int nArgs )
 	}
 	
 	GetCmdArg( 2, szBuffer, sizeof( szBuffer ) );
-	switch( FindItemEx( iClient, szBuffer, szClassname, sizeof( szClassname ), szItemName[0], sizeof( szItemName[] ), szItemName[1], sizeof( szItemName[] ), bItemNameIsML, iMaxAmmo[0], iMaxAmmo[1] ) )
+	char sModel[256];
+	switch( FindItemEx( iClient, szBuffer, szClassname, sizeof( szClassname ), szItemName[0], sizeof( szItemName[] ), szItemName[1], sizeof( szItemName[] ), bItemNameIsML, iMaxAmmo[0], iMaxAmmo[1],
+		sModel, sizeof( sModel ) ) )
 	{
 		case 1: {}
 		case FindItem_FoundNothing:
@@ -163,6 +165,7 @@ Action Command_Give( int iClient, int nArgs )
 	//bool bbPills = StrEqual( szClassname, "item_pills", true );
 	//bool bbWalkieTalkie = StrEqual( szClassname, "item_walkietalkie", true );
 	
+	float vecEyeOrigin[3];
 	for( int iEntity, iPAmmoOffs, i = 0; i < nTargets; i++ )
 	{
 		iEntity = -1;
@@ -202,19 +205,36 @@ Action Command_Give( int iClient, int nArgs )
 		
 		if( iEntity == -1 )
 		{
-			iEntity = GivePlayerItem( iTargets[i], szClassname );
-			if( !IsValidEdict( iEntity ) )
+			if(strncmp(szClassname, "item_inventory_box", 18, false) == 0)
 			{
-				LogMessage( "Failed to give '%s' to player %L (by %N)", szClassname, iTargets[i], iClient );
-				ReplyToCommand( iClient, "%s%t", PLUGIN_MSG_PREFIX, "NMP Invalid Item Entity", szClassname );
-				continue;
+				iEntity = CreateEntityByName( "item_inventory_box" );
+				if( iEntity <= MaxClients )
+				{
+					LogMessage( "Failed to give '%s' to player %L (by %N)", szClassname, iTargets[i], iClient );
+					ReplyToCommand( iClient, "%s%t", PLUGIN_MSG_PREFIX, "NMP Invalid Item Entity", szClassname );
+					continue;
+				}
+
+				DispatchKeyValue(iEntity, "spawnsolid", "0");
+				DispatchKeyValue(iEntity, "model", sModel);
+			}
+			else
+			{
+				iEntity = GivePlayerItem( iTargets[i], szClassname );
+				if( iEntity <= MaxClients )
+				{
+					LogMessage( "Failed to give '%s' to player %L (by %N)", szClassname, iTargets[i], iClient );
+					ReplyToCommand( iClient, "%s%t", PLUGIN_MSG_PREFIX, "NMP Invalid Item Entity", szClassname );
+					continue;
+				}
 			}
 		}
 
 		if(strncmp(szClassname, "item_inventory_box", 18, false) == 0)
 		{
-			DispatchKeyValue(iEntity, "spawnsolid", "0");
 			DispatchSpawn( iEntity );
+			GetClientEyePosition( iTargets[i], vecEyeOrigin );
+			TeleportEntity( iEntity, vecEyeOrigin, NULL_VECTOR, NULL_VECTOR );
 		}
 		else
 		{
@@ -243,12 +263,12 @@ Action Command_SpawnItem( int iClient, int nArgs )
 	if( iClient < 0 || iClient > MaxClients || iClient != 0 && !IsClientInGame( iClient ) )
 		return Plugin_Continue;
 	
-	char szBuffer[121];
+	char szBuffer[128];
 	bool bOverrideCoords = false;
 	int iTargets[MAXPLAYERS+1], nTargets;
 	char szTargetName[MAX_NAME_LENGTH];
 	bool bTargetNameML;
-	char szClassname[21], szItemName[2][32];
+	char szClassname[32], szItemName[2][32];
 	bool bItemNameIsML;
 	int iMaxAmmo[2];
 	
@@ -289,7 +309,9 @@ Action Command_SpawnItem( int iClient, int nArgs )
 	}
 	
 	GetCmdArg( 1, szBuffer, sizeof( szBuffer ) );
-	switch( FindItemEx( iClient, szBuffer, szClassname, sizeof( szClassname ), szItemName[0], sizeof( szItemName[] ), szItemName[1], sizeof( szItemName[] ), bItemNameIsML, iMaxAmmo[0], iMaxAmmo[1] ) )
+	char sModel[256];
+	switch( FindItemEx( iClient, szBuffer, szClassname, sizeof( szClassname ), szItemName[0], sizeof( szItemName[] ), szItemName[1], sizeof( szItemName[] ), bItemNameIsML, iMaxAmmo[0], iMaxAmmo[1],
+		sModel, sizeof( sModel ) ) )
 	{
 		case 1: {}
 		case FindItem_FoundNothing:
@@ -319,83 +341,47 @@ Action Command_SpawnItem( int iClient, int nArgs )
 		}
 	}
 	
-	int iEntity = CreateEntityByName( szClassname );
-	if( !IsValidEdict( iEntity ) )
-	{
-		LogMessage( "Failed to spawn '%s' (by %N)", szClassname, iClient );
-		ReplyToCommand( iClient, "%s%t", PLUGIN_MSG_PREFIX, "NMP Invalid Item Entity", szClassname );
-		return Plugin_Handled;
-	}
+	int iEntity;
 	
-	float vecEyeOrigin[3], vecMaxs[3];
 	for( int c = 0; c < nTargets; c++ )
 	{
-		if( !bOverrideCoords )
-		{
-			GetClientEyePosition( iTargets[c], vecEyeOrigin );
-			GetClientEyeAngles( iTargets[c], vecEyeAngles );
-			GetEntPropVector( iTargets[c], Prop_Send, "m_vecMaxs", vecMaxs );
-			
-			vecEyeAngles[0] = 0.0;
-			vecEyeAngles[2] = 0.0;
-			
-			Handle hRay = TR_TraceRayFilterEx( vecEyeOrigin, vecEyeAngles, MASK_PLAYERSOLID, RayType_Infinite, Callback_TraceFilter );
-			if( !TR_DidHit( hRay ) )
-			{
-				CloseHandle( hRay );
-				continue;
-			}
-			
-			float vecRayHit[3], vecBuffer[3];
-			
-			TR_GetEndPosition( vecRayHit, hRay );
-			CloseHandle( hRay );
-			
-			GetAngleVectors( vecEyeAngles, vecBuffer, NULL_VECTOR, NULL_VECTOR );
-			
-			float flDistance = FloatAbs( GetVectorDistance( vecEyeOrigin, vecRayHit, false ) );
-			if( flDistance > SPAWNITEM_DISTANCE )
-				flDistance -= SPAWNITEM_DISTANCE;
-			else
-				flDistance = 0.0;
-			flDistance += vecMaxs[0] + SPAWNITEM_OFFSET;
-			
-			for( int i = 0; i < 3; i++ )
-				vecTarget[i] = vecRayHit[i] + vecBuffer[i] * -flDistance;
-			
-			
-			// Anti Ceiling Stuck
-			
-			vecBuffer[0] = vecTarget[0];
-			vecBuffer[1] = vecTarget[1];
-			vecBuffer[2] = vecTarget[2] + vecMaxs[2];
-			
-			hRay = TR_TraceRayFilterEx( vecTarget, vecBuffer, MASK_PLAYERSOLID, RayType_EndPoint, Callback_TraceFilter );
-			if( TR_DidHit( hRay ) )
-			{
-				TR_GetEndPosition( vecRayHit, hRay );
-				CloseHandle( hRay );
-				
-				flDistance = FloatAbs( GetVectorDistance( vecTarget, vecRayHit, false ) );
-				if( flDistance >= vecMaxs[2] )
-					vecTarget[2] -= ( vecMaxs[2] + SPAWNITEM_OFFSET );
-				else if( 0.0 < flDistance < vecMaxs[2] )
-					vecTarget[2] -= ( vecMaxs[2] - flDistance + SPAWNITEM_OFFSET );
-			}
-			else
-				CloseHandle( hRay );
-		}
-		
 		if(strncmp(szClassname, "item_inventory_box", 18, false) == 0)
 		{
+			iEntity = CreateEntityByName( "item_inventory_box" );
+			if( iEntity <= MaxClients )
+			{
+				ReplyToCommand( iClient, "%s%t", PLUGIN_MSG_PREFIX, "NMP Invalid Item Entity", szClassname );
+				return Plugin_Handled;
+			}
+
 			DispatchKeyValue(iEntity, "spawnsolid", "0");
+			DispatchKeyValue(iEntity, "model", sModel);
 		}
+		else
+		{
+			iEntity = CreateEntityByName( szClassname );
+			if( iEntity <= MaxClients )
+			{
+				ReplyToCommand( iClient, "%s%t", PLUGIN_MSG_PREFIX, "NMP Invalid Item Entity", szClassname );
+				return Plugin_Handled;
+			}
+		}
+
 		DispatchSpawn( iEntity );
-		TeleportEntity( iEntity, vecTarget, vecEyeAngles, NULL_VECTOR );
+		if( !bOverrideCoords )
+		{
+			GetClientEyePosition( iTargets[c], vecTarget );
+			GetClientEyeAngles( iTargets[c], vecEyeAngles );
+			TeleportEntity( iEntity, vecTarget, vecEyeAngles, NULL_VECTOR );
+		}
+		else
+		{
+			TeleportEntity( iEntity, vecTarget, NULL_VECTOR, NULL_VECTOR );
+		}
 		ActivateEntity( iEntity );
 		//AcceptEntityInput( iEntity, "Use", iTargets[c], iTargets[c] );
 		
-		if( bOverrideCoords )
+		/*if( bOverrideCoords )
 		{
 			if( !bSilentAdmin )
 				ShowActivity2( iClient, PLUGIN_MSG_PREFIX, "%t", bItemNameIsML ? "NMP Activity Placed T" : "NMP Activity Placed", szItemName[1] );
@@ -406,24 +392,13 @@ Action Command_SpawnItem( int iClient, int nArgs )
 			if( !bSilentAdmin && !bTargetNameML )
 				ShowActivity2( iClient, PLUGIN_MSG_PREFIX, "%t", bItemNameIsML ? "NMP Activity Spawn 2 T" : "NMP Activity Spawn 2", szItemName[1], iTargets[c] );
 			LogAction( iClient, iTargets[c], "spawned '%s'", szClassname );
-		}
+		}*/
 	}
 	
 	if( !bOverrideCoords && !bSilentAdmin && bTargetNameML )
 		ShowActivity2( iClient, PLUGIN_MSG_PREFIX, "%t", bItemNameIsML ? "NMP Activity Spawn T" : "NMP Activity Spawn", szItemName[1], szTargetName );
 	
 	return Plugin_Handled;
-}
-
-bool Callback_TraceFilter( int iEntity, int iContentsMask )
-{
-	if( IsValidEntity( iEntity ) && !IsValidEdict( iEntity ) )
-		return true;
-	char strClassname[32];
-	GetEdictClassname( iEntity, strClassname, sizeof( strClassname ) );
-	if( StrEqual( strClassname, "player", false ) )
-		return false;
-	return true;
 }
 
 Action Command_ReloadConfigs( int iClient, int nArgs )
@@ -498,8 +473,8 @@ public void OnAdminMenuReady(Handle hTopMenu)
 	if( menu == INVALID_TOPMENUOBJECT )
 		return;
 	
-	AddToTopMenu( hLastTopMenu, "nmp_gw_give", TopMenuObject_Item, Handle_MenuGiveItem, menu, "sm_give", ADMFLAG_SLAY );
-	AddToTopMenu( hLastTopMenu, "nmp_gw_spawni", TopMenuObject_Item, Handle_MenuSpawnItem, menu, "sm_spawni", ADMFLAG_KICK );
+	AddToTopMenu( hLastTopMenu, "nmp_gw_give", TopMenuObject_Item, Handle_MenuGiveItem, menu, "sm_give", ADMFLAG_ROOT );
+	AddToTopMenu( hLastTopMenu, "nmp_gw_spawni", TopMenuObject_Item, Handle_MenuSpawnItem, menu, "sm_spawni", ADMFLAG_ROOT );
 }
 
 #if defined ADMINMENU_NEW_CATEGORY
@@ -618,10 +593,10 @@ void ShowAdminMenu( int iClient, int nType )
 						KvGetString( hItems, "name_ml", szBuffer[0], sizeof( szBuffer[] ) );
 						if( szBuffer[0][0] == '\0' )
 							Format( szBuffer[0], sizeof( szBuffer[] ), "Weapon_%s_short", szBuffer[2] );
-						Format( szBuffer[1], sizeof( szBuffer[] ), "%T (%s)", szBuffer[0], iClient, szBuffer[1], iClient );
+						Format( szBuffer[1], sizeof( szBuffer[] ), "%T [%s]", szBuffer[0], iClient, szBuffer[1], iClient );
 					}
 					else
-						Format( szBuffer[1], sizeof( szBuffer[] ), "%s (%s)", szBuffer[0], szBuffer[1], iClient );
+						Format( szBuffer[1], sizeof( szBuffer[] ), "%s [%s]", szBuffer[0], szBuffer[1], iClient );
 					
 					AddMenuItem( menu, szBuffer[2], szBuffer[1] );
 				}
@@ -669,7 +644,8 @@ int Menu_GiveTarget(Menu menu, MenuAction action, int param1, int param2)
 			char szBuffer[48];
 			GetMenuItem( menu, param2, szBuffer, sizeof( szBuffer ) );
 			FakeClientCommand( param1, "sm_give %s %s", szBuffer, szSelectedItem[param1] );
-			ShowAdminMenu( param1, ADMINMENU_GIVE_TARGET );
+			//ShowAdminMenu( param1, ADMINMENU_GIVE_TARGET );
+			ShowAdminMenu( param1, ADMINMENU_GIVE_ITEM );
 		}
 	}
 
@@ -710,7 +686,8 @@ int Menu_SpawnTarget(Menu menu, MenuAction action, int param1, int param2)
 			char szBuffer[48];
 			GetMenuItem( menu, param2, szBuffer, sizeof( szBuffer ) );
 			FakeClientCommand( param1, "sm_spawni %s %s", szSelectedItem[param1], szBuffer );
-			ShowAdminMenu( param1, ADMINMENU_SPAWN_TARGET );
+			//ShowAdminMenu( param1, ADMINMENU_SPAWN_TARGET );
+			ShowAdminMenu( param1, ADMINMENU_SPAWN_ITEM );
 		}
 	}
 
@@ -755,7 +732,8 @@ void GetTypeMLString( const char[] szType, char[] szOutput, int iOutputLength )
 		strcopy( szOutput, iOutputLength, szType );
 }
 
-int FindItemEx( int iAdmin = 0, const char[] szSearch, char[] szClassname = "", int iClassnameLen = 0, char[] szItemName = "", int iItemNameLen = 0, char[] szItemNameShort = "", int iItemNameShortLen = 0, bool &bItemNameIsML = false, int &iMaxAmmo1 = 0, int &iMaxAmmo2 = 0 )
+int FindItemEx( int iAdmin = 0, const char[] szSearch, char[] szClassname = "", int iClassnameLen = 0, char[] szItemName = "", int iItemNameLen = 0, char[] szItemNameShort = "", int iItemNameShortLen = 0, bool &bItemNameIsML = false, int &iMaxAmmo1 = 0, int &iMaxAmmo2 = 0,
+	 char[] sModel = "", int iModelLen = 0)
 {
 	char szBuffer[21];
 	char szItemClass[21];
@@ -769,57 +747,65 @@ int FindItemEx( int iAdmin = 0, const char[] szSearch, char[] szClassname = "", 
 	{
 		KvRewind( hItemsData );
 		if( KvJumpToKey( hItemsData, "items" ) && KvGotoFirstSubKey( hItemsData ) )
+		{
 			do
 			{
 				KvGetString( hItemsData, "classname", szItemClass, sizeof( szItemClass ) );
-				
-				if( !strlen( szItemClass ) || StrContains( szItemClass, szSearch, false ) == -1 )
-					continue;
-				
-				strcopy( szClassname, iClassnameLen, szItemClass );
-				
-				iMaxAmmo1 = KvGetNum( hItemsData, "max_ammo_prim", 0 );
-				iMaxAmmo2 = KvGetNum( hItemsData, "max_ammo_sec", 0 );
-				
-				KvGetString( hItemsData, "name_ml", szItemName, iItemNameLen, "" );
-				if( !strlen( szItemName ) )
+				if( !strlen( szItemClass ) || strcmp( szItemClass, szSearch, false ) != 0 )
 				{
-					KvGetString( hItemsData, "name", szItemName, iItemNameLen, "" );
-					if( !strlen( szItemName ) )
-					{
-						bItemNameIsML = true;
-						Format( szItemName, iItemNameLen, "Weapon_%s", szItemClass );
-					}
+					continue;
 				}
 				else
-					bItemNameIsML = true;
-				
-				KvGetString( hItemsData, "name_short", szItemNameShort, iItemNameShortLen, "" );
-				if( !strlen( szItemNameShort ) )
-					Format( szItemNameShort, iItemNameShortLen, "%s_short", szItemName );
-				
-				if( 0 < iAdmin <= MaxClients && IsClientInGame( iAdmin ) )
 				{
-					KvGetString( hItemsData, "type", szBuffer, sizeof( szBuffer ), "other" );
-					Format( szBuffer, sizeof( szBuffer ), "sm_give_type_%s", szBuffer );
-					if( !CheckCommandAccess( iAdmin, szBuffer, ADMFLAG_KICK, true ) )
+					strcopy( szClassname, iClassnameLen, szItemClass );
+					
+					iMaxAmmo1 = KvGetNum( hItemsData, "max_ammo_prim", 0 );
+					iMaxAmmo2 = KvGetNum( hItemsData, "max_ammo_sec", 0 );
+					
+					KvGetString( hItemsData, "name_ml", szItemName, iItemNameLen, "" );
+					if( !strlen( szItemName ) )
 					{
-						bNoAccess = true;
-						continue;
+						KvGetString( hItemsData, "name", szItemName, iItemNameLen, "" );
+						if( !strlen( szItemName ) )
+						{
+							bItemNameIsML = true;
+							Format( szItemName, iItemNameLen, "Weapon_%s", szItemClass );
+						}
+					}
+					else
+						bItemNameIsML = true;
+					
+					KvGetString( hItemsData, "name_short", szItemNameShort, iItemNameShortLen, "" );
+					if( !strlen( szItemNameShort ) )
+						Format( szItemNameShort, iItemNameShortLen, "%s_short", szItemName );
+
+					hItemsData.GetString("model", sModel, iModelLen, "" );
+					
+					if( 0 < iAdmin <= MaxClients && IsClientInGame( iAdmin ) )
+					{
+						KvGetString( hItemsData, "type", szBuffer, sizeof( szBuffer ), "other" );
+						Format( szBuffer, sizeof( szBuffer ), "sm_give_type_%s", szBuffer );
+						if( !CheckCommandAccess( iAdmin, szBuffer, ADMFLAG_ROOT, true ) )
+						{
+							bNoAccess = true;
+							break;
+						}
+						
+						KvGetString( hItemsData, "category", szBuffer, sizeof( szBuffer ), "other" );
+						Format( szBuffer, sizeof( szBuffer ), "sm_give_category_%s", szBuffer );
+						if( !CheckCommandAccess( iAdmin, szBuffer, ADMFLAG_ROOT, true ) )
+						{
+							bNoAccess = true;
+							break;
+						}
 					}
 					
-					KvGetString( hItemsData, "category", szBuffer, sizeof( szBuffer ), "other" );
-					Format( szBuffer, sizeof( szBuffer ), "sm_give_category_%s", szBuffer );
-					if( !CheckCommandAccess( iAdmin, szBuffer, ADMFLAG_KICK, true ) )
-					{
-						bNoAccess = true;
-						continue;
-					}
+					nFoundItems=1;
+					break;
 				}
-				
-				nFoundItems++;
 			}
-			while( KvGotoNextKey( hItemsData ) );
+			while( hItemsData.GotoNextKey() );
+		}
 	}
 	else
 	{
@@ -835,7 +821,7 @@ int FindItemEx( int iAdmin = 0, const char[] szSearch, char[] szClassname = "", 
 		
 		strcopy( szClassname, iClassnameLen, szSearch );
 		
-		nFoundItems++;
+		nFoundItems=1;
 	}
 	
 	if( nFoundItems == 0 )

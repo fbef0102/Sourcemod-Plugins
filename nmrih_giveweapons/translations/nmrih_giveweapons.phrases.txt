@@ -469,10 +469,16 @@
 		"zho"			"焊槍"
 	}
 	
-	"Weapon_item_inventory_box_short"
+	"Weapon_item_inventory_box_1_short"
 	{
-		"en"			"Big Inventory Box"
-		"zho"			"補給大箱子"
+		"en"			"Inventory Box (Supply crate)"
+		"zho"			"物資 (補給箱)"
+	}	
+	
+	"Weapon_item_inventory_box_2_short"
+	{
+		"en"			"Inventory Box (Duffle Bag)"
+		"zho"			"物資 (行李袋)"
 	}	
 	
 	"Weapon_item_gene_therapy_short"

@@ -100,6 +100,7 @@ enum eMods {
 	GameType_SGTLS,
 	GameType_TF,
 	GameType_DM,
+	GameType_SDK2013,
 	GameType_ZPS,
 };
 eMods g_CurrentMod;
@@ -188,6 +189,12 @@ public void OnPluginStart()
 		GetGameFolderName(sGameDir, sizeof(sGameDir));
 		Format(sTranslationFile, sizeof(sTranslationFile), "simple_chatprocessor.%s.phrases", sGameDir);
 		BuildPath(Path_SM, sTranslationLocation, sizeof(sTranslationLocation), "translations/%s.txt", sTranslationFile);
+
+		if (!FileExists(sTranslationLocation))
+		{
+			Format(sTranslationFile, sizeof(sTranslationFile), "simple_chatprocessor.unknown.phrases", sGameDir);
+			BuildPath(Path_SM, sTranslationLocation, sizeof(sTranslationLocation), "translations/%s.txt", sTranslationFile);
+		}
 
 		if (FileExists(sTranslationLocation)) {
 			//LogMessage("[SCP] Loading translation file [%s].", sTranslationFile);
@@ -796,7 +803,10 @@ eMods GetCurrentMod() {
 	if (StrEqual(sGameType, "mmdarkmessiah", false)) {
 		return GameType_DM;
 	}
-	LogMessage("Unknown Game Folder: %s", sGameType);
+	if (StrEqual(sGameType, "nmrih", false)) {
+		return GameType_SDK2013;
+	}
+	LogError("Unknown Game Folder: %s", sGameType);
 	return GameType_Unknown;
 }
 
