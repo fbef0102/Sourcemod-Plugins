@@ -56,6 +56,8 @@ If you want any modify or request, free to use or pay me money to do it.
     * 開服只執行一次的cfg檔案
 * <b>[firebulletsfix](/firebulletsfix)</b>: Fixes shooting/bullet displacement by 1 tick problems so you can accurately hit by moving.
     * 修復子彈擊中與伺服器運算相差 1 tick的延遲
+* <b>[sm_downloader](/sm_downloader)</b>: SM File/Folder Downloader and Precacher
+    * SM 文件下載器 (玩家連線伺服器的時候能下載自製的檔案)
 
 # CSS-Plugins
 > Apply to Counter-Strike: Source

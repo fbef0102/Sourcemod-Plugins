@@ -1,6 +1,11 @@
 # Description | 內容
 Allows admins to place any decals into the map that are defined in the the config and save them permanently for each map
 
+* Apply to | 適用於
+    ```
+    Any Source Game
+    ```
+
 * [Video | 影片展示](https://youtu.be/VGWEMl-6IgQ)
 
 * Image | 圖示
@@ -8,17 +13,21 @@ Allows admins to place any decals into the map that are defined in the the confi
 	<br/>![map-decals_2](image/map-decals_2.jpg)
 	<br/>![map-decals_3](image/map-decals_3.jpg)
 
-* Apply to | 適用於
-    ```
-    Any Source Game
-    ```
+* <details><summary>How does it work?</summary>
+
+	* Paint custom decal on the maps and everyone and see that
+	* To set up custom decal, read the steps below
+</details>
 
 * Require | 必要安裝
-<br/>None
+	1. 🟥 Prepare [your content-server for FastDL](https://developer.valvesoftware.com/wiki/FastDL), othersie this plugin will not work 
+		* 🟥 需[自備網空且支援FastDL](https://developer.valvesoftware.com/wiki/Zh/FastDL)，否則此插件會無效 (不知道什麼是FastDL請自行Google)
 
-* Notice
-	* 🟥 Prepare [your content-server for FastDL](https://developer.valvesoftware.com/wiki/FastDL), othersie this plugin will not work
-	* If you don't know what "FastDL" is, please google it
+* <details><summary>Support | 支援插件</summary>
+
+	1. [l4d_force_client_custom_download](https://github.com/fbef0102/Game-Private_Plugin/tree/main/L4D_%E6%8F%92%E4%BB%B6/Player_%E7%8E%A9%E5%AE%B6/l4d_force_client_custom_download): Force player to download your server's custom content
+		* 強制玩家打開設置下載伺服器自製的檔案
+</details>
 
 * <details><summary>ConVar | 指令</summary>
 
@@ -71,14 +80,9 @@ Allows admins to place any decals into the map that are defined in the the confi
 		```
 </details>
 
-* <details><summary>Data Example</summary>
-
-	* [configs/map-decals/decals.cfg](addons/sourcemod/configs/map-decals/decals.cfg)
-		> Manual in this file, click for more details...
-</details>
-
 * <details><summary>How do I add a new decal</summary>
 
+	> Take L4D1, L4D2 for example
 	1. Preparation of vmt/vtf files
 		* Tool - [VTFEdit](https://nemstools.github.io/pages/VTFLib-Download.html)
 		* Valve Developer Community - [Decals](http://developer.valvesoftware.com/wiki/Decals)
@@ -127,19 +131,14 @@ Allows admins to place any decals into the map that are defined in the the confi
 		* The decals will be saved to configs/map-decals/maps/XXXXXX.cfg (XXXXXX is map name)
 		* Restart map to see if the Decal is already on the wall
 	
-	6. Players should download custom vtf/vmt files when connecting to your server
+	6. Players download custom vtf/vmt files when connecting to your server (They need to set Options-> Multiplayer -> CUSTOM SERVER CONTENT -> Allow All)
 		<br/>![map-decals_4](image/map-decals_4.jpg)
 </details>
 
-* <details><summary>Translation Support | 支援翻譯</summary>
-
+* Translation Support | 支援翻譯
 	```
-	English
-	繁體中文
-	简体中文
-	Russian
+	translations/map-decals.phrases.txt
 	```
-</details>
 
 * <details><summary>Changelog | 版本日誌</summary>
 
@@ -158,7 +157,6 @@ Allows admins to place any decals into the map that are defined in the the confi
 
 * 原理
     * 在地圖的牆壁上放置海報並儲存，所有玩家都能看到
-	* 🟥 需[自備網空且支援FastDL](https://developer.valvesoftware.com/wiki/Zh/FastDL)，上傳vmt/vtf文件，客戶端才能下載檔案 (不知道什麼是FastDL請自行Google)
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
@@ -219,6 +217,7 @@ Allows admins to place any decals into the map that are defined in the the confi
 
 * <details><summary>如何添加新塗鴉</summary>
 
+	> 以L4D1與L4D2為例，其他遊戲自行摸索
 	1. 準備vmt/vtf文件
 		* 工具 - [VTFEdit](https://nemstools.github.io/pages/VTFLib-Download.html)
 		* Valve 開發者社區 - [塗鴉](http://developer.valvesoftware.com/wiki/Decals)
@@ -269,6 +268,6 @@ Allows admins to place any decals into the map that are defined in the the confi
 		* 保存配置位於 ```configs/map-decals/maps/XXXXXX.cfg``` (XXXXXX 是地圖名)
 		* 重啟地圖，查看塗鴉是否已經在牆壁上
 
-	6. 玩家加入伺服器時，會自動下載自製的vmt/vtf文件
+	6. 玩家加入伺服器時，會自動下載自製的vmt/vtf文件 (玩家必須自己打開選項->多人連線->自訂伺服器內容->全部允許)
 		<br/>![map-decals_4](image/map-decals_4.jpg)
 </details>
