@@ -1,10 +1,6 @@
 # Description | 內容
 Fixes shooting/bullet displacement by 1 tick problems so you can accurately hit by moving.
 
-* Video | 影片展示
-    1. [Huge CS:GO hitreg bug](https://www.youtube.com/watch?v=VPT0-CKODNc)
-    2. [One bug from all valve games](https://www.youtube.com/watch?v=pr4EZ06mrpQ)
-
 * Apply to | 適用於
     ```
     Counter-Strike: Source
@@ -19,6 +15,10 @@ Fixes shooting/bullet displacement by 1 tick problems so you can accurately hit 
     Insurgency
     No More Room in Hell
     ```
+
+* Video | 影片展示
+    1. [Huge CS:GO hitreg bug](https://www.youtube.com/watch?v=VPT0-CKODNc)
+    2. [One bug from all valve games](https://www.youtube.com/watch?v=pr4EZ06mrpQ)
 
 * Require | 必要安裝
 <br/>None

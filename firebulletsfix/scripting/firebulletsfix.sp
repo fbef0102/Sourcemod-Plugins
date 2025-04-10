@@ -46,8 +46,7 @@ public void OnPluginStart()
     if (offset == -1)
         SetFailState("[FireBullets Fix] failed to find offset");
 
-    LogMessage("Found offset for Weapon_ShootPosition %d", offset);
-
+    //LogMessage("Found offset for Weapon_ShootPosition %d", offset);
 
     StartPrepSDKCall(SDKCall_Player);
 
