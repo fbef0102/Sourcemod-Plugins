@@ -1,15 +1,15 @@
 # Description | 內容
 Translate chat message via Google API
 
-* Image | 圖示
-    <br/>![sm_translator_1](image/sm_translator_1.jpg)
-    <br/>![sm_translator_2](image/sm_translator_2.jpg)
-    <br/>![sm_translator_3](image/sm_translator_3.jpg)
-
 * Apply to | 適用於
 	```
 	Any Source Game
 	```
+
+* Image | 圖示
+    <br/>![sm_translator_1](image/sm_translator_1.jpg)
+    <br/>![sm_translator_2](image/sm_translator_2.jpg)
+    <br/>![sm_translator_3](image/sm_translator_3.jpg)
 
 * <details><summary>How does it work?</summary>
 

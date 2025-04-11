@@ -39,7 +39,6 @@ enum struct HelpMenu {
 ConVar
 	  g_cvarWelcome
 	, g_cvarAdmins
-	, g_cvarRotation
 	, g_cvarReload
 	, g_cvarConfigPath
 	, g_cvarSteamGroup
@@ -47,10 +46,6 @@ ConVar
 
 // Help menus
 ArrayList g_helpMenus;
-
-// Map cache
-ArrayList g_mapArray;
-int g_mapSerial = -1;
 
 // Config parsing
 int g_configLevel = -1;
@@ -85,7 +80,6 @@ public void OnPluginStart()
 	CreateConVar("sm_helpmenu_version", PLUGIN_VERSION, "Help menu version", FCVAR_SPONLY|FCVAR_DONTRECORD|FCVAR_NOTIFY).SetString(PLUGIN_VERSION);
 	g_cvarWelcome = CreateConVar("sm_helpmenu_welcome", "1", "Show welcome message and help menu to newly connected users.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_cvarAdmins = CreateConVar("sm_helpmenu_admins", "1", "Show a list of online admins in the menu.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	g_cvarRotation = CreateConVar("sm_helpmenu_rotation", "0", "Shows the map rotation in the menu.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_cvarReload = CreateConVar("sm_helpmenu_autoreload", "1", "Automatically reload the configuration file when changing the map.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	g_cvarConfigPath = CreateConVar("sm_helpmenu_config_path", "configs/helpmenu.cfg", "Path to configuration file.");
 	g_cvarSteamGroup = CreateConVar("sm_helpmenu_steam_group", "1", "Show 'Join our steam group' item in the menu.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
@@ -105,7 +99,6 @@ public void OnPluginStart()
 	RegConsoleCmd("sm_helpon", Command_HelpMenuOn, "Enable the help menu next time.");
 	RegAdminCmd("sm_helpmenu_reload", Command_HelpMenuReload, ADMFLAG_ROOT, "Reload the help menu configuration file");
 
-	g_mapArray = new ArrayList(ByteCountToCells(80));
 	g_helpMenus = new ArrayList(sizeof(HelpMenu));
 
 	char hc[PLATFORM_MAX_PATH];
@@ -373,10 +366,6 @@ void Help_ShowMainMenu(int client) {
 		menu.AddItem(menuid, Info);
 	}
 
-	if (g_cvarRotation.BoolValue) {
-		FormatEx(Info, sizeof(Info), "%T","Map Rotation", client);
-		menu.AddItem("maplist", Info);
-	}
 	if (g_cvarAdmins.BoolValue) {
 		FormatEx(Info, sizeof(Info), "%T","List Online Admins", client);
 		menu.AddItem("admins", Info);
@@ -437,91 +426,72 @@ int Help_MainMenuHandler(Menu menu, MenuAction action, int param1, int param2) {
 			}
 
 			int msize = g_helpMenus.Length;
-			if (param2 == msize) { // Maps
-				Menu mapMenu = new Menu(Help_MenuHandler);
-				mapMenu.ExitBackButton = true;
-				ReadMapList(g_mapArray, g_mapSerial, "default");
-				FormatEx(buf, sizeof(buf), "%T\n", "Current Rotation", param1, g_helpMenus.Length);
-				mapMenu.SetTitle(buf);
-
-				if (g_mapArray != null) {
-					int mapct = g_mapArray.Length;
-					static char mapname[64];
-					for (int i = 0; i < mapct; ++i) {
-						g_mapArray.GetString(i, mapname, sizeof(mapname));
-						mapMenu.AddItem(mapname, mapname, ITEMDRAW_DISABLED);
-					}
+			if (param2 <= msize) {
+				HelpMenu hmenu;
+				g_helpMenus.GetArray(param2, hmenu);
+				char mtitle[512];
+				if(TranslationPhraseExists(hmenu.title))
+				{
+					FormatEx(mtitle, sizeof(mtitle), "%T\n ", hmenu.title, param1);
 				}
-				mapMenu.Display(param1, MENU_TIME_FOREVER);
-			}
-			else { // Menu from config file
-				if (param2 <= msize) {
-					HelpMenu hmenu;
-					g_helpMenus.GetArray(param2, hmenu);
-					char mtitle[512];
-					if(TranslationPhraseExists(hmenu.title))
-					{
-						FormatEx(mtitle, sizeof(mtitle), "%T\n ", hmenu.title, param1);
-					}
-					else
-					{
-						FormatEx(mtitle, sizeof(mtitle), "%s\n ", hmenu.title);
-					}
-					if (hmenu.type == HelpMenuType_Text) {
-						Menu menu2 = new Menu(Help_MenuHandler);
-						menu2.SetTitle(mtitle);
-						char text[128];
-						char junk[128];
+				else
+				{
+					FormatEx(mtitle, sizeof(mtitle), "%s\n ", hmenu.title);
+				}
+				if (hmenu.type == HelpMenuType_Text) {
+					Menu menu2 = new Menu(Help_MenuHandler);
+					menu2.SetTitle(mtitle);
+					char text[128];
+					char junk[128];
 
-						int count = hmenu.itemCount;
-						for (int i = 0; i < count; ++i) {
-							hmenu.items.ReadString(junk, sizeof(junk));
-							hmenu.items.ReadString(text, sizeof(text));
-							if(TranslationPhraseExists(text))
-							{
-								FormatEx(buf, sizeof(buf), "%T", text, param1);
-								menu2.AddItem("",buf);
-							}
-							else
-							{
-								menu2.AddItem("",text);
-							}
+					int count = hmenu.itemCount;
+					for (int i = 0; i < count; ++i) {
+						hmenu.items.ReadString(junk, sizeof(junk));
+						hmenu.items.ReadString(text, sizeof(text));
+						if(TranslationPhraseExists(text))
+						{
+							FormatEx(buf, sizeof(buf), "%T", text, param1);
+							menu2.AddItem("",buf);
 						}
-
-						menu2.ExitBackButton = true;
-						menu2.Display(param1, MENU_TIME_FOREVER);
-						hmenu.items.Reset();
-					}
-					else {
-						Menu cmenu = new Menu(Help_CustomMenuHandler);
-						cmenu.ExitBackButton = true;
-						cmenu.SetTitle(mtitle);
-						char cmd[128];
-						char desc[128];
-
-						int count = hmenu.itemCount;
-						for (int i = 0; i < count; ++i) {
-							hmenu.items.ReadString(cmd, sizeof(cmd));
-							hmenu.items.ReadString(desc, sizeof(desc));
-							int drawstyle = ITEMDRAW_DEFAULT;
-							if (strlen(cmd) == 0) {
-								drawstyle = ITEMDRAW_DISABLED;
-							}
-							if(TranslationPhraseExists(cmd))
-							{
-								FormatEx(buf, sizeof(buf), "%T", cmd, param1);
-								cmenu.AddItem(cmd, buf, drawstyle);
-							}
-							else
-							{
-								//PrintToChatAll("here2: cmd - %s, desc - %s", cmd, desc);
-								cmenu.AddItem(cmd, desc, drawstyle);
-							}
+						else
+						{
+							menu2.AddItem("",text);
 						}
-
-						hmenu.items.Reset();
-						cmenu.Display(param1, MENU_TIME_FOREVER);
 					}
+
+					menu2.ExitBackButton = true;
+					menu2.Display(param1, MENU_TIME_FOREVER);
+					hmenu.items.Reset();
+				}
+				else {
+					Menu cmenu = new Menu(Help_CustomMenuHandler);
+					cmenu.ExitBackButton = true;
+					cmenu.SetTitle(mtitle);
+					char cmd[128];
+					char desc[128];
+
+					int count = hmenu.itemCount;
+					for (int i = 0; i < count; ++i) {
+						hmenu.items.ReadString(cmd, sizeof(cmd));
+						hmenu.items.ReadString(desc, sizeof(desc));
+						int drawstyle = ITEMDRAW_DEFAULT;
+						if (strlen(cmd) == 0) {
+							drawstyle = ITEMDRAW_DISABLED;
+						}
+						if(TranslationPhraseExists(cmd))
+						{
+							FormatEx(buf, sizeof(buf), "%T", cmd, param1);
+							cmenu.AddItem(cmd, buf, drawstyle);
+						}
+						else
+						{
+							//PrintToChatAll("here2: cmd - %s, desc - %s", cmd, desc);
+							cmenu.AddItem(cmd, desc, drawstyle);
+						}
+					}
+
+					hmenu.items.Reset();
+					cmenu.Display(param1, MENU_TIME_FOREVER);
 				}
 			}
 		}

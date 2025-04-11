@@ -1,8 +1,10 @@
 # Description | 內容
 In-game Help Menu (Support Translation)
 
-* Video | 影片展示
-<br/>None
+* Apply to | 適用於
+    ```
+    Any Source Game
+    ```
 
 * Image
 	* Help menu
@@ -86,9 +88,6 @@ In-game Help Menu (Support Translation)
 		// Show 'Don't display again' and 'Display again next time' item in the menu.
 		sm_helpmenu_do_not_display "1"
 
-		// Shows the map rotation in the menu.
-		sm_helpmenu_rotation "0"
-
 		// Show 'Join our steam group' item in the menu.
 		sm_helpmenu_steam_group "1"
 
@@ -126,21 +125,10 @@ In-game Help Menu (Support Translation)
 		```
 </details>
 
-* Apply to | 適用於
+* Translation Support | 支援翻譯
 	```
-	L4D1
-	L4D2
+	translations/helpmenu.phrases.txt
 	```
-
-* <details><summary>Translation Support | 支援翻譯</summary>
-
-	```
-	English
-	繁體中文
-	简体中文
-	Russian
-	```
-</details>
 
 * <details><summary>Related Plugin | 相關插件</summary>
 
@@ -172,10 +160,29 @@ In-game Help Menu (Support Translation)
 	* 玩家進來伺服器的時後自動顯示或者玩家自己輸入選單
 	* 選單內容可以自訂新增或修改，是用來幫助玩家更快速瞭解你的伺服器有什麼內容與玩法
 
-* 功能
-	1. 顯示在線管理員
-	2. 顯示steam群組
-	3. 顯示可使用的指令列表
+* <details><summary>指令中文介紹 (點我展開)</summary>
+
+	* cfg/sourcemod/helpmenu.cfg
+		```php
+		// 為1時，選單顯示 "在線管理員"
+		sm_helpmenu_admins "1"
+
+		// 為1時，換圖時重新載入文件
+		sm_helpmenu_autoreload "1"
+
+		// 文件路徑
+		sm_helpmenu_config_path "configs/helpmenu.cfg"
+
+		// 為1時，選單顯示 "不要再顯示" 和 "下次繼續顯示"
+		sm_helpmenu_do_not_display "1"
+
+		// 為1時，選單顯示 "加入我們的steam群組"
+		sm_helpmenu_steam_group "1"
+
+		// 為1時，新玩家連線至伺服器時顯示選單與提示
+		sm_helpmenu_welcome "1"
+		```
+</details>
 
 * <details><summary>文件設定 範例</summary>
 

@@ -1,15 +1,15 @@
 # Description | 內容
 Kicks out clients who are potentially attempting to enable mathack
 
-* Image | 圖示
-    * Kick player using cheat cvars (踢出試圖使用作弊指令的玩家)
-    <br/>![smd_texture_manager_block_1](image/smd_texture_manager_block_1.jpg)
-    <br/>![smd_texture_manager_block_2](image/smd_texture_manager_block_2.jpg)
-
 * Apply to | 適用於
     ```
     Any Source Game
     ```
+
+* Image | 圖示
+    * Kick player using cheat cvars (踢出試圖使用作弊指令的玩家)
+    <br/>![smd_texture_manager_block_1](image/smd_texture_manager_block_1.jpg)
+    <br/>![smd_texture_manager_block_2](image/smd_texture_manager_block_2.jpg)
 
 * <details><summary>How does it work?</summary>
 

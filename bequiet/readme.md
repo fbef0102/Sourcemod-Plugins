@@ -1,13 +1,13 @@
 # Description | 內容
 Please be Quiet! Block unnecessary chat or announcement
 
-* Image | 圖示
-    <br/>![bequiet_1](image/bequiet_1.jpg)
-    
 * Apply to | 適用於
 	```
 	Any Source Game
 	```
+
+* Image | 圖示
+    <br/>![bequiet_1](image/bequiet_1.jpg)
 
 * <details><summary>How does it work?</summary>
 

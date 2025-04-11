@@ -1,14 +1,14 @@
 # Description | 內容
 Admin say !restartmap to restart current map
 
-* Image | 圖示
-	* Count down message (倒數計時)
-	<br/>![smd_restartmap_command_1](image/smd_restartmap_command_1.jpg)
-
 * Apply to | 適用於
 	```
 	Any Source Game
 	```
+
+* Image | 圖示
+	* Count down message (倒數計時)
+	<br/>![smd_restartmap_command_1](image/smd_restartmap_command_1.jpg)
 
 * <details><summary>How does it work?</summary>
 

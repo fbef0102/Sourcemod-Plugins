@@ -2,13 +2,13 @@
 # Description | 內容
 Player can drop knife and HE Grenade, Smoke Grenade, Flash Bang
 
-* Image | 圖示
-    <br/>![css_drop_weapon_1](image/css_drop_weapon_1.gif)
-
 * Apply to | 適用於
 	```
 	Counter-Strike: Source
 	```
+
+* Image | 圖示
+    <br/>![css_drop_weapon_1](image/css_drop_weapon_1.gif)
 
 * <details><summary>How does it work?</summary>
 
@@ -37,11 +37,6 @@ Player can drop knife and HE Grenade, Smoke Grenade, Flash Bang
         // If 1, allow player to drop smoke grenades
         css_drop_weapon_drop_smokegrenade "1"
 		```
-</details>
-
-* <details><summary>Command | 命令</summary>
-
-	None
 </details>
 
 * <details><summary>Changelog | 版本日誌</summary>

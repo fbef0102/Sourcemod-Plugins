@@ -1,15 +1,15 @@
 # Description | 內容
 Gag & Mute & Ban - Ex
 
-* Image
-	* !admin -> Ban/Mute/Gag-Ex
-    <br/>![GagMuteBanEx_1](image/GagMuteBanEx_1.jpg)
-    <br/>![GagMuteBanEx_2](image/GagMuteBanEx_2.jpg)
-
 * Apply to | 適用於
 	```
 	Any Source Game
 	```
+
+* Image
+	* !admin -> Ban/Mute/Gag-Ex
+    <br/>![GagMuteBanEx_1](image/GagMuteBanEx_1.jpg)
+    <br/>![GagMuteBanEx_2](image/GagMuteBanEx_2.jpg)
 
 * <details><summary>How does it work?</summary>
 

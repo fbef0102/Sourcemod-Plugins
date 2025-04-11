@@ -2,13 +2,13 @@
 # Description | 內容
 Display health, stamina, speed, infected status, ammo on hud
 
-* Image | 圖示
-    <br/>![nmrih_HUD_1](image/nmrih_HUD_1.jpg)
-
 * Apply to | 適用於
     ```
     No More Room in Hell
     ```
+
+* Image | 圖示
+    <br/>![nmrih_HUD_1](image/nmrih_HUD_1.jpg)
     
 * <details><summary>How does it work?</summary>
 

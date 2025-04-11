@@ -5,13 +5,13 @@ Replacement of default player connection message, allows for custom connection m
 <br/>🟥Dedicated Server Only
 <br/>🟥只能安裝在Dedicated Server
 
-* Image | 圖示
-	<br/>![cannounce_1](image/cannounce_1.jpg)
-
 * Apply to | 適用於
 	```
 	Any Source Game Dedicated Server
 	```
+
+* Image | 圖示
+	<br/>![cannounce_1](image/cannounce_1.jpg)
 
 * <details><summary>How does it work?</summary>
 

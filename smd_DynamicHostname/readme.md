@@ -1,17 +1,14 @@
 # Description | 內容
 Server name with txt file (Support any language)
 
-* Video | 影片展示
-<br/>None
-
-* Image | 圖示
-    * Dynamic Host Name (Support any language) - 可以有中文房名
-    <br/>![smd_DynamicHostname_1](image/smd_DynamicHostname_1.jpg)
-
 * Apply to | 適用於
     ```
     Any Source Game
     ```
+
+* Image | 圖示
+    * Dynamic Host Name (Support any language) - 可以有中文房名
+    <br/>![smd_DynamicHostname_1](image/smd_DynamicHostname_1.jpg)
 
 * <details><summary>How does it work?</summary>
 

@@ -31,11 +31,6 @@ Records player chat messages and commands to a file
         ```
 </details>
 
-* <details><summary>Command | 命令</summary>
-
-    None
-</details>
-
 * <details><summary>Changelog | 版本日誌</summary>
 
     * v1.2 (2024-4-7)

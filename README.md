@@ -58,6 +58,8 @@ If you want any modify or request, free to use or pay me money to do it.
     * 修復子彈擊中與伺服器運算相差 1 tick的延遲
 * <b>[sm_downloader](/sm_downloader)</b>: SM File/Folder Downloader and Precacher
     * SM 文件下載器 (玩家連線伺服器的時候能下載自製的檔案)
+* <b>[smd_spritetrail_fix](/smd_spritetrail_fix)</b>: Fixes the invisible env_spritetrail entity
+    * 修復Source引擎的bug，看不見env_spritetrail物件的發光效果
 
 # CSS-Plugins
 > Apply to Counter-Strike: Source

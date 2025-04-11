@@ -1,13 +1,13 @@
 # Description | 內容
 Teleport an alive player in game
 
-* Image | 圖示
-<br/>![css_teleport_player_1](image/css_teleport_player_1.gif)
-
 * Apply to | 適用於
 	```
 	Counter-Strike: Source
 	```
+
+* Image | 圖示
+<br/>![css_teleport_player_1](image/css_teleport_player_1.gif)
 
 * <details><summary>How does it work?</summary>
 

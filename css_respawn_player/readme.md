@@ -1,13 +1,13 @@
 # Description | 內容
 Allows players to be respawned at one's crosshair.
 
-* Image | 圖示
-<br/>![css_respawn_player_1](image/css_respawn_player_1.gif)
-
 * Apply to | 適用於
 	```
 	Counter-Strike: Source
 	```
+
+* Image | 圖示
+<br/>![css_respawn_player_1](image/css_respawn_player_1.gif)
 
 * <details><summary>How does it work?</summary>
 

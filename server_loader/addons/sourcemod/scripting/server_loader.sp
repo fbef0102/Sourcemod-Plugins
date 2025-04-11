@@ -5,7 +5,7 @@
 
 public Plugin myinfo = 
 {
-	name		= "Server Loader (l4d1/2)",
+	name		= "[Any] Server Loader",
 	author		= "HarryPotter",
 	description	= "executes cfg file on server startup",
 	version		= PLUGIN_VERSION,
@@ -14,29 +14,32 @@ public Plugin myinfo =
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
 {
-    EngineVersion test = GetEngineVersion();
+	EngineVersion test = GetEngineVersion();
 
-    if( test != Engine_Left4Dead2 && test != Engine_Left4Dead)
-    {
-        strcopy(error, err_max, "Plugin only supports Left 4 Dead 1 & 2.");
-        return APLRes_SilentFailure;
-    }
+	if( test == Engine_Left4Dead2 || test == Engine_Left4Dead)
+	{
+		return APLRes_SilentFailure;
+	}
 
-    return APLRes_Success;
+	return APLRes_Success;
 }
 
+ConVar sv_hibernate_when_empty;
 ConVar cvarLoaderCfg;
 int serverLoaderCounter = 0;
 
 public void OnPluginStart()
 {	
 	cvarLoaderCfg = CreateConVar("server_loader", "server_startup.cfg", "Config that gets executed on server start. (Empty=Disable)");
-	FindConVar("sv_hibernate_when_empty").SetInt(false);
+	sv_hibernate_when_empty = FindConVar("sv_hibernate_when_empty");
+	
+	if(sv_hibernate_when_empty != null)
+		sv_hibernate_when_empty.SetInt(false);
 	
 	CreateTimer(5.0, execConfig, TIMER_FLAG_NO_MAPCHANGE);
 }
 
-public Action execConfig(Handle timer)
+Action execConfig(Handle timer)
 {
 	if (serverLoaderCounter < 1)
 	{

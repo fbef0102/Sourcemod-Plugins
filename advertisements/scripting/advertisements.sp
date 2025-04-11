@@ -1,15 +1,13 @@
 #include <sourcemod>
 #include <sdktools>
 #include <multicolors>
-#undef REQUIRE_PLUGIN
-//#include <updater>
 #include "advertisements/chatcolors.sp"
 #include "advertisements/topcolors.sp"
 
 #pragma newdecls required
 #pragma semicolon 1
 
-#define PL_VERSION	"2.2.1"
+#define PL_VERSION	"1.0h-2025/4/11"
 #define UPDATE_URL	"http://ErikMinekus.github.io/sm-advertisements/update.txt"
 
 public Plugin myinfo =
@@ -18,13 +16,9 @@ public Plugin myinfo =
     author      = "Tsunami & HarryPotter",
     description = "Display advertisements",
     version     = PL_VERSION,
-    url         = "http://www.tsunami-productions.nl"
+    url         = "https://forums.alliedmods.net/showthread.php?t=155705"
 };
 
-
-/**
- * Globals
- */
 KeyValues g_hAdvertisements;
 ConVar g_hEnabled;
 ConVar g_hFile;
@@ -33,9 +27,6 @@ ConVar g_hSoundFile;
 Handle g_hTimer;
 char g_sCvarSoundFile[PLATFORM_MAX_PATH];
 
-/**
- * Plugin Forwards
- */
 public void OnPluginStart()
 {
     CreateConVar("sm_advertisements_version", PL_VERSION, "Display advertisements Version", FCVAR_NOTIFY|FCVAR_DONTRECORD|FCVAR_SPONLY);
@@ -51,10 +42,6 @@ public void OnPluginStart()
 
     AddChatColors();
     AddTopColors();
-
-    //if (LibraryExists("updater")) {
-    //    Updater_AddPlugin(UPDATE_URL);
-    //}
 
     g_hTimer = CreateTimer(float(g_hInterval.IntValue), Timer_DisplayAd, _, TIMER_REPEAT);
 
@@ -74,48 +61,29 @@ public void OnConfigsExecuted()
     g_hSoundFile.GetString(g_sCvarSoundFile, sizeof(g_sCvarSoundFile));
     if (strlen(g_sCvarSoundFile) > 0) PrecacheSound(g_sCvarSoundFile);
 }
-/*
-public void OnLibraryAdded(const char[] name)
-{
-    if (StrEqual(name, "updater")) {
-        Updater_AddPlugin(UPDATE_URL);
-    }
-}
-*/
 
-public void ConVarChange_File(ConVar convar, const char[] oldValue, const char[] newValue)
+void ConVarChange_File(ConVar convar, const char[] oldValue, const char[] newValue)
 {
     ParseAds();
 }
 
-public void ConVarChange_Interval(ConVar convar, const char[] oldValue, const char[] newValue)
+void ConVarChange_Interval(ConVar convar, const char[] oldValue, const char[] newValue)
 {
     RestartTimer();
 }
 
-
-/**
- * Commands
- */
-public Action Command_ReloadAds(int args)
+Action Command_ReloadAds(int args)
 {
     ParseAds();
     return Plugin_Handled;
 }
 
-
-/**
- * Menu Handlers
- */
-public int Handler_DoNothing(Menu menu, MenuAction action, int param1, int param2) { return 0; }
+int Handler_DoNothing(Menu menu, MenuAction action, int param1, int param2) { return 0; }
 
 
-/**
- * Timers
- */
-public Action Timer_DisplayAd(Handle timer)
+Action Timer_DisplayAd(Handle timer)
 {
-    if (!g_hEnabled.BoolValue) {
+    if (!g_hEnabled.BoolValue || g_hAdvertisements == null) {
         return Plugin_Continue;
     }
 
@@ -218,7 +186,7 @@ public Action Timer_DisplayAd(Handle timer)
     return Plugin_Continue;
 }
 
-public Action Timer_CenterAd(Handle timer, DataPack pack)
+Action Timer_CenterAd(Handle timer, DataPack pack)
 {
     char sCenter[1024];
     static int iCount = 0;

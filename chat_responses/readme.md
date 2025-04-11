@@ -1,13 +1,13 @@
 # Description | 內容
 Displays chat advertisements when specified text is said in player chat.
 
-* Image | 圖示
-    <br/>![chat_responses_1](image/chat_responses_1.jpg)
-
 * Apply to | 適用於
 	```
 	Any Source Game
 	```
+
+* Image | 圖示
+    <br/>![chat_responses_1](image/chat_responses_1.jpg)
 
 * <details><summary>How does it work?</summary>
 

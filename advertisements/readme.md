@@ -1,14 +1,14 @@
 # Description | 內容
 Display advertisements
 
-* Image | 圖示
-	* Display advertisements in chat box (顯示公告)
-    <br/>![advertisements_1](image/advertisements_1.jpg)
-
 * Apply to | 適用於
 	```
 	Any Source Game
 	```
+
+* Image | 圖示
+	* Display advertisements in chat box (顯示公告)
+    <br/>![advertisements_1](image/advertisements_1.jpg)
 
 * Require | 必要安裝
     1. [[INC] Multi Colors](https://github.com/fbef0102/L4D1_2-Plugins/releases/tag/Multi-Colors)
@@ -47,10 +47,10 @@ Display advertisements
 
 * <details><summary>Changelog | 版本日誌</summary>
 
-	```php
-	//DJ Tsunami @ 2008-2021
-	//HarryPotter @ 2022-2023
-	```
+	* v1.0h (2025-4-11)
+		* Fixed error
+		* Optimize code
+
 	* v2.2.1 (2023-4-22)
 		* Remake Code
 		* Remove updater

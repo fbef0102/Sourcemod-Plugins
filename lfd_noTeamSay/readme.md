@@ -1,10 +1,6 @@
 # Description | 內容
 Redirecting all 'say_team' messages to 'say'
 
-* Image | 圖示
-	* No team chat ( 團隊聊天 變成 公開聊天)
-	<br/>![lfd_noTeamSay_1](image/lfd_noTeamSay_1.jpg)
-
 * Apply to | 適用於
 	```
 	L4D1
@@ -12,6 +8,10 @@ Redirecting all 'say_team' messages to 'say'
 	CSS
 	Team Fortress 2
 	```
+
+* Image | 圖示
+	* No team chat ( 團隊聊天 變成 公開聊天)
+	<br/>![lfd_noTeamSay_1](image/lfd_noTeamSay_1.jpg)
 
 * Require | 必要安裝
 <br/>None
