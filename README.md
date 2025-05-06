@@ -1,18 +1,17 @@
-# Sourcemod-Plugins by Harry Potter
-Plugins for most source engine games. Make server more fun, and more useful plugins for adm.
-
 # Appreciate my work, you can [PayPal Donate](https://paypal.me/Harry0215?locale.x=zh_TW) me.
 If you want any modify or request, free to use or pay me money to do it.
 # Require
 * [Sourcemod 1.11](https://www.sourcemod.net/downloads.php?branch=1.11-dev) (or newer)
 * [Metamod 1.11](https://www.sourcemm.net/downloads.php?branch=1.11-dev) (or newer)
 
-**[>>Click here to see my private plugin list<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**<br/>
-**[>>點擊我查看更多私人插件<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**
-
 # Source-Plugins
+Plugins for most source engine games. Make server more fun, and more useful plugins for adm.
 > Apply to most source engine games
-> <br/>適用於大部份的Source引擎遊戲
+> <br/> If you have any modify or request, feel free to use or pay me money to do it. 
+> <br/> **[>>Click here to see my private plugin list<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**
+> <br/> 適用於大部份的Source引擎遊戲
+> <br/> 歡迎自由使用，可以自行更改源碼。亦或付費請求修改。
+> <br/> **[>>點擊我查看更多私人插件<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**
 
 * <b>[smd_DynamicHostname](/smd_DynamicHostname)</b>: Server name with txt file (Support any language)
     * 伺服器房名可以寫中文的插件
@@ -85,8 +84,14 @@ If you want any modify or request, free to use or pay me money to do it.
 
 # Scripting Compiler
 * [sourcemod v1.11 compiler](https://www.sourcemod.net/downloads.php?branch=1.11-dev): scripting folder
+    * 使用 sourcemod v1.11 的編譯環境
+* SourceMod is licensed under the [GNU General Public License, version 3](https://www.sourcemod.net/license.php).
+    * 此專案內所有開源碼皆在授權條款下: [GNU General Public License, version 3](https://www.sourcemod.net/license.php)
 
 # Others
 * <b>[L4D1_2-Plugins](https://github.com/fbef0102/L4D1_2-Plugins)</b>: L4D1/2 general purpose and freaky-fun plugins.
+    * 適用於L4D1與L4D2的插件列表
 * <b>[Sourcemod-Server](https://github.com/fbef0102/Sourcemod-Server)</b>: Setup your own sourcemod servers.
+    * 架設遊戲伺服器
 * <b>[Game-Private_Plugin](https://github.com/fbef0102/Game-Private_Plugin)</b>: Private Plugin List.
+    * 私人插件列表
