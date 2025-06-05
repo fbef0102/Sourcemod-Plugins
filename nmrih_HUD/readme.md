@@ -45,14 +45,10 @@ Display health, stamina, speed, infected status, ammo on hud
         ```
 </details>
 
-* <details><summary>Translation Support | 支援翻譯</summary>
-
-    ```
-    English
-    繁體中文
-    简体中文
-    ```
-</details>
+* Translation Support | 支援翻譯
+	```
+	translations/nmrih_HUD.phrases.txt
+	```
 
 * <details><summary>Changelog | 版本日誌</summary>
 

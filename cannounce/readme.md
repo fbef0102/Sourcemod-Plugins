@@ -63,25 +63,16 @@ Replacement of default player connection message, allows for custom connection m
 		```
 </details>
 
-* <details><summary>Command | 命令</summary>
-
-	None
-</details>
-
 * <details><summary>Data Example</summary>
 
 	* [data/cannounce_settings.txt](data/cannounce_settings.txt)
 		> Manual in this file, click for more details...
 </details>
 
-* <details><summary>Translation Support | 支援翻譯</summary>
-
+* Translation Support | 支援翻譯
 	```
-	English
-	繁體中文
-	简体中文
+	translations/cannounce.phrases.txt
 	```
-</details>
 
 * <details><summary>Similar Plugin | 相似插件</summary>
 

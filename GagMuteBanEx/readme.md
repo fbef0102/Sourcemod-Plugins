@@ -123,15 +123,10 @@ Gag & Mute & Ban - Ex
         * If the above cvars didn't work, modify file [data/gagmutebanex.txt](data/gagmutebanex.txt) => Search Player's Steam64 ID => delete => save file => restart server
 </details>
 
-* <details><summary>Translation Support | 支援翻譯</summary>
-
+* Translation Support | 支援翻譯
 	```
-	English
-	繁體中文
-	简体中文
-	Russian
+	translations/GagMuteBanEx.phrases.txt
 	```
-</details>
 
 * <details><summary>Changelog | 版本日誌</summary>
 
