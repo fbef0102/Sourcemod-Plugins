@@ -64,13 +64,13 @@ void OnPostAdminCheck_CountryShow(int client)
 		//if sm_ca_showenhancedadmins - show diff messages to admins
 		if( g_CvarShowEnhancedToAdmins.BoolValue )
 		{
-			PrintFormattedMessageToAdmins( rawadmmsg, client );
-			PrintFormattedMsgToNonAdmins( rawmsg, client );
+			PrintFormattedMessageToAdmins( rawadmmsg, client, true );
+			PrintFormattedMsgToNonAdmins( rawmsg, client, true );
 			PrintMsgToSourceTV( client, true );
 		}
 		else
 		{
-			PrintFormattedMessageToAll( rawmsg, client );
+			PrintFormattedMessageToAll( rawmsg, client, true );
 			PrintMsgToSourceTV( client, true );
 		}
 	}	
@@ -142,13 +142,13 @@ void event_PlayerDisc_CountryShow(Event event)
 		//if sm_ca_showenhancedadmins - show diff messages to admins
 		if( g_CvarShowEnhancedToAdmins.BoolValue )
 		{
-			PrintFormattedMessageToAdmins( rawadmmsg, client );
-			PrintFormattedMsgToNonAdmins( rawmsg, client );
+			PrintFormattedMessageToAdmins( rawadmmsg, client, false );
+			PrintFormattedMsgToNonAdmins( rawmsg, client, false );
 			PrintMsgToSourceTV( client, false );
 		}
 		else
 		{
-			PrintFormattedMessageToAll( rawmsg, client );
+			PrintFormattedMessageToAll( rawmsg, client, false );
 			PrintMsgToSourceTV( client, false );
 		}
 		

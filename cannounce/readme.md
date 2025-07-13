@@ -31,6 +31,13 @@ Replacement of default player connection message, allows for custom connection m
 		// If 1, Display if player is admin on connect/disconnect message (allows the {PLAYERTYPE} placeholder)
 		sm_ca_display_admin "1"
 
+		// 0=The connected players will not see their own join message
+		// 1=The connected players can see their own join message
+		sm_ca_display_self_con "1"
+
+		// If 1, Only display disconnect message after player is fully in server
+		sm_ca_display_disc_ingame "0"
+
 		// shows standard player connected message
 		sm_ca_showstandard "0"
 
@@ -82,6 +89,9 @@ Replacement of default player connection message, allows for custom connection m
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+	* v2.3 (2025-7-13)
+		* Update cvars
+
 	* v2.2 (2024-12-3)
 	* v2.1 (2024-11-7)
 		* Update cvars
@@ -115,6 +125,13 @@ Replacement of default player connection message, allows for custom connection m
 		```php
 		// 為1時，顯示該玩家是否為管理員 (data文件必須寫入{PLAYERTYPE})
 		sm_ca_display_admin "1"
+
+		// 0=玩家無法看見自己的連線信息
+		// 1=玩家看得見自己的連線信息
+		sm_ca_display_self_con "1"
+
+		// 為1時，只有成功進入伺服器的玩家才顯示其離開遊戲的信息
+		sm_ca_display_disc_ingame "0"
 
 		// 為1時，玩家連線進來伺服器時，顯示遊戲內建的訊息
 		sm_ca_showstandard "0"

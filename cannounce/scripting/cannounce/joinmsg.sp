@@ -49,12 +49,12 @@ void SetupJoinMsg()
 	g_CvarPlayDiscSoundFile.AddChangeHook(ConVarChanged_Cvars);
 }
 
-void ConVarChanged_Cvars(ConVar hCvar, const char[] sOldVal, const char[] sNewVal)
+static void ConVarChanged_Cvars(ConVar hCvar, const char[] sOldVal, const char[] sNewVal)
 {
 	GetCvars();
 }
 
-void GetCvars()
+static void GetCvars()
 {
 	g_CvarPlaySoundFile.GetString(g_sCvarPlaySoundFile, sizeof(g_sCvarPlaySoundFile));
 	g_CvarPlayDiscSoundFile.GetString(g_sCvarPlayDiscSoundFile, sizeof(g_sCvarPlayDiscSoundFile));

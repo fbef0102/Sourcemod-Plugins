@@ -32,7 +32,7 @@
 #include <adminmenu>
 #include <multicolors>
 
-#define VERSION "2.2-2024/12/3"
+#define VERSION "2.3-2025/7/13"
 
 /*****************************************************************
 
@@ -44,7 +44,8 @@
 Handle hTopMenu = null;
 char g_filesettings[128];
 
-ConVar g_hCvarDisplayAdmin;
+ConVar g_hCvarDisplayAdmin, g_hCvarDisplaySelfCon, g_hCvarDisplayDiscInGame;
+bool g_bCvarDisplayAdmin, g_bCvarDisplaySelfCon, g_bCvarDisplayDiscInGame;
 /*****************************************************************
 
 
@@ -101,8 +102,16 @@ public void OnPluginStart()
 	
 	CreateConVar("sm_cannounce_version", VERSION, "Connect announce replacement", FCVAR_REPLICATED|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 
-	g_hCvarDisplayAdmin = CreateConVar("sm_ca_display_admin", "1", "If 1, Display if player is admin on connect/disconnect message (allows the {PLAYERTYPE} placeholder)");
-	
+	g_hCvarDisplayAdmin 		= CreateConVar("sm_ca_display_admin", 		"1", "If 1, Display if player is admin on connect/disconnect message (allows the {PLAYERTYPE} placeholder)", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	g_hCvarDisplaySelfCon 		= CreateConVar("sm_ca_display_self_con", 	"1", "0=The connected players will not see their own join message\n1=The connected players can see their own join message", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	g_hCvarDisplayDiscInGame 	= CreateConVar("sm_ca_display_disc_ingame", "0", "If 1, Only display disconnect message after player is fully in server", FCVAR_NOTIFY, true, 0.0, true, 1.0);
+	AutoExecConfig(true,                   "cannounce");
+
+	GetCvars();
+	g_hCvarDisplayAdmin.AddChangeHook(ConVarChanged_Cvars);
+	g_hCvarDisplaySelfCon.AddChangeHook(ConVarChanged_Cvars);
+	g_hCvarDisplayDiscInGame.AddChangeHook(ConVarChanged_Cvars);
+
 	BuildPath(Path_SM, g_filesettings, 128, "data/cannounce_settings.txt");
 	
 	//event hooks
@@ -127,9 +136,20 @@ public void OnPluginStart()
 	{
 		OnAdminMenuReady(topmenu);
 	}
-	
-	//create config file if not exists
-	AutoExecConfig(true, "cannounce");
+}
+
+// Cvars-------------------------------
+
+void ConVarChanged_Cvars(ConVar hCvar, const char[] sOldVal, const char[] sNewVal)
+{
+	GetCvars();
+}
+
+void GetCvars()
+{
+	g_bCvarDisplayAdmin = g_hCvarDisplayAdmin.BoolValue;
+	g_bCvarDisplaySelfCon = g_hCvarDisplaySelfCon.BoolValue;
+	g_bCvarDisplayDiscInGame = g_hCvarDisplayDiscInGame.BoolValue;
 }
 
 public void OnMapStart()
@@ -213,6 +233,8 @@ void event_PlayerDisconnect(Event event, char[] name, bool dontBroadcast)
 	
 	if( client && !IsFakeClient(client) )
 	{
+		if(g_bCvarDisplayDiscInGame && !IsClientInGame(client)) return;
+
 		event_PlayerDisc_CountryShow(event);
 		OnClientDisconnect_Sound();
 	}
@@ -247,7 +269,7 @@ bool IsLanIP( char src[16] )
 	return false;
 }
 
-void PrintFormattedMessageToAll( char rawmsg[301], int client )
+void PrintFormattedMessageToAll( char rawmsg[301], int client, bool bConnect = true )
 {
 	char message[301];
 	
@@ -255,6 +277,7 @@ void PrintFormattedMessageToAll( char rawmsg[301], int client )
 	
 	for (int i = 1; i <= MaxClients; i++)
 	{
+		if(!g_bCvarDisplaySelfCon && bConnect && i == client) continue;
 		if( !IsClientInGame(i) ) continue;
 		if( IsFakeClient(i) )
 		{
@@ -267,7 +290,7 @@ void PrintFormattedMessageToAll( char rawmsg[301], int client )
 	C_LogMessage(message);
 }
 
-void PrintFormattedMessageToAdmins(char rawmsg[301], int client )
+void PrintFormattedMessageToAdmins(char rawmsg[301], int client, bool bConnect = true )
 {
 	char message[301];
 	
@@ -275,6 +298,7 @@ void PrintFormattedMessageToAdmins(char rawmsg[301], int client )
 	
 	for (int i = 1; i <= MaxClients; i++)
 	{
+		if(!g_bCvarDisplaySelfCon && bConnect && i == client) continue;
 		if( !IsClientInGame(i) ) continue;
 		if( IsFakeClient(i) )
 		{
@@ -291,7 +315,7 @@ void PrintFormattedMessageToAdmins(char rawmsg[301], int client )
 	C_LogMessage(message, "MsgToAdmins");
 }
 
-void PrintFormattedMsgToNonAdmins( char rawmsg[301], int client )
+void PrintFormattedMsgToNonAdmins( char rawmsg[301], int client, bool bConnect = true )
 {
 	char message[301];
 	
@@ -299,6 +323,7 @@ void PrintFormattedMsgToNonAdmins( char rawmsg[301], int client )
 	
 	for (int i = 1; i <= MaxClients; i++)
 	{
+		if(!g_bCvarDisplaySelfCon && bConnect && i == client) continue;
 		if( !IsClientInGame(i) ) continue;
 		if( IsFakeClient(i) ) continue;
 		if(CheckCommandAccess( i, "", ADMFLAG_GENERIC, true )) continue;
@@ -498,7 +523,7 @@ void GetFormattedMessage( char rawmsg[301], int client,char[] outbuffer, int out
 			ReplaceString(rawmsg, sizeof(rawmsg), "{PLAYERIP}", ip);
 		}
 		
-		if( StrContains(rawmsg, "{PLAYERTYPE}") != -1 && g_hCvarDisplayAdmin.BoolValue  )
+		if( StrContains(rawmsg, "{PLAYERTYPE}") != -1 && g_bCvarDisplayAdmin  )
 		{
 			aid = GetUserAdmin( client );
 			
