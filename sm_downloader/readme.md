@@ -141,7 +141,7 @@ SM File/Folder Downloader and Precacher
 SM 文件下載器 (玩家連線伺服器的時候能下載自製的檔案)
 
 * 原理
-	* [什麼是自訂伺服器內容?](https://github.com/fbef0102/Game-Private_Plugin/tree/main/Tutorial_%E6%95%99%E5%AD%B8%E5%8D%80/Chinese_%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87/Game#%E4%B8%8B%E8%BC%89%E8%87%AA%E8%A8%82%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%85%A7%E5%AE%B9)
+	* [什麼是自訂伺服器內容?](https://github.com/fbef0102/Game-Private_Plugin/tree/main/Tutorial_教學區/Chinese_繁體中文/Game#%E4%B8%8B%E8%BC%89%E8%87%AA%E8%A8%82%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%85%A7%E5%AE%B9)
 	* 🟥 將你自己的自製檔案(貼圖、音樂、模組等等)準備好，上傳到自己準備的[網空支援Fastdl](https://developer.valvesoftware.com/wiki/Zh/FastDL)，玩家連線的時候會從網空伺服器上下載自製的檔案
 		* 不知道什麼是FastDL請自行Google
 		* 安裝FastDL教學請自行Google

@@ -13,7 +13,7 @@ Fixes the invisible env_spritetrail entity
 * <details><summary>How does it work?</summary>
 
 	* [env_spritetrail](https://developer.valvesoftware.com/wiki/Env_spritetrail) is created and is visible for about 1 second and then disappears. But actually the entity is not removed.
-</Chargedetails>
+</details>
 
 * <details><summary>Changelog | 版本日誌</summary>
 

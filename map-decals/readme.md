@@ -269,5 +269,7 @@ Allows admins to place any decals into the map that are defined in the the confi
 		* 重啟地圖，查看塗鴉是否已經在牆壁上
 
 	6. 玩家加入伺服器時，會自動下載自製的vmt/vtf文件 (玩家必須自己打開選項->多人連線->自訂伺服器內容->全部允許)
+		* 連線時, 控制台會顯示正在下載文件 (L4D1不會顯示)
+		* 可自行檢查遊戲內的資料夾確認文件已下載
 		<br/>![map-decals_4](image/map-decals_4.jpg)
 </details>

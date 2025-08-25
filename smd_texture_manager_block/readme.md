@@ -21,11 +21,6 @@ Kicks out clients who are potentially attempting to enable mathack
 * Require | 必要安裝
     1. [[INC] Multi Colors](https://github.com/fbef0102/L4D1_2-Plugins/releases/tag/Multi-Colors)
 
-* <details><summary>ConVar | 指令</summary>
-
-    None
-</details>
-
 * <details><summary>Command | 命令</summary>
     
     * **(Server) List Client settings enforced by smd_texture_manager_block**

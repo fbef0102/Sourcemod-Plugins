@@ -42,11 +42,6 @@ Server name with txt file (Support any language)
         ```
 </details>
 
-* <details><summary>Command | 命令</summary>
-
-    None
-</details>
-
 * <details><summary>Changelog | 版本日誌</summary>
 
     * v1.0 (2024-4-7)
