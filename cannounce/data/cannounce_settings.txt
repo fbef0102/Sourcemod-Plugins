@@ -44,8 +44,8 @@
 		"playerdisc"		"{default}[{olive}TS{default}] {red}Player {green}{PLAYERNAME} {red}disconnected{default}. ({green}{DISC_REASON}{default})"
 	}
 
-	//管理員會看到的句子
-	//only display message to adm
+	//管理員會看到的句子 (權限: ADMFLAG_GENERIC)
+	//only display message to adm (ADMFLAG_GENERIC)
 	"messages_admin"
 	{
 		"playerjoin"		"{default}[{olive}TS{default}] {blue}Player {green}{PLAYERNAME} {blue}connected{default}. ({green}{PLAYERCOUNTRY}, {PLAYERREGION}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"

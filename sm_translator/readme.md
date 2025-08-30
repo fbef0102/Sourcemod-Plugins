@@ -40,11 +40,13 @@ Translate chat message via Google API
         // 0=Plugin off, 1=Plugin on.
         sm_translator_enable "1"
 
-        // When new player connects, 0=Display menu to ask if player 'yes' or 'no', 1=Auto enable translator for player + Don't display menu
-        sm_translator_default "0"
+        // When new player connects
+        // 0=Display menu to ask if player 'yes' or 'no'
+        // 1=Auto enable translator for all players + Disable menu
+        sm_translator_auto "1"
 
         // If 1, use CookiesCached to save player settings. No need to select 'yes' or 'no' menu if rejoin server next time.
-        sm_translator_save_cookie "0"
+        sm_translator_save_cookie "1"
         ```
 </details>
 
@@ -54,9 +56,17 @@ Translate chat message via Google API
 		```php
 		sm_translator
 		```
+
+	* **Display other players' translations off/on**
+		```php
+		sm_showtranslate
+		```
 </details>
 
 * <details><summary>Changelog | 版本日誌</summary>
+
+    * v1.6h (2025-8-30)
+        * Update cvars, cmds, translation
 
     * v1.5h (2025-1-7)
         * Use cookie to save client setting
@@ -112,11 +122,13 @@ Translate chat message via Google API
         // 1=開啟插件. 0=關閉插件
         sm_translator_enable "1"
 
-        // 當玩家近來伺服器時, 0=彈出選單詢問玩家是否自動翻譯, 1=自動幫玩家翻譯 + 不彈出選單
-        sm_translator_default "0"
+        // 當玩家進來伺服器時
+        // 0=彈出選單詢問玩家是否自動翻譯
+        // 1=自動幫所有玩家翻譯+選單不能使用
+        sm_translator_auto "1"
 
         // 為1時，使用 CookiesCached 儲存玩家設定. 意思是說，下次玩家進服後不需要再顯示選單
-        sm_translator_save_cookie "0"
+        sm_translator_save_cookie "1"
         ```
 </details>
 
@@ -125,5 +137,10 @@ Translate chat message via Google API
 	* **打開選單**
 		```php
 		sm_translator
+		```
+
+	* **開關顯示其他人的翻譯語句**
+		```php
+		sm_showtranslate
 		```
 </details>
