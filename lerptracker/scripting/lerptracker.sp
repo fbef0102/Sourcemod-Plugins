@@ -12,7 +12,7 @@ public Plugin myinfo =
 	name = "LerpTracker",
 	author = "ProdigySim (archer edit) & HarryPotter",
 	description = "Keep track of players' lerp settings",
-	version = "1.1",
+	version = "1.2-2025/9/3",
 	url = "https://bitbucket.org/ProdigySim/misc-sourcemod-plugins"
 };
 
@@ -40,8 +40,6 @@ ConVar cVarMaxLerp;
 
 #define ShouldFixLerp() (hFixLerpValue.BoolValue)
 
-#define ShouldAnnounceLerpChanges() (hAnnounceLerp.BoolValue)
-
 #define DefaultLerpStyle() (hPrintLerpStyle.BoolValue)
 
 #define ShouldLogLerpChanges() (hLogLerp.BoolValue)
@@ -64,7 +62,7 @@ public void OnPluginStart()
 	hMaxInterpRatio	= FindConVar("sv_client_max_interp_ratio");
 
 	hLogLerp 			= CreateConVar("sm_log_lerp", 		"1", 		"Log changes to client lerp. 1=Log initial lerp and changes 2=Log changes only", CVAR_FLAGS);
-	hAnnounceLerp 		= CreateConVar("sm_announce_lerp", 	"1", 		"Announce changes to client lerp. 1=Announce initial lerp and changes 2=Announce changes only", CVAR_FLAGS);
+	hAnnounceLerp 		= CreateConVar("sm_announce_lerp", 	"1", 		"Announce client lerp. 1=Announce lerp and changes eveytime 2=Announce changes only", CVAR_FLAGS);
 	hFixLerpValue 		= CreateConVar("sm_fixlerp", 		"1", 		"Fix Lerp values clamping incorrectly when interp_ratio 0 is allowed", CVAR_FLAGS);
 	hMaxLerpValue 		= CreateConVar("sm_max_interp", 	"0.5", 		"Kick players whose settings breach this Hard upper-limit for player lerps.", CVAR_FLAGS);
 	hPrintLerpStyle 	= CreateConVar("sm_lerpstyle", 		"1", 		"Display Style, 0 = default, 1 = team based", CVAR_FLAGS);
@@ -221,7 +219,7 @@ void ProcessPlayerLerp(int client,bool teamchange = false)
 	{
 		if(m_fLerpTime != GetCurrentLerp(client))
 		{
-			if(ShouldAnnounceLerpChanges())
+			if(hAnnounceLerp.IntValue > 0)
 			{
 				if (iTeam == 2)
 					CPrintToChatAll("<{olive}Lerp{default}> {blue}%N{green}'s Lerp changed from {olive}%.01f {green}to {olive}%.01f", client, GetCurrentLerp(client)*1000, m_fLerpTime*1000);
@@ -255,10 +253,10 @@ void ProcessPlayerLerp(int client,bool teamchange = false)
 		ChangeClientTeam(client, 1);
 		CPrintToChat(client, "{blue}{default}[{green}Lerp{default}] Illegal lerp value (min: {olive}%.01f{default}, max: {olive}%.01f{default})",
 					cVarMinLerp.FloatValue*1000, cVarMaxLerp.FloatValue*1000);
-		// nothing else to do
+
 		return;
 	}
-	if(teamchange)
+	if(teamchange && hAnnounceLerp.IntValue == 1)
 	{
 		if(iTeam == 2)
 			CPrintToChatAll("<{olive}Lerp{default}> {blue}%N {default}@{blue} %.01f",client,m_fLerpTime*1000);

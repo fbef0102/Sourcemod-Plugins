@@ -23,7 +23,7 @@ Keep track of players' lerp settings
         // Log changes to client lerp. 1=Log initial lerp and changes 2=Log changes only
         sm_log_lerp "1"
 
-        // Announce changes to client lerp. 1=Announce initial lerp and changes 2=Announce changes only
+        // Announce client lerp. 1=Announce lerp and changes eveytime 2=Announce changes only
         sm_announce_lerp "1"
 
         // Fix Lerp values clamping incorrectly when interp_ratio 0 is allowed
@@ -53,6 +53,9 @@ Keep track of players' lerp settings
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+    * v1.2 (2025-9-3)
+        * Update cvars
+
     * v1.1
         * Remake Code
 
@@ -76,7 +79,7 @@ Keep track of players' lerp settings
         // Logs文件如何記錄? 1=記錄玩家最初的lerp與改變時的lerp 2=記錄玩家改變時的lerp
         sm_log_lerp "1"
 
-        // 聊天框如何顯示?. 1=顯示玩家最初的lerp與改變時的lerp 2=顯示玩家改變時的lerp
+        // 聊天框如何顯示?. 1=每次顯示玩家的lerp與玩家改變lerp 2=只顯示玩家改變lerp
         sm_announce_lerp "1"
 
         // 為1時，當伺服器允許interp_ratio 0之時修復客戶端的lerp參數
