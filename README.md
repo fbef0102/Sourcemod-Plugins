@@ -4,14 +4,16 @@
 * [Sourcemod 1.11](https://www.sourcemod.net/downloads.php?branch=1.11-dev) (or newer)
 * [Metamod 1.11](https://www.sourcemm.net/downloads.php?branch=1.11-dev) (or newer)
 
-# Source-Plugins
-Plugins for most source engine games. Make server more fun, and more useful plugins for adm.
-> Apply to most source engine games
-> <br/> If you have any modify or request, feel free to use or pay me money to do it. 
+# Description
+Make server more fun, and more useful plugins for adm.
+> If you have any modify or request, feel free to use or pay me money to do it. 
 > <br/> **[>>Click here to see my private plugin list<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**
 > <br/> 適用於大部份的Source引擎遊戲
 > <br/> 歡迎自由使用，可以自行更改源碼。亦或付費請求修改。
 > <br/> **[>>點擊我查看更多私人插件<<](https://github.com/fbef0102/Game-Private_Plugin?tab=readme-ov-file#%E7%A7%81%E4%BA%BA%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8-private-plugins-list)**
+
+# Source-Plugins
+> Apply to most source engine games
 
 * <b>[smd_DynamicHostname](/smd_DynamicHostname)</b>: Server name with txt file (Support any language)
     * 伺服器房名可以寫中文的插件
@@ -59,6 +61,8 @@ Plugins for most source engine games. Make server more fun, and more useful plug
     * SM 文件下載器 (玩家連線伺服器的時候能下載自製的檔案)
 * <b>[smd_spritetrail_fix](/smd_spritetrail_fix)</b>: Fixes the invisible env_spritetrail entity
     * 修復Source引擎的bug，看不見env_spritetrail物件的發光效果
+* <b>[smd_hackers_block](/smd_hackers_block)</b>: Block hackers using some exploit to crash server
+    * 阻止駭客利用某些漏洞導致伺服器崩潰
 
 # CSS-Plugins
 > Apply to Counter-Strike: Source

@@ -23,7 +23,7 @@
 #include <json> //https://github.com/clugg/sm-json
 #include <clientprefs>
 
-#define PLUGIN_VERSION 			"1.6h-2025/8/30"
+#define PLUGIN_VERSION 			"1.7h-2025/9/23"
 #define PLUGIN_NAME			    "sm_translator"
 #define DEBUG 0
 
@@ -212,6 +212,7 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 	iServerLanguage = GetServerLanguage();
 	GetLanguageInfo(iServerLanguage, sServerLanguage, sizeof(sServerLanguage)); // get Server language
 	GetLanguageInfo(iClientLanguage, sSourceLanguage, sizeof(sSourceLanguage)); // get client language
+	bool Chinese = strncmp(sSourceLanguage, "zho", 3, false) == 0 || strncmp(sSourceLanguage, "chi", 3,  false);
 	
 	// Foreign lanuage
 	if(iServerLanguage != iClientLanguage)
@@ -228,9 +229,13 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 			if(g_bShowTranslator[player] == false) continue;
 
 			iTargetLanguage = GetClientLanguage(player);
-			if(iClientLanguage == iTargetLanguage) continue;
+			// 相同語言不要翻譯
+			if(iClientLanguage == iTargetLanguage) continue; 
 
 			GetLanguageInfo(iTargetLanguage, sTargetLanguage, sizeof(sTargetLanguage)); // get Target language
+			// 都是中文不翻譯
+			if( Chinese && (strncmp(sTargetLanguage, "zho", 3, false) == 0 || strncmp(sTargetLanguage, "chi", 3, false) == 0) ) continue;
+
 			Handle request2 = CreateRequest(sSourceLanguage, sTargetLanguage, buffer, player, client, bTeamChat); // Translate Foreign msg to other player
 			SteamWorks_SendHTTPRequest(request2);
 		}
@@ -255,9 +260,13 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 			if(g_bShowTranslator[player] == false) continue;
 			iTargetLanguage = GetClientLanguage(player);
 
+			// 相同語言不要翻譯
 			if(iClientLanguage == iTargetLanguage) continue;
 
 			GetLanguageInfo(iTargetLanguage, sTargetLanguage, sizeof(sTargetLanguage)); // get Target language
+			// 都是中文不翻譯
+			if( Chinese && (strncmp(sTargetLanguage, "zho", 3, false) == 0 || strncmp(sTargetLanguage, "chi", 3, false) == 0) ) continue;
+
 			Handle request = CreateRequest(sServerLanguage, sTargetLanguage, buffer, player, client, bTeamChat); // Translate msg to other player
 			SteamWorks_SendHTTPRequest(request);
 		}

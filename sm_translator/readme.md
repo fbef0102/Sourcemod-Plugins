@@ -65,6 +65,10 @@ Translate chat message via Google API
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+    * v1.7h (2025-9-23)
+        * Don't translate traditional chinese to simplified chinese, and vice versa
+        * 繁體與簡體互不翻譯
+
     * v1.6h (2025-8-30)
         * Update cvars, cmds, translation
 
