@@ -212,7 +212,7 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 	iServerLanguage = GetServerLanguage();
 	GetLanguageInfo(iServerLanguage, sServerLanguage, sizeof(sServerLanguage)); // get Server language
 	GetLanguageInfo(iClientLanguage, sSourceLanguage, sizeof(sSourceLanguage)); // get client language
-	bool Chinese = strncmp(sSourceLanguage, "zho", 3, false) == 0 || strncmp(sSourceLanguage, "chi", 3,  false);
+	bool Chinese = strncmp(sSourceLanguage, "zho", 3, false) == 0 || strncmp(sSourceLanguage, "chi", 3, false) == 0;
 	
 	// Foreign lanuage
 	if(iServerLanguage != iClientLanguage)

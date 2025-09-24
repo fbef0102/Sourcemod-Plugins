@@ -11,7 +11,7 @@
 #include <basecomm>
 
 #define PLUGIN_VERSION			"1.4-2025/9/23"
-#define PLUGIN_NAME			    "l4d_hackers_block"
+#define PLUGIN_NAME			    "smd_hackers_block"
 #define DEBUG 0
 
 public Plugin myinfo =
