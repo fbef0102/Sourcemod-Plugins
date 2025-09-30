@@ -23,7 +23,7 @@
 #include <json> //https://github.com/clugg/sm-json
 #include <clientprefs>
 
-#define PLUGIN_VERSION 			"1.7h-2025/9/23"
+#define PLUGIN_VERSION 			"1.8h-2025/10/1"
 #define PLUGIN_NAME			    "sm_translator"
 #define DEBUG 0
 
@@ -193,7 +193,7 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 	if (sArgs[0] == '!' || sArgs[0] == '/' || sArgs[0] == '@') return;
 	if (CommandExists(sArgs)) return;
 	
-	static char buffer[255];
+	static char buffer[256];
 	FormatEx(buffer,sizeof(buffer),"%s",sArgs);
 	StripQuotes(buffer);
 
@@ -212,12 +212,13 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 	iServerLanguage = GetServerLanguage();
 	GetLanguageInfo(iServerLanguage, sServerLanguage, sizeof(sServerLanguage)); // get Server language
 	GetLanguageInfo(iClientLanguage, sSourceLanguage, sizeof(sSourceLanguage)); // get client language
-	bool Chinese = strncmp(sSourceLanguage, "zho", 3, false) == 0 || strncmp(sSourceLanguage, "chi", 3, false) == 0;
+	//bool Chinese = strncmp(sSourceLanguage, "zho", 3, false) == 0 || strncmp(sSourceLanguage, "chi", 3, false) == 0;
 	
 	// Foreign lanuage
 	if(iServerLanguage != iClientLanguage)
 	{
-		Handle request = CreateRequest(sSourceLanguage, sServerLanguage, buffer, client, 0, bTeamChat);
+		Handle request = CreateRequest("auto", sServerLanguage, buffer, client, 0, bTeamChat);
+		//Handle request = CreateRequest(sSourceLanguage, sServerLanguage, buffer, client, 0, bTeamChat);
 		SteamWorks_SendHTTPRequest(request);
 		
 		for(int player = 1; player <= MaxClients; player++)
@@ -230,13 +231,14 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 
 			iTargetLanguage = GetClientLanguage(player);
 			// 相同語言不要翻譯
-			if(iClientLanguage == iTargetLanguage) continue; 
+			//if(iClientLanguage == iTargetLanguage) continue; 
 
 			GetLanguageInfo(iTargetLanguage, sTargetLanguage, sizeof(sTargetLanguage)); // get Target language
 			// 都是中文不翻譯
-			if( Chinese && (strncmp(sTargetLanguage, "zho", 3, false) == 0 || strncmp(sTargetLanguage, "chi", 3, false) == 0) ) continue;
+			//if( Chinese && (strncmp(sTargetLanguage, "zho", 3, false) == 0 || strncmp(sTargetLanguage, "chi", 3, false) == 0) ) continue;
 
-			Handle request2 = CreateRequest(sSourceLanguage, sTargetLanguage, buffer, player, client, bTeamChat); // Translate Foreign msg to other player
+			Handle request2 = CreateRequest("auto", sTargetLanguage, buffer, player, client, bTeamChat); // Translate Foreign msg to other player
+			//Handle request2 = CreateRequest(sSourceLanguage, sTargetLanguage, buffer, player, client, bTeamChat); // Translate Foreign msg to other player
 			SteamWorks_SendHTTPRequest(request2);
 		}
 	}
@@ -261,13 +263,14 @@ public void OnClientSayCommand_Post(int client, const char[] command, const char
 			iTargetLanguage = GetClientLanguage(player);
 
 			// 相同語言不要翻譯
-			if(iClientLanguage == iTargetLanguage) continue;
+			//if(iClientLanguage == iTargetLanguage) continue;
 
 			GetLanguageInfo(iTargetLanguage, sTargetLanguage, sizeof(sTargetLanguage)); // get Target language
 			// 都是中文不翻譯
-			if( Chinese && (strncmp(sTargetLanguage, "zho", 3, false) == 0 || strncmp(sTargetLanguage, "chi", 3, false) == 0) ) continue;
+			//if( Chinese && (strncmp(sTargetLanguage, "zho", 3, false) == 0 || strncmp(sTargetLanguage, "chi", 3, false) == 0) ) continue;
 
-			Handle request = CreateRequest(sServerLanguage, sTargetLanguage, buffer, player, client, bTeamChat); // Translate msg to other player
+			Handle request = CreateRequest("auto", sTargetLanguage, buffer, player, client, bTeamChat); // Translate msg to other player
+			//Handle request = CreateRequest(sServerLanguage, sTargetLanguage, buffer, player, client, bTeamChat); // Translate msg to other player
 			SteamWorks_SendHTTPRequest(request);
 		}
 	}
@@ -418,7 +421,7 @@ int Menu_select(Menu menu, MenuAction action, int client, int param)
 
 // HTTP-------------------------------
 
-Handle CreateRequest(const char source[8], const char target[8], const char input[255], int client, int other = 0, bool bTeamChat = false)
+Handle CreateRequest(const char source[8], const char target[8], const char input[256], int client, int other = 0, bool bTeamChat = false)
 {
 	static char GoogleSourceCode[8], GoogleTargetCode[8];
 	if(g_smCodeToGoogle.ContainsKey(source))
@@ -452,12 +455,14 @@ Handle CreateRequest(const char source[8], const char target[8], const char inpu
 	SteamWorks_SetHTTPRequestGetOrPostParameter(request, "sl", GoogleSourceCode);//from en default, so you might wanna add this param too to modify.
 	SteamWorks_SetHTTPRequestGetOrPostParameter(request, "tl", GoogleTargetCode);//to desired.. target language
 	SteamWorks_SetHTTPRequestGetOrPostParameter(request, "q", input);//input text
-	//final url would be something like this  https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=en&tl=es&q=hello
+	//final url would be something like this  https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=auto&tl=es&q=hello
 	//response example [[["Hola","hello",null,null,10]],null,"en",null,null,null,null,[]]  so we need to parse json on Callback_OnHTTPResponse >  JSON.parse(response)[0][0][0] = Hola
+	// (sl=auto 自動檢測語言)
 
 	DataPack hPack = new DataPack();
 	hPack.WriteCell( other>0 ? GetClientUserId(other) : 0);
 	hPack.WriteCell(bTeamChat);
+	hPack.WriteString(input);
 	SteamWorks_SetHTTPRequestContextValue(request, GetClientUserId(client), hPack);
 	return request;
 }
@@ -481,6 +486,8 @@ void Callback_OnHTTPResponse(Handle request, bool bFailure, bool bRequestSuccess
 	hPack.Reset();
 	int other = hPack.ReadCell();
 	bool bTeamChat = hPack.ReadCell();
+	char sOriginalWord[256];
+	hPack.ReadString(sOriginalWord, sizeof(sOriginalWord));
 	delete hPack;
 
 	static char strval[512];
@@ -540,6 +547,8 @@ void Callback_OnHTTPResponse(Handle request, bool bFailure, bool bRequestSuccess
 		{
 			return;
 		}
+
+		if(strcmp(sOriginalWord, strval, false) == 0) return;
 		
 		if(bTeamChat)
 		{
