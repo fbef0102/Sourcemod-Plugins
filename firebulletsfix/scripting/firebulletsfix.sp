@@ -81,7 +81,7 @@ public void OnClientPutInServer(int client)
 
 public Action OnPlayerRunCmd(int client)
 {
-    if (IsPlayerAlive(client) && !IsFakeClient(client))
+    if (client > 0 && IsClientInGame(client) && IsPlayerAlive(client) && !IsFakeClient(client))
     {
         g_bCallingWeapon_ShootPosition = true;
         SDKCall(g_hWeapon_ShootPosition_SDKCall, client, g_vecOldWeaponShootPos[client]);
