@@ -1,0 +1,231 @@
+﻿"Phrases"
+{
+	"ConVar_Version"
+	{
+		"en"		"VAC Status Checker plugin version"
+		"ru"		"Версия плагина VAC Status Checker"
+		"fr"		"Version du plugin de VAC Status Checker"
+		"chi"		"VAC状态检查器版本"
+		"zho"		"VAC狀態檢查器版本"
+	}
+	"ConVar_DB"
+	{
+		"en"		"The named database config to use for caching"
+		"ru"		"Заголовок базы данных в databases.cfg, если нужны записи"
+		"fr"		"le nom de la base de données a été utilisé pour la mise en cache"
+		"chi"		"用于缓存的命名数据库配置 "
+	}
+	"ConVar_APIKey"
+	{
+		"en"		"The Steam Web API key used by VAC Status Checker\nhttps://steamcommunity.com/dev/apikey"
+	}
+	"ConVar_CacheTime"
+	{
+		"en"		"How long in days before re-checking the same client"
+		"ru"		"Как долго ждать для повторной проверки игрока (в днях)"
+		"fr"		"Combien de jour avant que le joueur soit re-verifier"
+	}
+	"ConVar_Action"
+	{
+		"en"		"Deprecated. Use sm_vacbans_actions"
+		"ru"		"Наказания для обнаруженных с VAC игроков (0 =бан,1 =кик,2 =сообщ. адм.,3 =в лог)"
+		"fr"		"Action à prendre sur les clients détectés (0 = ban, 1 = kick, 2 = alert admins, 3 = log only)"
+	}
+	"ConVar_Actions"
+	{
+		"en"		"Actions to take on detected clients\nAdd up the options from the list:\n1:  Log to sourcemod/logs/vacbans.log\n2:  Kick\n4:  Ban\n8:  Display message to admins\n16: Display message to all players"
+	}
+	"ConVar_Detect_VAC"
+	{
+		"en"		"Enable VAC ban detection"
+		"ru"		"Включить обнаружение VAC-бана"
+		"fr"		"Activé la detection VAC BAN"
+	}
+	"ConVar_VAC_Expire"
+	{
+		"en"		"Ignore VAC bans older than this many days (0 = disabled)"
+		"ru"		"Игнорировать VAC-бан старше этого количества дней (0 =не учитывать)"
+		"fr"		"Igonrer les VAC BAN plus ancien que ce nombre de jours (0 = desativer)"
+	}
+	"ConVar_VAC_Ignore_Before"
+	{
+		"en"		"Ignore VAC bans issued before this date (format: YYYY-MM-DD)"
+	}
+	"ConVar_Detect_Game"
+	{
+		"en"		"Enable game ban detection"
+		"ru"		"Включить онаружение игровых банов"
+		"fr"		"Activé la détection en jeu"
+	}
+	"ConVar_Detect_Community"
+	{
+		"en"		"Enable Steam Community ban detection"
+		"ru"		"Включить обнаружение банов сообщества Steam"
+		"fr"		"Activé la detection de Steam community"
+	}
+	"ConVar_Detect_Econ"
+	{
+		"en"		"Enable economy (trade) ban detection (0 = disabled, 1 = bans only, 2 = bans and probation)"
+		"ru"		"Включить обнаружение банов трейда (0 =не учитывать,1 =бан,2 =бан на срок)"
+		"fr"		"Activé la detection de ban de trade (0 = disabled, 1 = bans only, 2 = bans and probation)"
+	}
+	"Command_Reset"
+	{
+		"en"		"Clears the vacbans cache database"
+		"ru"		"Очистить кеш базы данных с VAC-банами"
+		"fr"		"Efface la base de données cache de Vac Ban"
+	}
+	"Command_Whitelist"
+	{
+		"en"		"Controls the vacbans whitelist"
+		"ru"		"Проверить белый список VAC-банов"
+		"fr"		"Contrôle la liste blanche des Vac Ban"
+	}
+	"Command_List"
+	{
+		"en"		"Lists the bans of connected clients"
+		"ru"		"Списки банов подключенных игроков"
+		"fr"		"Liste des bans des clients connectés"
+	}
+	"Message_Reset"
+	{
+		"en"		"The VAC Status Checker cache has been reset"
+	}
+	"Message_Usage"
+	{
+		"en"		"Usage"
+	}
+	"Message_Whitelist_Added"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} was added to the VAC Status Checker whitelist"
+		"ru"		"{1} был добавлен в белый список VAC Status Checker"
+		"fr"		"{1} a été ajouté a la whitelist Vac Status Checker"
+	}
+	"Message_Whitelist_Removed"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} was removed from the VAC Status Checker whitelist"
+		"ru"		"{1} был удалён из белого списка VAC Status Checker"
+		"fr"		"{1} a été retiré de la whitelist Vac Status Checker"
+	}
+	"Message_Whitelist_Cleared"
+	{
+		"en"		"The VAC Status Checker whitelist was cleared"
+		"ru"		"Белый список VAC Status Checker был очищен"
+		"fr"		"La whitelist VAC Status Checker a été nettoyé"
+	}
+	"Message_List"
+	{
+		"en"		"Listing bans of all connected clients:"
+		"ru"		"Список банов всех подключённых игроков:"
+		"fr"		"Liste des clients connectés bannis:"
+	}
+	"Error_Extension_Required"
+	{
+		"en"		"SteamWorks, SteamTools, or Socket extension required"
+	}
+	"Error_Key_Required"
+	{
+		"en"		"VAC Status Checker requires a Steam Web API key for player lookups. Get your key from https://steamcommunity.com/dev/apikey"
+	}
+	"Kicked"
+	{
+		"en"		"kicked"
+		"ru"		"кикнут"
+		"fr"		"Expulser"
+	}
+	"Banned"
+	{
+		"en"		"banned"
+		"ru"		"забанен"
+		"fr"		"Banni"
+	}
+	"Log_Banned"
+	{
+		"#format"	"{1:s},{2:t}"
+		"en"		"{1} was banned due to {2} on record"
+		"ru"		"{1} был забанен из-за {2}"
+		"fr"		"{1} a été banni en raison de {2} enregistré"
+	}
+	"Player_Message"
+	{
+		"#format"	"{1:t},{2:t}"
+		"en"		"You were {1} due to {2} on your account"
+		"ru"		"Вы были {1} из-за {2} на Вашем аккаунте"
+		"fr"		"Vous étiez {1} à cause de {2} sur votre compte"
+	}
+	"Admin_Message"
+	{
+		"#format"	"{1:d},{2:d},{3:t},{4:t}"
+		"en"		"VAC bans: {1}, Game bans: {2}, Community: {3}, Economy: {4}"
+		"ru"		"VAC-баны: {1}, Игровые: {2}, Сообщество: {3}, Трейд: {4}"
+		"fr"		"Ban VAC: {1}, Un bannissement de jeu: {2}, Steam Community: {3}, Trade: {4}"
+	}
+	"Admin_Message2"
+	{
+		"#format"	"{1:d},{2:d},{3:t},{4:t}"
+		"en"		"VAC bans: {green}{1}{default}, Game bans: {green}{2}{default}, Community: {green}{3}{default}, Economy: {green}{4}{default}"
+		"chi"		"VAC 封禁: {green}{1}{default}, 游戏封禁: {green}{2}{default}, 社区封禁: {green}{3}{default}, 交易封禁: {green}{4}{default}"
+	}
+	"Status_None"
+	{
+		"en"		"CLEAN"
+		"ru"		"ОЧИЩЕН"
+		"fr"		"NETTOYER"
+	}
+	"Status_Banned"
+	{
+		"en"		"BANNED"
+		"ru"		"ЗАБНЕН"
+		"fr"		"BANNI"
+	}
+	"Status_Probation"
+	{
+		"en"		"PROBATION"
+		"ru"		"УСЛОВНО"
+		"fr"		"PROBATION"
+	}
+	"VAC_Ban"
+	{
+		"en"		"a VAC ban"
+		"ru"		"VAC-бан"
+		"fr"		"Un Ban VAC"
+	}
+	"Game_Ban"
+	{
+		"en"		"a game ban"
+		"ru"		"игровая блокировка"
+		"fr"		"Un bannissement de jeu"
+	}
+	"VAC_Ban_Plural"
+	{
+		"en"		"VAC bans"
+		"ru"		"VAC-баны"
+		"fr"		"Des Bans Vac"
+	}
+	"Game_Ban_Plural"
+	{
+		"en"		"game bans"
+		"ru"		"игровые блокировки"
+		"fr"		"Des bannissements de jeux"
+	}
+	"Community_Ban"
+	{
+		"en"		"a Steam Community ban"
+		"ru"		"бан в сообществе Steam"
+		"fr"		"Un bannissement de Steam community"
+	}
+	"Economy_Ban"
+	{
+		"en"		"an economy ban"
+		"ru"		"бан трейда"
+		"fr"		"Un bannissement de Trade"
+	}
+	"Economy_Probation"
+	{
+		"en"		"economy probation"
+		"ru"		"временный бан трейда"
+		"fr"		"Un Probation de Trade"
+	}
+}

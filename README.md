@@ -63,6 +63,10 @@ Make server more fun, and more useful plugins for adm.
     * 修復Source引擎的bug，看不見env_spritetrail物件的發光效果
 * <b>[smd_hackers_block](/smd_hackers_block)</b>: Block hackers using some exploit to crash server
     * 阻止駭客利用某些漏洞導致伺服器崩潰
+* <b>[familyshare_manager](/familyshare_manager)</b>: Block family share accounts which does not own the game
+    * 封鎖使用家庭共享沒有真的購買遊戲的帳戶進來伺服器
+* <b>[familyshare_manager](/familyshare_manager)</b>: Checks for VAC, game, Steam Community, and trade bans on the accounts of connecting clients
+    * 封鎖有 VAC/遊戲封禁/社群封禁/交易封禁 的不良玩家進入伺服器
 
 # CSS-Plugins
 > Apply to Counter-Strike: Source

@@ -1,0 +1,9 @@
+"Phrases"
+{
+	"Message"
+	{
+		"en"			"Family sharing is disabled on this server."
+		"zho"			"此伺服器禁用家庭分享 (Family sharing is disabled)"
+		"chi"			"此服务器禁用家庭分享 (Family sharing is disabled)"
+	}
+}
