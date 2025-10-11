@@ -7,8 +7,10 @@ Block family share accounts which does not own the game
     ```
 
 * Require | 必要安裝
-    1. [SteamWorks](https://github.com/hexa-core-eu/SteamWorks/releases)
-
+    1. Steamworks
+        - Other: [SteamWorks](https://github.com/hexa-core-eu/SteamWorks/releases)
+        - CSS: [SteamWorks](https://github.com/hexa-core-eu/SteamWorks/releases/tag/v1.2.3)
+        
 * <details><summary>How does it work?</summary>
 
     * If player does not own the game and join server (Use steam family share)

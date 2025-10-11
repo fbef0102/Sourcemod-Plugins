@@ -21,7 +21,7 @@ Records player chat messages and commands to a file
 
 * <details><summary>ConVar | 指令</summary>
 
-    * cfg\sourcemod\savechat.cfg
+    * cfg/sourcemod/savechat.cfg
         ```php
         // 0=Plugin off, 1=Plugin on.
         css_savechat_command_enable "1"
@@ -70,7 +70,7 @@ Records player chat messages and commands to a file
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
-    * cfg\sourcemod\savechat.cfg
+    * cfg/sourcemod/savechat.cfg
         ```php
         // 0=關閉插件, 1=啟動插件
         css_savechat_command_enable "1"

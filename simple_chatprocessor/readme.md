@@ -38,7 +38,7 @@ Process chat and allows other plugins to manipulate chat.
 
 * <details><summary>API | 串接</summary>
 
-	* [simple_chatprocessor.inc](scripting\include\simple_chatprocessor.inc)
+	* [simple_chatprocessor.inc](scripting/include/simple_chatprocessor.inc)
 		```php
 		library name: simple_chatprocessor
 		```

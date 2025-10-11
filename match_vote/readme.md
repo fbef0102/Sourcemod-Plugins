@@ -18,7 +18,7 @@ Type !match/!load/!mode to vote a new mode
 
 * <details><summary>ConVar | 指令</summary>
 
-    * cfg\sourcemod\match_vote.cfg
+    * cfg/sourcemod/match_vote.cfg
         ```php
         // 0=Plugin off, 1=Plugin on.
         match_vote_enable "1"
@@ -103,7 +103,7 @@ Type !match/!load/!mode to vote a new mode
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
-    * cfg\sourcemod\match_vote.cfg
+    * cfg/sourcemod/match_vote.cfg
         ```php
         // 0=關閉插件, 1=啟動插件
         match_vote_enable "1"

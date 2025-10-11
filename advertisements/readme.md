@@ -15,7 +15,7 @@ Display advertisements
 
 * <details><summary>ConVar | 指令</summary>
 
-	* cfg\sourcemod\advertisements.cfg
+	* cfg/sourcemod/advertisements.cfg
 		```php
 		// Enable/disable displaying advertisements.
 		sm_advertisements_enabled "1"

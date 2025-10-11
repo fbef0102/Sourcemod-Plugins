@@ -1,0 +1,1235 @@
+Logfile of 'Entity Limit Logger' v.1.0-2025/3/3
+
+----------------------------------------------
+Server Port:     27022
+Map:             c1m2_streets
+Current time:    20 h. 52 m. 28 s.
+Snapshot time:   20 h. 05 m. 16 s.
+Time passed:     47 min.
+----------------------------------------------
+
+DELTA - {Class Count}
+*
+	This section describes the number of entity classes, which increased since the latest snapshot
+*
+
++1	trigger_multiple
++1	phys_bone_follower
++26	env_physics_blocker
++22	func_brush
++3	weapon_pistol
++44	func_simpleladder
++1	filter_activator_model
++1	logic_timer
++2	filter_activator_team
++35	prop_dynamic
+
+***********************     TOTAL NETWORKING ENTITIES    ***********************
+
+(   1) - player                          . Name: Gambler. Model: models/survivors/survivor_gambler.mdl. Origin: 2375.8 5244.5 448.0  (IN SAFEROOM) HammerId:      0
+(   2) - player                          . Name: Mechanic. Model: models/survivors/survivor_mechanic.mdl. Origin: 2405.6 5050.7 448.0  (IN SAFEROOM) HammerId:      0
+(   3) - player                          . Name: Coach. Model: models/survivors/survivor_coach.mdl. Origin: 2303.3 5145.5 448.0  (IN SAFEROOM) HammerId:      0
+(   4) - player                          . Name: Producer. Model: models/survivors/survivor_producer.mdl. Origin: 2422.4 5284.8 448.0  (IN SAFEROOM) HammerId:      0
+(  32) - cs_team_manager                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  33) - cs_team_manager                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  34) - cs_team_manager                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  35) - cs_team_manager                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  36) - cs_team_manager                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  37) - soundent                        . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  38) - terror_player_manager           . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  39) - vote_controller                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  40) - terror_gamerules                . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  41) - info_particle_system            . Name:     . Model:     . Origin: -7061.0 -1599.7 505.9  HammerId: 890771
+(  42) - info_particle_system            . Name:     . Model:     . Origin: -7058.0 -1694.7 503.3  HammerId: 890836
+(  43) - info_particle_system            . Name:     . Model:     . Origin: -7061.0 -1599.7 435.3  HammerId: 890901
+(  44) - move_rope                       . Name: AutoInstance1-cable01_4. Model:     . Origin: 4068.8 2365.1 881.0  HammerId: 1124951
+(  45) - move_rope                       . Name: AutoInstance1-cable02_4. Model:     . Origin: 4069.2 2387.9 882.0  HammerId: 1124954
+(  46) - move_rope                       . Name: AutoInstance1-cable03_4. Model:     . Origin: 4082.0 2457.9 886.0  HammerId: 1124957
+(  47) - move_rope                       . Name: AutoInstance1-cable04_4. Model:     . Origin: 4081.9 2479.9 887.0  HammerId: 1124960
+(  48) - keyframe_rope                   . Name: AutoInstance1-cable04_5. Model:     . Origin: 2687.0 2485.0 975.0  HammerId: 1124963
+(  49) - keyframe_rope                   . Name: AutoInstance1-cable03_5. Model:     . Origin: 2686.0 2463.0 974.0  HammerId: 1124966
+(  50) - keyframe_rope                   . Name: AutoInstance1-cable02_5. Model:     . Origin: 2674.0 2393.0 970.0  HammerId: 1124969
+(  51) - keyframe_rope                   . Name: AutoInstance1-cable01_5. Model:     . Origin: 2674.0 2370.0 969.0  HammerId: 1124972
+(  52) - keyframe_rope                   . Name: AutoInstance1-cable01_6. Model:     . Origin: 1491.0 2331.0 1007.0  HammerId: 1124975
+(  53) - keyframe_rope                   . Name: AutoInstance1-cable02_6. Model:     . Origin: 1491.0 2354.0 1008.0  HammerId: 1124978
+(  54) - keyframe_rope                   . Name: AutoInstance1-cable03_6. Model:     . Origin: 1503.0 2424.0 1012.0  HammerId: 1124981
+(  55) - keyframe_rope                   . Name: AutoInstance1-cable04_6. Model:     . Origin: 1504.0 2446.0 1013.0  HammerId: 1124984
+(  56) - keyframe_rope                   . Name: AutoInstance1-cable01_7. Model:     . Origin: -19.4 2387.0 886.0  HammerId: 1124987
+(  57) - keyframe_rope                   . Name: AutoInstance1-cable02_7. Model:     . Origin: -19.4 2410.0 885.0  HammerId: 1124990
+(  58) - keyframe_rope                   . Name: AutoInstance1-cable03_7. Model:     . Origin: -7.4 2480.0 881.0  HammerId: 1124993
+(  59) - keyframe_rope                   . Name: AutoInstance1-cable04_7. Model:     . Origin: -6.4 2502.0 880.0  HammerId: 1124996
+(  60) - keyframe_rope                   . Name: AutoInstance1-cable04_8. Model:     . Origin: -1582.7 2473.0 743.0  HammerId: 1124999
+(  61) - keyframe_rope                   . Name: AutoInstance1-cable03_8. Model:     . Origin: -1579.3 2449.9 742.0  HammerId: 1125002
+(  62) - keyframe_rope                   . Name: AutoInstance1-cable02_8. Model:     . Origin: -1582.4 2379.7 742.0  HammerId: 1125005
+(  63) - keyframe_rope                   . Name: AutoInstance1-cable01_8. Model:     . Origin: -1579.0 2356.6 742.0  HammerId: 1125008
+(  64) - move_rope                       . Name: AutoInstance1-cable05_1. Model:     . Origin: 3130.0 3118.0 754.0  HammerId: 1125011
+(  65) - move_rope                       . Name: AutoInstance1-cable06_1. Model:     . Origin: 1390.9 1774.8 992.0  HammerId: 1125014
+(  66) - keyframe_rope                   . Name: AutoInstance1-cable07_2. Model:     . Origin: 15.5 2450.0 836.4  HammerId: 1125017
+(  67) - move_rope                       . Name: AutoInstance1-cable16_1. Model:     . Origin: 2056.0 1823.0 746.0  HammerId: 1125020
+(  68) - move_rope                       . Name: AutoInstance1-cable17_1. Model:     . Origin: 502.0 1758.0 1002.0  HammerId: 1125023
+(  69) - prop_door_rotating_checkpoint   . Name: checkpoint_entrance. Model: models/props_doors/checkpoint_door_02.mdl. Origin: -7504.0 -4584.0 438.0  (IN SAFEROOM) HammerId: 163368
+(  70) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -6576.1 -2422.1 515.7  HammerId: 1328910
+(  71) - func_simpleladder               . Name:     . Model: *1  . Origin: 0.0 0.0 0.0  HammerId:  54515
+(  72) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -920.0 3444.0 127.9  HammerId:  70608
+(  73) - prop_door_rotating_checkpoint   . Name: checkpoint_exit. Model: models/props_doors/checkpoint_door_01.mdl. Origin: 2294.0 4942.0 500.3  HammerId:  75531
+(  74) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: 2440.0 4968.0 478.0  (IN SAFEROOM) HammerId:  75973
+(  75) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: 2390.0 4954.0 478.0  (IN SAFEROOM) HammerId:  76037
+(  76) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: 2403.0 4957.0 478.0  (IN SAFEROOM) HammerId:  76050
+(  77) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: 2388.0 4970.0 481.0  (IN SAFEROOM) HammerId:  76064
+(  78) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: 2402.0 4974.0 481.0  (IN SAFEROOM) HammerId:  76108
+(  79) - func_simpleladder               . Name:     . Model: *2  . Origin: 0.0 0.0 0.0  HammerId:  99829
+(  80) - func_simpleladder               . Name:     . Model: *3  . Origin: 0.0 0.0 0.0  HammerId:  99834
+(  81) - func_simpleladder               . Name:     . Model: *4  . Origin: 0.0 0.0 0.0  HammerId: 100309
+(  82) - func_simpleladder               . Name:     . Model: *5  . Origin: 0.0 0.0 0.0  HammerId: 100319
+(  83) - func_simpleladder               . Name:     . Model: *6  . Origin: 0.0 0.0 0.0  HammerId: 100444
+(  84) - func_simpleladder               . Name:     . Model: *7  . Origin: 0.0 0.0 0.0  HammerId: 100452
+(  85) - func_nav_attribute_region       . Name:     . Model: *8  . Origin: 0.0 0.0 0.0  HammerId: 101564
+(  86) - func_nav_attribute_region       . Name:     . Model: *9  . Origin: 0.0 0.0 0.0  HammerId: 101571
+(  87) - func_nav_attribute_region       . Name:     . Model: *10 . Origin: 0.0 0.0 0.0  HammerId: 101795
+(  88) - func_nav_attribute_region       . Name:     . Model: *11 . Origin: 0.0 0.0 0.0  HammerId: 101809
+(  89) - func_simpleladder               . Name:     . Model: *12 . Origin: 0.0 0.0 0.0  HammerId: 101827
+(  90) - func_nav_attribute_region       . Name:     . Model: *13 . Origin: 0.0 0.0 0.0  HammerId: 101939
+(  91) - scene_manager                   . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(  92) - info_director                   . Name: director. Model:     . Origin: 1536.0 4736.0 608.0  HammerId: 101953
+(  93) - prop_door_rotating              . Name: store_doors. Model: models/props_doors/door_rotate_112.mdl. Origin: -6648.0 -2550.0 392.0  HammerId: 111896
+(  94) - func_simpleladder               . Name:     . Model: *14 . Origin: 0.0 0.0 0.0  HammerId: 122386
+(  95) - func_simpleladder               . Name:     . Model: *15 . Origin: 0.0 0.0 0.0  HammerId: 122476
+(  96) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -3400.0 2168.0 127.9  HammerId: 134795
+(  97) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -3872.0 2052.0 127.9  HammerId: 134807
+(  98) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -3760.0 2144.0 129.0  HammerId: 134845
+(  99) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -3824.0 2208.0 129.0  HammerId: 134856
+( 100) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -3728.0 2240.0 129.0  HammerId: 134880
+( 101) - func_simpleladder               . Name:     . Model: *16 . Origin: 0.0 0.0 0.0  HammerId: 136629
+( 102) - func_simpleladder               . Name:     . Model: *17 . Origin: 0.0 0.0 0.0  HammerId: 136636
+( 103) - info_changelevel                . Name: c1m2_c1m3_changelevel. Model: *18 . Origin: 0.0 0.0 0.0  HammerId: 164224
+( 104) - info_landmark                   . Name: c1m2_c1m3_landmark. Model:     . Origin: -7456.0 -4688.0 448.0  (IN SAFEROOM) HammerId: 164235
+( 105) - func_simpleladder               . Name:     . Model: *19 . Origin: 0.0 0.0 0.0  HammerId: 170054
+( 106) - func_simpleladder               . Name:     . Model: *20 . Origin: 0.0 0.0 0.0  HammerId: 170060
+( 107) - func_simpleladder               . Name:     . Model: *21 . Origin: 0.0 0.0 0.0  HammerId: 170066
+( 108) - func_simpleladder               . Name:     . Model: *22 . Origin: 0.0 0.0 0.0  HammerId: 170106
+( 109) - func_nav_attribute_region       . Name:     . Model: *23 . Origin: 0.0 0.0 0.0  HammerId: 170608
+( 110) - func_nav_attribute_region       . Name:     . Model: *24 . Origin: 0.0 0.0 0.0  HammerId: 171024
+( 111) - func_nav_attribute_region       . Name:     . Model: *25 . Origin: 0.0 0.0 0.0  HammerId: 171046
+( 112) - func_nav_attribute_region       . Name:     . Model: *26 . Origin: 0.0 0.0 0.0  HammerId: 171070
+( 113) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -760.0 3064.0 71.9  HammerId: 174946
+( 114) - prop_dynamic                    . Name: tanker_back. Model: models/destruction_tanker/pre_destruction_tanker_trailer.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 175300
+( 115) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *27 . Origin: 0.0 0.0 0.0  HammerId: 182851
+( 116) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *28 . Origin: 0.0 0.0 0.0  HammerId: 182875
+( 117) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *29 . Origin: 0.0 0.0 0.0  HammerId: 182903
+( 118) - prop_door_rotating              . Name: store_doors. Model: models/props_doors/door_rotate_112.mdl. Origin: -6648.0 -2442.0 392.0  HammerId: 183080
+( 119) - func_nav_blocker                . Name: store_door_blocker. Model: *30 . Origin: 0.0 0.0 0.0  HammerId: 183439
+( 120) - ambient_generic                 . Name: store_alarm_generic. Model:     . Origin: -6720.0 -2496.0 448.0  HammerId: 183460
+( 121) - func_breakable                  . Name: stripmall_door1_breakable. Model: *31 . Origin: -5304.0 -2364.0 636.0  HammerId: 187311
+( 122) - func_nav_blocker                . Name: stripmall_door2_blocker. Model: *32 . Origin: 0.0 0.0 0.0  HammerId: 187429
+( 123) - func_nav_blocker                . Name: stripmall_door1_blocker. Model: *33 . Origin: 0.0 0.0 0.0  HammerId: 187436
+( 124) - env_explosion                   . Name: tanker_explosion. Model:     . Origin: -6848.0 -960.0 393.0  HammerId: 190159
+( 125) - env_physics_blocker             . Name: anv_mapfixes_mindthegap_lolvalve. Model:     . Origin: -2472.0 137.0 64.0  HammerId:      0
+( 126) - env_physics_blocker             . Name: anv_mapfixes_stuckwarpassist_walltovoid. Model:     . Origin: -5056.0 1500.0 1344.0  HammerId:      0
+( 127) - env_physics_blocker             . Name: anv_mapfixes_nav_cedaramp_in. Model:     . Origin: -4268.0 2566.0 75.0  HammerId:      0
+( 128) - weapon_adrenaline_spawn         . Name:     . Model: models/w_models/weapons/w_eq_adrenaline.mdl. Origin: -6672.0 -2640.0 392.4  HammerId:      0
+( 129) - env_physics_blocker             . Name: anv_mapfixes_nav_cedaramp_out. Model:     . Origin: -4322.0 2567.0 102.0  HammerId:      0
+( 130) - env_physics_blocker             . Name: anv_mapfixes_colastore_clipgap. Model:     . Origin: -6792.0 -3215.0 616.0  HammerId:      0
+( 131) - env_physics_blocker             . Name: anv_mapfixes_colastore_clipawn. Model:     . Origin: -7017.0 -1699.0 599.0  HammerId:      0
+( 132) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -3456.0 2240.0 332.9  HammerId:      0
+( 133) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_railing. Model:     . Origin: -2614.0 2319.0 300.0  HammerId:      0
+( 134) - env_physics_blocker             . Name: anv_mapfixes_save4lesscurb_smoother1. Model:     . Origin: -6515.0 -2681.0 384.0  HammerId:      0
+( 135) - func_simpleladder               . Name:     . Model: *34 . Origin: 0.0 0.0 0.0  HammerId: 196585
+( 136) - predicted_viewmodel             . Name:     . Model:     . Origin: 2375.8 5244.5 448.0  HammerId:      0
+( 137) - func_breakable                  . Name: stripmall_door2_breakable. Model: *36 . Origin: -5304.0 -2768.0 636.0  HammerId: 187324
+( 138) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7027.0 -2293.0 392.4  HammerId: 219720
+( 139) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6975.0 -2293.0 392.4  HammerId: 219724
+( 140) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6835.4 -2687.6 405.0  HammerId: 219728
+( 141) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6919.0 -2277.0 392.3  HammerId: 219732
+( 142) - prop_door_rotating              . Name: store_storagedoors. Model: models/props_downtown/metal_door_112.mdl. Origin: -7296.0 -2064.0 391.9  HammerId: 220485
+( 143) - prop_door_rotating              . Name: store_storagedoors. Model: models/props_downtown/metal_door_112.mdl. Origin: -7296.0 -2176.0 391.9  HammerId: 220500
+( 144) - env_physics_blocker             . Name: anv_mapfixes_save4lesscurb_smoother2. Model:     . Origin: -6515.0 -2302.0 384.0  HammerId:      0
+( 145) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -996.0 3208.0 319.9  HammerId: 236048
+( 146) - env_physics_blocker             . Name: anv_mapfixes_save4lesscurb_smoother3. Model:     . Origin: -6899.0 -1601.0 384.0  HammerId:      0
+( 147) - ambient_generic                 . Name: tanker_explosion_sound. Model:     . Origin: -6720.0 -992.0 448.0  HammerId: 236344
+( 148) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -720.0 2928.0 72.0  HammerId: 237007
+( 149) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -672.0 2880.0 72.0  HammerId: 237010
+( 150) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -672.0 2976.0 72.0  HammerId: 237013
+( 151) - func_simpleladder               . Name:     . Model: *37 . Origin: 0.0 0.0 0.0  HammerId: 237887
+( 152) - func_simpleladder               . Name:     . Model: *38 . Origin: 0.0 0.0 0.0  HammerId: 237930
+( 153) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_smootherl. Model:     . Origin: -6059.0 -2238.0 430.0  HammerId:      0
+( 154) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_smootherm. Model:     . Origin: -6060.0 -2586.0 427.0  HammerId:      0
+( 155) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_smootherr. Model:     . Origin: -6056.0 -2960.0 412.0  HammerId:      0
+( 156) - env_physics_blocker             . Name: anv_mapfixes_whitakercurb_smoother1. Model:     . Origin: -5525.0 -2349.0 448.0  HammerId:      0
+( 157) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -7134.0 -2021.0 423.6  HammerId:      0
+( 158) - env_physics_blocker             . Name: anv_mapfixes_whitakercurb_smoother2. Model:     . Origin: -5525.0 -1719.0 448.0  HammerId:      0
+( 159) - env_physics_blocker             . Name: anv_mapfixes_booster_bridgestairsa. Model:     . Origin: -5572.0 932.0 768.0  HammerId:      0
+( 160) - env_physics_blocker             . Name: anv_mapfixes_booster_bridgestairsb. Model:     . Origin: -5512.0 1016.0 832.0  HammerId:      0
+( 161) - env_physics_blocker             . Name: anv_mapfixes_booster_building. Model:     . Origin: -5064.0 1408.0 1344.0  HammerId:      0
+( 162) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -7174.0 -2217.6 428.5  HammerId:      0
+( 163) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -7192.0 -2217.6 454.0  HammerId:      0
+( 164) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -7200.0 -2217.6 402.6  HammerId:      0
+( 165) - trigger_multiple                . Name: anv_mapfixes_atomizer_bsp_dumpster_trigmult. Model:     . Origin: -7475.0 -4582.0 384.0  (IN SAFEROOM) HammerId:      0
+( 166) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -3597.0 2165.0 133.1  HammerId:      0
+( 167) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_desert_rifle.mdl. Origin: -3760.0 2260.0 356.3  HammerId: 240367
+( 168) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_shotgun_spas.mdl. Origin: -3736.0 2260.0 356.3  HammerId: 240383
+( 169) - prop_health_cabinet             . Name:     . Model: models/props_interiors/medicalcabinet02.mdl. Origin: -3584.0 2288.0 321.0  HammerId: 240423
+( 170) - func_brush                      . Name: tanker_clip_brush. Model: *39 . Origin: -6824.0 -968.0 532.1  HammerId: 240854
+( 171) - info_map_parameters             . Name: map_parameters. Model:     . Origin: 1536.0 4672.0 544.0  HammerId: 242611
+( 172) - info_game_event_proxy           . Name: store_door_proxy. Model:     . Origin: -6632.0 -2496.0 448.0  HammerId: 245992
+( 173) - prop_dynamic                    . Name: store_door02_dynamic. Model: models/props_doors/door_rotate_112.mdl. Origin: -6648.0 -2550.0 392.2  HammerId: 246036
+( 174) - prop_dynamic                    . Name: store_door01_dynamic. Model: models/props_doors/door_rotate_112.mdl. Origin: -6648.0 -2442.0 392.2  HammerId: 246060
+( 175) - info_game_event_proxy           . Name: store_item_proxy. Model:     . Origin: -7424.0 -1344.0 448.0  HammerId: 259117
+( 176) - func_nav_attribute_region       . Name:     . Model: *40 . Origin: 0.0 0.0 0.0  HammerId: 268362
+( 177) - func_simpleladder               . Name:     . Model: *41 . Origin: 0.0 0.0 0.0  HammerId: 268402
+( 178) - func_simpleladder               . Name:     . Model: *42 . Origin: 0.0 0.0 0.0  HammerId: 268410
+( 179) - func_simpleladder               . Name:     . Model: *43 . Origin: 0.0 0.0 0.0  HammerId: 268486
+( 180) - func_simpleladder               . Name:     . Model: *44 . Origin: 0.0 0.0 0.0  HammerId: 272783
+( 181) - func_simpleladder               . Name:     . Model: *45 . Origin: 0.0 0.0 0.0  HammerId: 276261
+( 182) - func_brush                      . Name: anv_mapfixes_losfix_backstreet_van. Model:     . Origin: -2182.0 687.0 9.0  HammerId:      0
+( 183) - func_brush                      . Name: anv_mapfixes_losfix_endstreet_bus. Model:     . Origin: -8352.0 -2283.0 395.0  HammerId:      0
+( 184) - func_brush                      . Name: anv_mapfixes_losfix_endstreet_fence. Model:     . Origin: -7071.0 -3944.0 389.0  HammerId:      0
+( 185) - func_brush                      . Name: anv_mapfixes_losfix_endstreet_gen1. Model:     . Origin: -7143.0 -4150.0 393.0  HammerId:      0
+( 186) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -672.0 3104.0 77.1  HammerId:      0
+( 187) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: -3676.0 2264.0 356.3  HammerId: 291146
+( 188) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *46 . Origin: 0.0 0.0 0.0  HammerId: 291229
+( 189) - prop_dynamic                    . Name:     . Model: models/props/de_nuke/truck_nuke_glass.mdl. Origin: -2224.0 1036.2 2.2  HammerId: 314232
+( 190) - prop_dynamic                    . Name:     . Model: models/props_vehicles/van_glass.mdl. Origin: -2176.0 672.0 2.2  HammerId: 314270
+( 191) - func_brush                      . Name: anv_mapfixes_losfix_endstreet_gen2. Model:     . Origin: -8699.0 -4013.0 393.0  HammerId:      0
+( 192) - func_brush                      . Name: anv_mapfixes_losfix_endstreet_van. Model:     . Origin: -7893.0 -2305.0 394.0  HammerId:      0
+( 193) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -4945.0 1606.8 389.1  HammerId:      0
+( 194) - func_brush                      . Name: anv_mapfixes_losfix_sidestreet_van1. Model:     . Origin: -1209.0 3992.0 131.0  HammerId:      0
+( 195) - func_simpleladder               . Name:     . Model: *47 . Origin: 0.0 0.0 0.0  HammerId: 370920
+( 196) - func_simpleladder               . Name:     . Model: *48 . Origin: 0.0 0.0 0.0  HammerId: 370928
+( 197) - func_simpleladder               . Name:     . Model: *49 . Origin: 0.0 0.0 0.0  HammerId: 370968
+( 198) - func_simpleladder               . Name:     . Model: *50 . Origin: 0.0 0.0 0.0  HammerId: 371291
+( 199) - func_simpleladder               . Name:     . Model: *51 . Origin: 0.0 0.0 0.0  HammerId: 371305
+( 200) - func_simpleladder               . Name:     . Model: *52 . Origin: 0.0 0.0 0.0  HammerId: 371593
+( 201) - func_simpleladder               . Name:     . Model: *53 . Origin: 0.0 0.0 0.0  HammerId: 371617
+( 202) - func_nav_attribute_region       . Name:     . Model: *54 . Origin: 0.0 0.0 0.0  HammerId: 371997
+( 203) - func_nav_attribute_region       . Name:     . Model: *55 . Origin: 0.0 0.0 0.0  HammerId: 372077
+( 204) - func_nav_attribute_region       . Name:     . Model: *56 . Origin: 0.0 0.0 0.0  HammerId: 372151
+( 205) - func_nav_attribute_region       . Name:     . Model: *57 . Origin: 0.0 0.0 0.0  HammerId: 372244
+( 206) - func_simpleladder               . Name:     . Model: *58 . Origin: 0.0 0.0 0.0  HammerId: 372688
+( 207) - func_simpleladder               . Name:     . Model: *59 . Origin: 0.0 0.0 0.0  HammerId: 372957
+( 208) - func_simpleladder               . Name:     . Model: *60 . Origin: 0.0 0.0 0.0  HammerId: 372959
+( 209) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_fireaxe.mdl. Origin: -7224.0 -2001.0 440.6  HammerId: 377747
+( 210) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_fireaxe.mdl. Origin: -944.0 3534.0 350.2  HammerId: 377813
+( 211) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_fireaxe.mdl. Origin: -910.0 3248.0 112.0  HammerId: 377819
+( 212) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_fireaxe.mdl. Origin: -3886.0 1978.0 170.6  HammerId: 377867
+( 213) - prop_dynamic                    . Name:     . Model: models/props_vehicles/van_glass.mdl. Origin: -7880.0 -2304.0 385.9  HammerId: 391344
+( 214) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -8672.0 -2688.0 389.1  HammerId:      0
+( 215) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_rear.mdl. Origin: -6843.8 -876.2 467.9  HammerId:      0
+( 216) - info_landmark                   . Name: c1m1_c1m2_landmark. Model:     . Origin: 2504.0 5128.0 512.0  (IN SAFEROOM) HammerId: 424052
+( 217) - func_nav_attribute_region       . Name:     . Model: *62 . Origin: 0.0 0.0 0.0  HammerId: 426215
+( 218) - func_nav_attribute_region       . Name:     . Model: *63 . Origin: 0.0 0.0 0.0  HammerId: 426237
+( 219) - func_simpleladder               . Name:     . Model: *64 . Origin: 0.0 0.0 0.0  HammerId: 436089
+( 220) - func_simpleladder               . Name:     . Model: *65 . Origin: 0.0 0.0 0.0  HammerId: 595399
+( 221) - func_simpleladder               . Name:     . Model: *66 . Origin: 0.0 0.0 0.0  HammerId: 595405
+( 222) - func_nav_attribute_region       . Name:     . Model: *67 . Origin: 0.0 0.0 0.0  HammerId: 605062
+( 223) - func_nav_attribute_region       . Name:     . Model: *68 . Origin: 0.0 0.0 0.0  HammerId: 605120
+( 224) - func_nav_attribute_region       . Name:     . Model: *69 . Origin: 0.0 0.0 0.0  HammerId: 605136
+( 225) - func_simpleladder               . Name:     . Model: *70 . Origin: 0.0 0.0 0.0  HammerId: 605351
+( 226) - func_simpleladder               . Name:     . Model: *71 . Origin: 0.0 0.0 0.0  HammerId: 605383
+( 227) - func_areaportalwindow           . Name: street_portal1. Model: *84 . Origin: -4160.0 2000.0 352.0  HammerId: 606449
+( 228) - func_simpleladder               . Name:     . Model: *72 . Origin: 0.0 0.0 0.0  HammerId: 606511
+( 229) - func_simpleladder               . Name:     . Model: *73 . Origin: 0.0 0.0 0.0  HammerId: 606545
+( 230) - func_simpleladder               . Name:     . Model: *74 . Origin: 0.0 0.0 -1000.0  HammerId: 606553
+( 231) - func_nav_attribute_region       . Name:     . Model: *75 . Origin: 0.0 0.0 0.0  HammerId: 606607
+( 232) - func_nav_attribute_region       . Name:     . Model: *76 . Origin: 0.0 0.0 0.0  HammerId: 606617
+( 233) - func_nav_attribute_region       . Name:     . Model: *77 . Origin: 0.0 0.0 0.0  HammerId: 606746
+( 234) - func_areaportalwindow           . Name: highway_portal2. Model: *98 . Origin: -3896.0 2240.0 378.0  HammerId: 611547
+( 235) - func_areaportalwindow           . Name: highway_portal1. Model: *97 . Origin: -3400.0 2140.0 186.0  HammerId: 611601
+( 236) - func_areaportalwindow           . Name: street_portal3. Model: *100. Origin: -920.0 3416.0 186.0  HammerId: 611608
+( 237) - func_areaportalwindow           . Name: street_portal2. Model: *99 . Origin: -968.0 3208.0 378.0  HammerId: 611614
+( 238) - trigger_once                    . Name:     . Model: *78 . Origin: -7144.0 -648.0 480.0  HammerId: 615854
+( 239) - trigger_once                    . Name: trigger_end_gauntlet. Model: *79 . Origin: -7952.0 -7928.0 440.0  HammerId: 615885
+( 240) - func_simpleladder               . Name:     . Model: *80 . Origin: 0.0 0.0 0.0  HammerId: 622430
+( 241) - func_simpleladder               . Name:     . Model: *81 . Origin: 0.0 0.0 0.0  HammerId: 622469
+( 242) - func_simpleladder               . Name:     . Model: *82 . Origin: 0.0 0.0 0.0  HammerId: 622529
+( 243) - prop_dynamic                    . Name:     . Model: models/props_vehicles/van_glass.mdl. Origin: -9151.9 0.0 385.9  HammerId: 629180
+( 244) - func_simpleladder               . Name:     . Model: *83 . Origin: 0.0 0.0 0.0  HammerId: 630466
+( 245) - func_brush                      . Name: street_portal1_brush. Model: *84 . Origin: -4160.0 2000.0 352.0  HammerId: 630571
+( 246) - func_brush                      . Name: anv_mapfixes_losfix_sidestreet_van2. Model:     . Origin: -1180.0 4061.0 132.0  HammerId:      0
+( 247) - func_brush                      . Name: anv_mapfixes_losfix_sidestreet_van3. Model:     . Origin: -1162.0 4126.0 138.0  HammerId:      0
+( 248) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: 800.0 4320.0 589.1  HammerId:      0
+( 249) - weapon_adrenaline_spawn         . Name:     . Model: models/w_models/weapons/w_eq_adrenaline.mdl. Origin: 2176.0 2832.0 572.4  HammerId:      0
+( 250) - weapon_adrenaline_spawn         . Name:     . Model: models/w_models/weapons/w_eq_adrenaline.mdl. Origin: -1084.0 2746.0 64.4  HammerId:      0
+( 251) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: -1648.0 1760.0 138.3  HammerId:      0
+( 252) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -2416.0 2880.0 0.2  HammerId:      0
+( 253) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -2448.0 1824.0 4.9  HammerId:      0
+( 254) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -2208.0 528.0 4.9  HammerId:      0
+( 255) - weapon_adrenaline_spawn         . Name:     . Model: models/w_models/weapons/w_eq_adrenaline.mdl. Origin: -2752.0 1456.0 0.4  HammerId:      0
+( 256) - func_brush                      . Name: anv_mapfixes_losfix_skybridge_bus. Model:     . Origin: -5310.0 -609.0 460.0  HammerId:      0
+( 257) - func_brush                      . Name: anv_mapfixes_losfix_stairs_gen1. Model:     . Origin: -4974.0 1669.0 392.0  HammerId:      0
+( 258) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -3568.0 2080.0 320.2  HammerId:      0
+( 259) - func_brush                      . Name: anv_mapfixes_losfix_stairs_gen2. Model:     . Origin: -4994.0 1651.0 392.0  HammerId:      0
+( 260) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -5536.0 976.0 568.2  HammerId:      0
+( 261) - func_brush                      . Name: anv_mapfixes_losfix_starting_truck. Model:     . Origin: 1165.0 2493.0 571.5  HammerId:      0
+( 262) - func_brush                      . Name: anv_mapfixes_losfix_tanker1. Model:     . Origin: -6939.0 -1040.0 444.0  HammerId:      0
+( 263) - func_brush                      . Name: anv_mapfixes_losfix_tanker2. Model:     . Origin: -6894.0 -964.0 444.0  HammerId:      0
+( 264) - func_brush                      . Name: anv_mapfixes_losfix_tanker3. Model:     . Origin: -6844.0 -888.0 444.0  HammerId:      0
+( 265) - func_brush                      . Name: anv_mapfixes_losfix_tanker4. Model:     . Origin: -6797.0 -820.0 444.0  HammerId:      0
+( 266) - weapon_adrenaline_spawn         . Name:     . Model: models/w_models/weapons/w_eq_adrenaline.mdl. Origin: -8624.0 -3488.0 384.4  HammerId:      0
+( 267) - func_brush                      . Name: anv_mapfixes_losfix_tanker5. Model:     . Origin: -6753.0 -801.0 444.0  HammerId:      0
+( 268) - func_brush                      . Name: anv_mapfixes_losfix_tanker6. Model:     . Origin: -6753.0 -736.0 444.0  HammerId:      0
+( 269) - func_brush                      . Name: anv_mapfixes_losfix_tanker7. Model:     . Origin: -6675.0 -619.0 444.0  HammerId:      0
+( 270) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_golfclub.mdl. Origin: -5241.0 691.0 385.5  HammerId: 640324
+( 271) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_tonfa.mdl. Origin: -3693.4 2227.8 321.5  HammerId: 640334
+( 272) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_electric_guitar.mdl. Origin: -2396.4 2271.2 84.0  HammerId: 640338
+( 273) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_fireaxe.mdl. Origin: -2194.7 906.6 44.5  HammerId: 640342
+( 274) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_pumpshotgun_A.mdl. Origin: -2260.1 896.5 42.5  HammerId: 640458
+( 275) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_shotgun.mdl. Origin: -1097.0 2852.0 105.0  HammerId: 640560
+( 276) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_smg_a.mdl. Origin: -835.0 3147.0 105.5  HammerId: 640650
+( 277) - func_simpleladder               . Name:     . Model: *85 . Origin: 0.0 0.0 0.0  HammerId: 642054
+( 278) - func_simpleladder               . Name:     . Model: *86 . Origin: 0.0 0.0 0.0  HammerId: 642105
+( 279) - func_simpleladder               . Name:     . Model: *87 . Origin: 0.0 0.0 0.0  HammerId: 642173
+( 280) - func_simpleladder               . Name:     . Model: *88 . Origin: 0.0 0.0 0.0  HammerId: 642205
+( 281) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -2335.9 1648.0 0.3  HammerId: 642449
+( 282) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1856.7 -975.3 3.0  HammerId: 642465
+( 283) - prop_dynamic                    . Name:     . Model: models/props/de_nuke/truck_nuke_glass.mdl. Origin: 1196.2 2486.0 572.8  HammerId: 642755
+( 284) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: 1088.0 2454.0 617.5  HammerId:      0
+( 285) - func_brush                      . Name: anv_mapfixes_losfix_tanker8. Model:     . Origin: -6631.0 -579.0 444.0  HammerId:      0
+( 286) - func_simpleladder               . Name:     . Model: *89 . Origin: 0.0 0.0 0.0  HammerId: 665286
+( 287) - func_simpleladder               . Name:     . Model: *90 . Origin: 0.0 0.0 0.0  HammerId: 665304
+( 288) - func_simpleladder               . Name:     . Model: *91 . Origin: 0.0 0.0 -1000.0  HammerId: 665320
+( 289) - func_simpleladder               . Name:     . Model: *92 . Origin: 0.0 0.0 -1000.0  HammerId: 665344
+( 290) - func_simpleladder               . Name:     . Model: *93 . Origin: 0.0 0.0 -1000.0  HammerId: 665368
+( 291) - trigger_once                    . Name:     . Model: *94 . Origin: -5112.0 728.0 512.0  HammerId: 665506
+( 292) - func_brush                      . Name: anv_mapfixes_losfix_tanker9. Model:     . Origin: -6623.0 -505.0 426.0  HammerId:      0
+( 293) - env_physics_blocker             . Name: anv_mapfixes_clipgap_deadendfence. Model:     . Origin: -1168.0 5160.0 383.0  HammerId:      0
+( 294) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -9112.0 -1664.0 393.1  HammerId:      0
+( 295) - env_physics_blocker             . Name: anv_mapfixes_ladder_copvines_clip. Model:     . Origin: -284.0 3211.0 719.0  HammerId:      0
+( 296) - env_physics_blocker             . Name: anv_mapfixes_ladder_endbillboard_clipB. Model:     . Origin: -7470.0 -150.0 696.0  HammerId:      0
+( 297) - env_physics_blocker             . Name: anv_mapfixes_ladder_endbillboard_clipT. Model:     . Origin: -7471.0 -150.0 714.0  HammerId:      0
+( 298) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -8832.0 -3872.0 388.5  HammerId:      0
+( 299) - weapon_molotov_spawn            . Name:     . Model: models/w_models/weapons/w_eq_molotov.mdl. Origin: 1760.0 3928.0 551.2  HammerId:      0
+( 300) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_smg_uzi.mdl. Origin: 1056.0 2504.0 613.5  HammerId: 677092
+( 301) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_sniper_scout.mdl. Origin: -9139.0 -1870.0 410.8  HammerId: 677115
+( 302) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_sniper_military.mdl. Origin: -9120.0 -1916.0 411.0  HammerId: 677135
+( 303) - func_areaportalwindow           . Name: hotel_portal1. Model: *95 . Origin: 2321.0 4936.0 503.0  HammerId: 684957
+( 304) - func_brush                      . Name: hotel_portal1_brush. Model: *95 . Origin: 2321.0 4936.0 503.0  HammerId: 684971
+( 305) - func_areaportalwindow           . Name: store_portal1. Model: *96 . Origin: -6648.0 -2496.0 456.0  HammerId: 685549
+( 306) - func_brush                      . Name: store_portal1_brush. Model: *96 . Origin: -6648.0 -2496.0 456.0  HammerId: 685564
+( 307) - func_brush                      . Name: highway_portal1_brush. Model: *97 . Origin: -3400.0 2140.0 186.0  HammerId: 685884
+( 308) - func_brush                      . Name: highway_portal2_brush. Model: *98 . Origin: -3896.0 2240.0 378.0  HammerId: 685905
+( 309) - func_brush                      . Name: street_portal2_brush. Model: *99 . Origin: -968.0 3208.0 378.0  HammerId: 685944
+( 310) - func_brush                      . Name: street_portal3_brush. Model: *100. Origin: -920.0 3416.0 186.0  HammerId: 685968
+( 311) - func_simpleladder               . Name:     . Model: *101. Origin: 0.0 0.0 0.0  HammerId: 691981
+( 312) - func_simpleladder               . Name:     . Model: *102. Origin: 0.0 0.0 0.0  HammerId: 691989
+( 313) - func_simpleladder               . Name:     . Model: *103. Origin: 0.0 0.0 0.0  HammerId: 691997
+( 314) - func_simpleladder               . Name:     . Model: *104. Origin: 0.0 0.0 0.0  HammerId: 692007
+( 315) - func_simpleladder               . Name:     . Model: *105. Origin: 0.0 0.0 0.0  HammerId: 692091
+( 316) - func_simpleladder               . Name:     . Model: *106. Origin: 0.0 0.0 0.0  HammerId: 692093
+( 317) - env_physics_blocker             . Name: anv_mapfixes_ladder_saferoomperch_clip. Model:     . Origin: -8190.0 -4353.0 384.0  HammerId:      0
+( 318) - env_physics_blocker             . Name: anv_mapfixes_ladder_tankhedge_jumpclip. Model:     . Origin: 2644.0 3327.0 640.0  HammerId:      0
+( 319) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_railingtop. Model:     . Origin: -2614.0 2318.0 348.0  HammerId:      0
+( 320) - info_gamemode                   . Name:     . Model:     . Origin: 2304.0 5120.0 512.0  (IN SAFEROOM) HammerId: 697187
+( 321) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_railleftbot. Model:     . Origin: -1154.0 2322.0 320.0  HammerId:      0
+( 322) - env_physics_blocker             . Name: anv_mapfixes_ladderqol_raillefttop. Model:     . Origin: -1154.0 2321.0 368.0  HammerId:      0
+( 323) - info_map_parameters_versus      . Name: map_parameters_vs. Model:     . Origin: 1536.0 4672.0 576.0  HammerId: 710781
+( 324) - env_physics_blocker             . Name: anv_mapfixes_skybridgebus_clip. Model:     . Origin: -5164.0 -485.0 595.0  HammerId:      0
+( 325) - prop_physics                    . Name:     . Model: models/props_junk/propanecanister001a.mdl. Origin: -896.0 3584.0 331.2  HammerId: 710933
+( 326) - env_physics_blocker             . Name: anv_mapfixes_sneaky_hunter. Model:     . Origin: -9207.0 -4402.0 1024.0  HammerId:      0
+( 327) - env_physics_blocker             . Name: anv_mapfixes_yeswaychoke_clip. Model:     . Origin: -3636.0 1800.0 523.0  HammerId:      0
+( 328) - env_physics_blocker             . Name: anv_mapfixes_yeswaycorner_clip. Model:     . Origin: 3703.0 2048.0 704.0  HammerId:      0
+( 329) - prop_physics                    . Name:     . Model: models/props_junk/propanecanister001a.mdl. Origin: -3380.0 2275.9 139.1  HammerId: 711017
+( 330) - env_physics_blocker             . Name: anv_mapfixes_yeswayturnpike_clipa. Model:     . Origin: -384.0 512.0 704.0  HammerId:      0
+( 331) - prop_physics                    . Name:     . Model: models/props_junk/propanecanister001a.mdl. Origin: -7004.1 -1920.0 403.0  HammerId: 711041
+( 332) - env_physics_blocker             . Name: anv_mapfixes_yeswayturnpike_clipb. Model:     . Origin: -876.0 48.0 456.0  HammerId:      0
+( 333) - func_simpleladder               . Name: anv_mapfixes_ladder_acbuildfront_cloned_acbuildside. Model: *64 . Origin: -5059.0 7184.0 0.0  HammerId:      0
+( 334) - prop_physics                    . Name:     . Model: models/props_junk/gascan001a.mdl. Origin: -1649.4 1699.9 133.0  HammerId: 711077
+( 335) - prop_physics                    . Name:     . Model: models/props_junk/gascan001a.mdl. Origin: -3624.0 2256.0 138.8  HammerId: 711101
+( 336) - func_simpleladder               . Name: anv_mapfixes_ladder_copfenceright_cloned_copfenceleft. Model: *207. Origin: 8.0 450.0 0.0  HammerId:      0
+( 337) - prop_physics                    . Name:     . Model: models/props_junk/gascan001a.mdl. Origin: -5552.0 856.0 578.8  HammerId: 711141
+( 338) - prop_physics                    . Name:     . Model: models/props_equipment/oxygentank01.mdl. Origin: 1175.9 2480.0 614.8  HammerId: 711177
+( 339) - prop_physics                    . Name:     . Model: models/props_equipment/oxygentank01.mdl. Origin: -9150.0 -1809.5 391.9  HammerId: 711225
+( 340) - prop_physics                    . Name:     . Model: models/props_equipment/oxygentank01.mdl. Origin: -9109.1 -1695.7 393.0  HammerId: 711233
+( 341) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -7080.0 -1112.0 384.2  HammerId: 802724
+( 342) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -7065.0 -1024.1 384.2  HammerId: 802728
+( 343) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -7054.0 -936.0 384.2  HammerId: 802732
+( 344) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -7036.3 -846.9 384.2  HammerId: 802736
+( 345) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -6897.5 -514.7 384.2  HammerId: 802740
+( 346) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -6873.5 -428.7 384.2  HammerId: 802744
+( 347) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -6999.5 -762.7 384.2  HammerId: 803236
+( 348) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -6953.5 -684.7 384.2  HammerId: 803248
+( 349) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_fortifications/concrete_wall001_96_reference.mdl. Origin: -6919.5 -602.7 384.2  HammerId: 803252
+( 350) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_downtown/sign_post.mdl. Origin: -6932.0 -1166.0 393.0  HammerId: 833658
+( 351) - func_brush                      . Name: tanker_wall_01. Model: *107. Origin: -6977.0 -1166.0 524.0  HammerId: 833662
+( 352) - prop_physics                    . Name: tanker_barrel. Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -6760.8 -904.8 384.9  HammerId: 841232
+( 353) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6750.0 -2273.0 392.4  HammerId: 883011
+( 354) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6806.0 -2289.0 392.4  HammerId: 883015
+( 355) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6858.0 -2289.0 392.3  HammerId: 883019
+( 356) - func_simpleladder               . Name: anv_mapfixes_ladder_copvines_cloned_startvines. Model: *7  . Origin: -2420.0 -1725.0 -35.0  HammerId:      0
+( 357) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: -7419.3 -1499.7 433.1  HammerId: 884322
+( 358) - func_simpleladder               . Name: anv_mapfixes_ladder_dumpsterfront_cloned_dumpsterback. Model: *58 . Origin: -9818.0 -2332.0 0.0  HammerId:      0
+( 359) - func_simpleladder               . Name: anv_mapfixes_ladder_dynamictanker_cloned_roundthehedge. Model: *4  . Origin: -5913.0 -8705.0 0.0  HammerId:      0
+( 360) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -4663.0 1119.0 256.2  HammerId:      0
+( 361) - func_simpleladder               . Name: anv_mapfixes_ladder_endbillboardB_cloned_save4lessleft. Model: *112. Origin: -729.0 2611.0 -89.0  HammerId:      0
+( 362) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6740.2 -710.8 415.5  HammerId:      0
+( 363) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6791.1 -718.6 407.6  HammerId:      0
+( 364) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7134.5 -1541.3 392.4  HammerId: 884456
+( 365) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7082.5 -1541.4 392.4  HammerId: 884460
+( 366) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_tonfa.mdl. Origin: -6816.4 -2440.0 433.0  HammerId: 884494
+( 367) - func_illusionary                . Name:     . Model: *108. Origin: -7069.5 -1636.0 473.8  HammerId: 890975
+( 368) - prop_dynamic                    . Name:     . Model: models/props_vehicles/van_glass.mdl. Origin: -4769.0 -1529.0 454.9  HammerId: 930153
+( 369) - prop_physics                    . Name:     . Model: models/props_junk/gascan001a.mdl. Origin: -7197.1 -2006.6 402.9  HammerId: 932711
+( 370) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7449.0 -2716.8 392.4  HammerId: 932719
+( 371) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7507.1 -1854.0 392.5  HammerId: 932735
+( 372) - prop_dynamic                    . Name: tanker_fence_model. Model: models/props_urban/telephone_pole002.mdl. Origin: -7017.0 -1011.0 382.1  HammerId: 933038
+( 373) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -6024.2 -483.5 441.8  HammerId: 941213
+( 374) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -6005.6 -385.7 442.9  HammerId: 941217
+( 375) - trigger_once                    . Name: trigger_store_glow. Model: *109. Origin: -5229.9 -505.6 680.0  HammerId: 951275
+( 376) - player_weaponstrip              . Name: cola_weaponstrip. Model:     . Origin: -5472.0 -2048.0 672.0  HammerId: 951278
+( 377) - info_game_event_proxy           . Name: gunshop_return_proxy. Model:     . Origin: -5372.0 -1956.0 688.0  HammerId: 951280
+( 378) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6697.5 -716.8 407.6  HammerId:      0
+( 379) - ambient_generic                 . Name: dumb_waiter_sound. Model:     . Origin: -5411.4 -2358.5 764.2  HammerId: 951293
+( 380) - prop_dynamic                    . Name: gunshop_door01_dynamic. Model: models/props_doors/gun_store_door.mdl. Origin: -5372.0 -1947.0 616.0  HammerId: 951398
+( 381) - point_prop_use_target           . Name: cola_delivered. Model:     . Origin: -5372.0 -1980.0 669.0  HammerId: 951982
+( 382) - trigger_push                    . Name: tanker_push_trigger. Model: *110. Origin: -6912.0 -1048.0 480.0  HammerId: 957287
+( 383) - env_shake                       . Name: tanker_shake1. Model:     . Origin: -6848.0 -960.0 448.0  HammerId: 957310
+( 384) - func_simpleladder               . Name:     . Model: *111. Origin: 0.0 0.0 0.0  HammerId: 963157
+( 385) - func_simpleladder               . Name:     . Model: *112. Origin: 0.0 0.0 0.0  HammerId: 963163
+( 386) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -952.6 3097.8 72.5  HammerId: 989479
+( 387) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1148.0 5164.3 198.0  HammerId: 1040842
+( 388) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1052.3 5177.2 199.5  HammerId: 1040850
+( 389) - func_simpleladder               . Name: anv_mapfixes_ladder_endbillboardT_cloned_save4lessright. Model: *111. Origin: -6642.5 -6636.1 -2475.6  HammerId:      0
+( 390) - prop_physics                    . Name:     . Model: models/props_junk/propanecanister001a.mdl. Origin: 1745.1 3973.6 522.8  HammerId: 1076551
+( 391) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_electric_guitar.mdl. Origin: 1467.1 4863.6 454.6  HammerId: 1077321
+( 392) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6724.8 -760.1 407.6  HammerId:      0
+( 393) - prop_physics                    . Name:     . Model: models/props_junk/gascan001a.mdl. Origin: -4926.7 1664.1 394.9  HammerId: 1111270
+( 394) - prop_physics                    . Name:     . Model: models/props_junk/propanecanister001a.mdl. Origin: -4911.8 1645.7 395.4  HammerId: 1111278
+( 395) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -4114.4 1111.9 153.2  HammerId: 1118039
+( 396) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -4186.0 1102.3 152.0  HammerId: 1118043
+( 397) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -4344.3 1062.4 155.2  HammerId: 1118051
+( 398) - keyframe_rope                   . Name: AutoInstance1-cable04_9. Model:     . Origin: -2831.7 2472.3 725.0  HammerId: 1126573
+( 399) - keyframe_rope                   . Name: AutoInstance1-cable03_9. Model:     . Origin: -2828.3 2449.2 724.0  HammerId: 1126576
+( 400) - keyframe_rope                   . Name: AutoInstance1-cable02_9. Model:     . Origin: -2831.4 2379.0 724.0  HammerId: 1126579
+( 401) - keyframe_rope                   . Name: AutoInstance1-cable01_9. Model:     . Origin: -2828.0 2356.0 724.0  HammerId: 1126582
+( 402) - keyframe_rope                   . Name: AutoInstance1-cable04_10. Model:     . Origin: -4467.7 2478.3 743.0  HammerId: 1126913
+( 403) - keyframe_rope                   . Name: AutoInstance1-cable03_10. Model:     . Origin: -4464.3 2455.2 742.0  HammerId: 1126916
+( 404) - keyframe_rope                   . Name: AutoInstance1-cable02_10. Model:     . Origin: -4467.4 2385.0 742.0  HammerId: 1126919
+( 405) - keyframe_rope                   . Name: AutoInstance1-cable01_10. Model:     . Origin: -4464.0 2362.0 742.0  HammerId: 1126922
+( 406) - keyframe_rope                   . Name: AutoInstance1-cable04_11. Model:     . Origin: -5592.0 2470.3 759.0  HammerId: 1126953
+( 407) - keyframe_rope                   . Name: AutoInstance1-cable03_11. Model:     . Origin: -5588.5 2447.2 758.0  HammerId: 1126956
+( 408) - keyframe_rope                   . Name: AutoInstance1-cable02_11. Model:     . Origin: -5591.6 2377.0 758.0  HammerId: 1126959
+( 409) - keyframe_rope                   . Name: AutoInstance1-cable01_11. Model:     . Origin: -5588.2 2354.0 758.0  HammerId: 1126962
+( 410) - keyframe_rope                   . Name: AutoInstance1-cable04_12. Model:     . Origin: -6725.7 2750.3 895.0  HammerId: 1126973
+( 411) - keyframe_rope                   . Name: AutoInstance1-cable03_12. Model:     . Origin: -6722.3 2727.2 894.0  HammerId: 1126976
+( 412) - keyframe_rope                   . Name: AutoInstance1-cable02_12. Model:     . Origin: -6725.4 2657.0 894.0  HammerId: 1126979
+( 413) - keyframe_rope                   . Name: AutoInstance1-cable01_12. Model:     . Origin: -6722.0 2634.0 894.0  HammerId: 1126982
+( 414) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6715.7 -671.5 415.4  HammerId:      0
+( 415) - move_rope                       . Name: cable_10_1. Model:     . Origin: -1021.0 6721.0 573.5  HammerId: 1143605
+( 416) - move_rope                       . Name: cable_11_1. Model:     . Origin: -1052.0 6723.1 573.5  HammerId: 1143616
+( 417) - keyframe_rope                   . Name: cable_10_2. Model:     . Origin: -1051.0 5979.0 506.7  HammerId: 1143631
+( 418) - keyframe_rope                   . Name: cable_11_2. Model:     . Origin: -1067.0 5979.0 507.1  HammerId: 1143645
+( 419) - keyframe_rope                   . Name: cable_11_3. Model:     . Origin: -1069.0 4851.0 507.1  HammerId: 1143800
+( 420) - keyframe_rope                   . Name: cable_10_3. Model:     . Origin: -1053.0 4851.0 506.7  HammerId: 1143803
+( 421) - keyframe_rope                   . Name: cable_11_4. Model:     . Origin: -1069.0 4032.0 515.1  HammerId: 1143812
+( 422) - keyframe_rope                   . Name: cable_10_4. Model:     . Origin: -1053.0 4032.0 514.7  HammerId: 1143815
+( 423) - keyframe_rope                   . Name: cable_11_5. Model:     . Origin: -1067.0 3189.0 548.1  HammerId: 1143872
+( 424) - keyframe_rope                   . Name: cable_10_5. Model:     . Origin: -1051.0 3193.0 547.7  HammerId: 1143875
+( 425) - move_rope                       . Name: cable_12_1. Model:     . Origin: -4223.0 701.0 383.9  HammerId: 1145540
+( 426) - move_rope                       . Name: cable_13_1. Model:     . Origin: -4238.0 709.0 383.9  HammerId: 1145605
+( 427) - keyframe_rope                   . Name: cable_12_2. Model:     . Origin: -3990.0 1560.0 382.2  HammerId: 1145611
+( 428) - keyframe_rope                   . Name: cable_13_2. Model:     . Origin: -4007.0 1563.0 381.9  HammerId: 1145640
+( 429) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1582.9 52.0 64.4  HammerId: 1152012
+( 430) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1670.2 85.4 64.4  HammerId: 1152016
+( 431) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2801.1 1629.6 0.3  HammerId: 1152421
+( 432) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2743.0 1579.5 0.3  HammerId: 1152425
+( 433) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2645.6 1536.3 0.4  HammerId: 1152429
+( 434) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2423.8 1133.1 0.4  HammerId: 1152437
+( 435) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2368.7 1252.5 0.3  HammerId: 1152441
+( 436) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2296.9 1406.2 0.5  HammerId: 1152445
+( 437) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2246.8 1523.3 0.5  HammerId: 1152453
+( 438) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: 1183.9 2712.0 572.3  HammerId: 651095
+( 439) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -639.3 2815.2 348.6  HammerId: 1152465
+( 440) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -706.5 2895.4 340.2  HammerId: 1152469
+( 441) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -771.6 2978.0 333.5  HammerId: 1152477
+( 442) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -815.6 3045.8 328.9  HammerId: 1152481
+( 443) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: 1569.0 3039.0 572.3  HammerId: 1152505
+( 444) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: 1658.3 3035.5 572.4  HammerId: 1152509
+( 445) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: 2128.4 3097.5 576.4  HammerId: 1152513
+( 446) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: 2250.5 3168.0 576.4  HammerId: 1152517
+( 447) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: 1094.4 2879.9 571.3  HammerId: 1152525
+( 448) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: 1122.6 2846.3 571.8  HammerId: 1152529
+( 449) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -8103.2 -3210.0 384.4  HammerId: 1186603
+( 450) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -8649.5 -3877.6 384.5  HammerId: 1186611
+( 451) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -8128.3 -4071.5 384.4  HammerId: 1186615
+( 452) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -8158.0 -780.0 384.5  HammerId: 1186619
+( 453) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -8137.6 -861.9 384.5  HammerId: 1186623
+( 454) - weapon_first_aid_kit_spawn      . Name: checkpoint_kits. Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -7683.0 -4759.0 419.5  (IN SAFEROOM) HammerId: 1206633
+( 455) - weapon_first_aid_kit_spawn      . Name: checkpoint_kits. Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -7701.0 -4738.0 422.1  (IN SAFEROOM) HammerId: 1206635
+( 456) - weapon_first_aid_kit_spawn      . Name: checkpoint_kits. Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -7698.0 -4755.0 419.5  (IN SAFEROOM) HammerId: 1206637
+( 457) - weapon_first_aid_kit_spawn      . Name: checkpoint_kits. Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -7683.1 -4744.0 422.1  (IN SAFEROOM) HammerId: 1206639
+( 458) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: -7695.0 -4716.0 419.6  (IN SAFEROOM) HammerId: 1206641
+( 459) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_shotgun_spas.mdl. Origin: -7684.3 -4682.8 420.5  (IN SAFEROOM) HammerId: 1206643
+( 460) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_rifle_sg552.mdl. Origin: -7684.3 -4650.8 420.2  (IN SAFEROOM) HammerId: 1206645
+( 461) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_sniper_military.mdl. Origin: -7684.3 -4628.8 420.2  (IN SAFEROOM) HammerId: 1206647
+( 462) - trigger_multiple                . Name: gunshop_detect_trigger. Model: *120. Origin: -5088.0 -1920.0 527.3  HammerId: 1213254
+( 463) - info_game_event_proxy           . Name: gunshop_proxy. Model:     . Origin: -4914.0 -2068.0 518.0  HammerId: 1213257
+( 464) - func_orator                     . Name: orator. Model:     . Origin: -4908.0 -2072.0 560.0  HammerId: 1213259
+( 465) - func_button                     . Name: gunshop_door_button. Model: *121. Origin: -4924.0 -2068.0 491.3  HammerId: 1213261
+( 466) - prop_door_rotating              . Name: gunshop_door_01. Model: models/props_downtown/metal_door_112.mdl. Origin: -4932.0 -2148.0 455.9  HammerId: 1213264
+( 467) - prop_dynamic                    . Name: tanker_back_wrecked. Model: models/destruction_tanker/destruction_tanker_rear.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213353
+( 468) - prop_dynamic                    . Name: tanker_front_wrecked. Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213376
+( 469) - prop_dynamic                    . Name: tanker_debris_1. Model: models/destruction_tanker/destruction_tanker_debris_1.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213411
+( 470) - prop_dynamic                    . Name: tanker_debris_2. Model: models/destruction_tanker/destruction_tanker_debris_2.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213434
+( 471) - prop_dynamic                    . Name: tanker_debris_3. Model: models/destruction_tanker/destruction_tanker_debris_3.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213453
+( 472) - prop_dynamic                    . Name: tanker_debris_4. Model: models/destruction_tanker/destruction_tanker_debris_4.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213643
+( 473) - prop_dynamic                    . Name: tanker_debris_5. Model: models/destruction_tanker/destruction_tanker_debris_5.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213666
+( 474) - prop_dynamic                    . Name: tanker_front. Model: models/destruction_tanker/destruction_tanker_cab.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1213761
+( 475) - func_simpleladder               . Name:     . Model: *122. Origin: 0.0 0.0 0.0  HammerId: 1219805
+( 476) - func_simpleladder               . Name:     . Model: *123. Origin: 0.0 0.0 0.0  HammerId: 1219811
+( 477) - func_simpleladder               . Name:     . Model: *124. Origin: 0.0 0.0 0.0  HammerId: 1219817
+( 478) - trigger_once                    . Name:     . Model: *125. Origin: -5088.0 -1688.0 519.4  HammerId: 1227408
+( 479) - func_brush                      . Name: tanker_wall_01. Model: *126. Origin: -7124.0 -1242.0 488.0  HammerId: 1227447
+( 480) - prop_dynamic                    . Name: tanker_awning. Model: models/destruction_tanker/destruction_awning.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1234088
+( 481) - func_brush                      . Name: tanker_wall_01. Model: *127. Origin: -6976.0 -1232.0 532.0  HammerId: 1234128
+( 482) - func_simpleladder               . Name:     . Model: *128. Origin: 0.0 0.0 0.0  HammerId: 1234372
+( 483) - func_simpleladder               . Name:     . Model: *129. Origin: 0.0 0.0 0.0  HammerId: 1234521
+( 484) - func_nav_blocker                . Name: gunshop_door_blocker. Model: *130. Origin: 0.0 0.0 0.0  HammerId: 1247112
+( 485) - func_simpleladder               . Name: anv_mapfixes_ladder_endfence_cloned_carthedge. Model: *60 . Origin: -1040.0 -1456.0 -47.0  HammerId:      0
+( 486) - func_playerinfected_clip        . Name:     . Model: *131. Origin: 0.0 0.0 0.0  HammerId: 1261568
+( 487) - func_playerinfected_clip        . Name:     . Model: *132. Origin: 0.0 0.0 0.0  HammerId: 1261570
+( 488) - func_playerinfected_clip        . Name:     . Model: *133. Origin: 0.0 0.0 0.0  HammerId: 1261572
+( 489) - func_playerinfected_clip        . Name:     . Model: *134. Origin: 0.0 0.0 0.0  HammerId: 1261574
+( 490) - func_playerinfected_clip        . Name:     . Model: *135. Origin: 0.0 0.0 0.0  HammerId: 1261576
+( 491) - func_playerinfected_clip        . Name:     . Model: *136. Origin: 0.0 0.0 0.0  HammerId: 1261578
+( 492) - func_playerinfected_clip        . Name:     . Model: *137. Origin: 0.0 0.0 0.0  HammerId: 1261580
+( 493) - func_playerinfected_clip        . Name:     . Model: *138. Origin: 0.0 0.0 0.0  HammerId: 1261582
+( 494) - func_playerinfected_clip        . Name:     . Model: *139. Origin: 0.0 0.0 0.0  HammerId: 1261584
+( 495) - func_playerinfected_clip        . Name:     . Model: *140. Origin: 0.0 0.0 0.0  HammerId: 1261586
+( 496) - func_playerinfected_clip        . Name:     . Model: *141. Origin: 0.0 0.0 0.0  HammerId: 1261588
+( 497) - func_playerinfected_clip        . Name:     . Model: *142. Origin: 0.0 0.0 0.0  HammerId: 1261590
+( 498) - func_playerinfected_clip        . Name:     . Model: *143. Origin: 0.0 0.0 0.0  HammerId: 1261592
+( 499) - func_playerinfected_clip        . Name:     . Model: *144. Origin: 0.0 0.0 0.0  HammerId: 1261594
+( 500) - func_playerinfected_clip        . Name:     . Model: *145. Origin: 0.0 0.0 0.0  HammerId: 1261596
+( 501) - func_playerinfected_clip        . Name:     . Model: *146. Origin: 0.0 0.0 0.0  HammerId: 1261598
+( 502) - func_playerinfected_clip        . Name:     . Model: *147. Origin: 0.0 0.0 0.0  HammerId: 1261600
+( 503) - func_playerinfected_clip        . Name:     . Model: *148. Origin: 0.0 0.0 0.0  HammerId: 1261602
+( 504) - func_playerinfected_clip        . Name:     . Model: *149. Origin: 0.0 0.0 0.0  HammerId: 1261604
+( 505) - func_playerinfected_clip        . Name:     . Model: *150. Origin: 0.0 0.0 0.0  HammerId: 1261606
+( 506) - func_playerinfected_clip        . Name:     . Model: *151. Origin: 0.0 0.0 0.0  HammerId: 1261608
+( 507) - func_playerinfected_clip        . Name:     . Model: *152. Origin: 0.0 0.0 0.0  HammerId: 1261610
+( 508) - func_playerinfected_clip        . Name:     . Model: *153. Origin: 0.0 0.0 0.0  HammerId: 1261612
+( 509) - func_playerinfected_clip        . Name:     . Model: *154. Origin: 0.0 0.0 0.0  HammerId: 1261614
+( 510) - func_playerinfected_clip        . Name:     . Model: *155. Origin: 0.0 0.0 0.0  HammerId: 1261616
+( 511) - func_playerinfected_clip        . Name:     . Model: *156. Origin: 0.0 0.0 0.0  HammerId: 1261618
+( 512) - func_playerinfected_clip        . Name:     . Model: *157. Origin: 0.0 0.0 0.0  HammerId: 1261620
+( 513) - predicted_viewmodel             . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2375.8 5244.5 448.0  HammerId:      0
+( 514) - weapon_pistol                   . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2375.8 5244.5 448.0  HammerId:      0
+( 515) - predicted_viewmodel             . Name:     . Model:     . Origin: 2405.6 5050.7 448.0  HammerId:      0
+( 516) - func_playerinfected_clip        . Name:     . Model: *161. Origin: 0.0 0.0 0.0  HammerId: 1261628
+( 517) - func_playerinfected_clip        . Name:     . Model: *162. Origin: 0.0 0.0 0.0  HammerId: 1261630
+( 518) - func_playerinfected_clip        . Name:     . Model: *163. Origin: 0.0 0.0 0.0  HammerId: 1261632
+( 519) - func_playerinfected_clip        . Name:     . Model: *164. Origin: 0.0 0.0 0.0  HammerId: 1261634
+( 520) - func_playerinfected_clip        . Name:     . Model: *165. Origin: 0.0 0.0 0.0  HammerId: 1261636
+( 521) - func_playerinfected_clip        . Name:     . Model: *166. Origin: 0.0 0.0 0.0  HammerId: 1261638
+( 522) - func_playerinfected_clip        . Name:     . Model: *167. Origin: 0.0 0.0 0.0  HammerId: 1261640
+( 523) - func_playerinfected_clip        . Name:     . Model: *168. Origin: 0.0 0.0 0.0  HammerId: 1261642
+( 524) - func_playerinfected_clip        . Name:     . Model: *169. Origin: 0.0 0.0 0.0  HammerId: 1261644
+( 525) - func_playerinfected_clip        . Name:     . Model: *170. Origin: 0.0 0.0 0.0  HammerId: 1261646
+( 526) - func_playerinfected_clip        . Name:     . Model: *171. Origin: 0.0 0.0 0.0  HammerId: 1261648
+( 527) - func_playerinfected_clip        . Name:     . Model: *172. Origin: 0.0 0.0 0.0  HammerId: 1261650
+( 528) - func_playerinfected_clip        . Name:     . Model: *173. Origin: 0.0 0.0 0.0  HammerId: 1261652
+( 529) - func_playerinfected_clip        . Name:     . Model: *174. Origin: 0.0 0.0 0.0  HammerId: 1261654
+( 530) - func_playerinfected_clip        . Name:     . Model: *175. Origin: 0.0 0.0 0.0  HammerId: 1261656
+( 531) - func_playerinfected_clip        . Name:     . Model: *176. Origin: 0.0 0.0 0.0  HammerId: 1261658
+( 532) - predicted_viewmodel             . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2405.6 5050.7 448.0  HammerId:      0
+( 533) - weapon_pistol                   . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2405.6 5050.7 448.0  HammerId:      0
+( 534) - func_playerinfected_clip        . Name:     . Model: *179. Origin: 0.0 0.0 0.0  HammerId: 1261664
+( 535) - func_playerinfected_clip        . Name:     . Model: *180. Origin: 0.0 0.0 0.0  HammerId: 1261666
+( 536) - func_playerinfected_clip        . Name:     . Model: *181. Origin: 0.0 0.0 0.0  HammerId: 1261668
+( 537) - func_playerinfected_clip        . Name:     . Model: *182. Origin: 0.0 0.0 0.0  HammerId: 1261670
+( 538) - func_playerinfected_clip        . Name:     . Model: *183. Origin: 0.0 0.0 0.0  HammerId: 1261672
+( 539) - func_playerinfected_clip        . Name:     . Model: *184. Origin: 0.0 0.0 0.0  HammerId: 1261674
+( 540) - func_playerinfected_clip        . Name:     . Model: *185. Origin: 0.0 0.0 0.0  HammerId: 1261676
+( 541) - predicted_viewmodel             . Name:     . Model:     . Origin: 2303.3 5145.5 448.0  HammerId:      0
+( 542) - predicted_viewmodel             . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2303.3 5145.5 448.0  HammerId:      0
+( 543) - func_brush                      . Name:     . Model: *188. Origin: -1616.0 20.0 256.0  HammerId: 1262072
+( 544) - func_brush                      . Name:     . Model: *189. Origin: -1676.0 35.0 256.0  HammerId: 1262087
+( 545) - func_brush                      . Name:     . Model: *190. Origin: -6596.0 576.0 832.0  HammerId: 1262277
+( 546) - func_brush                      . Name:     . Model: *191. Origin: -6596.0 704.0 832.0  HammerId: 1262282
+( 547) - func_brush                      . Name:     . Model: *192. Origin: -6596.0 832.0 832.0  HammerId: 1262287
+( 548) - func_brush                      . Name:     . Model: *193. Origin: -6596.0 960.0 832.0  HammerId: 1262292
+( 549) - logic_director_query            . Name: director_query. Model:     . Origin: -8000.0 -992.0 448.0  HammerId: 1283163
+( 550) - trigger_once                    . Name:     . Model: *194. Origin: -7935.2 -1088.0 480.0  HammerId: 1283165
+( 551) - func_simpleladder               . Name:     . Model: *195. Origin: 0.0 0.0 0.0  HammerId: 1289766
+( 552) - func_simpleladder               . Name:     . Model: *196. Origin: 0.0 0.0 0.0  HammerId: 1289827
+( 553) - func_simpleladder               . Name:     . Model: *197. Origin: 0.0 -4.0 0.0  HammerId: 1289907
+( 554) - func_simpleladder               . Name:     . Model: *198. Origin: 0.0 0.0 0.0  HammerId: 1289987
+( 555) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -1392.6 1854.6 96.1  HammerId: 1300598
+( 556) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -1458.0 1679.7 111.5  HammerId: 1300654
+( 557) - move_rope                       . Name: cable_14_1. Model:     . Origin: -3384.0 1792.0 378.5  HammerId: 1301215
+( 558) - move_rope                       . Name: cable_14_1. Model:     . Origin: -3384.0 1781.0 367.0  HammerId: 1301295
+( 559) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -2916.7 1952.5 14.3  HammerId: 1318889
+( 560) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -2899.3 1983.0 9.9  HammerId: 1318941
+( 561) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -3013.3 1568.3 38.4  HammerId: 1318985
+( 562) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -8041.4 -3104.2 384.4  HammerId: 1329768
+( 563) - move_rope                       . Name: AutoInstance1-cable01_13. Model:     . Origin: -3668.0 -1550.0 1007.9  HammerId: 1330663
+( 564) - move_rope                       . Name: AutoInstance1-cable02_13. Model:     . Origin: -3670.0 -1528.0 1008.9  HammerId: 1330666
+( 565) - move_rope                       . Name: AutoInstance1-cable03_13. Model:     . Origin: -3656.0 -1458.0 1012.9  HammerId: 1330669
+( 566) - move_rope                       . Name: AutoInstance1-cable04_13. Model:     . Origin: -3656.0 -1434.0 1013.9  HammerId: 1330672
+( 567) - keyframe_rope                   . Name: AutoInstance1-cable04_14. Model:     . Origin: -4685.0 -1503.0 896.9  HammerId: 1330675
+( 568) - keyframe_rope                   . Name: AutoInstance1-cable03_14. Model:     . Origin: -4686.0 -1525.0 895.9  HammerId: 1330678
+( 569) - keyframe_rope                   . Name: AutoInstance1-cable02_14. Model:     . Origin: -4698.0 -1595.0 891.9  HammerId: 1330681
+( 570) - keyframe_rope                   . Name: AutoInstance1-cable01_14. Model:     . Origin: -4698.0 -1618.0 890.9  HammerId: 1330684
+( 571) - keyframe_rope                   . Name: AutoInstance1-cable04_17. Model:     . Origin: -8496.0 -20.0 816.0  HammerId: 1330711
+( 572) - keyframe_rope                   . Name: AutoInstance1-cable03_17. Model:     . Origin: -8508.0 -40.0 819.0  HammerId: 1330714
+( 573) - keyframe_rope                   . Name: AutoInstance1-cable02_17. Model:     . Origin: -8554.0 -94.0 823.0  HammerId: 1330717
+( 574) - keyframe_rope                   . Name: AutoInstance1-cable01_17. Model:     . Origin: -8564.2 -114.0 823.0  HammerId: 1330720
+( 575) - move_rope                       . Name: AutoInstance1-cable05_2. Model:     . Origin: -4330.0 -1747.0 710.9  HammerId: 1330723
+( 576) - move_rope                       . Name: AutoInstance1-cable06_2. Model:     . Origin: -5448.0 -1662.0 787.9  HammerId: 1330726
+( 577) - keyframe_rope                   . Name: AutoInstance1-cable01_18. Model:     . Origin: -10138.0 -164.0 823.0  HammerId: 1333296
+( 578) - keyframe_rope                   . Name: AutoInstance1-cable02_18. Model:     . Origin: -10136.0 -140.0 823.0  HammerId: 1333299
+( 579) - keyframe_rope                   . Name: AutoInstance1-cable03_18. Model:     . Origin: -10124.0 -72.0 819.0  HammerId: 1333302
+( 580) - keyframe_rope                   . Name: AutoInstance1-cable04_18. Model:     . Origin: -10124.0 -50.0 816.0  HammerId: 1333305
+( 581) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7865.0 -4531.0 384.4  HammerId: 1349501
+( 582) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7917.0 -4530.9 384.4  HammerId: 1349505
+( 583) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8669.9 -4482.0 384.4  HammerId: 1349509
+( 584) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8625.0 -4508.1 384.4  HammerId: 1349513
+( 585) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8283.9 -4512.0 384.4  HammerId: 1349545
+( 586) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8562.0 -4520.0 397.1  HammerId: 1349557
+( 587) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6610.9 -2700.9 392.5  HammerId: 1349581
+( 588) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6599.0 -2640.0 392.4  HammerId: 1349585
+( 589) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -6330.0 -2418.2 404.6  HammerId: 1349621
+( 590) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -5386.0 -1451.9 461.0  HammerId: 1349645
+( 591) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8051.6 -1933.8 397.0  HammerId: 1349649
+( 592) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8315.3 -2847.9 397.0  HammerId: 1349653
+( 593) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -5440.0 1088.0 384.0  HammerId: 1357713
+( 594) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -5504.0 1152.0 384.0  HammerId: 1357716
+( 595) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -5440.0 1216.0 384.0  HammerId: 1357719
+( 596) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -5486.3 1261.0 447.7  HammerId:      0
+( 597) - func_simpleladder               . Name: anv_mapfixes_ladder_endfenceconcrete_cloned_endvanconcrete. Model: *52 . Origin: -9200.0 4227.0 0.0  HammerId:      0
+( 598) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -5295.0 -1795.0 498.0  HammerId: 1357893
+( 599) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -5309.0 -1788.0 498.0  HammerId: 1357930
+( 600) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -5346.0 -1814.0 498.0  HammerId: 1357954
+( 601) - weapon_first_aid_kit_spawn      . Name:     . Model: models/w_models/weapons/w_eq_Medkit.mdl. Origin: -5332.0 -1833.0 498.0  HammerId: 1357960
+( 602) - func_simpleladder               . Name: anv_mapfixes_ladder_fencedinplatform_cloned_longfencefarleft. Model: *102. Origin: -2305.0 3724.0 -18.0  HammerId:      0
+( 603) - func_brush                      . Name: store_awning_01. Model: *199. Origin: -6992.5 -1306.6 532.0  HammerId: 1381737
+( 604) - func_simpleladder               . Name: anv_mapfixes_ladder_hedgesreturn_cloned_skystairsback. Model: *72 . Origin: -10775.0 -1021.0 0.0  HammerId:      0
+( 605) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -7872.0 -3536.0 414.9  HammerId:      0
+( 606) - func_simpleladder               . Name: anv_mapfixes_ladder_longfencefarright_cloned_longfencefarleft. Model: *102. Origin: -900.0 -5.0 -16.0  HammerId:      0
+( 607) - func_simpleladder               . Name: anv_mapfixes_ladder_oneway_cloned_stairsbus. Model: *15 . Origin: -1680.0 1129.0 364.0  HammerId:      0
+( 608) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8354.8 -4464.0 384.4  HammerId: 1419177
+( 609) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8553.0 -4404.0 397.1  HammerId: 1419181
+( 610) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8615.9 -4392.1 384.4  HammerId: 1419185
+( 611) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -8660.9 -4366.0 384.4  HammerId: 1419189
+( 612) - prop_physics                    . Name:     . Model: models/props_urban/shopping_cart001.mdl. Origin: -7547.6 -4127.5 397.0  HammerId: 1419453
+( 613) - path_track                      . Name: gunshop_door_lighting. Model:     . Origin: -5376.0 -2016.0 684.7  HammerId: 1446565
+( 614) - trigger_push                    . Name: tanker_push_trigger. Model: *201. Origin: -6832.0 -800.0 480.0  HammerId: 1446735
+( 615) - trigger_push                    . Name: tanker_push_trigger. Model: *202. Origin: -6704.0 -544.0 480.0  HammerId: 1446768
+( 616) - trigger_push                    . Name: tanker_push_trigger. Model: *203. Origin: -6640.0 -280.0 480.0  HammerId: 1446803
+( 617) - trigger_hurt                    . Name: tanker_kill_trigger. Model: *204. Origin: -6912.0 -1048.0 464.0  HammerId: 1446972
+( 618) - trigger_hurt                    . Name: tanker_kill_trigger. Model: *205. Origin: -6912.0 -800.0 464.0  HammerId: 1446992
+( 619) - trigger_hurt                    . Name: tanker_kill_trigger. Model: *206. Origin: -6816.0 -544.0 464.0  HammerId: 1447043
+( 620) - info_gamemode                   . Name:     . Model:     . Origin: -7616.0 -4736.0 416.0  (IN SAFEROOM) HammerId: 1447480
+( 621) - func_simpleladder               . Name:     . Model: *207. Origin: 0.0 0.0 0.0  HammerId: 1447558
+( 622) - func_simpleladder               . Name:     . Model: *208. Origin: 0.0 0.0 0.0  HammerId: 1448844
+( 623) - func_brush                      . Name: gunshop_portal1_brush. Model: *209. Origin: -5088.0 -1672.0 514.0  HammerId: 1449118
+( 624) - func_areaportalwindow           . Name: gunshop_portal1. Model: *209. Origin: -5088.0 -1672.0 514.0  HammerId: 1449123
+( 625) - func_areaportal                 . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId: 1449125
+( 626) - func_brush                      . Name: gunshop_portal2_brush. Model: *210. Origin: -5304.0 -2120.0 674.0  HammerId: 1449127
+( 627) - func_areaportalwindow           . Name: gunshop_portal2. Model: *210. Origin: -5304.0 -2120.0 674.0  HammerId: 1449132
+( 628) - info_game_event_proxy           . Name: store_item_stop_proxy. Model:     . Origin: -7448.0 -1344.0 448.0  HammerId: 1464970
+( 629) - info_gamemode                   . Name:     . Model:     . Origin: 2392.0 5100.0 456.0  (IN SAFEROOM) HammerId: 1472795
+( 630) - env_physexplosion               . Name: tanker_impact. Model:     . Origin: -6832.0 -848.0 393.0  HammerId: 1480652
+( 631) - trigger_hurt                    . Name: tanker_fire_brush. Model: *211. Origin: -6944.0 -1056.0 456.0  HammerId: 1480733
+( 632) - trigger_hurt                    . Name: tanker_fire_brush_old. Model: *212. Origin: -6656.0 -592.0 456.0  HammerId: 1480766
+( 633) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *213. Origin: 0.0 0.0 0.0  HammerId: 1481089
+( 634) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *214. Origin: 0.0 0.0 0.0  HammerId: 1481181
+( 635) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *215. Origin: 0.0 0.0 0.0  HammerId: 1481361
+( 636) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *216. Origin: 0.0 0.0 0.0  HammerId: 1481421
+( 637) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *217. Origin: 0.0 0.0 0.0  HammerId: 1481628
+( 638) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *218. Origin: 0.0 0.0 0.0  HammerId: 1481649
+( 639) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *219. Origin: 0.0 0.0 0.0  HammerId: 1481697
+( 640) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *220. Origin: 0.0 0.0 0.0  HammerId: 1481724
+( 641) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *221. Origin: 0.0 0.0 0.0  HammerId: 1481733
+( 642) - trigger_multiple                . Name:     . Model: *222. Origin: -5312.0 -2192.0 1108.0  HammerId: 1481748
+( 643) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *223. Origin: 0.0 0.0 0.0  HammerId: 1481757
+( 644) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *224. Origin: 0.0 0.0 0.0  HammerId: 1481775
+( 645) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *225. Origin: 0.0 0.0 0.0  HammerId: 1481793
+( 646) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *226. Origin: 0.0 0.0 0.0  HammerId: 1481808
+( 647) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *227. Origin: 0.0 0.0 0.0  HammerId: 1481993
+( 648) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *228. Origin: 0.0 0.0 0.0  HammerId: 1482056
+( 649) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *229. Origin: 0.0 0.0 0.0  HammerId: 1482076
+( 650) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *230. Origin: 0.0 0.0 0.0  HammerId: 1482087
+( 651) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *231. Origin: 0.0 0.0 0.0  HammerId: 1482154
+( 652) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *232. Origin: 0.0 0.0 0.0  HammerId: 1482212
+( 653) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *233. Origin: 0.0 0.0 0.0  HammerId: 1482261
+( 654) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *234. Origin: 0.0 0.0 0.0  HammerId: 1482288
+( 655) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *235. Origin: 0.0 0.0 0.0  HammerId: 1482303
+( 656) - trigger_active_weapon_detect    . Name: cola_weapon_detect. Model: *236. Origin: -5088.0 -1648.0 536.0  HammerId: 1482398
+( 657) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *237. Origin: 0.0 0.0 0.0  HammerId: 1482429
+( 658) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *238. Origin: 0.0 0.0 0.0  HammerId: 1482480
+( 659) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *239. Origin: 0.0 0.0 0.0  HammerId: 1482535
+( 660) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *240. Origin: 0.0 0.0 0.0  HammerId: 1482543
+( 661) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *241. Origin: 0.0 0.0 0.0  HammerId: 1482551
+( 662) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *242. Origin: 0.0 0.0 0.0  HammerId: 1482558
+( 663) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *243. Origin: 0.0 0.0 0.0  HammerId: 1482569
+( 664) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *244. Origin: 0.0 0.0 0.0  HammerId: 1482659
+( 665) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *245. Origin: 0.0 0.0 0.0  HammerId: 1482766
+( 666) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *246. Origin: 0.0 0.0 0.0  HammerId: 1482810
+( 667) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *247. Origin: 0.0 0.0 0.0  HammerId: 1483322
+( 668) - prop_dynamic                    . Name:     . Model: models/props_vehicles/pickup_truck_2004_glass.mdl. Origin: -1094.0 2940.0 63.0  HammerId: 1508794
+( 669) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -8191.9 -3775.9 384.4  HammerId: 1516749
+( 670) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -8096.0 -3775.9 384.4  HammerId: 1516779
+( 671) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -8000.0 -3712.0 384.4  HammerId: 1516975
+( 672) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -8323.4 -1906.5 384.3  HammerId: 1517003
+( 673) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -8319.9 -2016.0 384.4  HammerId: 1517011
+( 674) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -6752.0 -2992.0 392.4  HammerId: 1517039
+( 675) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: -35.0 2909.9 463.1  HammerId: 1517507
+( 676) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: 896.0 4008.6 508.3  HammerId: 1517551
+( 677) - prop_physics                    . Name:     . Model: models/props_junk/dumpster_2.mdl. Origin: 885.5 4120.1 497.2  HammerId: 1517567
+( 678) - prop_dynamic                    . Name: tanker_front_glass. Model: models/props_vehicles/longnose_truck_glass.mdl. Origin: -6687.0 -625.0 384.6  HammerId: 1527357
+( 679) - info_particle_system            . Name: tanker_shockwave_system. Model:     . Origin: -6512.0 -1088.0 400.0  HammerId: 1527531
+( 680) - info_particle_target            . Name: tanker_shockwave_target1. Model:     . Origin: -6560.0 -1088.0 400.0  HammerId: 1527596
+( 681) - info_particle_target            . Name: tanker_shockwave_target2. Model:     . Origin: -6560.0 -1088.0 416.0  HammerId: 1527734
+( 682) - info_particle_target            . Name: tanker_shockwave_target3. Model:     . Origin: -6560.0 -1088.0 432.0  HammerId: 1527738
+( 683) - info_particle_target            . Name: tanker_shockwave_target4. Model:     . Origin: -6560.0 -1088.0 448.0  HammerId: 1527742
+( 684) - info_particle_target            . Name: tanker_shockwave_target5. Model:     . Origin: -6560.0 -1088.0 464.0  HammerId: 1527746
+( 685) - info_particle_target            . Name: tanker_shockwave_target6. Model:     . Origin: -6560.0 -1088.0 480.0  HammerId: 1527750
+( 686) - info_particle_target            . Name: tanker_shockwave_target7. Model:     . Origin: -6560.0 -1088.0 496.0  HammerId: 1527754
+( 687) - info_particle_target            . Name: tanker_shockwave_target8. Model:     . Origin: -6560.0 -1088.0 512.0  HammerId: 1527758
+( 688) - info_particle_target            . Name: tanker_shockwave_target9. Model:     . Origin: -6560.0 -1088.0 528.0  HammerId: 1527762
+( 689) - info_particle_target            . Name: tanker_shockwave_target10. Model:     . Origin: -6560.0 -1088.0 544.0  HammerId: 1527766
+( 690) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -8256.0 -1488.0 420.9  HammerId:      0
+( 691) - func_simpleladder               . Name: anv_mapfixes_ladder_overpassleft_cloned_overpassright. Model: *12 . Origin: 508.0 0.0 23.0  HammerId:      0
+( 692) - prop_dynamic                    . Name: whitaker. Model: models/deadbodies/chm_fallensurvivor.mdl. Origin: -5392.0 -1792.0 776.0  HammerId: 1544707
+( 693) - func_door                       . Name: whitaker_door. Model: *248. Origin: -5421.0 -1768.0 820.0  HammerId: 1544908
+( 694) - prop_dynamic                    . Name: gunshop_door_lock. Model: models/props_equipment/intercom.mdl. Origin: -4928.0 -2068.0 518.2  HammerId: 1570079
+( 695) - func_simpleladder               . Name: anv_mapfixes_ladder_postdropcut_cloned_turnpikemid. Model: *5  . Origin: -5147.0 3002.0 0.0  HammerId:      0
+( 696) - func_simpleladder               . Name: anv_mapfixes_ladder_saferoomperch_cloned_save4less. Model: *111. Origin: -1328.0 -2107.0 -8.0  HammerId:      0
+( 697) - func_simpleladder               . Name: anv_mapfixes_ladder_saferoomperchoob_cloned_save4less. Model: *111. Origin: -176.0 -2107.0 -8.0  HammerId:      0
+( 698) - weapon_upgradepack_explosive_spawn. Name:     . Model: models/w_models/weapons/w_eq_explosive_ammopack.mdl. Origin: -640.0 3032.0 72.2  HammerId:      0
+( 699) - func_simpleladder               . Name: anv_mapfixes_ladder_skybridgebus_cloned_endbusright. Model: *103. Origin: 1578.0 -5868.0 64.0  HammerId:      0
+( 700) - func_simpleladder               . Name: anv_mapfixes_ladder_skybridgechance_cloned_yellowbrickcones. Model: *123. Origin: 334.0 1154.0 217.0  HammerId:      0
+( 701) - func_simpleladder               . Name: anv_mapfixes_ladder_skybridgedodge_cloned_yellowbrickcones. Model: *123. Origin: 334.0 137.0 217.0  HammerId:      0
+( 702) - func_simpleladder               . Name: anv_mapfixes_ladder_skybridgestains_cloned_endslopeleft. Model: *207. Origin: -6972.0 -873.0 -83.0  HammerId:      0
+( 703) - func_simpleladder               . Name: anv_mapfixes_ladder_skystairsfront_cloned_skystairsback. Model: *72 . Origin: -10875.0 -1773.0 0.0  HammerId:      0
+( 704) - func_simpleladder               . Name: anv_mapfixes_ladder_slopeleftvine_cloned_save4lessright. Model: *111. Origin: 6808.0 4541.0 24.0  HammerId:      0
+( 705) - weapon_upgradepack_incendiary_spawn. Name:     . Model: models/w_models/weapons/w_eq_incendiary_ammopack.mdl. Origin: -5496.0 1261.0 391.4  HammerId:      0
+( 706) - func_simpleladder               . Name: anv_mapfixes_ladder_stairvines_cloned_dumpstervines. Model: *88 . Origin: -973.0 3.0 3.0  HammerId:      0
+( 707) - func_simpleladder               . Name: anv_mapfixes_ladder_startareavines_cloned_dumpsterright. Model: *88 . Origin: 3133.0 6469.0 453.0  HammerId:      0
+( 708) - func_simpleladder               . Name: anv_mapfixes_ladder_startfencefar_cloned_startfenceback. Model: *6  . Origin: 119.0 -850.0 77.0  HammerId:      0
+( 709) - prop_dynamic                    . Name: tanker_debris_6. Model: models/destruction_tanker/destruction_tanker_debris_6.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1628466
+( 710) - info_particle_target            . Name: tanker_shockwave_target11. Model:     . Origin: -6856.0 -896.0 384.0  HammerId: 1628515
+( 711) - prop_dynamic                    . Name: tanker_cables_near. Model: models/destruction_tanker/c1m2_cables_near.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1636919
+( 712) - prop_dynamic                    . Name: tanker_cables_far. Model: models/destruction_tanker/c1m2_cables_far.mdl. Origin: -6856.0 -896.0 384.6  HammerId: 1636942
+( 713) - keyframe_rope                   . Name: AutoInstance1-cable01_15. Model:     . Origin: -6070.0 -1032.0 870.9  HammerId: 1637004
+( 714) - keyframe_rope                   . Name: AutoInstance1-cable02_15. Model:     . Origin: -6058.0 -1012.0 871.7  HammerId: 1637007
+( 715) - keyframe_rope                   . Name: AutoInstance1-cable03_15. Model:     . Origin: -6012.0 -958.0 866.5  HammerId: 1637010
+( 716) - keyframe_rope                   . Name: AutoInstance1-cable04_15. Model:     . Origin: -6002.0 -938.0 863.9  HammerId: 1637013
+( 717) - weapon_grenade_launcher_spawn   . Name:     . Model: models/w_models/weapons/w_grenade_launcher.mdl. Origin: 1628.0 2557.0 578.1  HammerId:      0
+( 718) - func_simpleladder               . Name: anv_mapfixes_ladder_startfencefront_cloned_startfenceback. Model: *6  . Origin: 4873.0 9426.0 0.0  HammerId:      0
+( 719) - func_simpleladder               . Name: anv_mapfixes_ladder_starthedgesfront_cloned_starthedgesback. Model: *41 . Origin: 1536.0 6993.0 0.0  HammerId:      0
+( 720) - weapon_chainsaw_spawn           . Name:     . Model: models/weapons/melee/w_chainsaw.mdl. Origin: -2538.0 2786.0 4.3  HammerId:      0
+( 721) - func_simpleladder               . Name: anv_mapfixes_ladder_tankerfrontleft_cloned_tankerfenceleft. Model: *73 . Origin: -12063.0 -269.0 -5.0  HammerId:      0
+( 722) - func_simpleladder               . Name: anv_mapfixes_ladder_tankerfrontmid_cloned_tankerfencemid. Model: *89 . Origin: -12063.0 -269.0 -5.0  HammerId:      0
+( 723) - func_simpleladder               . Name: anv_mapfixes_ladder_tankerfrontright_cloned_tankerfenceright. Model: *90 . Origin: -12063.0 -269.0 -5.0  HammerId:      0
+( 724) - func_simpleladder               . Name: anv_mapfixes_ladder_tankhedge_cloned_stairsbus. Model: *15 . Origin: 5389.0 2072.0 572.0  HammerId:      0
+( 725) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6676.1 -607.6 414.5  HammerId:      0
+( 726) - info_game_event_proxy           . Name: tanker_proxy. Model:     . Origin: -6752.0 -896.0 480.0  HammerId: 1679659
+( 727) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6632.0 -537.1 414.5  HammerId:      0
+( 728) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6609.1 -502.6 437.5  HammerId:      0
+( 729) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6640.1 -476.0 407.9  HammerId:      0
+( 730) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6573.0 -518.2 407.9  HammerId:      0
+( 731) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6650.5 -565.8 474.8  HammerId:      0
+( 732) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6677.2 -609.6 474.0  HammerId:      0
+( 733) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6763.5 -722.5 302.7  HammerId:      0
+( 734) - phys_bone_follower              . Name:     . Model: models/destruction_tanker/destruction_tanker_front.mdl. Origin: -6764.0 -675.2 407.5  HammerId:      0
+( 735) - weapon_pipe_bomb_spawn          . Name:     . Model: models/w_models/weapons/w_eq_pipebomb.mdl. Origin: -3360.0 1856.0 132.9  HammerId:      0
+( 736) - func_simpleladder               . Name: anv_mapfixes_ladder_tentbus_cloned_stairsbus. Model: *15 . Origin: 1786.0 5841.0 570.0  (IN SAFEROOM) HammerId:      0
+( 737) - func_simpleladder               . Name: anv_mapfixes_ladder_truckandtent_cloned_carthedge. Model: *60 . Origin: -1460.0 8465.0 153.0  HammerId:      0
+( 738) - func_simpleladder               . Name: anv_mapfixes_ladder_turnpikeleft_cloned_turnpikemid. Model: *5  . Origin: 3.0 780.0 0.0  HammerId:      0
+( 739) - func_simpleladder               . Name: anv_mapfixes_ladder_turnpikeright_cloned_turnpikemid. Model: *5  . Origin: -1052.0 -1275.0 -41.0  HammerId:      0
+( 740) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2776.5 2827.2 0.4  HammerId: 1707616
+( 741) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2644.9 2817.3 0.4  HammerId: 1707624
+( 742) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2698.0 2897.8 0.3  HammerId: 1707636
+( 743) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2333.1 2757.9 0.4  HammerId: 1707648
+( 744) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2237.7 2799.6 0.4  HammerId: 1707652
+( 745) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -2762.9 2683.3 0.4  HammerId: 1707692
+( 746) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -2769.9 2486.7 0.4  HammerId: 1707696
+( 747) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -2546.4 2049.5 0.3  HammerId: 1707708
+( 748) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -2277.7 170.7 0.4  HammerId: 1707716
+( 749) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2204.2 230.4 0.4  HammerId: 1707724
+( 750) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -2388.0 230.2 0.3  HammerId: 1707732
+( 751) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -1608.6 132.9 64.4  HammerId: 1707748
+( 752) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -5569.8 2436.4 321.1  HammerId: 1708184
+( 753) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -5504.8 2576.2 316.3  HammerId: 1708208
+( 754) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -5498.4 2678.6 316.4  HammerId: 1708212
+( 755) - func_simpleladder               . Name: anv_mapfixes_ladder_whitakerback_cloned_tinyendladder. Model: *128. Origin: 2020.0 579.0 128.0  HammerId:      0
+( 756) - func_simpleladder               . Name: anv_mapfixes_ladder_whitakergunshop_cloned_eventicemachine. Model: *51 . Origin: -2400.0 -7165.0 172.0  HammerId:      0
+( 757) - func_simpleladder               . Name: anv_mapfixes_ladder_whitakerquick_cloned_hedgeparklot. Model: *59 . Origin: 723.9 196.0 233.0  HammerId:      0
+( 758) - func_simpleladder               . Name: anv_mapfixes_ladder_yeswaychokefence_cloned_yellowbrickcones. Model: *123. Origin: 2391.0 2893.0 -400.0  HammerId:      0
+( 759) - upgrade_laser_sight             . Name:     . Model: models/w_models/Weapons/w_laser_sights.mdl. Origin: -4784.0 -1864.0 496.0  HammerId:      0
+( 760) - info_target                     . Name: commentary_semaphore. Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+( 761) - info_remarkable                 . Name: RemarkWorldC1M2SpotGunStore. Model:     . Origin: -5112.6 -1090.5 719.4  HammerId:      0
+( 762) - info_remarkable                 . Name: RemarkWorldC1M2OutsideGunStore. Model:     . Origin: -5423.8 -2125.9 670.5  HammerId:      0
+( 763) - info_remarkable                 . Name: WorldC1M2BigGuns. Model:     . Origin: -3690.4 2270.3 355.1  HammerId:      0
+( 764) - info_remarkable                 . Name: WorldC1M2MallThisWay. Model:     . Origin: 1224.0 2783.7 572.0  HammerId:      0
+( 765) - info_remarkable                 . Name: WorldC1M2InHere. Model:     . Origin: -888.9 3102.4 326.1  HammerId:      0
+( 766) - info_remarkable                 . Name: WorldC1M2DownStairs. Model:     . Origin: -763.8 3761.7 279.8  HammerId:      0
+( 767) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -881.0 2489.0 321.6  HammerId: 1709002
+( 768) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -863.0 2608.9 323.6  HammerId: 1709018
+( 769) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1261.7 2866.4 316.4  HammerId: 1709042
+( 770) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -1206.2 2974.3 316.3  HammerId: 1709046
+( 771) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -1363.9 2631.4 311.8  HammerId: 1709106
+( 772) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -1518.9 2573.0 303.2  HammerId: 1709110
+( 773) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -1528.6 2991.0 302.6  HammerId: 1709146
+( 774) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -923.1 2536.8 317.5  HammerId: 1709242
+( 775) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -1508.3 2478.4 303.8  HammerId: 1709258
+( 776) - prop_physics                    . Name:     . Model: models/props_fortifications/traffic_barrier001.mdl. Origin: -1202.2 2520.9 316.5  HammerId: 1709282
+( 777) - prop_physics                    . Name:     . Model: models/props_fortifications/traffic_barrier001.mdl. Origin: -1206.3 2632.0 316.4  HammerId: 1709321
+( 778) - prop_physics                    . Name:     . Model: models/props_fortifications/traffic_barrier001.mdl. Origin: -2582.7 1534.2 0.5  HammerId: 1709333
+( 779) - prop_physics                    . Name:     . Model: models/props_fortifications/traffic_barrier001.mdl. Origin: -2699.0 3268.0 0.5  HammerId: 1709345
+( 780) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5546.5 247.5 317.4  HammerId: 1719839
+( 781) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5512.8 386.2 312.5  HammerId: 1719859
+( 782) - prop_physics                    . Name:     . Model: models/props_fairgrounds/traffic_barrel.mdl. Origin: -5500.2 321.1 310.8  HammerId: 1719887
+( 783) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -4067.5 1526.3 103.4  HammerId: 1719911
+( 784) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -5207.1 341.5 273.5  HammerId: 1719943
+( 785) - prop_physics                    . Name:     . Model: models/props_urban/tire001.mdl. Origin: -5205.3 548.9 273.1  HammerId: 1719967
+( 786) - prop_physics                    . Name:     . Model: models/props_fortifications/traffic_barrier001.mdl. Origin: -4258.9 1058.4 167.5  HammerId: 1719995
+( 787) - prop_physics                    . Name:     . Model: models/props_fortifications/traffic_barrier001.mdl. Origin: -5757.8 277.2 344.1  HammerId: 1720007
+( 788) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5667.0 -1337.5 448.3  HammerId: 1730115
+( 789) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5441.2 -1311.1 448.3  HammerId: 1730123
+( 790) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5464.5 -1149.9 448.4  HammerId: 1730139
+( 791) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_smg_mp5.mdl. Origin: 2540.6 5057.9 493.8  (IN SAFEROOM) HammerId: 1738949
+( 792) - weapon_pistol_spawn             . Name:     . Model: models/w_models/weapons/w_pistol_B.mdl. Origin: 2542.5 5022.8 492.8  (IN SAFEROOM) HammerId: 1738951
+( 793) - weapon_spawn                    . Name:     . Model: models/w_models/weapons/w_shotgun.mdl. Origin: 2541.6 5005.9 492.8  (IN SAFEROOM) HammerId: 1738953
+( 794) - ambient_generic                 . Name: tanker_fire_sound. Model:     . Origin: -6912.0 -1024.0 416.0  HammerId: 1747819
+( 795) - ambient_generic                 . Name: tanker_fire_sound. Model:     . Origin: -6688.0 -608.0 416.0  HammerId: 1747858
+( 796) - func_simpleladder               . Name: anv_mapfixes_ladder_yeswaychokeroof_cloned_tankerfencemid. Model: *89 . Origin: 2384.0 2428.1 -70.0  HammerId:      0
+( 797) - info_particle_system            . Name:     . Model:     . Origin: 1248.0 5928.0 1369.0  HammerId: 1756774
+( 798) - info_particle_target            . Name: target_fire_window_hotel2. Model:     . Origin: 1888.0 5928.0 1369.0  HammerId: 1756839
+( 799) - env_microphone                  . Name:     . Model:     . Origin: -4908.0 -2072.0 558.0  HammerId: 1784153
+( 800) - info_target                     . Name: mic_speaker1. Model:     . Origin: -5372.0 -1980.0 752.0  HammerId: 1784158
+( 801) - info_particle_system            . Name:     . Model:     . Origin: 876.1 5219.1 969.0  HammerId: 1792988
+( 802) - func_block_charge               . Name:     . Model: *249. Origin: -2090.0 1040.0 112.0  HammerId: 1801886
+( 803) - func_block_charge               . Name:     . Model: *250. Origin: -1292.0 1692.0 176.6  HammerId: 1801903
+( 804) - func_simpleladder               . Name:     . Model: *251. Origin: 0.0 0.0 0.0  HammerId: 1810801
+( 805) - func_simpleladder               . Name:     . Model: *252. Origin: 0.0 0.0 0.0  HammerId: 1810811
+( 806) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *253. Origin: 0.0 0.0 0.0  HammerId: 1810867
+( 807) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *254. Origin: 0.0 0.0 0.0  HammerId: 1810887
+( 808) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *255. Origin: 0.0 0.0 0.0  HammerId: 1810907
+( 809) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *256. Origin: 0.0 0.0 0.0  HammerId: 1810921
+( 810) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *257. Origin: 0.0 0.0 0.0  HammerId: 1810947
+( 811) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *258. Origin: 0.0 0.0 0.0  HammerId: 1810984
+( 812) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *259. Origin: 0.0 0.0 0.0  HammerId: 1811004
+( 813) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *260. Origin: 0.0 0.0 0.0  HammerId: 1811040
+( 814) - func_nav_blocker                . Name: tanker_nav_blocker. Model: *261. Origin: 0.0 0.0 0.0  HammerId: 1811062
+( 815) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *262. Origin: 0.0 0.0 0.0  HammerId: 1819947
+( 816) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *263. Origin: 0.0 0.0 0.0  HammerId: 1820013
+( 817) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *264. Origin: 0.0 0.0 0.0  HammerId: 1820022
+( 818) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *265. Origin: 0.0 0.0 0.0  HammerId: 1820031
+( 819) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *266. Origin: 0.0 0.0 0.0  HammerId: 1820111
+( 820) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *267. Origin: 0.0 0.0 0.0  HammerId: 1820161
+( 821) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_84sedan_glass.mdl. Origin: -6789.9 -1730.0 384.4  HammerId: 1829058
+( 822) - prop_physics                    . Name: AutoInstance1-car_physics. Model: models/props_vehicles/cara_84sedan.mdl. Origin: -6789.9 -1730.0 384.4  HammerId: 1829062
+( 823) - func_simpleladder               . Name: anv_mapfixes_ladder_yeswaycornerinner_cloned_roundthehedge. Model: *4  . Origin: 9600.0 3329.0 136.0  HammerId:      0
+( 824) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_95sedan_glass.mdl. Origin: -6417.1 -2224.9 389.2  HammerId: 1829193
+( 825) - prop_physics                    . Name: AutoInstance1-car_physics1. Model: models/props_vehicles/cara_95sedan.mdl. Origin: -6417.1 -2224.9 389.2  HammerId: 1829197
+( 826) - func_simpleladder               . Name: anv_mapfixes_ladder_yeswaycornerouter_cloned_save4lessright. Model: *111. Origin: 9427.0 4543.1 72.0  HammerId:      0
+( 827) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_95sedan_glass.mdl. Origin: -5632.0 -2112.0 448.5  HammerId: 1829218
+( 828) - prop_physics                    . Name: AutoInstance1-car_physics2. Model: models/props_vehicles/cara_95sedan.mdl. Origin: -5632.0 -2112.0 448.5  HammerId: 1829222
+( 829) - func_simpleladder               . Name: anv_mapfixes_ladder_yeswayturnpikesign_cloned_turnpikemid. Model: *5  . Origin: -1936.0 2051.0 396.0  HammerId:      0
+( 830) - prop_dynamic                    . Name: AutoInstance1-police_car_glass. Model: models/props_vehicles/police_car_city_glass.mdl. Origin: -6078.5 -429.3 438.0  HammerId: 1829239
+( 831) - prop_physics                    . Name: AutoInstance1-police_car. Model: models/props_vehicles/police_car_rural.mdl. Origin: -6078.5 -429.3 438.0  HammerId: 1829243
+( 832) - func_clip_vphysics              . Name: cola_car_clip_vphysics. Model: *268. Origin: 0.0 0.0 0.0  HammerId: 1838163
+( 833) - func_clip_vphysics              . Name: cola_car1_clip_vphysics. Model: *269. Origin: 0.0 0.0 0.0  HammerId: 1838172
+( 834) - func_clip_vphysics              . Name: cola_car2_clip_vphysics. Model: *270. Origin: 0.0 0.0 0.0  HammerId: 1838179
+( 835) - func_clip_vphysics              . Name: cola_car3_clip_vphysics. Model: *271. Origin: 0.0 0.0 0.0  HammerId: 1838188
+( 836) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *272. Origin: 0.0 0.0 0.0  HammerId: 1838196
+( 837) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *273. Origin: 0.0 0.0 0.0  HammerId: 1838217
+( 838) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *274. Origin: 0.0 0.0 0.0  HammerId: 1838231
+( 839) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *275. Origin: 0.0 0.0 0.0  HammerId: 1838237
+( 840) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *276. Origin: 0.0 0.0 0.0  HammerId: 1838243
+( 841) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *277. Origin: 0.0 0.0 0.0  HammerId: 1838251
+( 842) - func_clip_vphysics              . Name: cola_clip_vphysics. Model: *278. Origin: 0.0 0.0 0.0  HammerId: 1838285
+( 843) - env_sun                         . Name:     . Model:     . Origin: 1572.0 4432.0 1208.0  HammerId: 1838287
+( 844) - shadow_control                  . Name:     . Model:     . Origin: 1500.0 4432.0 1208.0  HammerId: 1838293
+( 845) - prop_dynamic                    . Name: anv_mapfixes_propladder_blocka. Model: models/props_fortifications/concrete_block001_128_reference.mdl. Origin: -2296.0 2341.0 288.0  HammerId:      0
+( 846) - env_tonemap_controller_infected . Name: tonemap_global_infected. Model:     . Origin: 1524.0 4464.0 1208.0  HammerId: 1838297
+( 847) - env_tonemap_controller_ghost    . Name: tonemap_global_ghost. Model:     . Origin: 1548.0 4464.0 1208.0  HammerId: 1838299
+( 848) - env_tonemap_controller          . Name: tonemap_global. Model:     . Origin: 1572.0 4464.0 1208.0  HammerId: 1838301
+( 849) - postprocess_controller          . Name: fx_settings_interior. Model:     . Origin: 1548.0 4496.0 1208.0  HammerId: 1838303
+( 850) - postprocess_controller          . Name: fx_settings_exterior. Model:     . Origin: 1524.0 4496.0 1208.0  HammerId: 1838305
+( 851) - env_fog_controller              . Name: fog_master. Model:     . Origin: 1500.0 4496.0 1208.0  HammerId: 1838307
+( 852) - color_correction                . Name: color_correction_main. Model:     . Origin: 1500.0 4528.0 1208.0  HammerId: 1838309
+( 853) - color_correction                . Name: colorcorrection_checkpoint. Model:     . Origin: 1524.0 4528.0 1208.0  HammerId: 1838313
+( 854) - env_fog_controller              . Name: foginteriorcontroller. Model:     . Origin: 1476.0 4496.0 1208.0  HammerId: 1838331
+( 855) - prop_dynamic                    . Name: InstanceAuto2-police_car_glass. Model: models/props_vehicles/police_car_city_glass.mdl. Origin: -2373.4 1464.1 0.7  HammerId: 1838333
+( 856) - prop_physics                    . Name: InstanceAuto2-police_car. Model: models/props_vehicles/police_car_rural.mdl. Origin: -2373.4 1464.1 0.7  HammerId: 1838337
+( 857) - prop_dynamic                    . Name: InstanceAuto3-police_car_glass. Model: models/props_vehicles/police_car_city_glass.mdl. Origin: -4789.6 2304.2 320.9  HammerId: 1838339
+( 858) - prop_physics                    . Name: InstanceAuto3-police_car. Model: models/props_vehicles/police_car_rural.mdl. Origin: -4789.6 2304.2 320.9  HammerId: 1838343
+( 859) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_82hatchback_glass.mdl. Origin: -8800.0 -3136.0 384.2  HammerId: 1838345
+( 860) - prop_physics                    . Name: InstanceAuto4-car_physics. Model: models/props_vehicles/cara_82hatchback.mdl. Origin: -8800.0 -3136.0 384.2  HammerId: 1838349
+( 861) - prop_dynamic                    . Name: anv_mapfixes_propladder_blockb. Model: models/props_fortifications/concrete_block001_128_reference.mdl. Origin: -2426.0 2341.0 287.0  HammerId:      0
+( 862) - prop_dynamic                    . Name: InstanceAuto5-police_car_glass. Model: models/props_vehicles/police_car_city_glass.mdl. Origin: 1793.1 2986.4 572.8  HammerId: 1838412
+( 863) - prop_physics                    . Name: InstanceAuto5-police_car. Model: models/props_vehicles/police_car_rural.mdl. Origin: 1793.1 2986.4 572.8  HammerId: 1838416
+( 864) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_82hatchback_wrecked_glass.mdl. Origin: -1197.0 2016.5 66.9  HammerId: 1838418
+( 865) - prop_physics                    . Name: InstanceAuto6-car_physics. Model: models/props_vehicles/cara_82hatchback_wrecked.mdl. Origin: -1197.0 2016.5 66.9  HammerId: 1838422
+( 866) - prop_dynamic                    . Name: anv_mapfixes_propladder_blockc. Model: models/props_fortifications/concrete_block001_128_reference.mdl. Origin: -2816.0 2340.0 288.0  HammerId:      0
+( 867) - prop_car_alarm                  . Name: caralarm_car1-car1_alarm. Model: models/props_vehicles/cara_95sedan.mdl. Origin: -7871.7 -2688.6 384.5  HammerId: 1838486
+( 868) - ambient_generic                 . Name: carchirp1-car1_alarm. Model:     . Origin: -7904.0 -2680.0 495.7  HammerId: 1838492
+( 869) - prop_car_glass                  . Name: caralarm_glass1-car1_alarm. Model: models/props_vehicles/cara_95sedan_glass_alarm.mdl. Origin: -7871.7 -2688.6 384.5  HammerId: 1838495
+( 870) - env_sprite                      . Name: caralarm_light1-car1_alarm. Model: sprites/glow.vmt. Origin: -7977.6 -2717.7 415.6  HammerId: 1838499
+( 871) - env_sprite                      . Name: caralarm_light1-car1_alarm. Model: sprites/glow.vmt. Origin: -7978.4 -2661.0 415.6  HammerId: 1838502
+( 872) - env_sprite                      . Name: caralarm_light1-car1_alarm. Model: sprites/glow.vmt. Origin: -7774.9 -2726.8 413.4  HammerId: 1838505
+( 873) - env_sprite                      . Name: caralarm_light1-car1_alarm. Model: sprites/glow.vmt. Origin: -7774.9 -2649.8 413.5  HammerId: 1838508
+( 874) - ambient_generic                 . Name: caralarm1-car1_alarm. Model:     . Origin: -7904.0 -2704.0 495.7  HammerId: 1838511
+( 875) - beam_spotlight                  . Name: caralarm_headlights1-car1_alarm. Model:     . Origin: -7770.9 -2717.8 414.1  HammerId: 1838514
+( 876) - beam_spotlight                  . Name: caralarm_headlights1-car1_alarm. Model:     . Origin: -7770.9 -2659.8 414.2  HammerId: 1838516
+( 877) - prop_dynamic                    . Name: anv_mapfixes_propladder_blockd. Model: models/props_fortifications/concrete_block001_128_reference.mdl. Origin: -2946.0 2339.0 289.0  HammerId:      0
+( 878) - prop_car_glass                  . Name: caralarm_glass1_off-car1_alarm. Model: models/props_vehicles/cara_95sedan_glass.mdl. Origin: -7871.7 -2688.6 384.5  HammerId: 1839403
+( 879) - env_entity_maker                . Name: maker_alarm_on-car1_alarm. Model:     . Origin: -7868.0 -2696.1 536.1  HammerId: 1839434
+( 880) - prop_dynamic                    . Name: anv_mapfixes_propladder_blocke. Model: models/props_fortifications/concrete_block001_128_reference.mdl. Origin: -3076.0 2339.0 295.0  HammerId:      0
+( 881) - info_remarkable                 . Name: WorldC1M2Abandoned. Model:     . Origin: -1992.2 1720.9 109.1  HammerId:      0
+( 882) - info_remarkable                 . Name: WorldC1M2Dumpster. Model:     . Origin: -2406.3 2414.9 108.8  HammerId:      0
+( 883) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_69sedan_glass.mdl. Origin: -8815.9 -2623.9 384.5  HammerId: 1839951
+( 884) - prop_physics                    . Name: InstanceAuto8-car_physics. Model: models/props_vehicles/cara_69sedan.mdl. Origin: -8815.9 -2623.9 384.5  HammerId: 1839955
+( 885) - prop_dynamic                    . Name: anv_mapfixes_propladder_blockf. Model: models/props_fortifications/concrete_block001_128_reference.mdl. Origin: -3203.0 2339.0 302.0  HammerId:      0
+( 886) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_95sedan_glass.mdl. Origin: -7872.0 -3071.9 384.5  HammerId: 1840018
+( 887) - prop_physics                    . Name: InstanceAuto9-car_physics. Model: models/props_vehicles/cara_95sedan.mdl. Origin: -7872.0 -3071.9 384.5  HammerId: 1840022
+( 888) - prop_dynamic                    . Name: anv_mapfixes_endbillboard_crashedvan. Model: models/props_vehicles/van_interior.mdl. Origin: -7350.0 0.0 400.0  HammerId:      0
+( 889) - func_brush                      . Name: InstanceAuto10-trafficmessage_panel_1. Model: *279. Origin: -6188.0 272.0 471.0  HammerId: 1840131
+( 890) - func_brush                      . Name: InstanceAuto10-trafficmessage_panel_2. Model: *280. Origin: -6188.0 272.0 471.0  HammerId: 1840171
+( 891) - logic_script                    . Name: InstanceAuto10-trafficmessage_script. Model:     . Origin: -6178.0 297.7 471.1  HammerId: 1840259
+( 892) - info_remarkable                 . Name: WorldC1M2JumpTruck. Model:     . Origin: -4370.2 2250.8 330.5  HammerId:      0
+( 893) - info_remarkable                 . Name: WorldC1M2GunStoreClose. Model:     . Origin: -4725.3 929.7 211.2  HammerId:      0
+( 894) - info_remarkable                 . Name: WorldC1M2UpStairs. Model:     . Origin: -5182.4 881.2 488.6  HammerId:      0
+( 895) - info_remarkable                 . Name: WorldC1M2MallSignHere. Model:     . Origin: -8118.8 -866.4 438.3  HammerId:      0
+( 896) - info_remarkable                 . Name: WorldC1M2MadeIt. Model:     . Origin: -7493.5 -4556.1 436.5  HammerId:      0
+( 897) - info_remarkable                 . Name: WorldC1M2Close. Model:     . Origin: -1090.5 3074.8 103.4  HammerId:      0
+( 898) - func_brush                      . Name: InstanceAuto12-message_brush1. Model: *281. Origin: -2812.3 1456.0 88.1  HammerId: 1842009
+( 899) - func_brush                      . Name: InstanceAuto12-message_brush2. Model: *282. Origin: -2812.3 1456.0 88.1  HammerId: 1842014
+( 900) - func_brush                      . Name: InstanceAuto12-message_brush_static. Model: *283. Origin: -2812.3 1456.0 88.1  HammerId: 1842021
+( 901) - info_remarkable                 . Name: WorldC1M2PreStoreAlarm. Model:     . Origin: -6668.2 -2494.2 392.0  HammerId:      0
+( 902) - info_remarkable                 . Name: WorldC1M2StoreAlarm. Model:     . Origin: -6702.2 -2494.7 392.0  HammerId:      0
+( 903) - info_remarkable                 . Name: WorldC1M2DeliverCola. Model:     . Origin: -5378.0 -2066.2 616.0  HammerId:      0
+( 904) - point_nav_attribute_region      . Name: offramp_nothreat_region. Model:     . Origin: -4272.0 2144.0 65.0  HammerId:      0
+( 905) - escape_route                    . Name:     . Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+( 906) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -3593.0 2283.0 358.5  HammerId:      0
+( 907) - weapon_pain_pills_spawn         . Name:     . Model: models/w_models/weapons/w_eq_painpills.mdl. Origin: -3576.0 2283.0 372.5  HammerId:      0
+( 908) - phys_bone_follower              . Name:     . Model: models/props_vehicles/van_interior.mdl. Origin: -7350.0 0.0 400.0  HammerId:      0
+( 909) - prop_dynamic                    . Name: anv_mapfixes_endbillboard_streetlight. Model: models/props_urban/streetlight001.mdl. Origin: -7434.0 -95.0 370.0  HammerId:      0
+( 910) - prop_dynamic                    . Name: anv_mapfixes_endbillboard_wrongway. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: -7622.0 -143.0 824.0  HammerId:      0
+( 911) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -5116.0 -1672.0 456.0  HammerId: 1845760
+( 912) - func_rotating                   . Name: spotlight_rotating04. Model: *284. Origin: -4781.5 -1706.0 778.5  HammerId: 1845869
+( 913) - prop_dynamic                    . Name:     . Model: models/props_wasteland/light_spotlight01_base.mdl. Origin: -4781.4 -1705.6 785.0  HammerId: 1845872
+( 914) - prop_dynamic                    . Name: spotlight4. Model: models/props_wasteland/light_spotlight01_lamp.mdl. Origin: -4781.6 -1705.5 791.1  HammerId: 1845876
+( 915) - beam_spotlight                  . Name: spotlight_beam4. Model:     . Origin: -4783.8 -1705.2 801.7  HammerId: 1845880
+( 916) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5106.0 -1970.0 524.0  HammerId: 1845920
+( 917) - prop_dynamic                    . Name: anv_mapfixes_losblocker_skybridgebus. Model: models/props_vehicles/bus01_2.mdl. Origin: -5180.0 -508.0 447.0  HammerId:      0
+( 918) - prop_dynamic                    . Name: anv_mapfixes_propladder_endplywood1. Model: models/props_highway/plywood_01.mdl. Origin: -7018.5 -3914.0 471.5  HammerId:      0
+( 919) - prop_dynamic                    . Name: anv_mapfixes_propladder_endplywood2. Model: models/props_highway/plywood_01.mdl. Origin: -7069.5 -3818.0 522.5  HammerId:      0
+( 920) - prop_dynamic                    . Name: anv_mapfixes_propladder_endvan. Model: models/props_vehicles/van.mdl. Origin: -7003.0 -3900.0 383.0  HammerId:      0
+( 921) - prop_dynamic                    . Name: anv_mapfixes_propladder_endvanglass. Model: models/props_vehicles/van_glass.mdl. Origin: -7003.0 -3900.0 383.0  HammerId:      0
+( 922) - prop_dynamic                    . Name: anv_mapfixes_propladder_whitakergunshop_plywood. Model: models/props_highway/plywood_03.mdl. Origin: -4798.0 -1600.0 623.0  HammerId:      0
+( 923) - weapon_pistol_spawn             . Name:     . Model: models/w_models/weapons/w_pistol_B.mdl. Origin: -4942.0 -1817.0 464.0  HammerId: 1845951
+( 924) - weapon_rifle_spawn              . Name:     . Model: models/w_models/weapons/w_rifle_m16a2.mdl. Origin: -5005.0 -1970.0 528.4  HammerId: 1845963
+( 925) - weapon_rifle_desert_spawn       . Name:     . Model: models/w_models/weapons/w_desert_rifle.mdl. Origin: -5045.0 -1970.0 504.0  HammerId: 1845971
+( 926) - weapon_hunting_rifle_spawn      . Name:     . Model: models/w_models/weapons/w_sniper_mini14.mdl. Origin: -5178.0 -1970.0 501.5  HammerId: 1845975
+( 927) - weapon_sniper_military_spawn    . Name:     . Model: models/w_models/weapons/w_sniper_military.mdl. Origin: -5232.0 -1970.0 523.0  HammerId: 1845981
+( 928) - prop_dynamic                    . Name: anv_mapfixes_yesdraw_disproof_hunt1. Model: models/props_update/c8m1_rooftop_1.mdl. Origin: -6032.0 1264.0 1344.0  HammerId:      0
+( 929) - weapon_rifle_ak47_spawn         . Name:     . Model: models/w_models/weapons/w_rifle_ak47.mdl. Origin: -4947.0 -1970.0 531.4  HammerId: 1846131
+( 930) - weapon_melee_spawn              . Name:     . Model: models/weapons/melee/w_fireaxe.mdl. Origin: -4978.0 -1985.0 506.5  HammerId: 1846170
+( 931) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -5040.0 -1992.0 455.9  HammerId: 1846203
+( 932) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -5328.0 -2032.0 456.0  HammerId: 1846208
+( 933) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -5356.0 -2112.0 456.0  HammerId: 1846211
+( 934) - info_survivor_rescue            . Name:     . Model: models/editor/playerstart.mdl. Origin: -5359.0 -2063.0 456.0  HammerId: 1846214
+( 935) - weapon_shotgun_chrome_spawn     . Name:     . Model: models/w_models/weapons/w_pumpshotgun_A.mdl. Origin: -5206.0 -1813.0 463.0  HammerId: 1846223
+( 936) - weapon_pumpshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_shotgun.mdl. Origin: -5121.0 -1833.0 472.0  HammerId: 1846225
+( 937) - weapon_smg_spawn                . Name:     . Model: models/w_models/weapons/w_smg_uzi.mdl. Origin: -5006.0 -1816.0 464.0  HammerId: 1846227
+( 938) - weapon_smg_silenced_spawn       . Name:     . Model: models/w_models/weapons/w_smg_a.mdl. Origin: -5066.0 -1834.0 472.0  HammerId: 1846229
+( 939) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: -5272.0 -1824.0 458.3  HammerId: 1846231
+( 940) - prop_dynamic                    . Name: anv_mapfixes_yesdraw_disproof_hunt2. Model: models/props_update/c8m1_rooftop_1.mdl. Origin: -6032.0 1744.0 1344.0  HammerId:      0
+( 941) - prop_dynamic                    . Name: anv_mapfixes_yesdraw_disproof_hunt3. Model: models/props_update/c8m1_rooftop_3.mdl. Origin: -5280.0 1264.0 1344.0  HammerId:      0
+( 942) - prop_dynamic                    . Name: gunshop_flag. Model: models/props_fairgrounds/fairgrounds_flagpole01.mdl. Origin: -5184.0 -1924.0 775.2  HammerId: 1850149
+( 943) - prop_dynamic                    . Name: anv_mapfixes_yesdraw_disproof_hunt4. Model: models/props_update/c8m1_rooftop_3.mdl. Origin: -5280.0 1744.0 1344.0  HammerId:      0
+( 944) - prop_dynamic                    . Name: anv_mapfixes_yesdraw_skybroof_hunt1. Model: models/props_update/c8m1_rooftop_1.mdl. Origin: -4368.0 3312.0 1728.0  HammerId:      0
+( 945) - prop_dynamic                    . Name: anv_mapfixes_yesdraw_skybroof_hunt2. Model: models/props_update/c8m1_rooftop_3.mdl. Origin: -3616.0 3312.0 1728.0  HammerId:      0
+( 946) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_fence1. Model: models/props_urban/fence_cover001_128.mdl. Origin: -3870.0 1887.0 512.0  HammerId:      0
+( 947) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_fence2. Model: models/props_urban/fence_cover001_64.mdl. Origin: -3870.0 1983.0 512.0  HammerId:      0
+( 948) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_roof1. Model: models/props_update/c1m2_wrongway_rooftop1.mdl. Origin: -3900.0 2044.0 532.0  HammerId:      0
+( 949) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_roof2. Model: models/props_update/c1m2_wrongway_rooftop2.mdl. Origin: -3652.0 2052.0 532.0  HammerId:      0
+( 950) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_wrongwaya. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: -3538.0 2042.0 574.0  HammerId:      0
+( 951) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_wrongwayb. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: -3648.0 2042.0 574.0  HammerId:      0
+( 952) - prop_dynamic                    . Name: anv_mapfixes_yeswaychoke_wrongwayc. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: -3758.0 2042.0 574.0  HammerId:      0
+( 953) - prop_dynamic                    . Name: anv_mapfixes_yeswaycorner_wall. Model: models/props_update/c1m2_wrongway_wall.mdl. Origin: 3072.0 2048.0 608.0  HammerId:      0
+( 954) - prop_dynamic                    . Name: anv_mapfixes_yeswaycorner_wrongway. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: 3703.0 2048.0 768.0  HammerId:      0
+( 955) - prop_dynamic                    . Name: anv_mapfixes_yeswayturnpike_hedgea. Model: models/props_foliage/urban_hedge_256_128_high.mdl. Origin: -599.0 1037.0 502.0  HammerId:      0
+( 956) - prop_dynamic                    . Name: anv_mapfixes_yeswayturnpike_hedgeb. Model: models/props_foliage/urban_hedge_256_128_high.mdl. Origin: -860.0 1037.0 426.0  HammerId:      0
+( 957) - prop_dynamic                    . Name: anv_mapfixes_yeswayturnpike_wrongwaya. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: -816.0 32.0 496.0  HammerId:      0
+( 958) - prop_dynamic                    . Name: anv_mapfixes_yeswayturnpike_wrongwayb. Model: models/props_misc/wrongway_sign01_optimized.mdl. Origin: -1200.0 32.0 496.0  HammerId:      0
+( 959) - weapon_pistol                   . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2303.3 5145.5 448.0  HammerId:      0
+( 960) - func_breakable                  . Name:     . Model: *285. Origin: -5008.0 -1822.5 497.7  HammerId: 1863889
+( 961) - func_breakable                  . Name:     . Model: *286. Origin: -5008.0 -1800.5 477.7  HammerId: 1863892
+( 962) - func_breakable                  . Name:     . Model: *287. Origin: -5168.0 -1800.5 477.7  HammerId: 1863925
+( 963) - func_breakable                  . Name:     . Model: *288. Origin: -5288.5 -1839.5 497.7  HammerId: 1863962
+( 964) - func_breakable                  . Name:     . Model: *289. Origin: -5304.0 -1824.0 477.7  HammerId: 1863967
+( 965) - func_breakable                  . Name:     . Model: *290. Origin: -5327.5 -1863.0 477.7  HammerId: 1863970
+( 966) - func_breakable                  . Name:     . Model: *291. Origin: -5265.0 -1800.5 477.7  HammerId: 1863973
+( 967) - func_breakable                  . Name:     . Model: *292. Origin: -5305.5 -1928.0 497.7  HammerId: 1864008
+( 968) - func_breakable                  . Name:     . Model: *293. Origin: -5327.5 -1928.0 477.7  HammerId: 1864011
+( 969) - func_breakable                  . Name:     . Model: *294. Origin: -5168.0 -1822.5 497.7  HammerId: 1863922
+( 970) - weapon_rifle_ak47_spawn         . Name:     . Model: models/w_models/weapons/w_rifle_ak47.mdl. Origin: -4945.0 -1970.0 506.0  HammerId: 1864633
+( 971) - weapon_rifle_ak47_spawn         . Name:     . Model: models/w_models/weapons/w_rifle_ak47.mdl. Origin: -4945.0 -1966.0 502.0  HammerId: 1864659
+( 972) - weapon_rifle_ak47_spawn         . Name:     . Model: models/w_models/weapons/w_rifle_ak47.mdl. Origin: -4945.0 -1962.0 498.0  HammerId: 1864661
+( 973) - weapon_rifle_ak47_spawn         . Name:     . Model: models/w_models/weapons/w_rifle_ak47.mdl. Origin: -4961.0 -1970.0 518.4  HammerId: 1864756
+( 974) - weapon_rifle_spawn              . Name:     . Model: models/w_models/weapons/w_rifle_m16a2.mdl. Origin: -5005.0 -1970.0 516.0  HammerId: 1864870
+( 975) - weapon_rifle_spawn              . Name:     . Model: models/w_models/weapons/w_rifle_m16a2.mdl. Origin: -4984.0 -1970.0 505.0  HammerId: 1864884
+( 976) - weapon_rifle_spawn              . Name:     . Model: models/w_models/weapons/w_rifle_m16a2.mdl. Origin: -4984.0 -1967.0 502.0  HammerId: 1864926
+( 977) - weapon_rifle_spawn              . Name:     . Model: models/w_models/weapons/w_rifle_m16a2.mdl. Origin: -4984.0 -1961.0 496.0  HammerId: 1864928
+( 978) - weapon_rifle_spawn              . Name:     . Model: models/w_models/weapons/w_rifle_m16a2.mdl. Origin: -4984.0 -1964.0 499.0  HammerId: 1864938
+( 979) - weapon_rifle_desert_spawn       . Name:     . Model: models/w_models/weapons/w_desert_rifle.mdl. Origin: -5043.0 -1970.0 530.0  HammerId: 1864974
+( 980) - weapon_rifle_desert_spawn       . Name:     . Model: models/w_models/weapons/w_desert_rifle.mdl. Origin: -5045.0 -1970.0 517.0  HammerId: 1864976
+( 981) - weapon_rifle_desert_spawn       . Name:     . Model: models/w_models/weapons/w_desert_rifle.mdl. Origin: -5030.0 -1962.0 493.0  HammerId: 1864980
+( 982) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5096.0 -1970.0 523.0  HammerId: 1865080
+( 983) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5104.0 -1970.0 508.0  HammerId: 1865082
+( 984) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5104.0 -1968.0 504.0  HammerId: 1865178
+( 985) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5080.0 -1966.0 502.0  HammerId: 1865225
+( 986) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5103.0 -1964.0 500.0  HammerId: 1865227
+( 987) - weapon_autoshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_autoshot_m4super.mdl. Origin: -5102.0 -1962.0 498.0  HammerId: 1865229
+( 988) - weapon_shotgun_spas_spawn       . Name:     . Model: models/w_models/weapons/w_shotgun_spas.mdl. Origin: -5128.0 -1969.5 530.3  HammerId: 1845995
+( 989) - weapon_sniper_military_spawn    . Name:     . Model: models/w_models/weapons/w_sniper_military.mdl. Origin: -5232.0 -1970.0 506.0  HammerId: 1865762
+( 990) - weapon_hunting_rifle_spawn      . Name:     . Model: models/w_models/weapons/w_sniper_mini14.mdl. Origin: -5175.0 -1970.0 511.0  HammerId: 1865872
+( 991) - weapon_hunting_rifle_spawn      . Name:     . Model: models/w_models/weapons/w_sniper_mini14.mdl. Origin: -5177.0 -1970.0 520.0  HammerId: 1865874
+( 992) - weapon_hunting_rifle_spawn      . Name:     . Model: models/w_models/weapons/w_sniper_mini14.mdl. Origin: -5177.0 -1970.0 531.0  HammerId: 1865876
+( 993) - weapon_pistol_spawn             . Name:     . Model: models/w_models/weapons/w_pistol_B.mdl. Origin: -4951.0 -1817.0 464.0  HammerId: 1866708
+( 994) - weapon_pistol_spawn             . Name:     . Model: models/w_models/weapons/w_pistol_B.mdl. Origin: -4960.0 -1817.0 464.0  HammerId: 1866710
+( 995) - weapon_pistol_spawn             . Name:     . Model: models/w_models/weapons/w_pistol_B.mdl. Origin: -4971.0 -1817.0 464.0  HammerId: 1866712
+( 996) - weapon_smg_spawn                . Name:     . Model: models/w_models/weapons/w_smg_uzi.mdl. Origin: -5005.0 -1828.0 469.0  HammerId: 1866718
+( 997) - weapon_smg_silenced_spawn       . Name:     . Model: models/w_models/weapons/w_smg_a.mdl. Origin: -5055.0 -1823.0 467.0  HammerId: 1866756
+( 998) - weapon_smg_silenced_spawn       . Name:     . Model: models/w_models/weapons/w_smg_a.mdl. Origin: -5060.0 -1812.0 462.0  HammerId: 1866758
+( 999) - weapon_shotgun_chrome_spawn     . Name:     . Model: models/w_models/weapons/w_pumpshotgun_A.mdl. Origin: -5129.0 -1834.5 473.0  HammerId: 1866905
+(1000) - weapon_shotgun_chrome_spawn     . Name:     . Model: models/w_models/weapons/w_pumpshotgun_A.mdl. Origin: -5177.0 -1813.0 463.0  HammerId: 1866907
+(1001) - weapon_pumpshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_shotgun.mdl. Origin: -5190.0 -1816.0 464.0  HammerId: 1866947
+(1002) - weapon_shotgun_spas_spawn       . Name:     . Model: models/w_models/weapons/w_shotgun_spas.mdl. Origin: -5130.0 -1969.5 519.0  HammerId: 1867169
+(1003) - weapon_shotgun_spas_spawn       . Name:     . Model: models/w_models/weapons/w_shotgun_spas.mdl. Origin: -5127.0 -1969.5 509.0  HammerId: 1867171
+(1004) - weapon_shotgun_spas_spawn       . Name:     . Model: models/w_models/weapons/w_shotgun_spas.mdl. Origin: -5152.0 -1949.0 493.0  HammerId: 1867173
+(1005) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: -5182.9 -1954.8 492.1  HammerId: 1867189
+(1006) - weapon_ammo_spawn               . Name:     . Model: models/props/terror/ammo_stack.mdl. Origin: -5225.0 -1956.0 492.1  HammerId: 1867191
+(1007) - weapon_pumpshotgun_spawn        . Name:     . Model: models/w_models/weapons/w_shotgun.mdl. Origin: -5143.0 -1832.0 472.0  HammerId: 1871133
+(1008) - weapon_pistol_magnum_spawn      . Name:     . Model: models/w_models/weapons/w_desert_eagle.mdl. Origin: -5313.0 -1948.7 461.0  HammerId: 1875947
+(1009) - weapon_pistol_magnum_spawn      . Name:     . Model: models/w_models/weapons/w_desert_eagle.mdl. Origin: -5302.0 -1948.7 466.0  HammerId: 1875978
+(1010) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -824.4 3552.4 431.7  HammerId: 1881485
+(1011) - func_simpleladder               . Name:     . Model: *295. Origin: 0.0 0.0 0.0  HammerId: 1881728
+(1012) - prop_door_rotating              . Name:     . Model: models/props_downtown/metal_door_112.mdl. Origin: -5528.0 1012.0 383.7  HammerId: 1890119
+(1013) - prop_physics                    . Name:     . Model: models/props_junk/wood_pallet001a.mdl. Origin: -5063.6 188.2 709.6  HammerId: 1895719
+(1014) - prop_physics                    . Name:     . Model: models/props_junk/wood_pallet001a.mdl. Origin: -5175.8 -459.8 709.6  HammerId: 1895875
+(1015) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5159.2 325.6 672.3  HammerId: 1895977
+(1016) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5069.7 -843.5 672.3  HammerId: 1895981
+(1017) - prop_physics                    . Name:     . Model: models/props_fortifications/orange_cone001_reference.mdl. Origin: -5070.1 -812.0 672.4  HammerId: 1895985
+(1018) - predicted_viewmodel             . Name:     . Model:     . Origin: 2422.4 5284.8 448.0  HammerId:      0
+(1019) - predicted_viewmodel             . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2422.4 5284.8 448.0  HammerId:      0
+(1020) - weapon_pistol                   . Name:     . Model: models/v_models/v_pistolA.mdl. Origin: 2422.4 5284.8 448.0  HammerId:      0
+(1021) - prop_dynamic                    . Name:     . Model: models/survivors/survivor_gambler.mdl. Origin: 2375.8 5244.5 428.0  HammerId:      0
+(1022) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: 1012.9 2971.5 569.8  HammerId:      0
+(1023) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -4361.5 2186.8 320.0  HammerId:      0
+(1024) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -3712.4 2225.4 431.7  HammerId: 1896071
+(1025) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -3726.4 1848.4 431.7  HammerId: 1896087
+(1026) - prop_dynamic                    . Name: InstanceAuto21-police_car_glass. Model: models/props_vehicles/police_car_city_glass.mdl. Origin: -894.5 2933.1 322.2  HammerId: 1896089
+(1027) - prop_physics                    . Name: InstanceAuto21-police_car. Model: models/props_vehicles/police_car_rural.mdl. Origin: -894.5 2933.1 322.2  HammerId: 1896093
+(1028) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -6848.4 -2623.5 507.7  HammerId: 1896109
+(1029) - beam_spotlight                  . Name: InstanceAuto23-workspotsbeam01. Model:     . Origin: -5017.5 1626.0 573.0  HammerId: 1896111
+(1030) - beam_spotlight                  . Name: InstanceAuto23-workspotsbeam01. Model:     . Origin: -4981.7 1618.1 573.4  HammerId: 1896113
+(1031) - beam_spotlight                  . Name: InstanceAuto23-workspotsbeam01. Model:     . Origin: -4982.2 1617.2 537.2  HammerId: 1896115
+(1032) - beam_spotlight                  . Name: InstanceAuto23-workspotsbeam01. Model:     . Origin: -5016.1 1626.4 537.9  HammerId: 1896117
+(1033) - beam_spotlight                  . Name: InstanceAuto24-workspotsbeam01. Model:     . Origin: -4712.3 -1335.8 722.4  HammerId: 1896138
+(1034) - beam_spotlight                  . Name: InstanceAuto24-workspotsbeam01. Model:     . Origin: -4686.7 -1362.0 724.9  HammerId: 1896140
+(1035) - beam_spotlight                  . Name: InstanceAuto24-workspotsbeam01. Model:     . Origin: -4668.8 -1347.6 698.1  HammerId: 1896142
+(1036) - beam_spotlight                  . Name: InstanceAuto24-workspotsbeam01. Model:     . Origin: -4692.2 -1321.4 696.1  HammerId: 1896144
+(1037) - prop_dynamic                    . Name: InstanceAuto25-police_car_glass. Model: models/props_vehicles/police_car_city_glass.mdl. Origin: -4251.5 968.0 166.6  HammerId: 1896165
+(1038) - prop_physics                    . Name: InstanceAuto25-police_car. Model: models/props_vehicles/police_car_rural.mdl. Origin: -4251.5 968.0 166.6  HammerId: 1896169
+(1039) - func_brush                      . Name: InstanceAuto26-message_brush1. Model: *296. Origin: 1100.8 2742.1 661.1  HammerId: 1896175
+(1040) - func_brush                      . Name: InstanceAuto26-message_brush2. Model: *297. Origin: 1100.8 2742.1 661.1  HammerId: 1896180
+(1041) - func_brush                      . Name: InstanceAuto26-message_brush_static. Model: *298. Origin: 1100.8 2742.1 661.1  HammerId: 1896251
+(1042) - func_brush                      . Name: InstanceAuto27-trafficmessage_panel_1. Model: *299. Origin: -8216.0 -849.0 472.7  HammerId: 1896341
+(1043) - func_brush                      . Name: InstanceAuto27-trafficmessage_panel_2. Model: *300. Origin: -8216.0 -849.0 472.7  HammerId: 1896386
+(1044) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -4117.8 2196.5 320.0  HammerId:      0
+(1045) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -3995.0 2195.8 320.0  HammerId:      0
+(1046) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -4223.2 2192.8 320.0  HammerId:      0
+(1047) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -5117.0 815.9 672.0  HammerId:      0
+(1048) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -6178.7 -1079.1 472.0  HammerId:      0
+(1049) - beam_spotlight                  . Name: InstanceAuto29-workspotsbeam01. Model:     . Origin: -7188.1 -4150.9 656.6  HammerId: 1898175
+(1050) - beam_spotlight                  . Name: InstanceAuto29-workspotsbeam01. Model:     . Origin: -7168.4 -4181.8 656.9  HammerId: 1898177
+(1051) - beam_spotlight                  . Name: InstanceAuto29-workspotsbeam01. Model:     . Origin: -7151.0 -4171.5 627.9  HammerId: 1898179
+(1052) - beam_spotlight                  . Name: InstanceAuto29-workspotsbeam01. Model:     . Origin: -7168.6 -4141.1 627.9  HammerId: 1898181
+(1053) - prop_car_alarm                  . Name: caralarm_car1-car2_alarm. Model: models/props_vehicles/cara_95sedan.mdl. Origin: -8799.7 -3392.6 384.5  HammerId: 1912465
+(1054) - ambient_generic                 . Name: carchirp1-car2_alarm. Model:     . Origin: -8832.0 -3384.0 495.7  HammerId: 1912471
+(1055) - prop_car_glass                  . Name: caralarm_glass1-car2_alarm. Model: models/props_vehicles/cara_95sedan_glass_alarm.mdl. Origin: -8799.7 -3392.6 384.5  HammerId: 1912474
+(1056) - env_sprite                      . Name: caralarm_light1-car2_alarm. Model: sprites/glow.vmt. Origin: -8905.6 -3421.7 415.5  HammerId: 1912478
+(1057) - env_sprite                      . Name: caralarm_light1-car2_alarm. Model: sprites/glow.vmt. Origin: -8906.4 -3365.0 415.5  HammerId: 1912481
+(1058) - env_sprite                      . Name: caralarm_light1-car2_alarm. Model: sprites/glow.vmt. Origin: -8702.9 -3430.8 413.5  HammerId: 1912484
+(1059) - env_sprite                      . Name: caralarm_light1-car2_alarm. Model: sprites/glow.vmt. Origin: -8702.9 -3353.8 413.5  HammerId: 1912487
+(1060) - ambient_generic                 . Name: caralarm1-car2_alarm. Model:     . Origin: -8832.0 -3408.0 495.7  HammerId: 1912490
+(1061) - beam_spotlight                  . Name: caralarm_headlights1-car2_alarm. Model:     . Origin: -8698.9 -3421.8 414.2  HammerId: 1912493
+(1062) - beam_spotlight                  . Name: caralarm_headlights1-car2_alarm. Model:     . Origin: -8698.9 -3363.8 414.2  HammerId: 1912495
+(1063) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -5410.6 -1986.7 616.0  HammerId:      0
+(1064) - prop_car_glass                  . Name: caralarm_glass1_off-car2_alarm. Model: models/props_vehicles/cara_95sedan_glass.mdl. Origin: -8799.7 -3392.6 384.5  HammerId: 1913382
+(1065) - env_entity_maker                . Name: maker_alarm_on-car2_alarm. Model:     . Origin: -8796.1 -3400.0 536.1  HammerId: 1913413
+(1066) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -5416.4 -2155.0 616.0  HammerId:      0
+(1067) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -7697.6 -4357.6 384.0  HammerId:      0
+(1068) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -7769.8 -4465.6 384.0  HammerId:      0
+(1069) - beam_spotlight                  . Name: InstanceAuto33-workspotsbeam01. Model:     . Origin: -8485.8 -1977.0 655.6  HammerId: 1913934
+(1070) - beam_spotlight                  . Name: InstanceAuto33-workspotsbeam01. Model:     . Origin: -8505.5 -1946.0 655.9  HammerId: 1913936
+(1071) - beam_spotlight                  . Name: InstanceAuto33-workspotsbeam01. Model:     . Origin: -8522.9 -1956.4 627.0  HammerId: 1913938
+(1072) - beam_spotlight                  . Name: InstanceAuto33-workspotsbeam01. Model:     . Origin: -8505.3 -1986.8 627.0  HammerId: 1913940
+(1073) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -816.4 3502.4 240.7  HammerId: 1913975
+(1074) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -7364.4 -1395.5 535.7  HammerId: 1913991
+(1075) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_82hatchback_wrecked_glass.mdl. Origin: -6254.2 2903.7 422.7  HammerId: 1914302
+(1076) - prop_physics                    . Name: InstanceAuto37-car_physics. Model: models/props_vehicles/cara_82hatchback_wrecked.mdl. Origin: -6254.2 2903.7 422.7  HammerId: 1914306
+(1077) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -7323.1 -4334.4 384.0  HammerId:      0
+(1078) - prop_dynamic                    . Name:     . Model: models/props_vehicles/cara_82hatchback_wrecked_glass.mdl. Origin: -3859.7 -1277.5 554.0  HammerId: 1914369
+(1079) - prop_physics                    . Name: InstanceAuto38-car_physics. Model: models/props_vehicles/cara_82hatchback_wrecked.mdl. Origin: -3859.7 -1277.5 554.0  HammerId: 1914373
+(1080) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -7517.1 -4342.8 384.0  HammerId:      0
+(1081) - info_particle_system            . Name:     . Model:     . Origin: 2213.0 5192.0 557.5  HammerId: 1914513
+(1082) - info_particle_system            . Name:     . Model:     . Origin: 2651.0 4979.0 557.5  HammerId: 1914592
+(1083) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -4864.4 -1953.4 568.7  HammerId: 1914608
+(1084) - env_sprite                      . Name:     . Model: sprites/glow06.vmt. Origin: -5184.4 -1856.4 568.7  HammerId: 1914624
+(1085) - prop_dynamic                    . Name: stripmall_door1_tankwall. Model: models/props/effects/tankwall_64_2_112.mdl. Origin: -5308.0 -2364.0 642.0  HammerId: 1936855
+(1086) - prop_dynamic                    . Name: stripmall_door1_tankwall. Model: models/props/effects/tankwall_64_2_112.mdl. Origin: -5300.0 -2364.0 642.0  HammerId: 1936859
+(1087) - prop_dynamic                    . Name: stripmall_door2_tankwall. Model: models/props/effects/tankwall_64_2_112.mdl. Origin: -5308.0 -2768.0 642.0  HammerId: 1936863
+(1088) - prop_dynamic                    . Name: stripmall_door2_tankwall. Model: models/props/effects/tankwall_64_2_112.mdl. Origin: -5300.0 -2768.0 642.0  HammerId: 1936867
+(1089) - ambient_generic                 . Name: whitaker_gunfire. Model:     . Origin: -4915.0 -2069.0 528.0  HammerId: 1936870
+(1090) - weapon_smg_mp5_spawn            . Name:     . Model: models/w_models/weapons/w_smg_mp5.mdl. Origin: -5400.0 -2014.0 489.0  HammerId: 1936872
+(1091) - weapon_sniper_scout_spawn       . Name:     . Model: models/w_models/weapons/w_sniper_scout.mdl. Origin: -5387.0 -2059.2 463.8  HammerId: 1936873
+(1092) - weapon_sniper_awp_spawn         . Name:     . Model: models/w_models/weapons/w_sniper_awp.mdl. Origin: -5384.0 -1995.0 465.5  HammerId: 1936874
+(1093) - weapon_rifle_sg552_spawn        . Name:     . Model: models/w_models/weapons/w_rifle_sg552.mdl. Origin: -5404.0 -2029.0 462.0  HammerId: 1936875
+(1094) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -1165.1 2404.1 64.0  HammerId:      0
+(1095) - prop_minigun                    . Name:     . Model: models/w_models/weapons/50cal.mdl. Origin: -2451.8 2411.6 89.3  HammerId:      0
+(1096) - prop_minigun_l4d1               . Name:     . Model: models/w_models/weapons/w_minigun.mdl. Origin: -2456.5 2248.5 87.7  HammerId:      0
+Total Networking Entities: 1069
+---------------------------------------------------------
+
+***********************     TOTAL NON-NETWORKING ENTITIES    ***********************
+
+(2142) - logic_relay                     . Name: store_alarm_relay. Model:     . Origin: -6720.0 -2496.0 432.0  HammerId: 183620
+(2143) - logic_timer                     . Name: cola_glow_timer. Model:     . Origin: -7504.0 -1408.0 464.0  HammerId: 187203
+(2144) - logic_timer                     . Name: store_door_timer. Model:     . Origin: -6592.0 -2496.0 432.0  HammerId: 252884
+(2145) - point_template                  . Name: vs_template. Model:     . Origin: 2304.0 5120.0 544.0  (IN SAFEROOM) HammerId: 697173
+(2146) - filter_activator_team           . Name: survivor_filter. Model:     . Origin: -5472.0 -2112.0 632.0  HammerId: 951273
+(2147) - logic_relay                     . Name: gunshop_button_relay. Model:     . Origin: -5472.0 -2080.0 656.0  HammerId: 951285
+(2148) - logic_timer                     . Name: gunshop_button_timer. Model:     . Origin: -5472.0 -2080.0 680.0  HammerId: 951287
+(2149) - fog_volume                      . Name:     . Model: *113. Origin: 0.0 0.0 0.0  HammerId: 1192572
+(2150) - fog_volume                      . Name:     . Model: *114. Origin: 0.0 0.0 0.0  HammerId: 1192596
+(2151) - fog_volume                      . Name:     . Model: *115. Origin: 0.0 0.0 0.0  HammerId: 1192612
+(2152) - fog_volume                      . Name:     . Model: *116. Origin: 0.0 0.0 0.0  HammerId: 1192620
+(2153) - fog_volume                      . Name:     . Model: *117. Origin: 0.0 0.0 0.0  HammerId: 1192640
+(2154) - fog_volume                      . Name:     . Model: *118. Origin: 0.0 0.0 0.0  HammerId: 1192667
+(2155) - fog_volume                      . Name:     . Model: *119. Origin: 0.0 0.0 0.0  HammerId: 1192675
+(2156) - logic_relay                     . Name: gunshop_door_relay. Model:     . Origin: -4880.0 -2080.0 528.0  HammerId: 1213269
+(2157) - logic_relay                     . Name: tanker_destroy_relay. Model:     . Origin: -6656.0 -864.0 512.0  HammerId: 1213790
+(2158) - logic_relay                     . Name: tanker_destruction_relay. Model:     . Origin: -6656.0 -864.0 480.0  HammerId: 1213806
+(2159) - logic_timer                     . Name: gunshop_door_timer. Model:     . Origin: -4880.0 -2080.0 504.0  HammerId: 1227304
+(2160) - filter_activator_model          . Name: cola_filter. Model:     . Origin: -7362.0 -1387.9 401.0  HammerId: 1262801
+(2161) - point_template                  . Name: cola_template. Model:     . Origin: -7392.0 -1344.0 448.0  HammerId: 1262866
+(2162) - logic_case                      . Name: car_alarm_case. Model:     . Origin: -8000.0 -992.0 416.0  HammerId: 1283161
+(2163) - logic_timer                     . Name: tanker_glow_timer. Model:     . Origin: -5472.0 -2080.0 704.0  HammerId: 1358964
+(2164) - fog_volume                      . Name:     . Model: *200. Origin: 0.0 0.0 0.0  HammerId: 1419137
+(2165) - logic_relay                     . Name: store_button_relay. Model:     . Origin: -7504.0 -1408.0 432.0  HammerId: 182987
+(2166) - logic_relay                     . Name: tanker_ropes_relay. Model:     . Origin: -6976.0 -1024.0 832.0  HammerId: 1481056
+(2167) - logic_relay                     . Name: tanker_reset_relay. Model:     . Origin: -6656.0 -928.0 480.0  HammerId: 1500834
+(2168) - logic_relay                     . Name: tanker_particle_relay. Model:     . Origin: -6528.0 -1056.0 400.0  HammerId: 1528036
+(2169) - logic_relay                     . Name: whitaker_relay. Model:     . Origin: -5504.0 -1792.0 832.0  HammerId: 1544865
+(2170) - logic_case                      . Name: chainsaw_case. Model:     . Origin: 1472.0 4736.0 480.0  HammerId: 1637128
+(2171) - logic_relay                     . Name: null_relay. Model:     . Origin: 1472.0 4736.0 544.0  HammerId: 1637132
+(2172) - point_template                  . Name: cola_refill_template. Model:     . Origin: -5088.0 -1760.0 544.1  HammerId: 1645402
+(2173) - logic_case                      . Name: AutoInstance1-case_car_color. Model:     . Origin: -6795.6 -1724.3 465.4  HammerId: 1829066
+(2174) - logic_case                      . Name: AutoInstance1-case_car_color1. Model:     . Origin: -6420.1 -2216.5 470.4  HammerId: 1829201
+(2175) - logic_case                      . Name: AutoInstance1-case_car_color2. Model:     . Origin: -5632.0 -2120.0 528.3  HammerId: 1829226
+(2176) - logic_case                      . Name: InstanceAuto4-case_car_color. Model:     . Origin: -8800.0 -3144.0 464.6  HammerId: 1838408
+(2177) - logic_case                      . Name: InstanceAuto6-case_car_color. Model:     . Origin: -1193.0 2020.0 160.0  HammerId: 1838481
+(2178) - logic_timer                     . Name: alarmtimer1-car1_alarm. Model:     . Origin: -7880.0 -2702.5 496.6  HammerId: 1838490
+(2179) - logic_case                      . Name: case_car_color-car1_alarm. Model:     . Origin: -7880.0 -2680.0 496.6  HammerId: 1839246
+(2180) - logic_relay                     . Name: relay_caralarm_on-car1_alarm. Model:     . Origin: -7868.0 -2712.0 536.6  HammerId: 1839490
+(2181) - logic_relay                     . Name: relay_caralarm_off-car1_alarm. Model:     . Origin: -7900.0 -2712.0 536.6  HammerId: 1839496
+(2182) - logic_branch                    . Name: branch_caralarm-car1_alarm. Model:     . Origin: -7868.0 -2712.0 568.6  HammerId: 1839797
+(2183) - point_template                  . Name: ptemplate_alarm_on-car1_alarm. Model:     . Origin: -7868.0 -2696.0 536.6  HammerId: 1839911
+(2184) - logic_case                      . Name: InstanceAuto8-case_car_color. Model:     . Origin: -8816.0 -2632.0 464.6  HammerId: 1840014
+(2185) - logic_case                      . Name: InstanceAuto9-case_car_color. Model:     . Origin: -7872.0 -3080.0 464.6  HammerId: 1840081
+(2186) - logic_timer                     . Name: InstanceAuto12-default_message_timer. Model:     . Origin: -2807.9 1429.7 95.2  HammerId: 1842019
+(2187) - logic_timer                     . Name: InstanceAuto12-message_timer. Model:     . Origin: -2825.8 1434.5 96.0  HammerId: 1842026
+(2188) - sky_camera                      . Name:     . Model:     . Origin: 9728.0 11776.0 -3312.0  HammerId: 1877551
+(2189) - logic_timer                     . Name: InstanceAuto26-default_message_timer. Model:     . Origin: 1080.2 2725.2 668.2  HammerId: 1896185
+(2190) - logic_timer                     . Name: InstanceAuto26-message_timer. Model:     . Origin: 1075.5 2743.0 669.0  HammerId: 1896293
+(2191) - logic_timer                     . Name: InstanceAuto27-trafficmessage_panel_timer. Model:     . Origin: -8206.0 -813.7 488.4  HammerId: 1896382
+(2192) - logic_timer                     . Name: alarmtimer1-car2_alarm. Model:     . Origin: -8808.0 -3406.5 496.6  HammerId: 1912469
+(2193) - logic_case                      . Name: case_car_color-car2_alarm. Model:     . Origin: -8808.0 -3384.0 496.6  HammerId: 1913225
+(2194) - logic_relay                     . Name: relay_caralarm_on-car2_alarm. Model:     . Origin: -8796.0 -3416.0 536.6  HammerId: 1913469
+(2195) - logic_relay                     . Name: relay_caralarm_off-car2_alarm. Model:     . Origin: -8828.0 -3416.0 536.6  HammerId: 1913475
+(2196) - logic_branch                    . Name: branch_caralarm-car2_alarm. Model:     . Origin: -8796.0 -3416.0 568.6  HammerId: 1913776
+(2197) - point_template                  . Name: ptemplate_alarm_on-car2_alarm. Model:     . Origin: -8796.0 -3400.0 536.6  HammerId: 1913890
+(2198) - env_soundscape                  . Name: InstanceAuto36-alley.ent. Model:     . Origin: -1133.9 2421.3 97.0  HammerId: 1913992
+(2199) - env_soundscape                  . Name: InstanceAuto36-alley.exit. Model:     . Origin: -1133.9 2333.3 97.0  HammerId: 1914003
+(2200) - env_soundscape                  . Name: InstanceAuto36-gunshop.ent. Model:     . Origin: -5269.0 -2125.7 670.9  HammerId: 1914014
+(2201) - env_soundscape                  . Name: InstanceAuto36-gunshop.ent. Model:     . Origin: -5089.4 -1703.1 509.0  HammerId: 1914025
+(2202) - env_soundscape                  . Name: InstanceAuto36-gunshop.exit. Model:     . Origin: -5333.0 -2121.7 670.9  HammerId: 1914036
+(2203) - env_soundscape                  . Name: InstanceAuto36-gunshop.exit. Model:     . Origin: -5089.4 -1619.1 509.0  HammerId: 1914047
+(2204) - env_soundscape                  . Name: InstanceAuto36-safehouse.ent. Model:     . Origin: -7483.7 -4617.1 429.0  (IN SAFEROOM) HammerId: 1914058
+(2205) - env_soundscape                  . Name: InstanceAuto36-safehouse.exit. Model:     . Origin: -7483.7 -4545.1 429.0  HammerId: 1914069
+(2206) - env_soundscape                  . Name: InstanceAuto36-spawn.ent. Model:     . Origin: 2421.9 5145.6 505.0  (IN SAFEROOM) HammerId: 1914080
+(2207) - env_soundscape                  . Name: InstanceAuto36-spawn.ent. Model:     . Origin: 2325.9 4969.6 505.0  (IN SAFEROOM) HammerId: 1914091
+(2208) - env_soundscape                  . Name: InstanceAuto36-spawn.exit. Model:     . Origin: 2325.9 4889.6 505.0  HammerId: 1914102
+(2209) - env_soundscape                  . Name: InstanceAuto36-stairwell.ent. Model:     . Origin: -5500.2 928.9 429.0  HammerId: 1914113
+(2210) - env_soundscape                  . Name: InstanceAuto36-stairwell.ent. Model:     . Origin: -5267.0 968.4 564.3  HammerId: 1914124
+(2211) - env_soundscape                  . Name: InstanceAuto36-stairwell.ent. Model:     . Origin: -3855.6 2237.3 369.0  HammerId: 1914135
+(2212) - env_soundscape                  . Name: InstanceAuto36-stairwell.ent. Model:     . Origin: -876.6 3416.0 185.0  HammerId: 1914146
+(2213) - env_soundscape                  . Name: InstanceAuto36-stairwell.ent. Model:     . Origin: -5319.0 864.4 636.3  HammerId: 1914157
+(2214) - env_soundscape                  . Name: InstanceAuto36-stairwell.ent. Model:     . Origin: -962.4 3251.0 377.0  HammerId: 1914168
+(2215) - env_soundscape                  . Name: InstanceAuto36-stairwell.exit. Model:     . Origin: -5500.2 852.9 429.0  HammerId: 1914179
+(2216) - env_soundscape                  . Name: InstanceAuto36-stairwell.exit. Model:     . Origin: -960.6 3416.0 185.0  HammerId: 1914190
+(2217) - env_soundscape                  . Name: InstanceAuto36-stairwell.exit. Model:     . Origin: -3919.6 2237.3 369.0  HammerId: 1914201
+(2218) - env_soundscape                  . Name: InstanceAuto36-stairwell.exit. Model:     . Origin: -962.4 3171.0 377.0  HammerId: 1914212
+(2219) - env_soundscape                  . Name: InstanceAuto36-store.ent. Model:     . Origin: -6687.3 -2488.1 449.0  HammerId: 1914223
+(2220) - env_soundscape                  . Name: InstanceAuto36-store.exit. Model:     . Origin: -6607.3 -2488.1 449.0  HammerId: 1914234
+(2221) - env_soundscape                  . Name: InstanceAuto36-street.ent. Model:     . Origin: -3352.3 2139.3 173.0  HammerId: 1914245
+(2222) - env_soundscape                  . Name: InstanceAuto36-street.exit. Model:     . Origin: -3424.3 2139.3 181.0  HammerId: 1914256
+(2223) - env_soundscape                  . Name: InstanceAuto36-underpass.ent. Model:     . Origin: -2302.2 2437.9 89.0  HammerId: 1914267
+(2224) - env_soundscape                  . Name: InstanceAuto36-underpass.ent. Model:     . Origin: -2698.2 2437.9 69.0  HammerId: 1914278
+(2225) - env_soundscape                  . Name: InstanceAuto36-underpass.exit. Model:     . Origin: -2706.2 2169.9 69.0  HammerId: 1914289
+(2226) - env_soundscape                  . Name: InstanceAuto36-underpass.exit. Model:     . Origin: -2278.2 2169.9 65.0  HammerId: 1914300
+(2227) - logic_case                      . Name: InstanceAuto37-case_car_color. Model:     . Origin: -6449.0 2884.4 507.3  HammerId: 1914365
+(2228) - logic_case                      . Name: InstanceAuto38-case_car_color. Model:     . Origin: -3794.9 -1279.7 632.8  HammerId: 1914432
+(2229) - logic_relay                     . Name: relay_gunshop_door. Model:     . Origin: -4864.0 -2080.0 528.0  HammerId: 1925672
+(2230) - logic_relay                     . Name: relay_gunfire. Model:     . Origin: -4915.0 -2049.0 528.0  HammerId: 1936871
+(2231) - filter_activator_team           . Name: anv_globalfixes_filter_survivor. Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(2232) - filter_activator_team           . Name: anv_globalfixes_filter_infected. Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(2233) - filter_activator_model          . Name: anv_mapfixes_atomizer_bsp_dumpster_filter. Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+(2234) - logic_timer                     . Name: anv_mapfixes_atomizer_bsp_dumpster_timer. Model:     . Origin: 0.0 0.0 0.0  HammerId:      0
+Total non-networked Entities: 93
+---------------------------------------------------------
+
+***********************     STRINGTABLE     ***********************
+
+'modelprecache' count: 786
+
+***********************     WEAPON REPORT     ***********************
+
+{Spectators}
+
+{Team 2}
+1. Harry [TW]
+Slot #0: EMPTY
+Slot #1: weapon_pistol
+Slot #2: EMPTY
+Slot #3: EMPTY
+Slot #4: EMPTY
+2. Ellis (BOT)
+Slot #0: EMPTY
+Slot #1: weapon_pistol
+Slot #2: EMPTY
+Slot #3: EMPTY
+Slot #4: EMPTY
+3. Coach (BOT)
+Slot #0: EMPTY
+Slot #1: weapon_pistol
+Slot #2: EMPTY
+Slot #3: EMPTY
+Slot #4: EMPTY
+4. Rochelle (BOT)
+Slot #0: EMPTY
+Slot #1: weapon_pistol
+Slot #2: EMPTY
+Slot #3: EMPTY
+Slot #4: EMPTY
+
+{Team 3}
+
+End of Report.

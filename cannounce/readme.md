@@ -26,7 +26,7 @@ Replacement of default player connection message, allows for custom connection m
 
 * <details><summary>ConVar | 指令</summary>
 
-	* cfg\sourcemod\cannounce.cfg
+	* cfg/sourcemod/cannounce.cfg
 		```php
 		// If 1, Display if player is admin on connect/disconnect message (allows the {PLAYERTYPE} placeholder)
 		sm_ca_display_admin "1"
@@ -121,7 +121,7 @@ Replacement of default player connection message, allows for custom connection m
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
-	* cfg\sourcemod\cannounce.cfg
+	* cfg/sourcemod/cannounce.cfg
 		```php
 		// 為1時，顯示該玩家是否為管理員 (data文件必須寫入{PLAYERTYPE})
 		sm_ca_display_admin "1"

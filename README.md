@@ -65,9 +65,11 @@ Make server more fun, and more useful plugins for adm.
     * 阻止駭客利用某些漏洞導致伺服器崩潰
 * <b>[familyshare_manager](/familyshare_manager)</b>: Block family share accounts which does not own the game
     * 封鎖使用家庭共享沒有真的購買遊戲的帳戶進來伺服器
-* <b>[familyshare_manager](/familyshare_manager)</b>: Checks for VAC, game, Steam Community, and trade bans on the accounts of connecting clients
+* <b>[vacbans](/vacbans)</b>: Checks for VAC, game, Steam Community, and trade bans on the accounts of connecting clients
     * 封鎖有 VAC/遊戲封禁/社群封禁/交易封禁 的不良玩家進入伺服器
-
+* <b>[entity_limit_logger](/entity_limit_logger)</b>: Analyse and logs entity classes delta when the total number of entities on the map exceeds a pre-prefined maximum
+    * 產生文件記錄地圖當前所有實體的資訊與總數量，協助查找實體太多導致崩潰的原因
+    
 # CSS-Plugins
 > Apply to Counter-Strike: Source
 > <br/>適用於絕對武力：次世代
