@@ -63,7 +63,7 @@ char
 	sHostport[10],
 	g_sLogPath[PLATFORM_MAX_PATH+1];
 
-bool g_bLogged;
+bool g_bCanLogged;
 
 int g_iEntityLimit = 99999;
 int g_iSnapTime;
@@ -155,7 +155,7 @@ Action CmdCreateEntities(int client, int args)
 
 public void OnMapStart()
 {
-	g_bLogged = false;
+	g_bCanLogged = true;
 	CreateTimer(g_hCVarDelay.FloatValue, Timer_CreateSnapshot, _, TIMER_FLAG_NO_MAPCHANGE);
 }
 
@@ -195,20 +195,25 @@ void MakeSnapshot()
 
 public void OnEntityCreated(int entity, const char[] classname)
 {
-	if( GetEntityCount() > g_iEntityLimit )
+	if( g_bCanLogged && GetEntityCount() > g_iEntityLimit )
 	{
-		if( !g_bLogged )
-		{
-			g_bLogged = true; // log every 360.0 second
-			CreateTimer(360.0, Timer_LogAgain, TIMER_FLAG_NO_MAPCHANGE);
-			LogAll();
-		}
+		g_bCanLogged = false; // log every 360.0 second
+		CreateTimer(360.0, Timer_LogAgain, TIMER_FLAG_NO_MAPCHANGE);
+		CreateTimer(3.0, Timer_LogAll, _, TIMER_FLAG_NO_MAPCHANGE);
+		
 	}
+}
+
+Action Timer_LogAll(Handle timer)
+{
+	LogAll();
+
+	return Plugin_Continue;
 }
 
 Action Timer_LogAgain(Handle Timer)
 {
-	g_bLogged = false;
+	g_bCanLogged = true;
 
 	return Plugin_Continue;
 }
