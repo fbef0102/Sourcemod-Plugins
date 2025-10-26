@@ -7,7 +7,7 @@ Fixes the invisible env_spritetrail entity
 	```
 
 * Video | 影片展示
-    * [See this video](https://www.youtube.com/watch?v=i1zY1tpFMkw): Source engine game has bug when env_spritetrail is created and is visible for about 1 second and then disappears. But actually the entity is not removed.]
+    * [See this video](https://www.youtube.com/watch?v=i1zY1tpFMkw): Source engine game has bug when env_spritetrail is created and is visible for about 1 second and then disappears. But actually the entity is not removed.
         > spritetrails物件不會發光但其實物件還是存在的
 
 * <details><summary>How does it work?</summary>
