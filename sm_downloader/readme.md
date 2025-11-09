@@ -110,6 +110,20 @@ SM File/Folder Downloader and Precacher
 	5. Players should download custom files when connecting to your server (They need to set Options-> Multiplayer -> CUSTOM SERVER CONTENT -> Allow All)
 </details>
 
+* <details><summary>Q&A</summary>
+
+	* Q1: Why it won't download files ?
+		* A1: If file is not downloading, try rename logner file name or different folder
+			* 🟥 And please ensure no file has space or special characters like "long dash" (–) or so.
+			* 🟥 Valve Block path: addons, scripts
+			* 🟥 Valve Block file format: .vpk
+
+	* Q2: Download custom sounds successfully, buy why can't play them in game ?
+		* A1: Use .mp3 file if play custom sound, otherwise it may not play at all
+			* 🟥 All MP3 files must be encoded in 44100 Hz sample rate 
+			* 🟥 128 or 192 Kbit/s
+</details>
+
 * <details><summary>Changelog | 版本日誌</summary>
 
 	* v2.2 (2024-11-21)
@@ -226,10 +240,24 @@ SM 文件下載器 (玩家連線伺服器的時候能下載自製的檔案)
 		<br/>![zho/sm_downloader_0](image/zho/sm_downloader_0.jpg)
 		* 連線到伺服器
 		* 打開控制台查看是否下載自製的檔案 (此處圖片顯示正在下載音樂)
-			* 註: L4D1 不會顯示
+			* 部分遊戲譬如L4D1不會顯示這些
 		<br/>![sm_downloader_4](image/sm_downloader_4.jpg)
 		* 再去你的遊戲資料夾查看檔案是否已經下載 
 		<br/>![sm_downloader_5](image/sm_downloader_5.jpg)
 
 	5. 玩家加入伺服器時，會自動下載自製的文件 (玩家必須自己打開選項->多人連線->自訂伺服器內容->全部允許)
+</details>
+
+* <details><summary>Q&A</summary>
+
+	* Q1: 為什麼我將檔案寫入data文件依然無法下載 ?
+		* A1: 如果檔案沒有下載，請嘗試重新命名更長的檔案名稱或變更資料夾路徑, 非所有路徑與文件類型都能傳送
+			* 🟥 路徑與檔案請不要有空格或是特殊符號
+			* 🟥 已確定會被Valve阻擋的路徑有: addons, scripts
+			* 🟥 已確定Valve不允許傳送的文件類型有: .vpk
+
+	* Q2: 為什麼音效檔案已下載卻沒有聲音 ?
+		* A1: 如要播放自製音效，建議使用 MP3 文件，否則可能根本無法播放
+			* 🟥 所有音效文件必須以 44100 Hz 採樣率編碼
+			* 🟥 128或 192 Kbit/s 比特率重新編碼
 </details>
