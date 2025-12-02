@@ -2,41 +2,17 @@
 #pragma newdecls required
 #include <sourcemod>
 #include <basecomm>
+#include <smlib>
 
 public Plugin myinfo =
 {
 	name = "No Team Chat",
 	author = "bullet28, HarryPotter",
-	description = "Redirecting all 'say_team' messages to 'say' in order to remove (Survivor) prefix when it's useless",
-	version = "2.4",
+	description = "Redirecting all 'say_team' messages to 'say', print team chat message to all clients on the server",
+	version = "1.0h-2025/12/2",
 	url = "https://forums.alliedmods.net/showthread.php?p=2691314"
 }
 
-EngineVersion g_EngineVersion;
-char sAllMsg[64];
-public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max) 
-{
-	g_EngineVersion = GetEngineVersion();
-	if(g_EngineVersion == Engine_Left4Dead || g_EngineVersion == Engine_Left4Dead2)
-	{
-		sAllMsg = "L4D_Chat_All";
-	}
-	else if(g_EngineVersion == Engine_CSS || g_EngineVersion == Engine_CSGO)
-	{
-		sAllMsg = "Cstrike_Chat_All";
-	}
-	else if(g_EngineVersion == Engine_TF2)
-	{
-		sAllMsg = "TF_Chat_All";
-	}
-	else
-	{
-		strcopy(error, err_max, "Plugin unsupports this game.");
-		return APLRes_SilentFailure;
-	}
-
-	return APLRes_Success; 
-}
 
 ConVar cvarIgnoreList;
 char ignoreList[32][8];
@@ -63,7 +39,7 @@ void GetCvars()
 	ExplodeString(buffer, ",", ignoreList, sizeof ignoreList, sizeof ignoreList[]);
 }
 
-public Action OnClientSayCommand(int client, const char[] command, const char[] sArgs) {
+/*public Action OnClientSayCommand(int client, const char[] command, const char[] sArgs) {
 	
 	if (client <= 0)
 		return Plugin_Continue;
@@ -86,7 +62,7 @@ public Action OnClientSayCommand(int client, const char[] command, const char[] 
 		}
 	}
 
-	return Plugin_Stop;
+	return Plugin_Continue;
 }
 
 void SayText2(int client, int sender, const char[] msg) {
@@ -105,4 +81,53 @@ void SayText2(int client, int sender, const char[] msg) {
 		BfWriteByte(hMessage, true);
 		EndMessage();
 	}
+}
+*/
+
+public void OnClientSayCommand_Post(int client, const char[] command, const char[] sArgs) {
+	
+	if (client <= 0)
+		return;
+	
+	if (strcmp(command, "say_team", false) != 0)
+		return;
+
+	if (BaseComm_IsClientGagged(client) == true) //this client has been gagged
+		return;	
+		
+	for (int i = 0; i < sizeof ignoreList; i++) {
+		if ( ignoreList[i][0] != EOS && strncmp(sArgs, ignoreList[i], strlen(ignoreList[i])) == 0 ) {
+			return;
+		}
+	}
+
+	DataPack hPack = new DataPack();
+	hPack.WriteCell(GetClientUserId(client));
+	hPack.WriteCell(GetClientTeam(client));
+	hPack.WriteString(sArgs);
+	RequestFrame(OnNextFrame_OnClientSayCommand_Post, hPack);
+
+	return;
+}
+
+void OnNextFrame_OnClientSayCommand_Post(DataPack hPack)
+{
+	hPack.Reset();
+	int client = GetClientOfUserId(hPack.ReadCell());
+	int team = hPack.ReadCell();
+	char sArgs[256]; hPack.ReadString(sArgs, sizeof sArgs);
+	delete hPack;
+
+	if(!client || !IsClientInGame(client)) return;
+
+	char buffer[256];
+	FormatEx(buffer, sizeof(buffer), "(NO TEAMCHAT) %N :  %s", client, sArgs);
+
+	for (int i = 1; i <= MaxClients; i++) {
+		if (i != client && IsClientInGame(i) && !IsFakeClient(i) && GetClientTeam(i) != team) {
+			Client_PrintToChat(i, true, buffer);
+		}
+	}
+
+	//Client_PrintToChat(client, true, buffer);
 }

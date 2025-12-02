@@ -1,20 +1,17 @@
 # Description | 內容
-Redirecting all 'say_team' messages to 'say'
+Print team chat message to all clients on the server
 
 * Apply to | 適用於
-	```
-	L4D1
-	L4D2
-	CSS
-	Team Fortress 2
-	```
+    ```
+    Any Source Game
+    ```
 
 * Image | 圖示
 	* No team chat ( 團隊聊天 變成 公開聊天)
 	<br/>![lfd_noTeamSay_1](image/lfd_noTeamSay_1.jpg)
 
 * Require | 必要安裝
-<br/>None
+	1. [smlib](https://github.com/fbef0102/L4D1_2-Plugins/releases/tag/smlib-Colors)
 
 * <details><summary>ConVar | 指令</summary>
 
@@ -25,13 +22,12 @@ Redirecting all 'say_team' messages to 'say'
 		```
 </details>
 
-* <details><summary>Related Plugin | 相關插件</summary>
-
-	1. [sm_regexfilter](https://github.com/fbef0102/Game-Private_Plugin/tree/main/Source_插件/Anti_Griefer_防惡意路人/sm_regexfilter): Filter dirty words via Regular Expressions
-		> 禁詞表，任何人打字說出髒話或敏感詞彙，字詞會被屏蔽、玩家禁言並處死，網路並非法外之地
-</details>
-
 * <details><summary>Changelog | 版本日誌</summary>
+
+	* v1.0h (2025-12-2)
+		* To prevent conflict with other plugins, now this plugin does not block the team chat message
+		* Print team chat message to all clients on the server
+		* Require smlib
 
 	* v2.4 (2023-5-20)
 		* Fixed Error
@@ -49,7 +45,7 @@ Redirecting all 'say_team' messages to 'say'
 
 - - - -
 # 中文說明
-沒有團隊聊天頻道只有公開聊天頻道
+玩家輸入的團隊聊天訊息會傳送給伺服器內所有人看
 
 * 原理
 	* 不管在哪一個頻道說話，全部的人都能看到
