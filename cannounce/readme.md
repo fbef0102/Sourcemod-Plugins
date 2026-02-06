@@ -89,6 +89,10 @@ Replacement of default player connection message, allows for custom connection m
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+	* v1.0h (2026-2-6)
+		* Update translation
+		* delete data\cannounce_settings.txt, use translations\cannounce.phrases.txt
+
 	* v2.3 (2025-7-13)
 		* Update cvars
 
