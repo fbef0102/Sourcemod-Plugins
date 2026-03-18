@@ -70,6 +70,7 @@ Kicks out clients who are potentially attempting to enable mathack
     * 幫玩家檢測指令，如有發現試圖使用或超出範圍將踢出伺服器
     * 檢測的指令表位於[configs/smd_texture_manager_block.cfg](configs/smd_texture_manager_block.cfg)
         * 如你有發現更多作弊指令想新增檢測，請自行增加
+        * 不想檢測的指令可以自行刪除或是使用//符號註解
     * 紀錄文件於```sourcempd\logs\smd_texture_manager_block.log```
 
 * <details><summary>命令中文介紹 (點我展開)</summary>
