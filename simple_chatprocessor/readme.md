@@ -50,8 +50,8 @@ Process chat and allows other plugins to manipulate chat.
 		* 禁詞表，任何人打字說出髒話或敏感詞彙，字詞會被屏蔽、玩家禁言並處死，網路並非法外之地
 	2. [smd_mute_player_list](https://github.com/fbef0102/Game-Private_Plugin/tree/main/Source_插件/Anti_Griefer_防惡意路人/smd_mute_player_list): Player can personally mute someone chat text and mic voice.
 		* 玩家可以在個人列表上封鎖其他人的語音與聊天文字
-	3. [simple-chatcolors](https://github.com/fbef0102/Game-Private_Plugin/tree/main/Source_插件/Fun_娛樂/simple-chatcolors): Changes the colors of players chat based on config file.
-		* 根據管理員或玩家身分修改聊天窗口的對話顏色
+	3. [simple-chatcolors](https://github.com/fbef0102/Game-Private_Plugin/tree/main/Source_插件/Fun_娛樂/simple-chatcolors): Changes the colors of players chat and give player tag name based on config file.
+		* 根據管理員或玩家身分給予專屬稱號與聊天窗的專屬顏色
 </details>
 
 * <details><summary>Changelog | 版本日誌</summary>

@@ -1,8 +1,7 @@
 # Appreciate my work, you can [PayPal Donate](https://paypal.me/Harry0215?locale.x=zh_TW) me
 
-# Require
-* [Sourcemod 1.11](https://www.sourcemod.net/downloads.php?branch=1.11-dev) (or newer)
-* [Metamod 1.11](https://www.sourcemm.net/downloads.php?branch=1.11-dev) (or newer)
+# Require Server Install
+* [Sourcemod + Metamod](https://github.com/fbef0102/Sourcemod-Server/tree/main?tab=readme-ov-file#server-install)
 
 # Description
 Make server more fun, and more useful plugins for adm.
