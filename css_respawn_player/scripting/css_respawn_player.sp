@@ -9,8 +9,6 @@
 #define PLUGIN_NAME			    "css_respawn_player"
 #define DEBUG 0
 
-#define CVAR_FLAGS	FCVAR_NOTIFY
-
 public Plugin myinfo =
 {
 	name = "[CSS] SM Respawn Player",
