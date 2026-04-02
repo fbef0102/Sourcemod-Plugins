@@ -92,8 +92,8 @@ Make server more fun, and more useful plugins for adm.
     * 顯示HUD在玩家的螢幕上: 血量、體力、感染狀態、速度、武器彈藥...
 
 # Scripting Compiler
-* [sourcemod v1.11 compiler](https://www.sourcemod.net/downloads.php?branch=1.11-dev): scripting folder
-    * 使用 sourcemod v1.11 的編譯環境
+* [sourcemod v1.12 compiler](https://www.sourcemod.net/downloads.php?branch=1.12-dev): scripting folder
+    * 使用 sourcemod v1.12 的編譯環境
 * SourceMod is licensed under the [GNU General Public License, version 3](https://www.sourcemod.net/license.php).
     * 此專案內所有開源碼皆在授權條款下: [GNU General Public License, version 3](https://www.sourcemod.net/license.php)
 
