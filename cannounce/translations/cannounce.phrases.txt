@@ -49,12 +49,12 @@
 	"messages_playerjoin"
 	{
 		"en"		"[{olive}TS{default}] {blue}Player {green}{PLAYERNAME} {blue}joined{default}. ({green}{PLAYERCOUNTRY},{PLAYERCITY}{default})"
-		"zho"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}來了{default}. ({green}{PLAYERCOUNTRY},{PLAYERCITY}{default})"
-		"chi"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}来了{default}. ({green}{PLAYERCOUNTRY},{PLAYERCITY}{default})"
+		"zho"		"[{olive}TS{default}] {blue}玩家 {green}{PLAYERNAME} {blue}來了{default}. ({green}{PLAYERCOUNTRY},{PLAYERCITY}{default})"
+		"chi"		"[{olive}TS{default}] {blue}玩家 {green}{PLAYERNAME} {blue}来了{default}. ({green}{PLAYERCOUNTRY},{PLAYERCITY}{default})"
 	}
 	"messages_playerdisc"
 	{
-		"en"		"[{olive}TS{default}] {blue}Player {green}{PLAYERNAME} {blue}disconnected{default}. ({green}{DISC_REASON}{default})"
+		"en"		"[{olive}TS{default}] {red}Player {green}{PLAYERNAME} {red}disconnected{default}. ({green}{DISC_REASON}{default})"
 		"zho"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}跑了{default}. ({green}{DISC_REASON}{default})"
 		"chi"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}跑了{default}. ({green}{DISC_REASON}{default})"
 	}
@@ -64,13 +64,13 @@
 	"messages_admin_playerjoin"
 	{
 		"en"		"[{olive}TS{default}] {blue}Player {green}{PLAYERNAME} {blue}joined{default}. ({green}{PLAYERCOUNTRY}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
-		"zho"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}來了{default}. ({green}{PLAYERCOUNTRY}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
-		"chi"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}来了{default}. ({green}{PLAYERCOUNTRY}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
+		"zho"		"[{olive}TS{default}] {blue}玩家 {green}{PLAYERNAME} {blue}來了{default}. ({green}{PLAYERCOUNTRY}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
+		"chi"		"[{olive}TS{default}] {blue}玩家 {green}{PLAYERNAME} {blue}来了{default}. ({green}{PLAYERCOUNTRY}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
 	}
 	
 	"messages_admin_playerdisc"
 	{
-		"en"		"[{olive}TS{default}] {blue}Player {green}{PLAYERNAME} {blue}disconnected{default}. ({green}{DISC_REASON}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
+		"en"		"[{olive}TS{default}] {red}Player {green}{PLAYERNAME} {red}disconnected{default}. ({green}{DISC_REASON}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
 		"zho"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}跑了{default}. ({green}{DISC_REASON}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
 		"chi"		"[{olive}TS{default}] {red}玩家 {green}{PLAYERNAME} {red}跑了{default}. ({green}{DISC_REASON}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
 	}

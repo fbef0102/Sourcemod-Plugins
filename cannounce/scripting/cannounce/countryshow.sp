@@ -54,8 +54,6 @@ void OnPostAdminCheck_CountryShow(int client)
 ****************************************************************/
 void event_PlayerDisc_CountryShow(Event event)
 {
-	char rawmsg[301];
-	char rawadmmsg[301];
 	char sReason[128];
 	
 	int client = GetClientOfUserId(GetEventInt(event, "userid"));
