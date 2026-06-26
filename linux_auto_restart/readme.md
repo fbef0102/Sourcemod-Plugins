@@ -27,6 +27,9 @@ Make server restart (Force crash) when the last player disconnects from the serv
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+	* v3.4 (2026-6-26)
+		* Fixed server unables to unload Accelerator extension if players use other version of extension, example: MrPanica's accelerator
+
 	* v3.3 (2024-12-7)
 	* v3.2 (2024-11-30)
 	* v3.1 (2024-10-26)
@@ -40,7 +43,7 @@ Make server restart (Force crash) when the last player disconnects from the serv
 		* Optimize Code
 
 	* v2.4 (2023-3-29)
-		* Auto detect Accelerator extension and unload extension　before shutdown
+		* Auto detect Accelerator extension and unload extension before shutdown
 		* Remove Cvar
 
 	* v1.0

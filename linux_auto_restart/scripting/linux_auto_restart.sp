@@ -2,7 +2,7 @@
 #pragma newdecls required
 #include <sourcemod>
 #include <regex>
-#define PLUGIN_VERSION			"3.3-2024/12/7"
+#define PLUGIN_VERSION			"3.4-2026/6/26"
 #define DEBUG 0
 
 public Plugin myinfo =
@@ -176,19 +176,26 @@ Action Timer_COLD_DOWN(Handle timer, any client)
 		g_bNoOneInServer = false;
 		return Plugin_Continue;
 	}
-	
-	LogToFileEx(g_sPath, "Last one player left the server, Restart server now");
-	PrintToServer("Last one player left the server, Restart server now");
 
 	UnloadAccelerator();
-
-	CreateTimer(0.1, Timer_RestartServer);
+	CreateTimer(0.2, Timer_RestartServer, 0);
 
 	return Plugin_Continue;
 }
 
-Action Timer_RestartServer(Handle timer)
+Action Timer_RestartServer(Handle timer, int type)
 {
+	if(type == 0)
+	{
+		LogToFileEx(g_sPath, "Last one player left the server, Restart server now");
+		PrintToServer("Last one player left the server, Restart server now");
+	}
+	else
+	{
+		LogToFileEx(g_sPath, "Manually restart via cmd, Restart server now");
+		PrintToServer("Manually restart via cmd, Restart server now");
+	}
+
 	if(g_bGameL4D)
 	{
 		SetCommandFlags("crash", GetCommandFlags("crash") &~ FCVAR_CHEAT);
@@ -217,14 +224,39 @@ Action Timer_Cmd_RestartServer(Handle timer)
 
 		KickClient(i, "Server is restarting");
 	}
+
 	UnloadAccelerator();
-	CreateTimer(0.2, Timer_RestartServer);
+	CreateTimer(0.2, Timer_RestartServer, 1);
 
 	return Plugin_Continue;
 }
 
 void UnloadAccelerator()
 {
+	/*Handle hIterator = GetPluginIterator();
+	Handle hPlug;
+
+	ServerCommand("sm plugins load_unlock");
+
+	static char PluginName[256];
+	while (MorePlugins(hIterator))
+	{
+		hPlug = ReadPlugin(hIterator);
+
+		if( hPlug )
+		{
+			// 得到插件全名包含路徑與.smx (路徑相對於plugins/)
+			GetPluginFilename(hPlug, PluginName, sizeof(PluginName));
+			if(StrContains(PluginName, "accelerator_local.smx", false) > 0)
+			{
+				ServerCommand("sm plugins unload %s", PluginName);
+				break;
+			}
+		}
+	}
+	
+	delete hIterator;*/
+
 	/*if( g_iCvarUnloadExtNum )
 	{
 		ServerCommand("sm exts unload %i 0", g_iCvarUnloadExtNum);
@@ -243,13 +275,28 @@ void UnloadAccelerator()
 	if (regex.Match(responseBuffer) > 0 && regex.CaptureCount() == 2)
 	{
 		char sAcceleratorExtNum[4];
-		
-		// 0 is the full string "[?] Accelerator"
-		// 1 is the matched extension number
+		// 索引 0 永遠是「整個匹配成功的字串」，舉例: [01] Accelerator
+		// 索引 1 是第一個括號 ([0-9]+) 內的文字，舉例: 01
 		regex.GetSubString(1, sAcceleratorExtNum, sizeof(sAcceleratorExtNum));
-		
-		// unload it
-		ServerCommand("sm exts unload %s 0", sAcceleratorExtNum);
+
+		ServerCommandEx(responseBuffer, sizeof(responseBuffer), "sm exts unload %s", sAcceleratorExtNum);
+		Regex regex2 = new Regex("sm exts unload ([0-9]+) ([0-9]+)");
+		if (regex2.Match(responseBuffer) > 0)
+		{
+			char sUnloadCode[64];
+			// example: sm exts unload 01 164
+			regex2.GetSubString(0, sUnloadCode, sizeof(sUnloadCode));
+
+			// unload it
+			ServerCommand("%s", sUnloadCode);
+			LogToFileEx(g_sPath, "Unload Accelerator with code successfully");
+		}
+		else
+		{
+			LogToFileEx(g_sPath, "Unload Accelerator successfully");
+			// unload it
+		}
+
 		ServerExecute();
 	}
 	
