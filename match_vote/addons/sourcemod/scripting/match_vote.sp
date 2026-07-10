@@ -3,7 +3,7 @@
 
 #include <sourcemod>
 #include <multicolors> 
-#include <builtinvotes> //https://github.com/L4D-Community/builtinvotes/actions
+#include <builtinvotes> //https://github.com/fbef0102/builtinvotes/releases
 #include <adminmenu>
 
 #define PLUGIN_VERSION			"1.5-2024/8/25"

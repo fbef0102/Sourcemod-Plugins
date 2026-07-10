@@ -14,7 +14,7 @@ Type !match/!load/!mode to vote a new mode
 
 * Require | 必要安裝
     1. [[INC] Multi Colors](https://github.com/fbef0102/L4D1_2-Plugins/releases/tag/Multi-Colors)
-    2. [builtinvotes](https://github.com/L4D-Community/builtinvotes/actions)
+    2. [builtinvotes](https://github.com/fbef0102/builtinvotes/releases)
 
 * <details><summary>ConVar | 指令</summary>
 
