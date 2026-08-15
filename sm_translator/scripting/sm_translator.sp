@@ -23,7 +23,7 @@
 #include <json> //https://github.com/clugg/sm-json
 #include <clientprefs>
 
-#define PLUGIN_VERSION 			"1.8h-2025/10/1"
+#define PLUGIN_VERSION 			"1.9h-2026/8/15"
 #define PLUGIN_NAME			    "sm_translator"
 #define DEBUG 0
 
@@ -476,8 +476,25 @@ void Callback_OnHTTPResponse(Handle request, bool bFailure, bool bRequestSuccess
 		return;
 	}
 
+	int client = GetClientOfUserId(userid);
+
+	if (!client || !IsClientInGame(client)) 
+	{
+		delete request;
+		delete hPack;
+		return;
+	}
+
 	int iBufferSize;
 	SteamWorks_GetHTTPResponseBodySize(request, iBufferSize);
+	if (iBufferSize <= 0 || iBufferSize > 65536)
+	 {
+		C_PrintToChat(client, "%T", "Invalid", client, iBufferSize);
+		LogError("HTTP response size Too big (%d bytes) or invalid.", iBufferSize);
+		delete request;
+		delete hPack;
+		return;
+	}
 
 	char[] result = new char[iBufferSize];
 	SteamWorks_GetHTTPResponseBodyData(request, result, iBufferSize);
@@ -516,14 +533,6 @@ void Callback_OnHTTPResponse(Handle request, bool bFailure, bool bRequestSuccess
 
 	// fixed memory leak ( Warning: plugin sm_translator.smx is using more than 100000 handles!)
 	json_cleanup_and_delete(arr);
-	
-
-	int client = GetClientOfUserId(userid);
-
-	if (!client || !IsClientInGame(client)) 
-	{
-		return;
-	}
 
 	if(other == 0)
 	{

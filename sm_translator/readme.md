@@ -73,6 +73,9 @@ Translate chat message via Google API
 
 * <details><summary>Changelog | 版本日誌</summary>
 
+    * v1.9h (2026-8-15)
+        * Fixed: Exception reported: Not enough space on the heap
+
     * v1.8h (2025-10-1)
     * v1.7h (2025-9-23)
         * Use google api to auto detect langauge
@@ -119,7 +122,7 @@ Translate chat message via Google API
         * B玩家的steam平台設置的語言是**法文**，那B玩家會看到法文
         * C玩家的steam平台設置的語言是**日文**，那C玩家會看到日文
         * D玩家的steam平台設置的語言是**繁體中文**，那D玩家不會看到翻譯 (除非A玩家輸入的文字不是繁體中文)
-        * E玩家的steam平台設置的語言是**簡體中文**，那E玩家會看到翻譯
+        * E玩家的steam平台設置的語言是**簡體中文**，那E玩家會看到簡體中文
     * 伺服器語言預設是英文，可於 ```addons/sourcemod/configs/core.cfg``` 查看 (最好不要修改)
         ```
         "ServerLang"    "en"
@@ -128,7 +131,7 @@ Translate chat message via Google API
 * 注意事項
     * 使用的是Google提供的API翻譯，所以可能翻譯得不正確
     * 如果你所在的地區無法上Google網站，可能無法使用此插件
-    * Google的自動可能會檢測到錯誤的語言
+    * Google可能會檢測到錯誤的語言
     * 如果Sourcemod不支援你的語言，你只會看到英文翻譯
         * 查看Sourcemod 支援的語言列表: ```addons/sourcemod/configs/languages.cfg```
     * 玩家看到的語言翻譯取決於他們的steam平台設置的語言

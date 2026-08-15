@@ -180,4 +180,12 @@
 		"chi"		"{lightgreen}[TRANSLATOR]{green} 显示开启, 看得到其他人的翻译语句"
 		"hu"		"{lightgreen}[TRANSLATOR]{green} Megjelenés be, látod a többi játékos fordításait"
 	}
+	
+	"Invalid"
+	{
+		"#format"		"{1:i}"
+		"en"			"({green}Unable to translate{default}) HTTP Too big ({1} bytes) or Invalid."
+		"zho"			"({green}無法翻譯{default}) HTTP 回應過大 (%d bytes) 或無效，拒絕處理。"
+		"chi"			"({green}无法翻译{default}) HTTP 回应过大 (%d bytes) 或无效，拒绝处理。"
+	}
 }
