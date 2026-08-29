@@ -24,7 +24,7 @@ public void OnPluginStart() {
 	GetCvars();
 	cvarIgnoreList.AddChangeHook(OnConVarChange);
 	
-	AutoExecConfig(true, "lfd_noTeamSay");
+	AutoExecConfig(true, "smd_noTeamSay");
 }
 
 public void OnConVarChange(ConVar convar, char[] oldValue, char[] newValue) {

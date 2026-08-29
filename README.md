@@ -44,7 +44,7 @@ Make server more fun, and more useful plugins for adm.
     * 小遊戲，大家玩! Duel 決鬥!!
 * <b>[lerptracker](/lerptracker)</b>: Keep track of players' lerp settings
     * 顯示玩家的Lerp值
-* <b>[lfd_noTeamSay](/lfd_noTeamSay)</b>: Print team chat message to all clients on the server
+* <b>[smd_noTeamSay](/smd_noTeamSay)</b>: Print team chat message to all clients on the server
     * 玩家輸入的團隊聊天訊息會傳送給伺服器內所有人看
 * <b>[linux_auto_restart](/linux_auto_restart)</b>: Make server restart (Force crash) when the last player disconnects from the server
     * 最後一位玩家離開伺服器之後自動關閉Server並重啟

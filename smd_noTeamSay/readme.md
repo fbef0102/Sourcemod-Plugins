@@ -8,14 +8,14 @@ Print team chat message to all clients on the server
 
 * Image | 圖示
 	* No team chat ( 團隊聊天 變成 公開聊天)
-	<br/>![lfd_noTeamSay_1](image/lfd_noTeamSay_1.jpg)
+	<br/>![smd_noTeamSay_1](image/smd_noTeamSay_1.jpg)
 
 * Require | 必要安裝
 	1. [smlib](https://github.com/fbef0102/L4D1_2-Plugins/releases/tag/smlib-Colors)
 
 * <details><summary>ConVar | 指令</summary>
 
-	* cfg/sourcemod/lfd_noTeamSay.cfg
+	* cfg/sourcemod/smd_noTeamSay.cfg
 		```php
         // Messages starting with this will be ignored, separate by , symbol
         noteamsay_ignorelist "!,/,@"
@@ -56,7 +56,7 @@ Print team chat message to all clients on the server
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
-	* cfg/sourcemod/lfd_noTeamSay.cfg
+	* cfg/sourcemod/smd_noTeamSay.cfg
 		```php
         // 用這些符號開頭的文字會被忽略，用逗號區分
         noteamsay_ignorelist "!,/,@"
