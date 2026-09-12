@@ -8,6 +8,9 @@
  *
  */
 
+#pragma semicolon 1
+#pragma newdecls required
+
 #include <sourcemod>
 #include <vacbans>
 #include <multicolors>
@@ -20,9 +23,6 @@
 
 //#undef REQUIRE_PLUGIN
 //#tryinclude <updater> //https://forums.alliedmods.net/showthread.php?t=169095
-
-#pragma semicolon 1
-#pragma newdecls required
 
 
 // v1.0h by Harry
