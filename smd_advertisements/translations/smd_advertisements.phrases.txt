@@ -1,0 +1,127 @@
+// Cvar: smd_advertisements_type
+// 1=In center text, 2=In chat, 3=In Hint Box, 4=In Menu
+// -----
+// center: Center message (does not support colors)
+// chat: Chat message (support colors)
+// hint: Hint message (does not support colors)
+// menu: Menu message (does not support colors)
+//
+// Please use notepad++ or vscode to open this file, so you will see the special ascii character for Colors tag
+// Colors tag (Colors are different and some not work in each source engine game, you need to test)
+//	= \x01 (SOH) 
+//	= \x02 (STX) 
+//	= \x03 (ETX) grey
+//	= \x04 (EOT) green
+//	= \x05 (ENQ) black
+//	= \x06 (ACK)
+//	= \x07 (BEL)
+//
+//	FFFFFFFF	= \x08 custom color with alpha (RGBA)
+//	FFFFFF	= \x07 custom color (RGB)
+//
+// -----
+//	There are only 6 colors supported in L4D1/L4D2, not like other source game
+//	 - {default}	(white color)
+//	 - {green}		(olive color)
+//	 - {olive}		(green color)
+//	 - {lightgreen}	(light green color)
+//	 - {red}		(red color) - There must be at least one player or bot in infected team，or red will turn into {green} color
+//	 - {blue}		(blue color) - There must be at least one player or bot in survivor team，or blue will turn into {green} color 
+//	 Warning: {lightgreen}、{red}、{blue}, 2 of 3 colors can not be used at the same sentence
+
+// 中文說明
+// 插件指令: smd_advertisements_type
+// 1=螢幕中央, 2=聊天框, 3=螢幕下方黑底白字框 , 4=Menu菜單
+// -----
+// center: 廣告文字顯示於螢幕中央 (不支援顏色)
+// chat: 廣告文字顯示於聊天框 (支援顏色)
+// hint: 廣告文字顯示於螢幕下方黑底白字框 (不支援顏色)
+// menu: 廣告文字顯示於左邊菜單介面 (不支援顏色)
+//
+// -----
+// 使用notepad++ 或是 vscode 文件編輯器，你才會看到顏色標籤的特殊符號
+// 以下為顏色標籤 (每個Source引擎遊戲呈現的顏色都不同, 符號也不一定有用, 請自己測試)
+//	= \x01 (SOH) 
+//	= \x02 (STX)
+//	= \x03 (ETX) 灰色
+//	= \x04 (EOT) 綠色
+//	= \x05 (ENQ) 黑色
+//	= \x06 (ACK) 
+//	= \x07 (BEL)
+//
+//	FFFFFFFF	= \x08 自訂顏色 (RGBA)
+//	FFFFFF	= \x07 自訂顏色 (RGB)
+//
+// -----
+//	L4D1/L4D2 只支援以下顏色:
+//	 - {default}	(白色)
+//	 - {green}		(橘色)
+//	 - {olive}		(綠色)
+//	 - {lightgreen}	(淺綠色)
+//	 - {red}		(紅色) - 特感隊伍要有人或bot在才會顯示紅色，否則顯示橘色
+//	 - {blue}		(藍色) - 人類隊伍要有人或bot在才會顯示藍色，否則顯示橘色
+//	 注意事項: 藍色、紅色、淺綠色，這三種顏色不可出現在同一句話裡
+//
+
+"Phrases"
+{
+	// some tags available
+	// {currentmap} <-- current map, example: c1m2_streets
+	// {date} <-- date (month/day/4 digit year), example: 02/15/1995
+	// {time} <-- current time (Hours in 12-hour format : minute : second AM/PM), example: 02:15:18 PM
+	// {time24} <-- current time (Hours in 24-hour format : minute : second ), example: 14:15:18
+	// {timeleft} <-- an estimate of the time left before the map ends, example: 20:30
+	//
+	// 可使用的標籤
+	// {currentmap} <-- 目前地圖名稱, 舉例: c1m2_streets
+	// {date} <-- 日期 (月/日/4位數的年份), 舉例: 02/15/1995
+	// {time} <-- 目前時間 (12進制), 舉例: 02:15:18 PM
+	// {time24} <-- 目前時間 (24進制), 舉例: 14:15:18
+	// {timeleft} <-- 地圖剩餘時間, 舉例: 20:30
+	
+	"1"
+	{
+		"en"			"{green}!votes{lightgreen}: kick、change map、restartmap"
+		"zho"			"{green}!votes{lightgreen}: 踢人、換圖、重新關卡"
+		"chi"			"{green}!votes{lightgreen}: 踢人、换图、重新关卡"
+	}
+	"2"
+    {
+        "en"			"{green}!js{lightgreen}: Join Survivor, {green}!s{lightgreen}: Join Spectator, {green}!ji{lightgreen}: Join Infected"
+        "zho"			"{green}!js{lightgreen}: 加入人類陣營, {green}!s{lightgreen}: 休息旁觀, {green}!ji{lightgreen}: 成為特感陣營"
+        "chi"			"{green}!js{lightgreen}: 加入人类阵营, {green}!s{lightgreen}: 休息旁观, {green}!ji{lightgreen}: 成为特感阵营"
+    }
+	"3"
+    {
+        "en"			"{lightgreen}Shop is open now! type {green}!buy{lightgreen} to purchase useful item"
+        "zho"			"{lightgreen}商店功能已開啟! 輸入 {green}!buy{lightgreen} 購買商品"
+        "chi"			"{lightgreen}商店功能已开启! 输入 {green}!buy{lightgreen} 购买商品"
+    }
+	"4"
+    {
+        "en"			"{lightgreen}Type {green}!help{lightgreen} to know server information"
+        "zho"			"{lightgreen}輸入 {green}!help{lightgreen} 了解本伺服器的內容"
+        "chi"			"{lightgreen}输入 {green}!help{lightgreen} 了解本伺服器的内容"
+    }
+	"5"
+    {
+        "en"			"{lightgreen}Date: {green}{date}{lightgreen}, Time: {green}{time}"
+        "zho"			"{lightgreen}日期: {green}{date}{lightgreen}, 時間: {green}{time}"
+        "chi"			"{lightgreen}日期: {green}{date}{lightgreen}, 时间: {green}{time}"
+    }
+	"6"
+    {
+        "en"			"{lightgreen}Map: {green}{currentmap}{lightgreen}, Time Left: {green}{timeleft}"
+        "zho"			"{lightgreen}地圖: {green}{currentmap}{lightgreen}, 剩餘時間: {green}{timeleft}"
+        "chi"			"{lightgreen}地图: {green}{currentmap}{lightgreen}, 剩余时间: {green}{timeleft}"
+    }
+	
+	// add more if you want
+	// 自行新增更多公告或廣告, 請按照數字順序填寫 
+	//"7"
+    //{
+    //    "en"			"{lightgreen}Hello World!!"
+    //    "zho"			"{lightgreen}歡迎使用本程式!!"
+    //    "chi"			"{lightgreen}欢迎使用本程式!!"
+    //}
+}

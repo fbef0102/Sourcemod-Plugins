@@ -32,8 +32,8 @@ Make server more fun, and more useful plugins for adm.
     * 翻譯你的句子給其他玩家 (玩家對應的語言)
 * <b>[helpmenu](/helpmenu)</b>: In-game Help Menu (Support Translation)
     * 輸入!helpmenu顯示選單，用來幫助玩家瞭解你的伺服器內容
-* <b>[advertisements](/advertisements)</b>: Display advertisements
-    * 廣告&公告欄插件，每隔一段時間於聊天框自動顯示一段公告內容
+* <b>[smd_advertisements](/smd_advertisements)</b>: Display advertisements at regular intervals, with translation support
+    * 每隔一段時間於聊天框自動顯示公告或是廣告，支援多國翻譯
 * <b>[bequiet](/bequiet)</b>: Please be Quiet! Block unnecessary chat or announcement.
     * 阻擋一些非必要提示的訊息在聊天框 (指令更改、名字更改)
 * <b>[chat_responses](/chat_responses)</b>: Displays chat advertisements when specified text is said in player chat.
