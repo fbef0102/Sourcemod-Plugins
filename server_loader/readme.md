@@ -14,7 +14,22 @@ Executes cfg file on server startup only one time
 * Require | 必要安裝
 <br/>None
 
+* Directory Structure | 檔案結構
+	```
+	/
+	├── addons/sourcemod
+	│   ├── plugins/    
+	│   │   └── server_loader.smx	# Compiled plugin | 編譯源碼後產生插件
+	│   └── scripting/
+	│       └── server_loader.sp	# Source code | 源碼
+	└── cfg/
+	    └── server_loader.cfg		# Execute only one time | 只會執行一次的文件
+	```
+
 * <details><summary>Changelog | 版本日誌</summary>
+
+	* v1.1h (2026-9-22)
+		* Force to set official cvar "sv_hibernate_when_empty" 0 until cfg is executed in l4d1/2
 
 	* v1.0h (2025-11-21)
 		* Support any source game
