@@ -18,12 +18,12 @@ Executes cfg file on server startup only one time
 	```
 	/
 	├── addons/sourcemod
-	│   ├── plugins/    
-	│   │   └── server_loader.smx	# Compiled plugin | 編譯源碼後產生插件
-	│   └── scripting/
-	│       └── server_loader.sp	# Source code | 源碼
+	│		├── plugins/
+	│		│	└── server_loader.smx	# Compiled plugin | 已編譯的插件檔案
+	│		└── scripting/
+	│			└── server_loader.sp	# Source code | 源碼
 	└── cfg/
-	    └── server_loader.cfg		# Execute only one time | 只會執行一次的文件
+		└── server_loader.cfg			# Execute only one time | 只會執行一次的文件
 	```
 
 * <details><summary>Changelog | 版本日誌</summary>
