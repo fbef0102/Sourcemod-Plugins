@@ -1,7 +1,7 @@
 #pragma semicolon 1
 #pragma newdecls required //強制1.7以後的新語法
 #include <sourcemod>
-#define PLUGIN_VERSION "1.1h-2026/9/22"
+#define PLUGIN_VERSION "1.2h-2026/9/30"
 
 public Plugin myinfo = 
 {
@@ -25,13 +25,14 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 }
 
 ConVar sv_hibernate_when_empty;
-ConVar cvarLoaderCfg;
-int serverLoaderCounter = 0;
+ConVar cvarLoaderCfg, cvarLoaderDone;
+bool g_ServerLoadedConfig = false;
 bool g_bForceSserverWakeUp;
 
 public void OnPluginStart()
 {	
-	cvarLoaderCfg = CreateConVar("server_loader", "server_loader.cfg", "Config that gets executed on server start. (Empty=Disable)");
+	cvarLoaderCfg 	= CreateConVar("server_loader", 		"server_loader.cfg", 	"Config that gets executed on server start. (Empty=Disable)");
+	cvarLoaderDone 	= CreateConVar("server_loader_done", 	"0", 					"0=Try to execute startup config, 1=Startup config already executed, do not execute again on plugin reload. (Set 0 to allow it again)", FCVAR_DONTRECORD);
 	if(g_bGameL4D)
 	{
 		g_bForceSserverWakeUp = true;
@@ -52,7 +53,7 @@ Action execConfig(Handle timer)
 {
 	g_bForceSserverWakeUp = false;
 
-	if (serverLoaderCounter < 1)
+	if (g_ServerLoadedConfig == false && !cvarLoaderDone.BoolValue)
 	{
 		static char loaderCfgString[256];
 		cvarLoaderCfg.GetString(loaderCfgString, sizeof loaderCfgString);
@@ -60,12 +61,16 @@ Action execConfig(Handle timer)
 		{
 			ServerCommand("exec %s", loaderCfgString);
 			//LogMessage("executed %s", loaderCfgString);
-			serverLoaderCounter++;
+			g_ServerLoadedConfig = true;
+
+			cvarLoaderDone.SetBool(true);
 		}
 		else
 		{
-			LogError("No config or invalid config specified, no configs were loaded.");
-			serverLoaderCounter++;
+			//LogError("server_loader cvar \"server_loader\" not set.");
+			g_ServerLoadedConfig = true;
+
+			cvarLoaderDone.SetBool(true);
 		}
 	}
 
