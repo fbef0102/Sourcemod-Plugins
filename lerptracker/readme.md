@@ -11,6 +11,12 @@ Keep track of players' lerp settings
     * Display lerp when player joins team to play.
     * Kick player if lerp is illegal
     * If you don't know what is "lerp", please google it
+    * To allow players to change the lerp `0~100` in server, modify the convars in `cfg/server.cfg`
+        ```php
+        sm_cvar sv_client_min_interp_ratio 0          // Minimum value of cl_interp_ratio on clients. (Client can adjust lerp to 0.0)
+        sm_cvar sv_client_max_interp_ratio 0          // Maximum value of cl_interp_ratio on clients. (Client can adjust lerp to 0.0)
+        sm_cvar nb_update_frequency 0.014            // The lower the value, the more often NextBots get updated (Pathing and state), very CPU Intensive. (Default: 0.100). 
+        ```
 </details>
 
 * Require | 必要安裝
@@ -71,6 +77,12 @@ Keep track of players' lerp settings
     * 玩家加入隊伍時顯示lerp
     * 玩家的lerp不合法之時踢出伺服器
     * 不知道什麼是"lerp"，自行Google
+    * 如果要允許玩家在伺服器中改lerp `0~100`，寫入以下指令到 `cfg/server.cfg` 文件
+        ```php
+        sm_cvar sv_client_min_interp_ratio 0          // Minimum value of cl_interp_ratio on clients. (Client can adjust lerp to 0.0)
+        sm_cvar sv_client_max_interp_ratio 0          // Maximum value of cl_interp_ratio on clients. (Client can adjust lerp to 0.0)
+        sm_cvar nb_update_frequency 0.014            // The lower the value, the more often NextBots get updated (Pathing and state), very CPU Intensive. (Default: 0.100). 
+        ```
 
 * <details><summary>指令中文介紹 (點我展開)</summary>
 
