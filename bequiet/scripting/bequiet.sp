@@ -3,7 +3,7 @@
 
 #include <sourcemod>
 #include <sdktools>
-#define PLUGIN_VERSION			"1.0h-2024/3/3"
+#define PLUGIN_VERSION			"1.1h-2026/11/11"
 #define PLUGIN_NAME			    "bequiet"
 #define DEBUG 0
 
@@ -70,6 +70,11 @@ public Action Say_Callback(int client, const char[] command, int argc)
 {
 	if(!g_bCvarEnable || !g_bCvarChatChange) return Plugin_Continue;
 
+	if (!client || !IsClientInGame(client))
+	{
+		return Plugin_Continue;
+	}
+
 	char sayWord[MAX_NAME_LENGTH];
 	GetCmdArg(1, sayWord, sizeof(sayWord));
 	
@@ -77,6 +82,7 @@ public Action Say_Callback(int client, const char[] command, int argc)
 	{
 		return Plugin_Handled;
 	}
+
 	return Plugin_Continue;
 }
 
@@ -84,13 +90,19 @@ public Action TeamSay_Callback(int client, const char[] command, int argc)
 {
 	if(!g_bCvarEnable || !g_bCvarChatChange) return Plugin_Continue;
 
+	if (!client || !IsClientInGame(client))
+	{
+		return Plugin_Continue;
+	}
+
 	char sayWord[MAX_NAME_LENGTH];
 	GetCmdArg(1, sayWord, sizeof(sayWord));
-	
+
 	if(sayWord[0] == '!' || sayWord[0] == '/')
 	{
 		return Plugin_Handled;
 	}
+
 	return Plugin_Continue;
 }
 
@@ -118,9 +130,7 @@ Action UserMessageHook(UserMsg msg_hd, Handle bf, const int [] players, int play
 
 	if(StrContains(_sMessage, "Cstrike_Name_Change") != -1)
 	{
-		for(int i = 1; i <= MaxClients; i++)
-			if(IsClientInGame(i))
-				return Plugin_Handled;
+		return Plugin_Handled;
 	}
 
 	return Plugin_Continue;

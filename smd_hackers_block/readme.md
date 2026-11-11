@@ -39,7 +39,7 @@ Block hackers using some exploit to crash server
         smd_hackers_block_time "10.0"
 
         // 1=Kick the player if no steam id authorized, 0=Log only
-        smd_hackers_block_kick "1"
+        smd_hackers_block_kick "0"
 
         // If 1, Force to spec/Block chat/Block voice/Block commands while no steam id available
         smd_hackers_block_spec "1"
@@ -102,7 +102,7 @@ Block hackers using some exploit to crash server
         smd_hackers_block_time "10.0"
 
         // 1=踢出steam驗證失敗的玩家 (steam id抓不到), 0=只記錄log文件
-        smd_hackers_block_kick "1"
+        smd_hackers_block_kick "0"
 
         // 為1時，當玩家沒有steam id驗證時，強制旁觀、禁語音、禁言打字、禁止使用控制台發送指令給伺服器
         smd_hackers_block_spec "1"

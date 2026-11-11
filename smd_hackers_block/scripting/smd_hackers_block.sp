@@ -73,7 +73,7 @@ public void OnPluginStart()
 {
     g_hCvarEnable 		= CreateConVar( PLUGIN_NAME ... "_enable",        "1",   "0=Plugin off, 1=Plugin on.", CVAR_FLAGS, true, 0.0, true, 1.0);
     g_hCvarTime 		= CreateConVar( PLUGIN_NAME ... "_time",          "10.0","Time in seconds to check if players has steam id authorized after join server", CVAR_FLAGS, true, 0.0);
-    g_hCvarKick         = CreateConVar( PLUGIN_NAME ... "_kick",          "1",   "1=Kick the player if no steam id authorized, 0=Log only", CVAR_FLAGS, true, 0.0, true, 1.0);
+    g_hCvarKick         = CreateConVar( PLUGIN_NAME ... "_kick",          "0",   "1=Kick the player if no steam id authorized, 0=Log only", CVAR_FLAGS, true, 0.0, true, 1.0);
     g_hCvarSpec         = CreateConVar( PLUGIN_NAME ... "_spec",          "1",   "If 1, Force to spec/Block chat/Block voice/Block commands while no steam id available", CVAR_FLAGS, true, 0.0, true, 1.0);
     CreateConVar(                       PLUGIN_NAME ... "_version",       PLUGIN_VERSION, PLUGIN_NAME ... " Plugin Version", CVAR_FLAGS_PLUGIN_VERSION);
     AutoExecConfig(true,                PLUGIN_NAME);
