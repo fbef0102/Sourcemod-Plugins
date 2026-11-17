@@ -7,7 +7,6 @@
 
 #define PLUGIN_VERSION		"1.1-2026/11/17"
 #define PLUGIN_NAME			"smd_teleport_player"
-#define DEBUG 0
 
 public Plugin myinfo =
 {
